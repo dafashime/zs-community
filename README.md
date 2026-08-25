@@ -58,7 +58,7 @@ zs-community/
 3. **编译**(需 VS2022 + MSVC v143 + Windows SDK 10.0.22621,见 `client/编译指南.md` §3):
    ```powershell
    & "D:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Current\Bin\MSBuild.exe" `
-     "client\cocos\frameworks\runtime-src\proj.win32\BaiZhuClient.sln" `
+     "client\lib\frameworks\runtime-src\proj.win32\BaiZhuClient.sln" `
      /p:Configuration=Debug /p:Platform=Win32 /p:PlatformToolset=v143 /m /nologo
    ```
 4. **运行**:`bin\run-win-client.bat`(自动定位 `client/lib` 下的 exe 与 DLL,工作目录已按 Quick 工程约定设置);
