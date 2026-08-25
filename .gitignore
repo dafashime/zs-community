@@ -47,5 +47,3 @@ __pycache__/
 # ---- tool outputs ----
 tools/proto-docs/_out/
 
-# ---- skill link (Windows junction, rebuild locally) ----
-.claude/
