@@ -98,14 +98,18 @@ zs-community/
 
 见 [AGENTS.md](AGENTS.md):`client/src*` 为**源码字节保真区**(GBK/ANSI/UTF-8 混合,禁止批量转码),新文档与工具一律 UTF-8。
 
-## AI 协作:skill 链接(本地重建)
+## AI 协作:skill 链接
 
-仓库内置学习导航 skill:`zhans-qidong`(架设/编译/功能文档查询指引)。内容在 `.agents/skills/zhans-qidong/SKILL.md`(已入库);`.claude/skills` 为**本地符号链接**(不入库),Windows 上重建:
+仓库内置学习导航 skill:`zhans-qidong`(架设/编译/功能文档查询指引)。内容在 `.agents/skills/zhans-qidong/SKILL.md`(已入库);`.claude/skills` 为**随仓库入库的符号链接**(git 条目 120000,目标 `../.agents/skills`),clone 后自动生效:
+
+- 支持符号链接的环境(Windows 开发者模式/管理员,或 macOS/Linux),checkout 即得到真实链接,可直接使用;
+- 若 `core.symlinks=false`(Windows 默认),git 会把链接落盘成 17 字节的普通文件,需手动重建一次:
 
 ```powershell
-cmd /c mklink /D .claude\skills .agents\skills   # 需开发者模式或管理员
+Remove-Item .claude\skills -Force
+cmd /c mklink /D .claude\skills ..\.agents\skills   # 需开发者模式或管理员
 # 或无需权限的等价形式(junction):
-cmd /c mklink /J .claude\skills .agents\skills
+cmd /c mklink /J .claude\skills ..\.agents\skills
 ```
 
 ## 协议研究工具(可复现本文档结论)

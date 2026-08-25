@@ -48,5 +48,8 @@ __pycache__/
 tools/proto-docs/_out/
 
 
-# ---- .claude/skills 为本地目录符号链接(不入库, 见 README) ----
-.claude/
+# ---- .claude/skills 为指向 .agents/skills 的符号链接(随仓库入库), 其余 .claude 本地文件忽略 ----
+.claude/commands/
+.claude/launch.json
+.claude/settings.json
+
