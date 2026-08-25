@@ -47,3 +47,6 @@ __pycache__/
 # ---- tool outputs ----
 tools/proto-docs/_out/
 
+
+# ---- .claude/skills 为本地目录符号链接(不入库, 见 README) ----
+.claude/

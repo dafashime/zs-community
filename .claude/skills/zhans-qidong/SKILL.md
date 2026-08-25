@@ -1,1 +1,0 @@
-../../../.agents/skills/zhans-qidong/SKILL.md
