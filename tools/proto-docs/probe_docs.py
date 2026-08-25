@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 import os
 
-DOCS = "D:/ZhanS/zs-community/docs"
+_HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.normpath(os.path.join(_HERE, "..", ".."))
+DOCS = os.path.join(ROOT, "docs")
 for dp, dns, fns in os.walk(DOCS):
     for fn in fns:
         if fn.endswith(".md"):

@@ -2,10 +2,11 @@
 """Validate generated docs: message-number values vs globa1.lua, link integrity, coverage."""
 import re, os, json, collections
 
-ROOT = r"D:\Dev\ZhanS\client-other"
-SRC = os.path.join(ROOT, "res", "rebuilt-src", "mir2")
+_HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.normpath(os.path.join(_HERE, "..", ".."))
+SRC = os.path.join(ROOT, "client", "src", "mir2")
 DOCS = os.path.join(ROOT, "docs", "服务端功能", "基础版")
-TMP = r"D:\Dev\ZhanS\_tmp\proto-docs"
+TMP = os.path.join(_HERE, "_out")
 
 def decode(b):
     for enc in ("utf-8", "gbk"):

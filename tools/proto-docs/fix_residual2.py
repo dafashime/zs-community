@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 import os
 
-DOCS = "D:/ZhanS/zs-community/docs"
+_HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.normpath(os.path.join(_HERE, "..", ".."))
+DOCS = os.path.join(ROOT, "docs")
 WZ = "\u767d\u732a\u7248"          # 白猪版
 SUB = "\u5b50\u6a21\u5757"          # 子模块
 MULU = "\u76ee\u5f55.md"            # 目录.md

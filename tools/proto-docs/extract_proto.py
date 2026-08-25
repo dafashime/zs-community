@@ -2,8 +2,11 @@
 """Extract protocol constants and record definitions from rebuilt-src."""
 import re, json, os, sys
 
-SRC = r"D:\Dev\ZhanS\client-other\res\rebuilt-src\mir2"
-OUT = r"D:\Dev\ZhanS\_tmp\proto-docs"
+_HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.normpath(os.path.join(_HERE, "..", ".."))
+SRC = os.path.join(ROOT, "client", "src", "mir2")
+OUT = os.path.join(_HERE, "_out")
+
 os.makedirs(OUT, exist_ok=True)
 
 def read_bytes(p):

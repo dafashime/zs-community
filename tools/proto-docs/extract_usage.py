@@ -2,8 +2,10 @@
 """Cross-reference CM/SM/LM constant usage across rebuilt-src lua files."""
 import re, json, os, collections
 
-ROOT = r"D:\Dev\ZhanS\client-other\res\rebuilt-src"
-OUT = r"D:\Dev\ZhanS\_tmp\proto-docs"
+_HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.join(_HERE, "..", "..", "client", "src")
+OUT = os.path.join(_HERE, "_out")
+
 
 def decode(b):
     for enc in ("utf-8", "gbk"):

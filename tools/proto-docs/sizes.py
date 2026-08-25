@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 """Compute C-style aligned record sizes following globa2 generateConfigs rules."""
-import json
+import json, os
 
-recs = json.load(open(r"D:\Dev\ZhanS\_tmp\proto-docs\records.json", encoding="utf-8"))
+_HERE = os.path.dirname(os.path.abspath(__file__))
+recs = json.load(open(os.path.join(_HERE, "_out", "records.json"), encoding="utf-8"))
 
 def size_of(name, memo=None):
     memo = memo or {}

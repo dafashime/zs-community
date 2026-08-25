@@ -98,10 +98,6 @@ zs-community/
 
 见 [AGENTS.md](AGENTS.md):`client/src*` 为**源码字节保真区**(GBK/ANSI/UTF-8 混合,禁止批量转码),新文档与工具一律 UTF-8。
 
-## 关于研究文档中的本机路径
-
-`docs/魔改包(白筑).md` / `docs/列表界面展示.md` / `client/编译指南.md` 为原始研究笔记,其中保留的 `D:\Dev\ZhanS\...`、`D:\Downloads\...`、`D:\BaiZhuCocos2dx33\...`、`D:\MirServerZS\...` 等路径是**作者本机环境**,仅供参考:引擎/工具路径请按你的环境替换,`D:\MirServerZS` 对应本仓库 `server/`(整包未随仓库分发)。
-
 ## 协议研究工具(可复现本文档结论)
 
 `tools/proto-docs/` 收录了生成协议文档所用的提取与校验脚本:

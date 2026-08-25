@@ -43,3 +43,6 @@ Desktop.ini
 # ---- python caches ----
 __pycache__/
 *.pyc
+
+# ---- tool outputs ----
+tools/proto-docs/_out/

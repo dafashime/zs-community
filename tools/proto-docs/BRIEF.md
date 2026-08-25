@@ -10,9 +10,9 @@
 - 网络层:`mir2/mir2.single.net.lua`
 - 调试名表:`mir2/mir2.single.m2debug.lua`(cmNames/smNames,可读消息名)
 - 本机字节流实现(Win32 本地化改造,权威):`frameworks/runtime-src/Classes/Mir2ByteStreamCompat.cpp`
-- 消息号↔文件交叉引用表(已生成):`D:\Dev\ZhanS\_tmp\proto-docs\usage.json`(常量→文件→行号列表)
-- 记录定义提取表:`D:\Dev\ZhanS\_tmp\proto-docs\records.json` / `records.txt`
-- 全部常量数值表:`D:\Dev\ZhanS\_tmp\proto-docs\constants.txt`
+- 消息号↔文件交叉引用表(已生成):`tools/proto-docs/_out/usage.json`(常量→文件→行号列表)
+- 记录定义提取表:`tools/proto-docs/_out/records.json` / `records.txt`
+- 全部常量数值表:`tools/proto-docs/_out/constants.txt`
 
 ## 2. TCP 帧格式(小端)
 

@@ -2,9 +2,12 @@
 """Compare white-pig (bz) protocol constants/records vs base version."""
 import re, json, os
 
-BASE = r"D:\Dev\ZhanS\client-other\res\rebuilt-src\mir2"
-BZ = r"D:\Dev\ZhanS\client-other\res\rebuilt-src-bz\白猪G2.5_0518_lua_plain_readable_20260710_014719\mir2"
-OUT = r"D:\Dev\ZhanS\_tmp\proto-docs"
+_HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.normpath(os.path.join(_HERE, "..", ".."))
+BASE = os.path.join(ROOT, "client", "src", "mir2")
+BZ = os.path.join(ROOT, "client", "src-bz", "白猪G2.5_0518_lua_plain_readable_20260710_014719", "mir2")
+OUT = os.path.join(_HERE, "_out")
+
 
 def decode(b):
     for enc in ("utf-8", "gbk"):
