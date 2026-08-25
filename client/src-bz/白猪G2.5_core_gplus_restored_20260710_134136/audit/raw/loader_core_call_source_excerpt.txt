@@ -1,0 +1,23 @@
+6519: 	function core_func_checkbin()
+6520: 		return true
+6521: 	end
+6522: 
+6523: 	local var_260_4, var_260_5 = ycFunction.getFileData(ycFunction, "core.bin", var_260_1)
+6524: 
+6525: 	if not var_260_4 then
+6526: 		core_func_byby()
+6527: 	end
+6528: 
+6529: 	local var_260_6 = var_0_123()
+6530: 
+6531: 	if not var_260_6 then
+6532: 		core_func_byby()
+6533: 	end
+6534: 
+6535: 	if getinfo(load).what == "C" then
+6536: 		pcall(function()
+6537: 			load(var_260_6)()
+6538: 		end)
+6539: 	else
+6540: 		core_func_byby()
+6541: 	end

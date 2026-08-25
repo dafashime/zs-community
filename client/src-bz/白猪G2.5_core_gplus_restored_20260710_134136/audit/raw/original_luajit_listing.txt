@@ -1,0 +1,1574 @@
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    KSTR     0   0      ; "rM"
+0002    RET1     0   2
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    KSTR     0   0      ; "A"
+0002    RET1     0   2
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    RET1     0   2
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    UGET     1   0      ; t
+0002    UGET     2   1      ; h
+0003    TGETS    2   2   0  ; "cc"
+0004    TGETS    2   2   1  ; "Crypto"
+0005    TGETS    2   2   2  ; "decodeBase64"
+0006    CALL     1   2   2
+0007    TGETS    1   1   3  ; "what"
+0008    ISNES    1   4      ; "C"
+0009    JMP      1 => 0042
+0010    UGET     1   1      ; h
+0011    TGETS    1   1   5  ; "core_func_decryptTEA"
+0012    UGET     2   1      ; h
+0013    TGETS    2   2   6  ; "core_func_decodeBase64"
+0014    MOV      3   0
+0015    CALL     2   2   2
+0016    UGET     3   1      ; h
+0017    TGETS    3   3   7  ; "tostring"
+0018    UGET     4   1      ; h
+0019    TGETS    4   4   8  ; "os"
+0020    TGETS    4   4   9  ; "date"
+0021    KSTR     5  10      ; "%Y%m"
+0022    CALL     4   0   2
+0023    CALLM    3   2   0
+0024    UGET     4   1      ; h
+0025    TGETS    4   4   6  ; "core_func_decodeBase64"
+0026    KSTR     5  11      ; "K"
+0027    UGET     6   2      ; z
+0028    CALL     6   2   1
+0029    KSTR     7  12      ; "s"
+0030    UGET     8   3      ; x
+0031    CALL     8   2   1
+0032    KSTR     9  13      ; "oLrt"
+0033    CAT      5   5   9
+0034    CALL     4   2   2
+0035    UGET     5   1      ; h
+0036    TGETS    5   5  14  ; "def"
+0037    TGETS    5   5  15  ; "role"
+0038    TGETS    5   5  16  ; "stuff"
+0039    CAT      3   3   5
+0040    CALLT    1   3
+0041    JMP      1 => 0045
+0042 => UGET     1   1      ; h
+0043    TGETS    1   1  17  ; "core_func_exit"
+0044    CALL     1   1   1
+0045 => RET0     0   1
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    UGET     2   0      ; t
+0002    UGET     3   1      ; h
+0003    TGETS    3   3   0  ; "io"
+0004    TGETS    3   3   1  ; "write"
+0005    CALL     2   2   2
+0006    TGETS    2   2   2  ; "what"
+0007    ISNES    2   3      ; "C"
+0008    JMP      2 => 0037
+0009    UGET     2   1      ; h
+0010    TGETS    2   2   0  ; "io"
+0011    TGETS    2   2   4  ; "open"
+0012    MOV      3   0
+0013    KSTR     4   5      ; "w+b"
+0014    CALL     2   2   3
+0015    ISF          2
+0016    JMP      3 => 0034
+0017    TGETS    3   2   1  ; "write"
+0018    MOV      4   2
+0019    MOV      5   1
+0020    CALL     3   2   3
+0021    UGET     4   2      ; f
+0022    ISNEV    3   4
+0023    JMP      3 => 0026
+0024    UGET     3   3      ; d
+0025    RET1     3   2
+0026 => UGET     3   1      ; h
+0027    TGETS    3   3   0  ; "io"
+0028    TGETS    3   3   6  ; "close"
+0029    MOV      4   2
+0030    CALL     3   1   2
+0031    UGET     3   4      ; e
+0032    RET1     3   2
+0033    JMP      3 => 0040
+0034 => UGET     3   3      ; d
+0035    RET1     3   2
+0036    JMP      2 => 0040
+0037 => UGET     2   1      ; h
+0038    TGETS    2   2   7  ; "core_func_exit"
+0039    CALL     2   1   1
+0040 => RET0     0   1
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    UGET     0   0      ; h
+0002    TGETS    0   0   0  ; "load"
+0003    UGET     1   1      ; K
+0004    CALL     0   2   2
+0005    CALL     0   1   1
+0006    RET0     0   1
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    UGET     1   0      ; t
+0002    UGET     2   1      ; h
+0003    TGETS    2   2   0  ; "pcall"
+0004    CALL     1   2   2
+0005    TGETS    1   1   1  ; "what"
+0006    ISEQS    1   2      ; "C"
+0007    JMP      1 => 0012
+0008    UGET     1   1      ; h
+0009    TGETS    1   1   3  ; "core_func_exit"
+0010    CALL     1   1   1
+0011    UCLO     0 => 0030
+0012 => UGET     1   0      ; t
+0013    UGET     2   1      ; h
+0014    TGETS    2   2   4  ; "load"
+0015    CALL     1   2   2
+0016    TGETS    1   1   1  ; "what"
+0017    ISNES    1   2      ; "C"
+0018    JMP      1 => 0025
+0019    UGET     1   1      ; h
+0020    TGETS    1   1   0  ; "pcall"
+0021    FNEW     2   5      ; core_dec_original_payload.lua:1
+0022    UCLO     0 => 0023
+0023 => CALLT    1   2
+0024    JMP      1 => 0028
+0025 => UGET     1   1      ; h
+0026    TGETS    1   1   3  ; "core_func_exit"
+0027    CALL     1   1   1
+0028 => UCLO     0 => 0029
+0029 => RET0     0   1
+0030 => RET0     0   1
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    UGET     0   0      ; h
+0002    TGETS    0   0   0  ; "isloaded"
+0003    ISF          0
+0004    JMP      1 => 0006
+0005    RET0     0   1
+0006 => UGET     0   0      ; h
+0007    TGETS    0   0   1  ; "io"
+0008    TGETS    0   0   2  ; "exists"
+0009    UGET     1   1      ; A
+0010    KSTR     2   3      ; ".bin"
+0011    CAT      1   1   2
+0012    CALL     0   2   2
+0013    ISF          0
+0014    JMP      1 => 0043
+0015    UGET     0   0      ; h
+0016    TGETS    0   0   1  ; "io"
+0017    TGETS    0   0   4  ; "readfile"
+0018    UGET     1   1      ; A
+0019    KSTR     2   3      ; ".bin"
+0020    CAT      1   1   2
+0021    CALL     0   2   2
+0022    ISF          0
+0023    JMP      1 => 0043
+0024    UGET     1   2      ; D
+0025    MOV      2   0
+0026    CALL     1   2   2
+0027    MOV      0   1
+0028    ISF          0
+0029    JMP      1 => 0043
+0030    UGET     1   3      ; J
+0031    MOV      2   0
+0032    CALL     1   3   2
+0033    ISF          1
+0034    JMP      3 => 0043
+0035    UGET     3   5      ; e
+0036    USETV    4   3      ; v
+0037    UGET     3   0      ; h
+0038    TGETS    3   3   5  ; "print"
+0039    KSTR     4   6      ; "m1"
+0040    CALL     3   1   2
+0041    UGET     3   5      ; e
+0042    RET1     3   2
+0043 => USETS    6   7      ; y ; "nover"
+0044    UGET     0   7      ; d
+0045    RET1     0   2
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    UGET     0   0      ; h
+0002    TGETS    0   0   0  ; "io"
+0003    TGETS    0   0   1  ; "exists"
+0004    UGET     1   1      ; A
+0005    KSTR     2   2      ; ".bin"
+0006    CAT      1   1   2
+0007    CALL     0   2   2
+0008    ISF          0
+0009    JMP      1 => 0030
+0010    UGET     0   0      ; h
+0011    TGETS    0   0   0  ; "io"
+0012    TGETS    0   0   1  ; "exists"
+0013    UGET     1   1      ; A
+0014    KSTR     2   3      ; ".version"
+0015    CAT      1   1   2
+0016    CALL     0   2   2
+0017    ISF          0
+0018    JMP      1 => 0030
+0019    UGET     0   0      ; h
+0020    TGETS    0   0   0  ; "io"
+0021    TGETS    0   0   4  ; "readfile"
+0022    UGET     1   1      ; A
+0023    KSTR     2   3      ; ".version"
+0024    CAT      1   1   2
+0025    CALL     0   2   2
+0026    ISF          0
+0027    JMP      1 => 0030
+0028    USETV    2   0      ; y
+0029    RET0     0   1
+0030 => RET0     0   1
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    UGET     1   0      ; F
+0002    UGET     2   1      ; A
+0003    KSTR     3   0      ; ".version"
+0004    CAT      2   2   3
+0005    MOV      3   0
+0006    CALL     1   1   3
+0007    RET0     0   1
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    UGET     1   0      ; F
+0002    UGET     2   1      ; A
+0003    KSTR     3   0      ; ".bin"
+0004    CAT      2   2   3
+0005    MOV      3   0
+0006    CALL     1   1   3
+0007    UGET     1   2      ; h
+0008    TGETS    1   1   1  ; "print"
+0009    KSTR     2   2      ; "m2"
+0010    CALL     1   1   2
+0011    RET0     0   1
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    TGETS    1   0   0  ; "name"
+0002    ISEQS    1   1      ; "completed"
+0003    JMP      1 => 0020
+0004    TGETS    1   0   0  ; "name"
+0005    ISNES    1   2      ; "failed"
+0006    JMP      1 => 0019
+0007    UGET     1   0      ; h
+0008    TGETS    1   1   3  ; "def"
+0009    TGETS    1   1   4  ; "debugkey"
+0010    ISF          1
+0011    JMP      2 => 0016
+0012    UGET     1   0      ; h
+0013    TGETS    1   1   5  ; "print"
+0014    KSTR     2   6      ; "backup not ok"
+0015    CALL     1   1   2
+0016 => UGET     1   1      ; S
+0017    UGET     2   2      ; T
+0018    CALL     1   1   2
+0019 => RET0     0   1
+0020 => TGETS    1   0   7  ; "request"
+0021    TGETS    2   1   8  ; "getResponseStatusCode"
+0022    MOV      3   1
+0023    CALL     2   2   2
+0024    UGET     3   3      ; j
+0025    KSTR     4   9      ; "200"
+0026    CALL     3   2   2
+0027    ISEQV    2   3
+0028    JMP      3 => 0030
+0029    RET0     0   1
+0030 => TGETS    3   1  10  ; "getResponseData"
+0031    MOV      4   1
+0032    CALL     3   2   2
+0033    ISF          3
+0034    JMP      4 => 0146
+0035    ISNES    3  11      ; "u7bTrcq508Ow19bttcfCvMb3"
+0036    JMP      4 => 0040
+0037    UGET     4   0      ; h
+0038    TGETS    4   4  12  ; "core_func_exit"
+0039    CALL     4   1   1
+0040 => ISNES    3  13      ; "OK"
+0041    JMP      4 => 0063
+0042    UGET     4   0      ; h
+0043    TGETS    4   4   3  ; "def"
+0044    TGETS    4   4   4  ; "debugkey"
+0045    ISF          4
+0046    JMP      5 => 0051
+0047    UGET     4   0      ; h
+0048    TGETS    4   4   5  ; "print"
+0049    KSTR     5  14      ; "same versions"
+0050    CALL     4   1   2
+0051 => UGET     4   0      ; h
+0052    TGETS    4   4  15  ; "isloaded"
+0053    IST          4
+0054    JMP      4 => 0062
+0055    UGET     4   4      ; L
+0056    CALL     4   2   1
+0057    IST          4
+0058    JMP      4 => 0062
+0059    UGET     4   1      ; S
+0060    UGET     5   5      ; e
+0061    CALL     4   1   2
+0062 => RET0     0   1
+0063 => UGET     4   0      ; h
+0064    TGETS    4   4  16  ; "require"
+0065    KSTR     5  17      ; "cjson"
+0066    CALL     4   2   2
+0067    TGETS    5   4  18  ; "decode"
+0068    MOV      6   3
+0069    CALL     5   2   2
+0070    IST          5
+0071    JMP      6 => 0084
+0072    UGET     6   0      ; h
+0073    TGETS    6   6   3  ; "def"
+0074    TGETS    6   6   4  ; "debugkey"
+0075    ISF          6
+0076    JMP      7 => 0081
+0077    UGET     6   0      ; h
+0078    TGETS    6   6   5  ; "print"
+0079    KSTR     7  19      ; "json decode error"
+0080    CALL     6   1   2
+0081 => UGET     6   1      ; S
+0082    UGET     7   5      ; e
+0083    CALL     6   1   2
+0084 => TGETS    6   5  20  ; "version"
+0085    ISF          6
+0086    JMP      6 => 0090
+0087    TGETS    6   5  21  ; "content"
+0088    IST          6
+0089    JMP      6 => 0103
+0090 => UGET     6   0      ; h
+0091    TGETS    6   6   3  ; "def"
+0092    TGETS    6   6   4  ; "debugkey"
+0093    ISF          6
+0094    JMP      7 => 0099
+0095    UGET     6   0      ; h
+0096    TGETS    6   6   5  ; "print"
+0097    KSTR     7  22      ; "json format error"
+0098    CALL     6   1   2
+0099 => UGET     6   1      ; S
+0100    UGET     7   5      ; e
+0101    CALL     6   1   2
+0102    RET0     0   1
+0103 => UGET     6   6      ; D
+0104    TGETS    7   5  21  ; "content"
+0105    CALL     6   2   2
+0106    IST          6
+0107    JMP      7 => 0121
+0108    UGET     7   0      ; h
+0109    TGETS    7   7   3  ; "def"
+0110    TGETS    7   7   4  ; "debugkey"
+0111    ISF          7
+0112    JMP      8 => 0117
+0113    UGET     7   0      ; h
+0114    TGETS    7   7   5  ; "print"
+0115    KSTR     8  23      ; "content decode error"
+0116    CALL     7   1   2
+0117 => UGET     7   1      ; S
+0118    UGET     8   5      ; e
+0119    CALL     7   1   2
+0120    JMP      7 => 0149
+0121 => UGET     7   7      ; J
+0122    MOV      8   6
+0123    CALL     7   3   2
+0124    ISF          7
+0125    JMP      9 => 0133
+0126    UGET     9   8      ; R
+0127    TGETS   10   5  21  ; "content"
+0128    CALL     9   1   2
+0129    UGET     9   9      ; Q
+0130    TGETS   10   5  20  ; "version"
+0131    CALL     9   1   2
+0132    JMP      9 => 0149
+0133 => UGET     9   0      ; h
+0134    TGETS    9   9   3  ; "def"
+0135    TGETS    9   9   4  ; "debugkey"
+0136    ISF          9
+0137    JMP     10 => 0142
+0138    UGET     9   0      ; h
+0139    TGETS    9   9   5  ; "print"
+0140    KSTR    10  24      ; "run code error"
+0141    CALL     9   1   2
+0142 => UGET     9   1      ; S
+0143    UGET    10   5      ; e
+0144    CALL     9   1   2
+0145    JMP      4 => 0149
+0146 => UGET     4   1      ; S
+0147    UGET     5   5      ; e
+0148    CALL     4   1   2
+0149 => RET0     0   1
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    UGET     1   0      ; h
+0002    TGETS    1   1   0  ; "device"
+0003    TGETS    1   1   1  ; "writablePath"
+0004    KSTR     2   2      ; "bzuuid"
+0005    CAT      1   1   2
+0006    UGET     2   0      ; h
+0007    TGETS    2   2   3  ; "io"
+0008    TGETS    2   2   4  ; "exists"
+0009    MOV      3   1
+0010    CALL     2   2   2
+0011    IST          2
+0012    JMP      2 => 0025
+0013    UGET     2   0      ; h
+0014    TGETS    2   2   5  ; "crypto"
+0015    TGETS    2   2   6  ; "md5"
+0016    MOV      3   0
+0017    CALL     2   2   2
+0018    MOV      0   2
+0019    UGET     2   0      ; h
+0020    TGETS    2   2   7  ; "core_func_writefile"
+0021    MOV      3   1
+0022    MOV      4   0
+0023    CALL     2   1   3
+0024    RET1     0   2
+0025 => UGET     2   0      ; h
+0026    TGETS    2   2   3  ; "io"
+0027    TGETS    2   2   8  ; "readfile"
+0028    MOV      3   1
+0029    CALLT    2   2
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    ISF          0
+0002    JMP      1 => 0028
+0003    UGET     1   0      ; q
+0004    UGET     2   1      ; p
+0005    ISGT     1   2
+0006    JMP      1 => 0018
+0007    UGET     1   3      ; n
+0008    UGET     2   0      ; q
+0009    TGETV    1   1   2
+0010    USETV    2   1      ; o
+0011    UGET     1   0      ; q
+0012    UGET     2   4      ; j
+0013    KSTR     3   0      ; "1"
+0014    CALL     2   2   2
+0015    ADDVV    1   1   2
+0016    USETV    0   1      ; q
+0017    JMP      1 => 0028
+0018 => UGET     1   5      ; h
+0019    TGETS    1   1   1  ; "def"
+0020    TGETS    1   1   2  ; "debugkey"
+0021    ISF          1
+0022    JMP      2 => 0027
+0023    UGET     1   5      ; h
+0024    TGETS    1   1   3  ; "print"
+0025    KSTR     2   4      ; "没有可以访问的服务器"
+0026    CALL     1   1   2
+0027 => UCLO     0 => 0130
+0028 => UGET     1   6      ; y
+0029    ISF          0
+0030    JMP      2 => 0032
+0031    KSTR     1   5      ; "dirty"
+0032 => UGET     2   5      ; h
+0033    TGETS    2   2   1  ; "def"
+0034    TGETS    2   2   2  ; "debugkey"
+0035    ISF          2
+0036    JMP      3 => 0041
+0037    UGET     2   5      ; h
+0038    TGETS    2   2   3  ; "print"
+0039    UGET     3   2      ; o
+0040    CALL     2   1   2
+0041 => UGET     2   5      ; h
+0042    TGETS    2   2   6  ; "core_func_createNet"
+0043    FNEW     3   7      ; core_dec_original_payload.lua:1
+0044    UGET     4  14      ; B
+0045    UGET     5   2      ; o
+0046    CALL     4   2   2
+0047    KSTR     5   8      ; "POST"
+0048    CALL     2   2   4
+0049    UGET     3   5      ; h
+0050    TGETS    3   3   9  ; "ycFunction"
+0051    TGETS    3   3  10  ; "getFileData"
+0052    UGET     4   5      ; h
+0053    TGETS    4   4   9  ; "ycFunction"
+0054    KSTR     5  11      ; "gplus.bin"
+0055    UGET     6   9      ; e
+0056    CALL     3   3   4
+0057    FNEW     5  12      ; core_dec_original_payload.lua:1
+0058    KSTR     6  13      ; "smlt_"
+0059    MOV      7   5
+0060    UGET     8  15      ; g
+0061    UGET     9   5      ; h
+0062    TGETS    9   9  14  ; "os"
+0063    TGETS    9   9  15  ; "time"
+0064    CALL     9   2   1
+0065    CAT      8   8   9
+0066    CALL     7   2   2
+0067    CAT      6   6   7
+0068    KSTR     7  16      ; "none"
+0069    UGET     8   5      ; h
+0070    TGETS    8   8  17  ; "g_data"
+0071    TGETS    8   8  18  ; "login"
+0072    TGETS    8   8  19  ; "localLastSer"
+0073    ISF          8
+0074    JMP      9 => 0092
+0075    UGET     8   5      ; h
+0076    TGETS    8   8  17  ; "g_data"
+0077    TGETS    8   8  18  ; "login"
+0078    TGETS    8   8  19  ; "localLastSer"
+0079    TGETS    8   8  20  ; "zonename"
+0080    ISF          8
+0081    JMP      9 => 0092
+0082    UGET     8   5      ; h
+0083    TGETS    8   8  21  ; "crypto"
+0084    TGETS    8   8  22  ; "encodeBase64"
+0085    UGET     9   5      ; h
+0086    TGETS    9   9  17  ; "g_data"
+0087    TGETS    9   9  18  ; "login"
+0088    TGETS    9   9  19  ; "localLastSer"
+0089    TGETS    9   9  20  ; "zonename"
+0090    CALL     8   2   2
+0091    MOV      7   8
+0092 => TGETS    8   2  23  ; "setPOSTData"
+0093    MOV      9   2
+0094    KSTR    10  24      ; "ip="
+0095    UGET    11   5      ; h
+0096    TGETS   11  11  21  ; "crypto"
+0097    TGETS   11  11  22  ; "encodeBase64"
+0098    UGET    12  16      ; w
+0099    CALL    11   2   2
+0100    KSTR    12  25      ; "&uid="
+0101    MOV     13   6
+0102    KSTR    14  26      ; "&code="
+0103    MOV     15   4
+0104    KSTR    16  27      ; "&key="
+0105    UGET    17   5      ; h
+0106    TGETS   17  17  21  ; "crypto"
+0107    TGETS   17  17  28  ; "decodeBase64"
+0108    UGET    18   5      ; h
+0109    TGETS   18  18   1  ; "def"
+0110    TGETS   18  18  29  ; "role"
+0111    TGETS   18  18  30  ; "stuff"
+0112    CALL    17   2   2
+0113    KSTR    18  31      ; "&version="
+0114    MOV     19   1
+0115    KSTR    20  32      ; "&zone="
+0116    MOV     21   7
+0117    CAT     10  10  21
+0118    CALL     8   1   3
+0119    TGETS    8   2  33  ; "setTimeout"
+0120    MOV      9   2
+0121    UGET    10   4      ; j
+0122    KSTR    11  34      ; "6"
+0123    CALL    10   0   2
+0124    CALLM    8   1   1
+0125    TGETS    8   2  35  ; "start"
+0126    MOV      9   2
+0127    CALL     8   1   2
+0128    UCLO     0 => 0129
+0129 => RET0     0   1
+0130 => RET0     0   1
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    TGETS    1   0   0  ; "name"
+0002    ISEQS    1   1      ; "completed"
+0003    JMP      1 => 0029
+0004    UGET     1   0      ; h
+0005    TGETS    1   1   2  ; "def"
+0006    TGETS    1   1   3  ; "debugkey"
+0007    ISF          1
+0008    JMP      2 => 0013
+0009    UGET     1   0      ; h
+0010    TGETS    1   1   4  ; "print"
+0011    TGETS    2   0   0  ; "name"
+0012    CALL     1   1   2
+0013 => TGETS    1   0   0  ; "name"
+0014    ISNES    1   5      ; "failed"
+0015    JMP      1 => 0028
+0016    UGET     1   0      ; h
+0017    TGETS    1   1   2  ; "def"
+0018    TGETS    1   1   3  ; "debugkey"
+0019    ISF          1
+0020    JMP      2 => 0025
+0021    UGET     1   0      ; h
+0022    TGETS    1   1   4  ; "print"
+0023    KSTR     2   6      ; "not ok"
+0024    CALL     1   1   2
+0025 => UGET     1   1      ; S
+0026    UGET     2   2      ; d
+0027    CALL     1   1   2
+0028 => RET0     0   1
+0029 => TGETS    1   0   7  ; "request"
+0030    TGETS    2   1   8  ; "getResponseStatusCode"
+0031    MOV      3   1
+0032    CALL     2   2   2
+0033    UGET     3   3      ; j
+0034    KSTR     4   9      ; "200"
+0035    CALL     3   2   2
+0036    ISEQV    2   3
+0037    JMP      3 => 0039
+0038    RET0     0   1
+0039 => TGETS    3   1  10  ; "getResponseData"
+0040    MOV      4   1
+0041    CALL     3   2   2
+0042    ISF          3
+0043    JMP      4 => 0156
+0044    ISNES    3  11      ; "u7bTrcq508Ow19bttcfCvMb3"
+0045    JMP      4 => 0050
+0046    UGET     4   0      ; h
+0047    TGETS    4   4  12  ; "core_func_exit"
+0048    CALL     4   1   1
+0049    RET0     0   1
+0050 => ISNES    3  13      ; "OK"
+0051    JMP      4 => 0073
+0052    UGET     4   0      ; h
+0053    TGETS    4   4   2  ; "def"
+0054    TGETS    4   4   3  ; "debugkey"
+0055    ISF          4
+0056    JMP      5 => 0061
+0057    UGET     4   0      ; h
+0058    TGETS    4   4   4  ; "print"
+0059    KSTR     5  14      ; "same version"
+0060    CALL     4   1   2
+0061 => UGET     4   0      ; h
+0062    TGETS    4   4  15  ; "isloaded"
+0063    IST          4
+0064    JMP      4 => 0072
+0065    UGET     4   4      ; L
+0066    CALL     4   2   1
+0067    IST          4
+0068    JMP      4 => 0072
+0069    UGET     4   5      ; a6
+0070    UGET     5   6      ; e
+0071    CALL     4   1   2
+0072 => RET0     0   1
+0073 => UGET     4   0      ; h
+0074    TGETS    4   4  16  ; "require"
+0075    KSTR     5  17      ; "cjson"
+0076    CALL     4   2   2
+0077    TGETS    5   4  18  ; "decode"
+0078    MOV      6   3
+0079    CALL     5   2   2
+0080    IST          5
+0081    JMP      6 => 0094
+0082    UGET     6   0      ; h
+0083    TGETS    6   6   2  ; "def"
+0084    TGETS    6   6   3  ; "debugkey"
+0085    ISF          6
+0086    JMP      7 => 0091
+0087    UGET     6   0      ; h
+0088    TGETS    6   6   4  ; "print"
+0089    KSTR     7  19      ; "json decode error"
+0090    CALL     6   1   2
+0091 => UGET     6   1      ; S
+0092    UGET     7   6      ; e
+0093    CALL     6   1   2
+0094 => TGETS    6   5  20  ; "version"
+0095    ISF          6
+0096    JMP      6 => 0100
+0097    TGETS    6   5  21  ; "content"
+0098    IST          6
+0099    JMP      6 => 0113
+0100 => UGET     6   0      ; h
+0101    TGETS    6   6   2  ; "def"
+0102    TGETS    6   6   3  ; "debugkey"
+0103    ISF          6
+0104    JMP      7 => 0109
+0105    UGET     6   0      ; h
+0106    TGETS    6   6   4  ; "print"
+0107    KSTR     7  22      ; "json format error"
+0108    CALL     6   1   2
+0109 => UGET     6   1      ; S
+0110    UGET     7   6      ; e
+0111    CALL     6   1   2
+0112    RET0     0   1
+0113 => UGET     6   7      ; D
+0114    TGETS    7   5  21  ; "content"
+0115    CALL     6   2   2
+0116    IST          6
+0117    JMP      7 => 0131
+0118    UGET     7   0      ; h
+0119    TGETS    7   7   2  ; "def"
+0120    TGETS    7   7   3  ; "debugkey"
+0121    ISF          7
+0122    JMP      8 => 0127
+0123    UGET     7   0      ; h
+0124    TGETS    7   7   4  ; "print"
+0125    KSTR     8  23      ; "content decode error"
+0126    CALL     7   1   2
+0127 => UGET     7   1      ; S
+0128    UGET     8   6      ; e
+0129    CALL     7   1   2
+0130    JMP      7 => 0159
+0131 => UGET     7   8      ; J
+0132    MOV      8   6
+0133    CALL     7   3   2
+0134    ISF          7
+0135    JMP      9 => 0143
+0136    UGET     9   9      ; R
+0137    TGETS   10   5  21  ; "content"
+0138    CALL     9   1   2
+0139    UGET     9  10      ; Q
+0140    TGETS   10   5  20  ; "version"
+0141    CALL     9   1   2
+0142    JMP      9 => 0159
+0143 => UGET     9   0      ; h
+0144    TGETS    9   9   2  ; "def"
+0145    TGETS    9   9   3  ; "debugkey"
+0146    ISF          9
+0147    JMP     10 => 0152
+0148    UGET     9   0      ; h
+0149    TGETS    9   9   4  ; "print"
+0150    KSTR    10  24      ; "run code error"
+0151    CALL     9   1   2
+0152 => UGET     9   1      ; S
+0153    UGET    10   6      ; e
+0154    CALL     9   1   2
+0155    JMP      4 => 0159
+0156 => UGET     4   1      ; S
+0157    UGET     5   6      ; e
+0158    CALL     4   1   2
+0159 => RET0     0   1
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    UGET     1   0      ; h
+0002    TGETS    1   1   0  ; "device"
+0003    TGETS    1   1   1  ; "writablePath"
+0004    KSTR     2   2      ; "bzuuid"
+0005    CAT      1   1   2
+0006    UGET     2   0      ; h
+0007    TGETS    2   2   3  ; "io"
+0008    TGETS    2   2   4  ; "exists"
+0009    MOV      3   1
+0010    CALL     2   2   2
+0011    IST          2
+0012    JMP      2 => 0025
+0013    UGET     2   0      ; h
+0014    TGETS    2   2   5  ; "crypto"
+0015    TGETS    2   2   6  ; "md5"
+0016    MOV      3   0
+0017    CALL     2   2   2
+0018    MOV      0   2
+0019    UGET     2   0      ; h
+0020    TGETS    2   2   7  ; "core_func_writefile"
+0021    MOV      3   1
+0022    MOV      4   0
+0023    CALL     2   1   3
+0024    RET1     0   2
+0025 => UGET     2   0      ; h
+0026    TGETS    2   2   3  ; "io"
+0027    TGETS    2   2   8  ; "readfile"
+0028    MOV      3   1
+0029    CALLT    2   2
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    UGET     1   0      ; y
+0002    ISF          0
+0003    JMP      2 => 0005
+0004    KSTR     1   0      ; "dirty"
+0005 => UGET     2   1      ; h
+0006    TGETS    2   2   1  ; "def"
+0007    TGETS    2   2   2  ; "debugkey"
+0008    ISF          2
+0009    JMP      3 => 0014
+0010    UGET     2   1      ; h
+0011    TGETS    2   2   3  ; "print"
+0012    UGET     3   2      ; k
+0013    CALL     2   1   2
+0014 => UGET     2   1      ; h
+0015    TGETS    2   2   4  ; "core_func_createNet"
+0016    FNEW     3   5      ; core_dec_original_payload.lua:1
+0017    UGET     4  13      ; B
+0018    UGET     5   2      ; k
+0019    CALL     4   2   2
+0020    KSTR     5   6      ; "POST"
+0021    CALL     2   2   4
+0022    UGET     3   1      ; h
+0023    TGETS    3   3   7  ; "ycFunction"
+0024    TGETS    3   3   8  ; "getFileData"
+0025    UGET     4   1      ; h
+0026    TGETS    4   4   7  ; "ycFunction"
+0027    KSTR     5   9      ; "gplus.bin"
+0028    UGET     6   8      ; e
+0029    CALL     3   3   4
+0030    FNEW     5  10      ; core_dec_original_payload.lua:1
+0031    KSTR     6  11      ; "smlt_"
+0032    MOV      7   5
+0033    UGET     8  14      ; g
+0034    UGET     9   1      ; h
+0035    TGETS    9   9  12  ; "os"
+0036    TGETS    9   9  13  ; "time"
+0037    CALL     9   2   1
+0038    CAT      8   8   9
+0039    CALL     7   2   2
+0040    CAT      6   6   7
+0041    KSTR     7  14      ; "none"
+0042    UGET     8   1      ; h
+0043    TGETS    8   8  15  ; "g_data"
+0044    TGETS    8   8  16  ; "login"
+0045    TGETS    8   8  17  ; "localLastSer"
+0046    ISF          8
+0047    JMP      9 => 0065
+0048    UGET     8   1      ; h
+0049    TGETS    8   8  15  ; "g_data"
+0050    TGETS    8   8  16  ; "login"
+0051    TGETS    8   8  17  ; "localLastSer"
+0052    TGETS    8   8  18  ; "zonename"
+0053    ISF          8
+0054    JMP      9 => 0065
+0055    UGET     8   1      ; h
+0056    TGETS    8   8  19  ; "crypto"
+0057    TGETS    8   8  20  ; "encodeBase64"
+0058    UGET     9   1      ; h
+0059    TGETS    9   9  15  ; "g_data"
+0060    TGETS    9   9  16  ; "login"
+0061    TGETS    9   9  17  ; "localLastSer"
+0062    TGETS    9   9  18  ; "zonename"
+0063    CALL     8   2   2
+0064    MOV      7   8
+0065 => TGETS    8   2  21  ; "setPOSTData"
+0066    MOV      9   2
+0067    KSTR    10  22      ; "ip="
+0068    UGET    11   1      ; h
+0069    TGETS   11  11  19  ; "crypto"
+0070    TGETS   11  11  20  ; "encodeBase64"
+0071    UGET    12  15      ; w
+0072    CALL    11   2   2
+0073    KSTR    12  23      ; "&uid="
+0074    MOV     13   6
+0075    KSTR    14  24      ; "&code="
+0076    MOV     15   4
+0077    KSTR    16  25      ; "&key="
+0078    UGET    17   1      ; h
+0079    TGETS   17  17  19  ; "crypto"
+0080    TGETS   17  17  26  ; "decodeBase64"
+0081    UGET    18   1      ; h
+0082    TGETS   18  18   1  ; "def"
+0083    TGETS   18  18  27  ; "role"
+0084    TGETS   18  18  28  ; "stuff"
+0085    CALL    17   2   2
+0086    KSTR    18  29      ; "&version="
+0087    MOV     19   1
+0088    KSTR    20  30      ; "&zone="
+0089    MOV     21   7
+0090    CAT     10  10  21
+0091    CALL     8   1   3
+0092    TGETS    8   2  31  ; "setTimeout"
+0093    MOV      9   2
+0094    UGET    10   5      ; j
+0095    KSTR    11  32      ; "6"
+0096    CALL    10   0   2
+0097    CALLM    8   1   1
+0098    TGETS    8   2  33  ; "start"
+0099    MOV      9   2
+0100    CALL     8   1   2
+0101    RET0     0   1
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    TDUP     0   1
+0002    UGET     1   0      ; j
+0003    KSTR     2   0      ; "0.5"
+0004    CALL     1   2   2
+0005    TSETS    1   0   2  ; "phase_shift"
+0006    UGET     1   0      ; j
+0007    KSTR     2   3      ; "2.302585093"
+0008    CALL     1   2   2
+0009    TSETS    1   0   4  ; "exp_factor"
+0010    UGET     1   0      ; j
+0011    KSTR     2   5      ; "36"
+0012    CALL     1   2   2
+0013    TSETS    1   0   6  ; "char_offset"
+0014    RET1     0   2
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    UGET     0   0      ; ad
+0002    CALL     0   2   1
+0003    UGET     1   1      ; a8
+0004    UGET     2   2      ; a9
+0005    TGETS    3   0   0  ; "exp_factor"
+0006    CALL     2   0   2
+0007    CALLM    1   2   0
+0008    UGET     2   3      ; h
+0009    TGETS    2   2   1  ; "math"
+0010    TGETS    2   2   2  ; "pi"
+0011    UGET     3   4      ; j
+0012    KSTR     4   3      ; "3.1415926535"
+0013    CALL     3   2   2
+0014    SUBVV    2   2   3
+0015    TGETS    3   0   4  ; "phase_shift"
+0016    ADDVV    2   2   3
+0017    MULVV    2   1   2
+0018    UGET     3   1      ; a8
+0019    UGET     4   4      ; j
+0020    KSTR     5   5      ; "0.5"
+0021    CALL     4   2   2
+0022    MULVV    4   2   4
+0023    UGET     5   4      ; j
+0024    KSTR     6   6      ; "100"
+0025    CALL     5   2   2
+0026    MULVV    4   4   5
+0027    CALL     3   2   2
+0028    UGET     4   4      ; j
+0029    KSTR     5   7      ; "10"
+0030    CALL     4   2   2
+0031    UGET     5   4      ; j
+0032    KSTR     6   7      ; "10"
+0033    CALL     5   2   2
+0034    MULVV    4   4   5
+0035    UGET     5   4      ; j
+0036    KSTR     6   8      ; "2"
+0037    CALL     5   2   2
+0038    MULVV    4   4   5
+0039    MULVV    5   3   4
+0040    UGET     6   5      ; aa
+0041    MOV      7   5
+0042    CALL     6   2   2
+0043    UGET     7   6      ; ac
+0044    UGET     8   7      ; ab
+0045    UGET     9   1      ; a8
+0046    UGET    10   4      ; j
+0047    KSTR    11   7      ; "10"
+0048    CALL    10   2   2
+0049    DIVVV   10   6  10
+0050    CALL     9   2   2
+0051    UGET    10   4      ; j
+0052    KSTR    11   9      ; "36"
+0053    CALL    10   2   2
+0054    TGETS   11   0  10  ; "char_offset"
+0055    ADDVV   10  10  11
+0056    UGET    11   4      ; j
+0057    KSTR    12  11      ; "72"
+0058    CALL    11   2   2
+0059    UGET    12   4      ; j
+0060    KSTR    13  12      ; "15"
+0061    CALL    12   2   2
+0062    SUBVV   11  11  12
+0063    UGET    12   4      ; j
+0064    KSTR    13  13      ; "57"
+0065    CALL    12   2   2
+0066    UGET    13   4      ; j
+0067    KSTR    14  14      ; "25"
+0068    CALL    13   2   2
+0069    ADDVV   12  12  13
+0070    UGET    13   4      ; j
+0071    KSTR    14  15      ; "82"
+0072    CALL    13   2   2
+0073    UGET    14   4      ; j
+0074    KSTR    15   5      ; "0.5"
+0075    CALL    14   2   2
+0076    POW     13  13  14
+0077    UGET    14   4      ; j
+0078    KSTR    15  16      ; "9"
+0079    CALL    14   2   2
+0080    UGET    15   4      ; j
+0081    KSTR    16  17      ; "33"
+0082    CALL    15   2   2
+0083    ADDVV   14  14  15
+0084    UGET    15   4      ; j
+0085    KSTR    16  18      ; "42"
+0086    CALL    15   2   2
+0087    UGET    16   4      ; j
+0088    KSTR    17  19      ; "52"
+0089    CALL    16   2   2
+0090    ADDVV   15  15  16
+0091    UGET    16   4      ; j
+0092    KSTR    17  20      ; "94"
+0093    CALL    16   2   2
+0094    UGET    17   4      ; j
+0095    KSTR    18  21      ; "65"
+0096    CALL    17   2   2
+0097    MODVV   16  16  17
+0098    CALL     8   0   9
+0099    CALLM    7   2   0
+0100    MOV      8   7
+0101    TGETS    7   7  22  ; "gsub"
+0102    KSTR     9  23      ; "[\022]"
+0103    KSTR    10  24      ; "HK"
+0104    CALL     7   2   4
+0105    MOV      8   7
+0106    TGETS    7   7  22  ; "gsub"
+0107    KSTR     9  25      ; "[\t]"
+0108    KSTR    10  26      ; "EX"
+0109    CALLT    7   4
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    UGET     1   0      ; j
+0002    KSTR     2   0      ; "1"
+0003    CALL     1   2   2
+0004    ISNEV    1   0
+0005    JMP      1 => 0010
+0006    UGET     1   1      ; h
+0007    TGETS    1   1   1  ; "core_func_byby"
+0008    KSTR     2   2      ; "不是G版本"
+0009    CALL     1   1   2
+0010 => RET0     0   1
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    UGET     0   0      ; h
+0002    TGETS    0   0   0  ; "os"
+0003    TGETS    0   0   1  ; "exit"
+0004    CALL     0   1   1
+0005    RET0     0   1
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    UGET     1   0      ; h
+0002    TGETS    1   1   0  ; "def"
+0003    TGETS    1   1   1  ; "role"
+0004    TSETS    0   1   2  ; "helperID"
+0005    RET0     0   1
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    TGETS    1   0   0  ; "name"
+0002    ISEQS    1   1      ; "completed"
+0003    JMP      1 => 0029
+0004    UGET     1   0      ; h
+0005    TGETS    1   1   2  ; "def"
+0006    TGETS    1   1   3  ; "debugkey"
+0007    ISF          1
+0008    JMP      2 => 0013
+0009    UGET     1   0      ; h
+0010    TGETS    1   1   4  ; "print"
+0011    TGETS    2   0   0  ; "name"
+0012    CALL     1   1   2
+0013 => TGETS    1   0   0  ; "name"
+0014    ISNES    1   5      ; "failed"
+0015    JMP      1 => 0028
+0016    UGET     1   0      ; h
+0017    TGETS    1   1   2  ; "def"
+0018    TGETS    1   1   3  ; "debugkey"
+0019    ISF          1
+0020    JMP      2 => 0025
+0021    UGET     1   0      ; h
+0022    TGETS    1   1   4  ; "print"
+0023    KSTR     2   6      ; "not ok"
+0024    CALL     1   1   2
+0025 => UGET     1   1      ; S
+0026    UGET     2   2      ; d
+0027    CALL     1   1   2
+0028 => RET0     0   1
+0029 => TGETS    1   0   7  ; "request"
+0030    TGETS    2   1   8  ; "getResponseStatusCode"
+0031    MOV      3   1
+0032    CALL     2   2   2
+0033    UGET     3   3      ; j
+0034    KSTR     4   9      ; "200"
+0035    CALL     3   2   2
+0036    ISEQV    2   3
+0037    JMP      3 => 0039
+0038    RET0     0   1
+0039 => TGETS    3   1  10  ; "getResponseData"
+0040    MOV      4   1
+0041    CALL     3   2   2
+0042    ISF          3
+0043    JMP      4 => 0156
+0044    ISNES    3  11      ; "u7bTrcq508Ow19bttcfCvMb3"
+0045    JMP      4 => 0050
+0046    UGET     4   0      ; h
+0047    TGETS    4   4  12  ; "core_func_exit"
+0048    CALL     4   1   1
+0049    RET0     0   1
+0050 => ISNES    3  13      ; "OK"
+0051    JMP      4 => 0073
+0052    UGET     4   0      ; h
+0053    TGETS    4   4   2  ; "def"
+0054    TGETS    4   4   3  ; "debugkey"
+0055    ISF          4
+0056    JMP      5 => 0061
+0057    UGET     4   0      ; h
+0058    TGETS    4   4   4  ; "print"
+0059    KSTR     5  14      ; "same version"
+0060    CALL     4   1   2
+0061 => UGET     4   0      ; h
+0062    TGETS    4   4  15  ; "isloaded"
+0063    IST          4
+0064    JMP      4 => 0072
+0065    UGET     4   4      ; L
+0066    CALL     4   2   1
+0067    IST          4
+0068    JMP      4 => 0072
+0069    UGET     4   5      ; a6
+0070    UGET     5   6      ; e
+0071    CALL     4   1   2
+0072 => RET0     0   1
+0073 => UGET     4   0      ; h
+0074    TGETS    4   4  16  ; "require"
+0075    KSTR     5  17      ; "cjson"
+0076    CALL     4   2   2
+0077    TGETS    5   4  18  ; "decode"
+0078    MOV      6   3
+0079    CALL     5   2   2
+0080    IST          5
+0081    JMP      6 => 0094
+0082    UGET     6   0      ; h
+0083    TGETS    6   6   2  ; "def"
+0084    TGETS    6   6   3  ; "debugkey"
+0085    ISF          6
+0086    JMP      7 => 0091
+0087    UGET     6   0      ; h
+0088    TGETS    6   6   4  ; "print"
+0089    KSTR     7  19      ; "json decode error"
+0090    CALL     6   1   2
+0091 => UGET     6   1      ; S
+0092    UGET     7   6      ; e
+0093    CALL     6   1   2
+0094 => TGETS    6   5  20  ; "version"
+0095    ISF          6
+0096    JMP      6 => 0100
+0097    TGETS    6   5  21  ; "content"
+0098    IST          6
+0099    JMP      6 => 0113
+0100 => UGET     6   0      ; h
+0101    TGETS    6   6   2  ; "def"
+0102    TGETS    6   6   3  ; "debugkey"
+0103    ISF          6
+0104    JMP      7 => 0109
+0105    UGET     6   0      ; h
+0106    TGETS    6   6   4  ; "print"
+0107    KSTR     7  22      ; "json format error"
+0108    CALL     6   1   2
+0109 => UGET     6   1      ; S
+0110    UGET     7   6      ; e
+0111    CALL     6   1   2
+0112    RET0     0   1
+0113 => UGET     6   7      ; D
+0114    TGETS    7   5  21  ; "content"
+0115    CALL     6   2   2
+0116    IST          6
+0117    JMP      7 => 0131
+0118    UGET     7   0      ; h
+0119    TGETS    7   7   2  ; "def"
+0120    TGETS    7   7   3  ; "debugkey"
+0121    ISF          7
+0122    JMP      8 => 0127
+0123    UGET     7   0      ; h
+0124    TGETS    7   7   4  ; "print"
+0125    KSTR     8  23      ; "content decode error"
+0126    CALL     7   1   2
+0127 => UGET     7   1      ; S
+0128    UGET     8   6      ; e
+0129    CALL     7   1   2
+0130    JMP      7 => 0159
+0131 => UGET     7   8      ; J
+0132    MOV      8   6
+0133    CALL     7   3   2
+0134    ISF          7
+0135    JMP      9 => 0143
+0136    UGET     9   9      ; R
+0137    TGETS   10   5  21  ; "content"
+0138    CALL     9   1   2
+0139    UGET     9  10      ; Q
+0140    TGETS   10   5  20  ; "version"
+0141    CALL     9   1   2
+0142    JMP      9 => 0159
+0143 => UGET     9   0      ; h
+0144    TGETS    9   9   2  ; "def"
+0145    TGETS    9   9   3  ; "debugkey"
+0146    ISF          9
+0147    JMP     10 => 0152
+0148    UGET     9   0      ; h
+0149    TGETS    9   9   4  ; "print"
+0150    KSTR    10  24      ; "run code error"
+0151    CALL     9   1   2
+0152 => UGET     9   1      ; S
+0153    UGET    10   6      ; e
+0154    CALL     9   1   2
+0155    JMP      4 => 0159
+0156 => UGET     4   1      ; S
+0157    UGET     5   6      ; e
+0158    CALL     4   1   2
+0159 => RET0     0   1
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    UGET     1   0      ; h
+0002    TGETS    1   1   0  ; "device"
+0003    TGETS    1   1   1  ; "writablePath"
+0004    KSTR     2   2      ; "bzuuid"
+0005    CAT      1   1   2
+0006    UGET     2   0      ; h
+0007    TGETS    2   2   3  ; "io"
+0008    TGETS    2   2   4  ; "exists"
+0009    MOV      3   1
+0010    CALL     2   2   2
+0011    IST          2
+0012    JMP      2 => 0025
+0013    UGET     2   0      ; h
+0014    TGETS    2   2   5  ; "crypto"
+0015    TGETS    2   2   6  ; "md5"
+0016    MOV      3   0
+0017    CALL     2   2   2
+0018    MOV      0   2
+0019    UGET     2   0      ; h
+0020    TGETS    2   2   7  ; "core_func_writefile"
+0021    MOV      3   1
+0022    MOV      4   0
+0023    CALL     2   1   3
+0024    RET1     0   2
+0025 => UGET     2   0      ; h
+0026    TGETS    2   2   3  ; "io"
+0027    TGETS    2   2   8  ; "readfile"
+0028    MOV      3   1
+0029    CALLT    2   2
+
+-- BYTECODE -- core_dec_original_payload.lua:1-1
+0001    UGET     0   0      ; h
+0002    TGETS    0   0   0  ; "def"
+0003    TGETS    0   0   1  ; "showUserAgreement"
+0004    ISF          0
+0005    JMP      1 => 0009
+0006    UGET     0   0      ; h
+0007    KSTR     1   3      ; "        一、不得利用本软件或�"~
+0008    TSETS    1   0   2  ; "argeementText"
+0009 => KSTR     0   4      ; "http://go.zejiang.wang/gv6"
+0010    KSTR     1   5      ; "http://gate.zejiang.wang:88/gv6"
+0011    TDUP     2   6
+0012    TDUP     3   7
+0013    MOV      4   1
+0014    UGET     5   1      ; j
+0015    KSTR     6   8      ; "4"
+0016    CALL     5   2   2
+0017    UGET     6   1      ; j
+0018    KSTR     7   9      ; "1"
+0019    CALL     6   2   2
+0020    UGET     7   0      ; h
+0021    TGETS    7   7  10  ; "device"
+0022    TGETS    7   7  11  ; "writablePath"
+0023    KSTR     8  12      ; "cache/ao/"
+0024    CAT      7   7   8
+0025    UGET     8   2      ; d
+0026    UGET     9   0      ; h
+0027    TGETS    9   9  13  ; "getinfo"
+0028    UGET    10   0      ; h
+0029    TGETS   10  10  14  ; "string"
+0030    TGETS   10  10  15  ; "len"
+0031    UGET    11   2      ; d
+0032    UGET    12   0      ; h
+0033    TGETS   12  12   0  ; "def"
+0034    TGETS   12  12  16  ; "gateIP"
+0035    FNEW    13  17      ; core_dec_original_payload.lua:1
+0036    KSTR    14  18      ; "nofile"
+0037    UGET    15   0      ; h
+0038    TGETS   15  15   0  ; "def"
+0039    TGETS   15  15  19  ; "role"
+0040    UGET    16   3      ; e
+0041    TSETS   16  15  20  ; "open"
+0042    FNEW    15  21      ; core_dec_original_payload.lua:1
+0043    MOV     16   7
+0044    UGET    17   0      ; h
+0045    TGETS   17  17  22  ; "core_func_md5"
+0046    UGET    18   0      ; h
+0047    TGETS   18  18   0  ; "def"
+0048    TGETS   18  18  19  ; "role"
+0049    TGETS   18  18  23  ; "stuff"
+0050    IST         18
+0051    JMP     19 => 0053
+0052    KSTR    18  24      ; "999"
+0053 => CALL    17   2   2
+0054    CAT     16  16  17
+0055    UGET    17   0      ; h
+0056    TGETS   17  17  25  ; "io"
+0057    TGETS   17  17  26  ; "exists"
+0058    MOV     18   7
+0059    CALL    17   2   2
+0060    IST         17
+0061    JMP     17 => 0069
+0062    UGET    17   0      ; h
+0063    TGETS   17  17  27  ; "ycFunction"
+0064    TGETS   17  17  28  ; "mkdir"
+0065    UGET    18   0      ; h
+0066    TGETS   18  18  27  ; "ycFunction"
+0067    MOV     19   7
+0068    CALL    17   1   3
+0069 => FNEW    17  29      ; core_dec_original_payload.lua:1
+0070    FNEW    18  30      ; core_dec_original_payload.lua:1
+0071    FNEW    19  31      ; core_dec_original_payload.lua:1
+0072    FNEW    20  32      ; core_dec_original_payload.lua:1
+0073    FNEW    21  33      ; core_dec_original_payload.lua:1
+0074    FNEW    22  34      ; core_dec_original_payload.lua:1
+0075    FNEW    23  35      ; core_dec_original_payload.lua:1
+0076    FNEW    24  36      ; core_dec_original_payload.lua:1
+0077    FNEW    25  37      ; core_dec_original_payload.lua:1
+0078    FNEW    26  38      ; core_dec_original_payload.lua:1
+0079    UGET    27   0      ; h
+0080    TGETS   27  27  39  ; "math"
+0081    TGETS   27  27  40  ; "floor"
+0082    UGET    28   0      ; h
+0083    TGETS   28  28  39  ; "math"
+0084    TGETS   28  28  41  ; "exp"
+0085    UGET    29   0      ; h
+0086    TGETS   29  29  39  ; "math"
+0087    TGETS   29  29  42  ; "sqrt"
+0088    UGET    30   0      ; h
+0089    TGETS   30  30  14  ; "string"
+0090    TGETS   30  30  43  ; "char"
+0091    UGET    31   0      ; h
+0092    TGETS   31  31  14  ; "string"
+0093    TGETS   31  31  44  ; "reverse"
+0094    FNEW    32  45      ; core_dec_original_payload.lua:1
+0095    FNEW    33  46      ; core_dec_original_payload.lua:1
+0096    UGET    34   0      ; h
+0097    TGETS   34  34  47  ; "pcall"
+0098    MOV     35  33
+0099    CALL    34   3   2
+0100    UGET    36   0      ; h
+0101    TGETS   36  36  10  ; "device"
+0102    TGETS   36  36  11  ; "writablePath"
+0103    KSTR    37  48      ; "res/"
+0104    CAT     36  36  37
+0105    UGET    37   0      ; h
+0106    TGETS   37  37  14  ; "string"
+0107    TGETS   37  37  49  ; "format"
+0108    KSTR    38  50      ; "core%s.zip"
+0109    UGET    39   0      ; h
+0110    TGETS   39  39  51  ; "USE_ARM64"
+0111    ISF         39
+0112    JMP     40 => 0115
+0113    KSTR    39  52      ; "64"
+0114    JMP     40 => 0116
+0115 => UGET    39   5      ; g
+0116 => CALL    37   2   3
+0117    UGET    38   0      ; h
+0118    TGETS   38  38  14  ; "string"
+0119    TGETS   38  38  49  ; "format"
+0120    KSTR    39  53      ; "dcore%s.zip"
+0121    UGET    40   0      ; h
+0122    TGETS   40  40  51  ; "USE_ARM64"
+0123    ISF         40
+0124    JMP     41 => 0127
+0125    KSTR    40  52      ; "64"
+0126    JMP     41 => 0128
+0127 => UGET    40   5      ; g
+0128 => CALL    38   2   3
+0129    UGET    39   0      ; h
+0130    TGETS   39  39  25  ; "io"
+0131    TGETS   39  39  26  ; "exists"
+0132    MOV     40  36
+0133    CALL    39   2   2
+0134    IST         39
+0135    JMP     39 => 0143
+0136    UGET    39   0      ; h
+0137    TGETS   39  39  27  ; "ycFunction"
+0138    TGETS   39  39  28  ; "mkdir"
+0139    UGET    40   0      ; h
+0140    TGETS   40  40  27  ; "ycFunction"
+0141    MOV     41  36
+0142    CALL    39   1   3
+0143 => UGET    39   0      ; h
+0144    TGETS   39  39  25  ; "io"
+0145    TGETS   39  39  26  ; "exists"
+0146    MOV     40  36
+0147    MOV     41  37
+0148    CAT     40  40  41
+0149    CALL    39   2   2
+0150    IST         39
+0151    JMP     39 => 0173
+0152    UGET    39   0      ; h
+0153    TGETS   39  39  54  ; "an"
+0154    TGETS   39  39  55  ; "newMsgbox"
+0155    KSTR    40  56      ; "你的登陆器不是G版登陆器\n请�"~
+0156    FNEW    41  57      ; core_dec_original_payload.lua:1
+0157    TDUP    42  58
+0158    UGET    43   3      ; e
+0159    TSETS   43  42  59  ; "center"
+0160    UGET    43   2      ; d
+0161    TSETS   43  42  60  ; "close"
+0162    CALL    39   1   4
+0163    UGET    39   0      ; h
+0164    TGETS   39  39  61  ; "scheduler"
+0165    TGETS   39  39  62  ; "performWithDelayGlobal"
+0166    FNEW    40  63      ; core_dec_original_payload.lua:1
+0167    UGET    41   1      ; j
+0168    KSTR    42  64      ; "6"
+0169    CALL    41   0   2
+0170    CALLM   39   1   1
+0171    UCLO     0 => 0172
+0172 => RET0     0   1
+0173 => MOV     39   9
+0174    UGET    40   0      ; h
+0175    TGETS   40  40  65  ; "cc"
+0176    TGETS   40  40  66  ; "Crypto"
+0177    TGETS   40  40  67  ; "decryptXXTEA"
+0178    CALL    39   2   2
+0179    TGETS   39  39  68  ; "what"
+0180    ISEQS   39  69      ; "C"
+0181    JMP     39 => 0186
+0182    UGET    39   0      ; h
+0183    TGETS   39  39  70  ; "core_func_byby"
+0184    KSTR    40  71      ; "非法hook"
+0185    CALL    39   1   2
+0186 => UGET    39   0      ; h
+0187    TGETS   39  39  25  ; "io"
+0188    TGETS   39  39  72  ; "readfile"
+0189    MOV     40  36
+0190    MOV     41  37
+0191    CAT     40  40  41
+0192    CALL    39   2   2
+0193    IST         39
+0194    JMP     40 => 0199
+0195    UGET    40   0      ; h
+0196    TGETS   40  40  70  ; "core_func_byby"
+0197    KSTR    41  73      ; "core缺失"
+0198    CALL    40   1   2
+0199 => UGET    40   0      ; h
+0200    TGETS   40  40  74  ; "core_func_decryptTEA"
+0201    MOV     41  39
+0202    MOV     42  35
+0203    KSTR    43  75      ; "爲"
+0204    CAT     42  42  43
+0205    CALL    40   2   3
+0206    UGET    41   0      ; h
+0207    TGETS   41  41  76  ; "core_func_writefile"
+0208    MOV     42  36
+0209    MOV     43  38
+0210    CAT     42  42  43
+0211    MOV     43  40
+0212    CALL    41   1   3
+0213    UGET    41   0      ; h
+0214    TGETS   41  41  65  ; "cc"
+0215    TGETS   41  41  77  ; "LuaLoadChunksFromZIP"
+0216    MOV     42  38
+0217    CALL    41   1   2
+0218    UGET    41   0      ; h
+0219    TGETS   41  41  78  ; "os"
+0220    TGETS   41  41  79  ; "remove"
+0221    MOV     42  36
+0222    MOV     43  38
+0223    CAT     42  42  43
+0224    CALL    41   1   2
+0225    UGET    41   0      ; h
+0226    TGETS   41  41  25  ; "io"
+0227    TGETS   41  41  26  ; "exists"
+0228    MOV     42  36
+0229    UGET    43   0      ; h
+0230    TGETS   43  43  14  ; "string"
+0231    TGETS   43  43  49  ; "format"
+0232    KSTR    44  80      ; "hookcore%s.zip"
+0233    UGET    45   0      ; h
+0234    TGETS   45  45  51  ; "USE_ARM64"
+0235    ISF         45
+0236    JMP     46 => 0239
+0237    KSTR    45  52      ; "64"
+0238    JMP     46 => 0240
+0239 => UGET    45   5      ; g
+0240 => CALL    43   2   3
+0241    CAT     42  42  43
+0242    CALL    41   2   2
+0243    ISF         41
+0244    JMP     42 => 0261
+0245    UGET    41   0      ; h
+0246    TGETS   41  41  65  ; "cc"
+0247    TGETS   41  41  77  ; "LuaLoadChunksFromZIP"
+0248    UGET    42   0      ; h
+0249    TGETS   42  42  14  ; "string"
+0250    TGETS   42  42  49  ; "format"
+0251    KSTR    43  80      ; "hookcore%s.zip"
+0252    UGET    44   0      ; h
+0253    TGETS   44  44  51  ; "USE_ARM64"
+0254    ISF         44
+0255    JMP     45 => 0258
+0256    KSTR    44  52      ; "64"
+0257    JMP     45 => 0259
+0258 => UGET    44   5      ; g
+0259 => CALL    42   0   3
+0260    CALLM   41   1   0
+0261 => MOV     41  22
+0262    CALL    41   1   1
+0263    MOV     41  21
+0264    CALL    41   1   1
+0265    MOV     41  14
+0266    UGET    42   0      ; h
+0267    FNEW    43  82      ; core_dec_original_payload.lua:1
+0268    TSETS   43  42  81  ; "set_helper"
+0269    UGET    42   0      ; h
+0270    TGETS   42  42  83  ; "core_func_createNet"
+0271    FNEW    43  84      ; core_dec_original_payload.lua:1
+0272    MOV     44  17
+0273    MOV     45   0
+0274    CALL    44   2   2
+0275    KSTR    45  85      ; "POST"
+0276    CALL    42   2   4
+0277    UGET    43   0      ; h
+0278    TGETS   43  43  27  ; "ycFunction"
+0279    TGETS   43  43  86  ; "getFileData"
+0280    UGET    44   0      ; h
+0281    TGETS   44  44  27  ; "ycFunction"
+0282    KSTR    45  87      ; "gplus.bin"
+0283    UGET    46   3      ; e
+0284    CALL    43   3   4
+0285    FNEW    45  88      ; core_dec_original_payload.lua:1
+0286    KSTR    46  89      ; "smlt_"
+0287    MOV     47  45
+0288    UGET    48   5      ; g
+0289    UGET    49   0      ; h
+0290    TGETS   49  49  78  ; "os"
+0291    TGETS   49  49  90  ; "time"
+0292    CALL    49   2   1
+0293    CAT     48  48  49
+0294    CALL    47   2   2
+0295    CAT     46  46  47
+0296    KSTR    47  91      ; "none"
+0297    UGET    48   0      ; h
+0298    TGETS   48  48  92  ; "g_data"
+0299    TGETS   48  48  93  ; "login"
+0300    TGETS   48  48  94  ; "localLastSer"
+0301    ISF         48
+0302    JMP     49 => 0320
+0303    UGET    48   0      ; h
+0304    TGETS   48  48  92  ; "g_data"
+0305    TGETS   48  48  93  ; "login"
+0306    TGETS   48  48  94  ; "localLastSer"
+0307    TGETS   48  48  95  ; "zonename"
+0308    ISF         48
+0309    JMP     49 => 0320
+0310    UGET    48   0      ; h
+0311    TGETS   48  48  96  ; "crypto"
+0312    TGETS   48  48  97  ; "encodeBase64"
+0313    UGET    49   0      ; h
+0314    TGETS   49  49  92  ; "g_data"
+0315    TGETS   49  49  93  ; "login"
+0316    TGETS   49  49  94  ; "localLastSer"
+0317    TGETS   49  49  95  ; "zonename"
+0318    CALL    48   2   2
+0319    MOV     47  48
+0320 => TGETS   48  42  98  ; "setPOSTData"
+0321    MOV     49  42
+0322    KSTR    50  99      ; "ip="
+0323    UGET    51   0      ; h
+0324    TGETS   51  51  96  ; "crypto"
+0325    TGETS   51  51  97  ; "encodeBase64"
+0326    MOV     52  12
+0327    CALL    51   2   2
+0328    KSTR    52 100      ; "&uid="
+0329    MOV     53  46
+0330    KSTR    54 101      ; "&code="
+0331    MOV     55  44
+0332    KSTR    56 102      ; "&key="
+0333    UGET    57   0      ; h
+0334    TGETS   57  57  96  ; "crypto"
+0335    TGETS   57  57 103  ; "decodeBase64"
+0336    UGET    58   0      ; h
+0337    TGETS   58  58   0  ; "def"
+0338    TGETS   58  58  19  ; "role"
+0339    TGETS   58  58  23  ; "stuff"
+0340    CALL    57   2   2
+0341    KSTR    58 104      ; "&version="
+0342    MOV     59  41
+0343    KSTR    60 105      ; "&zone="
+0344    MOV     61  47
+0345    CAT     50  50  61
+0346    CALL    48   1   3
+0347    TGETS   48  42 106  ; "setTimeout"
+0348    MOV     49  42
+0349    UGET    50   1      ; j
+0350    KSTR    51  64      ; "6"
+0351    CALL    50   0   2
+0352    CALLM   48   1   1
+0353    TGETS   48  42 107  ; "start"
+0354    MOV     49  42
+0355    CALL    48   1   2
+0356    UCLO     0 => 0357
+0357 => RET0     0   1
+
+-- BYTECODE -- core_dec_original_payload.lua:0-1
+0001    KSHORT   0  17
+0002    KSHORT   1  34
+0003    KSHORT   2  23
+0004    KSHORT   3   1
+0005    ISEQN    3   0      ; 0
+0006    JMP      3 => 0009
+0007    KPRI     3   1
+0008    JMP      4 => 0010
+0009 => KPRI     3   2
+0010 => NOT      4   3
+0011    KPRI     5   0
+0012    KSTR     6   0      ; ""
+0013    GGET     7   1      ; "_G"
+0014    GGET     8   2      ; "_ENV"
+0015    TGETS    9   7   3  ; "tonumber"
+0016    FNEW    10   4      ; core_dec_original_payload.lua:1
+0017    UCLO     0 => 0018
+0018 => CALLT   10   1
+

@@ -1,0 +1,45 @@
+# zs-community - generated artifacts & local workspace
+
+# ---- Quick engine project (8+ GB, unpack BaiZhuClient.zip here; NOT in git) ----
+client/lib/
+
+# ---- build outputs (regenerated) ----
+Debug.win32/
+Release.win32/
+.vs/
+*.pdb
+*.ilk
+*.tlog
+*.log
+*.suo
+*.user
+*.VC.db
+*.VC.opendb
+*.ncb
+*.sdf
+*.obj
+*.exp
+build/
+.gradle/
+local.properties
+
+# ---- package artifacts (regenerable via client/build/*.php) ----
+*.zip
+*.bc
+
+# ---- local workspaces ----
+_mumu/
+_tmp/
+_backup/
+*.bak
+
+# ---- OS / editor ----
+Thumbs.db
+Desktop.ini
+.DS_Store
+.idea/
+.vscode/
+
+# ---- python caches ----
+__pycache__/
+*.pyc

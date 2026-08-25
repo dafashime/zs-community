@@ -1,0 +1,11 @@
+﻿node_type,original_count,readable_count,equal
+function_declaration,17,17,true
+function_definition,8,8,true
+block,126,126,true
+assignment_statement,101,101,true
+binary_expression,124,124,true
+function_call,223,223,true
+if_statement,87,87,true
+return_statement,38,38,true
+variable_declaration,83,83,true
+parameters,25,25,true

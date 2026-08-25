@@ -1,0 +1,95 @@
+{
+  "generated_at_utc": "2026-07-10T05:08:57.085421+00:00",
+  "result": "PASS",
+  "source_root": "D:\\loym2\\白猪G2.5 0518离线[必须更新]\\dec",
+  "output_root": "D:\\loym2\\白猪G2.5_0518_lua_plain_readable_20260710_014719",
+  "files_expected": 582,
+  "files_checked": 582,
+  "package_counts": {
+    "core": 82,
+    "core64": 82,
+    "mir2": 203,
+    "mir264": 203,
+    "upt": 6,
+    "upt64": 6
+  },
+  "structure": {
+    "missing_package_directories": [],
+    "unexpected_package_directories": [],
+    "missing_lua_files": [],
+    "extra_lua_files": []
+  },
+  "format": {
+    "mismatches": [],
+    "chunk_headers_remaining": []
+  },
+  "generic_identifiers": {
+    "rename_safe_local_occurrences": 0,
+    "member_or_table_key_occurrences": 0,
+    "preserved_runtime_global_or_label_occurrences": 8,
+    "preserved_runtime_unique_names": [
+      "var_0_123",
+      "var_0_124"
+    ],
+    "files_with_preserved_runtime_names": [
+      "mir2/mir2.def.bzinit.lua",
+      "mir264/mir2.def.bzinit.lua"
+    ],
+    "occurrences": [
+      {
+        "file": "mir2/mir2.def.bzinit.lua",
+        "line": 4063,
+        "name": "var_0_124",
+        "category": "runtime_global_or_label"
+      },
+      {
+        "file": "mir2/mir2.def.bzinit.lua",
+        "line": 6265,
+        "name": "var_0_123",
+        "category": "runtime_global_or_label"
+      },
+      {
+        "file": "mir2/mir2.def.bzinit.lua",
+        "line": 6354,
+        "name": "var_0_124",
+        "category": "runtime_global_or_label"
+      },
+      {
+        "file": "mir2/mir2.def.bzinit.lua",
+        "line": 6527,
+        "name": "var_0_123",
+        "category": "runtime_global_or_label"
+      },
+      {
+        "file": "mir264/mir2.def.bzinit.lua",
+        "line": 4063,
+        "name": "var_0_124",
+        "category": "runtime_global_or_label"
+      },
+      {
+        "file": "mir264/mir2.def.bzinit.lua",
+        "line": 6265,
+        "name": "var_0_123",
+        "category": "runtime_global_or_label"
+      },
+      {
+        "file": "mir264/mir2.def.bzinit.lua",
+        "line": 6354,
+        "name": "var_0_124",
+        "category": "runtime_global_or_label"
+      },
+      {
+        "file": "mir264/mir2.def.bzinit.lua",
+        "line": 6527,
+        "name": "var_0_123",
+        "category": "runtime_global_or_label"
+      }
+    ]
+  },
+  "independent_luajit_bytecode_audit": {
+    "checked": 582,
+    "syntax_failures": [],
+    "bytecode_failures": [],
+    "elapsed_seconds": 4.5
+  }
+}

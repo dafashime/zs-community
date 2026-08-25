@@ -1,0 +1,128 @@
+﻿scope_id,scope_node_type,owner_node_type,parent_scope_id,function_depth,original_location,readable_location,direct_semantic_statement_count,direct_local_declaration_statement_count,direct_statement_types,parent_scope_equal,function_depth_equal,statement_sequence_equal,scope_structure_equal
+S000,chunk,<root>,,0,1:1-1:23697,1:1-565:1,11,10,variable_declaration | variable_declaration | variable_declaration | variable_declaration | variable_declaration | variable_declaration | variable_declaration | variable_declaration | variable_declaration | variable_declaration | return_statement,true,true,true,true
+S001,block,function_definition,S000,1,1:171-1:23691,19:5-563:27,61,43,if_statement | variable_declaration | variable_declaration | variable_declaration | variable_declaration | variable_declaration | variable_declaration | variable_declaration | variable_declaration | variable_declaration | variable_declaration | variable_declaration | variable_declaration | variable_declaration | function_declaration | variable_declaration | assignment_statement | function_declaration | variable_declaration | if_statement | function_declaration | function_declaration | function_declaration | function_declaration | function_declaration | function_declaration | function_declaration | function_declaration | function_declaration | function_declaration | variable_declaration | variable_declaration | function_declaration | function_declaration | variable_declaration | variable_declaration | variable_declaration | variable_declaration | if_statement | if_statement | if_statement | variable_declaration | if_statement | variable_declaration | function_call | function_call | function_call | if_statement | function_call | function_call | variable_declaration | assignment_statement | variable_declaration | variable_declaration | function_declaration | variable_declaration | variable_declaration | if_statement | function_call | function_call | function_call,true,true,true,true
+S002,block,if_statement,S001,1,1:266-1:4038,20:9-33:8,1,0,assignment_statement,true,true,true,true
+S003,block,function_declaration,S001,2,1:5127-1:5142,56:9-56:20,1,0,return_statement,true,true,true,true
+S004,block,function_declaration,S001,2,1:5258-1:5269,61:9-61:19,1,0,return_statement,true,true,true,true
+S005,block,if_statement,S001,1,1:5468-1:5580,65:9-65:70,1,0,function_call,true,true,true,true
+S006,block,function_declaration,S001,2,1:5603-1:5611,68:9-68:21,1,0,return_statement,true,true,true,true
+S007,block,function_declaration,S001,2,1:5635-1:6279,72:9-81:12,1,0,if_statement,true,true,true,true
+S008,block,if_statement,S007,2,1:5757-1:6212,73:13-78:14,1,0,return_statement,true,true,true,true
+S009,block,else_statement,S007,2,1:6217-1:6276,80:13-80:37,1,0,function_call,true,true,true,true
+S010,block,function_declaration,S001,2,1:6305-1:6634,84:9-97:12,1,0,if_statement,true,true,true,true
+S011,block,if_statement,S010,2,1:6379-1:6566,85:13-94:16,2,1,variable_declaration | if_statement,true,true,true,true
+S012,block,if_statement,S011,2,1:6446-1:6548,87:17-91:34,3,0,if_statement | function_call | return_statement,true,true,true,true
+S013,block,if_statement,S012,2,1:6488-1:6496,88:21-88:39,1,0,return_statement,true,true,true,true
+S014,block,else_statement,S011,2,1:6554-1:6562,93:17-93:35,1,0,return_statement,true,true,true,true
+S015,block,else_statement,S010,2,1:6572-1:6631,96:13-96:37,1,0,function_call,true,true,true,true
+S016,block,function_declaration,S001,2,1:6658-1:6982,100:9-110:12,2,0,if_statement | if_statement,true,true,true,true
+S017,block,if_statement,S016,2,1:6718-1:6783,101:13-102:19,2,0,function_call | return_statement,true,true,true,true
+S018,block,if_statement,S016,2,1:6845-1:6915,105:13-107:17,1,0,return_statement,true,true,true,true
+S019,block,function_definition,S018,3,1:6886-1:6911,106:17-106:43,1,0,function_call,true,true,true,true
+S020,block,else_statement,S016,2,1:6920-1:6979,109:13-109:37,1,0,function_call,true,true,true,true
+S021,block,function_declaration,S001,2,1:7005-1:7354,113:9-131:27,4,0,if_statement | if_statement | assignment_statement | return_statement,true,true,true,true
+S022,block,if_statement,S021,2,1:7049-1:7055,114:13-114:19,1,0,return_statement,true,true,true,true
+S023,block,if_statement,S021,2,1:7130-1:7317,117:13-128:16,2,1,variable_declaration | if_statement,true,true,true,true
+S024,block,if_statement,S023,2,1:7217-1:7313,119:17-127:20,2,0,assignment_statement | if_statement,true,true,true,true
+S025,block,if_statement,S024,2,1:7233-1:7309,121:21-126:24,2,1,variable_declaration | if_statement,true,true,true,true
+S026,block,if_statement,S025,2,1:7257-1:7305,123:25-125:42,3,0,assignment_statement | function_call | return_statement,true,true,true,true
+S027,block,function_declaration,S001,2,1:7377-1:7652,134:9-140:12,1,0,if_statement,true,true,true,true
+S028,block,if_statement,S027,2,1:7530-1:7648,135:13-139:16,2,1,variable_declaration | if_statement,true,true,true,true
+S029,block,if_statement,S028,2,1:7634-1:7644,137:17-138:23,2,0,assignment_statement | return_statement,true,true,true,true
+S030,block,function_declaration,S001,2,1:7676-1:7717,143:9-143:65,1,0,function_call,true,true,true,true
+S031,block,function_declaration,S001,2,1:7740-1:7800,146:9-147:28,2,0,function_call | function_call,true,true,true,true
+S032,block,function_declaration,S001,2,1:7823-1:11981,151:9-267:45,13,6,if_statement | variable_declaration | if_statement | if_statement | variable_declaration | variable_declaration | function_declaration | variable_declaration | variable_declaration | if_statement | function_call | function_call | function_call,true,true,true,true
+S033,block,if_statement,S032,2,1:7833-1:8092,152:13-160:16,1,0,if_statement,true,true,true,true
+S034,block,if_statement,S033,2,1:7846-1:7864,153:17-154:69,2,0,assignment_statement | assignment_statement,true,true,true,true
+S035,block,else_statement,S033,2,1:7869-1:8088,156:17-159:23,2,0,if_statement | return_statement,true,true,true,true
+S036,block,if_statement,S035,2,1:7929-1:8078,157:21-157:68,1,0,function_call,true,true,true,true
+S037,block,if_statement,S032,2,1:8117-1:8141,164:13-164:34,1,0,assignment_statement,true,true,true,true
+S038,block,if_statement,S032,2,1:8205-1:8233,167:13-167:46,1,0,function_call,true,true,true,true
+S039,block,function_definition,S032,3,1:8331-1:10308,170:13-233:16,6,3,if_statement | variable_declaration | variable_declaration | if_statement | variable_declaration | if_statement,true,true,true,true
+S040,block,if_statement,S039,3,1:8398-1:8607,171:17-177:23,2,0,if_statement | return_statement,true,true,true,true
+S041,block,if_statement,S040,3,1:8453-1:8597,172:21-175:57,2,0,if_statement | function_call,true,true,true,true
+S042,block,if_statement,S041,3,1:8513-1:8589,173:25-173:55,1,0,function_call,true,true,true,true
+S043,block,if_statement,S039,3,1:8774-1:8780,182:17-182:23,1,0,return_statement,true,true,true,true
+S044,block,if_statement,S039,3,1:8867-1:10295,186:17-230:20,8,3,if_statement | if_statement | variable_declaration | variable_declaration | if_statement | if_statement | variable_declaration | if_statement,true,true,true,true
+S045,block,if_statement,S044,3,1:8960-1:9019,187:21-187:45,1,0,function_call,true,true,true,true
+S046,block,if_statement,S044,3,1:9042-1:9258,190:21-196:27,3,0,if_statement | if_statement | return_statement,true,true,true,true
+S047,block,if_statement,S046,3,1:9102-1:9181,191:25-191:55,1,0,function_call,true,true,true,true
+S048,block,if_statement,S046,3,1:9244-1:9248,194:25-194:58,1,0,function_call,true,true,true,true
+S049,block,if_statement,S044,3,1:9380-1:9542,201:21-204:54,2,0,if_statement | function_call,true,true,true,true
+S050,block,if_statement,S049,3,1:9440-1:9534,202:25-202:59,1,0,function_call,true,true,true,true
+S051,block,if_statement,S044,3,1:9630-1:9798,207:21-211:27,3,0,if_statement | function_call | return_statement,true,true,true,true
+S052,block,if_statement,S051,3,1:9690-1:9784,208:25-208:59,1,0,function_call,true,true,true,true
+S053,block,if_statement,S044,3,1:9860-1:10033,215:21-218:54,2,0,if_statement | function_call,true,true,true,true
+S054,block,if_statement,S053,3,1:9920-1:10025,216:25-216:62,1,0,function_call,true,true,true,true
+S055,block,else_statement,S044,3,1:10038-1:10291,220:21-229:24,2,1,variable_declaration | if_statement,true,true,true,true
+S056,block,if_statement,S055,3,1:10062-1:10133,222:25-223:67,2,0,function_call | function_call,true,true,true,true
+S057,block,else_statement,S055,3,1:10138-1:10288,225:25-228:58,2,0,if_statement | function_call,true,true,true,true
+S058,block,if_statement,S057,3,1:10198-1:10280,226:29-226:60,1,0,function_call,true,true,true,true
+S059,block,else_statement,S039,3,1:10301-1:10305,232:17-232:50,1,0,function_call,true,true,true,true
+S060,block,function_declaration,S032,3,1:10535-1:10907,238:13-244:50,3,1,variable_declaration | if_statement | return_statement,true,true,true,true
+S061,block,if_statement,S060,3,1:10702-1:10844,240:17-242:33,3,0,assignment_statement | function_call | return_statement,true,true,true,true
+S062,block,if_statement,S032,2,1:11253-1:11465,249:13-249:103,1,0,assignment_statement,true,true,true,true
+S063,block,function_declaration,S001,2,1:12005-1:15985,271:9-380:31,12,6,variable_declaration | if_statement | if_statement | variable_declaration | variable_declaration | function_declaration | variable_declaration | variable_declaration | if_statement | function_call | function_call | function_call,true,true,true,true
+S064,block,if_statement,S063,2,1:12025-1:12049,273:13-273:34,1,0,assignment_statement,true,true,true,true
+S065,block,if_statement,S063,2,1:12113-1:12141,276:13-276:46,1,0,function_call,true,true,true,true
+S066,block,function_definition,S063,3,1:12240-1:14312,279:13-346:16,6,3,if_statement | variable_declaration | variable_declaration | if_statement | variable_declaration | if_statement,true,true,true,true
+S067,block,if_statement,S066,3,1:12308-1:12606,280:17-289:23,3,0,if_statement | if_statement | return_statement,true,true,true,true
+S068,block,if_statement,S067,3,1:12368-1:12416,281:21-281:54,1,0,function_call,true,true,true,true
+S069,block,if_statement,S067,3,1:12476-1:12596,284:21-287:55,2,0,if_statement | function_call,true,true,true,true
+S070,block,if_statement,S069,3,1:12536-1:12588,285:25-285:48,1,0,function_call,true,true,true,true
+S071,block,if_statement,S066,3,1:12774-1:12780,294:17-294:23,1,0,return_statement,true,true,true,true
+S072,block,if_statement,S066,3,1:12867-1:14299,298:17-343:20,8,3,if_statement | if_statement | variable_declaration | variable_declaration | if_statement | if_statement | variable_declaration | if_statement,true,true,true,true
+S073,block,if_statement,S072,3,1:12960-1:13025,299:21-300:27,2,0,function_call | return_statement,true,true,true,true
+S074,block,if_statement,S072,3,1:13049-1:13262,303:21-309:27,3,0,if_statement | if_statement | return_statement,true,true,true,true
+S075,block,if_statement,S074,3,1:13109-1:13184,304:25-304:54,1,0,function_call,true,true,true,true
+S076,block,if_statement,S074,3,1:13247-1:13252,307:25-307:59,1,0,function_call,true,true,true,true
+S077,block,if_statement,S072,3,1:13384-1:13546,314:21-317:54,2,0,if_statement | function_call,true,true,true,true
+S078,block,if_statement,S077,3,1:13444-1:13538,315:25-315:59,1,0,function_call,true,true,true,true
+S079,block,if_statement,S072,3,1:13634-1:13802,320:21-324:27,3,0,if_statement | function_call | return_statement,true,true,true,true
+S080,block,if_statement,S079,3,1:13694-1:13788,321:25-321:59,1,0,function_call,true,true,true,true
+S081,block,if_statement,S072,3,1:13864-1:14037,328:21-331:54,2,0,if_statement | function_call,true,true,true,true
+S082,block,if_statement,S081,3,1:13924-1:14029,329:25-329:62,1,0,function_call,true,true,true,true
+S083,block,else_statement,S072,3,1:14042-1:14295,333:21-342:24,2,1,variable_declaration | if_statement,true,true,true,true
+S084,block,if_statement,S083,3,1:14066-1:14137,335:25-336:67,2,0,function_call | function_call,true,true,true,true
+S085,block,else_statement,S083,3,1:14142-1:14292,338:25-341:58,2,0,if_statement | function_call,true,true,true,true
+S086,block,if_statement,S085,3,1:14202-1:14284,339:29-339:60,1,0,function_call,true,true,true,true
+S087,block,else_statement,S066,3,1:14305-1:14309,345:17-345:50,1,0,function_call,true,true,true,true
+S088,block,function_declaration,S063,3,1:14539-1:14911,351:13-357:50,3,1,variable_declaration | if_statement | return_statement,true,true,true,true
+S089,block,if_statement,S088,3,1:14706-1:14848,353:17-355:33,3,0,assignment_statement | function_call | return_statement,true,true,true,true
+S090,block,if_statement,S063,2,1:15257-1:15469,362:13-362:103,1,0,assignment_statement,true,true,true,true
+S091,block,function_declaration,S001,2,1:16266-1:16474,386:9-390:10,1,0,return_statement,true,true,true,true
+S092,block,function_declaration,S001,2,1:16497-1:17113,393:9-414:32,8,7,variable_declaration | variable_declaration | variable_declaration | variable_declaration | variable_declaration | variable_declaration | variable_declaration | return_statement,true,true,true,true
+S093,block,if_statement,S001,1,1:17629-1:17742,422:9-422:73,1,0,function_call,true,true,true,true
+S094,block,if_statement,S001,1,1:17807-1:18483,425:9-433:15,3,0,function_call | function_call | return_statement,true,true,true,true
+S095,block,function_definition,S094,2,1:18095-1:18229,426:13-428:16,1,0,if_statement,true,true,true,true
+S096,block,if_statement,S095,2,1:18116-1:18226,427:17-427:56,1,0,function_call,true,true,true,true
+S097,block,function_definition,S094,2,1:18429-1:18464,431:13-431:30,1,0,function_call,true,true,true,true
+S098,block,if_statement,S001,1,1:18609-1:18708,436:9-436:45,1,0,function_call,true,true,true,true
+S099,block,if_statement,S001,1,1:18792-1:18890,440:9-440:45,1,0,function_call,true,true,true,true
+S100,block,if_statement,S001,1,1:19446-1:19695,451:9-453:10,1,0,function_call,true,true,true,true
+S101,block,function_definition,S001,2,1:19772-1:19846,460:9-460:46,1,0,assignment_statement,true,true,true,true
+S102,block,function_definition,S001,2,1:19946-1:22018,463:9-530:12,6,3,if_statement | variable_declaration | variable_declaration | if_statement | variable_declaration | if_statement,true,true,true,true
+S103,block,if_statement,S102,2,1:20014-1:20312,464:13-473:19,3,0,if_statement | if_statement | return_statement,true,true,true,true
+S104,block,if_statement,S103,2,1:20074-1:20122,465:17-465:50,1,0,function_call,true,true,true,true
+S105,block,if_statement,S103,2,1:20182-1:20302,468:17-471:51,2,0,if_statement | function_call,true,true,true,true
+S106,block,if_statement,S105,2,1:20242-1:20294,469:21-469:44,1,0,function_call,true,true,true,true
+S107,block,if_statement,S102,2,1:20480-1:20486,478:13-478:19,1,0,return_statement,true,true,true,true
+S108,block,if_statement,S102,2,1:20573-1:22005,482:13-527:16,8,3,if_statement | if_statement | variable_declaration | variable_declaration | if_statement | if_statement | variable_declaration | if_statement,true,true,true,true
+S109,block,if_statement,S108,2,1:20666-1:20731,483:17-484:23,2,0,function_call | return_statement,true,true,true,true
+S110,block,if_statement,S108,2,1:20755-1:20968,487:17-493:23,3,0,if_statement | if_statement | return_statement,true,true,true,true
+S111,block,if_statement,S110,2,1:20815-1:20890,488:21-488:50,1,0,function_call,true,true,true,true
+S112,block,if_statement,S110,2,1:20953-1:20958,491:21-491:55,1,0,function_call,true,true,true,true
+S113,block,if_statement,S108,2,1:21090-1:21252,498:17-501:50,2,0,if_statement | function_call,true,true,true,true
+S114,block,if_statement,S113,2,1:21150-1:21244,499:21-499:55,1,0,function_call,true,true,true,true
+S115,block,if_statement,S108,2,1:21340-1:21508,504:17-508:23,3,0,if_statement | function_call | return_statement,true,true,true,true
+S116,block,if_statement,S115,2,1:21400-1:21494,505:21-505:55,1,0,function_call,true,true,true,true
+S117,block,if_statement,S108,2,1:21570-1:21743,512:17-515:50,2,0,if_statement | function_call,true,true,true,true
+S118,block,if_statement,S117,2,1:21630-1:21735,513:21-513:58,1,0,function_call,true,true,true,true
+S119,block,else_statement,S108,2,1:21748-1:22001,517:17-526:20,2,1,variable_declaration | if_statement,true,true,true,true
+S120,block,if_statement,S119,2,1:21772-1:21843,519:21-520:63,2,0,function_call | function_call,true,true,true,true
+S121,block,else_statement,S119,2,1:21848-1:21998,522:21-525:54,2,0,if_statement | function_call,true,true,true,true
+S122,block,if_statement,S121,2,1:21908-1:21990,523:25-523:56,1,0,function_call,true,true,true,true
+S123,block,else_statement,S102,2,1:22011-1:22015,529:13-529:46,1,0,function_call,true,true,true,true
+S124,block,function_declaration,S001,2,1:22245-1:22617,534:9-540:46,3,1,variable_declaration | if_statement | return_statement,true,true,true,true
+S125,block,if_statement,S124,2,1:22412-1:22554,536:13-538:29,3,0,assignment_statement | function_call | return_statement,true,true,true,true
+S126,block,if_statement,S001,1,1:22963-1:23175,545:9-545:99,1,0,assignment_statement,true,true,true,true

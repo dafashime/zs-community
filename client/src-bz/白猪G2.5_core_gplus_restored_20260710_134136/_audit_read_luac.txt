@@ -1,0 +1,2428 @@
+
+main <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:0,0> (23 instructions, 92 bytes at 006C1760)
+0+ params, 11 slots, 0 upvalues, 10 locals, 9 constants, 1 function
+	1	[7]	LOADK    	0 -1	; 17
+	2	[8]	LOADK    	1 -2	; 34
+	3	[9]	LOADK    	2 -3	; 23
+	4	[10]	EQ       	1 -4 -5	; 0 1
+	5	[10]	JMP      	1	; to 7
+	6	[10]	LOADBOOL 	3 0 1
+	7	[10]	LOADBOOL 	3 1 0
+	8	[11]	NOT      	4 3
+	9	[12]	LOADNIL  	5 5
+	10	[13]	LOADK    	6 -6	; ""
+	11	[14]	GETGLOBAL	7 -7	; _G
+	12	[15]	GETGLOBAL	8 -8	; _ENV
+	13	[16]	GETTABLE 	9 7 -9	; "tonumber"
+	14	[564]	CLOSURE  	10 0	; 006C26A0
+	15	[564]	MOVE     	0 7
+	16	[564]	MOVE     	0 9
+	17	[564]	MOVE     	0 3
+	18	[564]	MOVE     	0 4
+	19	[564]	MOVE     	0 5
+	20	[564]	MOVE     	0 6
+	21	[564]	TAILCALL 	10 1 0
+	22	[564]	RETURN   	10 0
+	23	[564]	RETURN   	0 1
+constants (9) for 006C1760:
+	1	17
+	2	34
+	3	23
+	4	0
+	5	1
+	6	""
+	7	"_G"
+	8	"_ENV"
+	9	"tonumber"
+locals (10) for 006C1760:
+	0	unused_number_17	2	23
+	1	unused_number_34	3	23
+	2	unused_number_23	4	23
+	3	false_value	8	23
+	4	true_value	9	23
+	5	nil_value	10	23
+	6	empty_string	11	23
+	7	globals	12	23
+	8	unused_environment	13	23
+	9	to_number	14	23
+upvalues (0) for 006C1760:
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:17,564> (457 instructions, 1828 bytes at 006C26A0)
+0+ params, 63 slots, 6 upvalues, 49 locals, 97 constants, 19 functions
+	1	[19]	GETUPVAL 	1 0	; globals
+	2	[19]	GETTABLE 	1 1 -1	; "def"
+	3	[19]	GETTABLE 	1 1 -2	; "showUserAgreement"
+	4	[19]	TEST     	1 0 0
+	5	[19]	JMP      	2	; to 8
+	6	[20]	GETUPVAL 	1 0	; globals
+	7	[33]	SETTABLE 	1 -3 -4	; "argeementText" "        \228\184\128\227\128\129\228\184\141\229\190\151\229\136\169\231\148\168\230\156\172\232\189\175\228\187\182\230\136\150\230\156\172\232\189\175\228\187\182\230\156\141\229\138\161\229\136\182\228\189\156\227\128\129\228\184\138\232\189\189\227\128\129\229\164\141\229\136\182\227\128\129\229\143\145\233\128\129\229\166\130\228\184\139\229\134\133\229\174\185\239\188\154\n        (1) \229\143\141\229\175\185\229\174\170\230\179\149\230\137\128\231\161\174\229\174\154\231\154\132\229\159\186\230\156\172\229\142\159\229\136\153\231\154\132\239\188\155\n        (2) \229\141\177\229\174\179\229\155\189\229\174\182\229\174\137\229\133\168\239\188\140\230\179\132\233\156\178\229\155\189\229\174\182\231\167\152\229\175\134\239\188\140\233\162\160\232\166\134\229\155\189\229\174\182\230\148\191\230\157\131\239\188\140\231\160\180\229\157\143\229\155\189\229\174\182\231\187\159\228\184\128\231\154\132\239\188\155\n        (3) \230\141\159\229\174\179\229\155\189\229\174\182\232\141\163\232\170\137\229\146\140\229\136\169\231\155\138\231\154\132\239\188\155\n        (4) \231\133\189\229\138\168\230\176\145\230\151\143\228\187\135\230\129\168\227\128\129\230\176\145\230\151\143\230\173\167\232\167\134\239\188\140\231\160\180\229\157\143\230\176\145\230\151\143\229\155\162\231\187\147\231\154\132\239\188\155\n        (5) \231\160\180\229\157\143\229\155\189\229\174\182\229\174\151\230\149\153\230\148\191\231\173\150\239\188\140\229\174\163\230\137\172\233\130\170\230\149\153\229\146\140\229\176\129\229\187\186\232\191\183\228\191\161\231\154\132\239\188\155\n        (6) \230\149\163\229\184\131\232\176\163\232\168\128\239\188\140\230\137\176\228\185\177\231\164\190\228\188\154\231\167\169\229\186\143\239\188\140\231\160\180\229\157\143\231\164\190\228\188\154\231\168\179\229\174\154\231\154\132\239\188\155\n        (7) \230\149\163\229\184\131\230\183\171\231\167\189\227\128\129\232\137\178\230\131\133\227\128\129\232\181\140\229\141\154\227\128\129\230\154\180\229\138\155\227\128\129\229\135\182\230\157\128\227\128\129\230\129\144\230\128\150\230\136\150\232\128\133\230\149\153\229\148\134\231\138\175\231\189\170\231\154\132\239\188\155\n        (8) \228\190\174\232\190\177\230\136\150\232\128\133\232\175\189\232\176\164\228\187\150\228\186\186\239\188\140\228\190\181\229\174\179\228\187\150\228\186\186\229\144\136\230\179\149\230\157\131\231\155\138\231\154\132\239\188\155\n        (9) \229\144\171\230\156\137\230\179\149\229\190\139\227\128\129\232\161\140\230\148\191\230\179\149\232\167\132\231\166\129\230\173\162\231\154\132\229\133\182\228\187\150\229\134\133\229\174\185\231\154\132\228\191\161\230\129\175\227\128\130\n        \228\186\140\227\128\129\230\156\172\230\184\184\230\136\143\230\137\128\230\156\137\231\180\160\230\157\144\229\157\135\230\157\165\232\135\170\228\186\146\232\129\148\231\189\145\239\188\140\229\166\130\233\129\135\228\190\181\230\157\131\232\175\183\232\129\148\231\179\187GM\229\136\160\233\153\164\227\128\130\n        \228\184\137\227\128\129\232\139\165\230\130\168\229\175\185\230\156\172\230\184\184\230\136\143\229\143\138\230\156\172\230\156\141\229\138\161\230\156\137\228\187\187\228\189\149\230\132\143\232\167\129\239\188\140\230\172\162\232\191\142\232\129\148\231\179\187\230\184\184\230\136\143\231\149\140\233\157\162\228\184\173\231\154\132\229\174\162\230\156\141\232\129\148\231\179\187\230\150\185\229\188\143\227\128\130\n    "
+	8	[36]	LOADK    	1 -5	; "http://go.zejiang.wang/gv6"
+	9	[37]	LOADK    	2 -6	; "http://gate.zejiang.wang:88/gv6"
+	10	[38]	NEWTABLE 	3 8 0
+	11	[38]	LOADK    	4 -7	; "81"
+	12	[38]	LOADK    	5 -8	; "88"
+	13	[38]	LOADK    	6 -9	; "89"
+	14	[38]	LOADK    	7 -10	; "90"
+	15	[38]	LOADK    	8 -11	; "91"
+	16	[38]	LOADK    	9 -12	; "92"
+	17	[38]	LOADK    	10 -13	; "93"
+	18	[38]	LOADK    	11 -14	; "94"
+	19	[38]	SETLIST  	3 8 1	; 1
+	20	[39]	NEWTABLE 	4 4 0
+	21	[40]	LOADK    	5 -6	; "http://gate.zejiang.wang:88/gv6"
+	22	[41]	LOADK    	6 -15	; "http://tm2.zejiang.wang/gv6"
+	23	[42]	LOADK    	7 -16	; "http://tm3.zejiang.wang/gv6"
+	24	[44]	LOADK    	8 -17	; "http://sng.zejiang.wang:99/gv6"
+	25	[44]	SETLIST  	4 4 1	; 1
+	26	[45]	MOVE     	5 2
+	27	[46]	GETUPVAL 	6 1	; to_number
+	28	[46]	LOADK    	7 -18	; "4"
+	29	[46]	CALL     	6 2 2
+	30	[47]	GETUPVAL 	7 1	; to_number
+	31	[47]	LOADK    	8 -19	; "1"
+	32	[47]	CALL     	7 2 2
+	33	[49]	GETUPVAL 	8 0	; globals
+	34	[49]	GETTABLE 	8 8 -20	; "device"
+	35	[49]	GETTABLE 	8 8 -21	; "writablePath"
+	36	[49]	LOADK    	9 -22	; "cache/ao/"
+	37	[49]	CONCAT   	8 8 9
+	38	[50]	GETUPVAL 	9 2	; false_value
+	39	[51]	GETUPVAL 	10 0	; globals
+	40	[51]	GETTABLE 	10 10 -23	; "getinfo"
+	41	[52]	GETUPVAL 	11 0	; globals
+	42	[52]	GETTABLE 	11 11 -24	; "string"
+	43	[52]	GETTABLE 	11 11 -25	; "len"
+	44	[53]	GETUPVAL 	12 2	; false_value
+	45	[54]	GETUPVAL 	13 0	; globals
+	46	[54]	GETTABLE 	13 13 -1	; "def"
+	47	[54]	GETTABLE 	13 13 -26	; "gateIP"
+	48	[57]	CLOSURE  	14 0	; 006C99E8
+	49	[58]	LOADK    	15 -27	; "nofile"
+	50	[59]	GETUPVAL 	16 0	; globals
+	51	[59]	GETTABLE 	16 16 -1	; "def"
+	52	[59]	GETTABLE 	16 16 -28	; "role"
+	53	[59]	GETUPVAL 	17 3	; true_value
+	54	[59]	SETTABLE 	16 -29 17	; "open" -
+	55	[62]	CLOSURE  	16 1	; 006CAE40
+	56	[63]	MOVE     	17 8
+	57	[63]	GETUPVAL 	18 0	; globals
+	58	[63]	GETTABLE 	18 18 -30	; "core_func_md5"
+	59	[63]	GETUPVAL 	19 0	; globals
+	60	[63]	GETTABLE 	19 19 -1	; "def"
+	61	[63]	GETTABLE 	19 19 -28	; "role"
+	62	[63]	GETTABLE 	19 19 -31	; "stuff"
+	63	[63]	TEST     	19 0 1
+	64	[63]	JMP      	1	; to 66
+	65	[63]	LOADK    	19 -32	; "999"
+	66	[63]	CALL     	18 2 2
+	67	[63]	CONCAT   	17 17 18
+	68	[64]	GETUPVAL 	18 0	; globals
+	69	[64]	GETTABLE 	18 18 -33	; "io"
+	70	[64]	GETTABLE 	18 18 -34	; "exists"
+	71	[64]	MOVE     	19 8
+	72	[64]	CALL     	18 2 2
+	73	[64]	TEST     	18 0 1
+	74	[64]	JMP      	7	; to 82
+	75	[65]	GETUPVAL 	18 0	; globals
+	76	[65]	GETTABLE 	18 18 -35	; "ycFunction"
+	77	[65]	GETTABLE 	18 18 -36	; "mkdir"
+	78	[65]	GETUPVAL 	19 0	; globals
+	79	[65]	GETTABLE 	19 19 -35	; "ycFunction"
+	80	[65]	MOVE     	20 8
+	81	[65]	CALL     	18 3 1
+	82	[69]	CLOSURE  	18 2	; 006CAEB0
+	83	[82]	CLOSURE  	19 3	; 006CAF08
+	84	[82]	MOVE     	0 10
+	85	[82]	GETUPVAL 	0 0	; globals
+	86	[82]	MOVE     	0 16
+	87	[82]	MOVE     	0 14
+	88	[98]	CLOSURE  	20 4	; 006CEF90
+	89	[98]	MOVE     	0 10
+	90	[98]	GETUPVAL 	0 0	; globals
+	91	[98]	GETUPVAL 	0 4	; nil_value
+	92	[98]	GETUPVAL 	0 2	; false_value
+	93	[98]	GETUPVAL 	0 3	; true_value
+	94	[111]	CLOSURE  	21 5	; 006CE720
+	95	[111]	MOVE     	0 10
+	96	[111]	GETUPVAL 	0 0	; globals
+	97	[132]	CLOSURE  	22 6	; 006CADD8
+	98	[132]	GETUPVAL 	0 0	; globals
+	99	[132]	MOVE     	0 17
+	100	[132]	MOVE     	0 19
+	101	[132]	MOVE     	0 21
+	102	[132]	MOVE     	0 12
+	103	[132]	GETUPVAL 	0 3	; true_value
+	104	[132]	MOVE     	0 15
+	105	[132]	GETUPVAL 	0 2	; false_value
+	106	[141]	CLOSURE  	23 7	; 006D2028
+	107	[141]	GETUPVAL 	0 0	; globals
+	108	[141]	MOVE     	0 17
+	109	[141]	MOVE     	0 15
+	110	[144]	CLOSURE  	24 8	; 006D2840
+	111	[144]	MOVE     	0 20
+	112	[144]	MOVE     	0 17
+	113	[148]	CLOSURE  	25 9	; 006D2D40
+	114	[148]	MOVE     	0 20
+	115	[148]	MOVE     	0 17
+	116	[148]	GETUPVAL 	0 0	; globals
+	117	[268]	CLOSURE  	26 10	; 006D2978
+	118	[268]	MOVE     	0 7
+	119	[268]	MOVE     	0 6
+	120	[268]	MOVE     	0 5
+	121	[268]	MOVE     	0 4
+	122	[268]	GETUPVAL 	0 1	; to_number
+	123	[268]	GETUPVAL 	0 0	; globals
+	124	[268]	MOVE     	0 15
+	125	[268]	MOVE     	0 26
+	126	[268]	MOVE     	0 22
+	127	[268]	GETUPVAL 	0 3	; true_value
+	128	[268]	MOVE     	0 19
+	129	[268]	MOVE     	0 21
+	130	[268]	MOVE     	0 25
+	131	[268]	MOVE     	0 24
+	132	[268]	MOVE     	0 18
+	133	[268]	GETUPVAL 	0 5	; empty_string
+	134	[268]	MOVE     	0 13
+	135	[381]	CLOSURE  	27 11	; 006D2E48
+	136	[381]	MOVE     	0 15
+	137	[381]	GETUPVAL 	0 0	; globals
+	138	[381]	MOVE     	0 1
+	139	[381]	MOVE     	0 26
+	140	[381]	GETUPVAL 	0 2	; false_value
+	141	[381]	GETUPVAL 	0 1	; to_number
+	142	[381]	MOVE     	0 22
+	143	[381]	MOVE     	0 27
+	144	[381]	GETUPVAL 	0 3	; true_value
+	145	[381]	MOVE     	0 19
+	146	[381]	MOVE     	0 21
+	147	[381]	MOVE     	0 25
+	148	[381]	MOVE     	0 24
+	149	[381]	MOVE     	0 18
+	150	[381]	GETUPVAL 	0 5	; empty_string
+	151	[381]	MOVE     	0 13
+	152	[383]	GETUPVAL 	28 0	; globals
+	153	[383]	GETTABLE 	28 28 -37	; "math"
+	154	[383]	GETTABLE 	28 28 -38	; "floor"
+	155	[383]	GETUPVAL 	29 0	; globals
+	156	[383]	GETTABLE 	29 29 -37	; "math"
+	157	[383]	GETTABLE 	29 29 -39	; "exp"
+	158	[383]	GETUPVAL 	30 0	; globals
+	159	[383]	GETTABLE 	30 30 -37	; "math"
+	160	[383]	GETTABLE 	30 30 -40	; "sqrt"
+	161	[384]	GETUPVAL 	31 0	; globals
+	162	[384]	GETTABLE 	31 31 -24	; "string"
+	163	[384]	GETTABLE 	31 31 -41	; "char"
+	164	[384]	GETUPVAL 	32 0	; globals
+	165	[384]	GETTABLE 	32 32 -24	; "string"
+	166	[384]	GETTABLE 	32 32 -42	; "reverse"
+	167	[391]	CLOSURE  	33 12	; 006D2AD8
+	168	[391]	GETUPVAL 	0 1	; to_number
+	169	[415]	CLOSURE  	34 13	; 006D2B30
+	170	[415]	MOVE     	0 33
+	171	[415]	MOVE     	0 28
+	172	[415]	MOVE     	0 29
+	173	[415]	GETUPVAL 	0 0	; globals
+	174	[415]	GETUPVAL 	0 1	; to_number
+	175	[415]	MOVE     	0 30
+	176	[415]	MOVE     	0 32
+	177	[415]	MOVE     	0 31
+	178	[417]	GETUPVAL 	35 0	; globals
+	179	[417]	GETTABLE 	35 35 -43	; "pcall"
+	180	[417]	MOVE     	36 34
+	181	[417]	CALL     	35 2 3
+	182	[418]	GETUPVAL 	37 0	; globals
+	183	[418]	GETTABLE 	37 37 -20	; "device"
+	184	[418]	GETTABLE 	37 37 -21	; "writablePath"
+	185	[418]	LOADK    	38 -44	; "res/"
+	186	[418]	CONCAT   	37 37 38
+	187	[419]	GETUPVAL 	38 0	; globals
+	188	[419]	GETTABLE 	38 38 -24	; "string"
+	189	[419]	GETTABLE 	38 38 -45	; "format"
+	190	[419]	LOADK    	39 -46	; "core%s.zip"
+	191	[419]	GETUPVAL 	40 0	; globals
+	192	[419]	GETTABLE 	40 40 -47	; "USE_ARM64"
+	193	[419]	TEST     	40 0 0
+	194	[419]	JMP      	3	; to 198
+	195	[419]	LOADK    	40 -48	; "64"
+	196	[419]	TEST     	40 0 1
+	197	[419]	JMP      	1	; to 199
+	198	[419]	GETUPVAL 	40 5	; empty_string
+	199	[419]	CALL     	38 3 2
+	200	[420]	GETUPVAL 	39 0	; globals
+	201	[420]	GETTABLE 	39 39 -24	; "string"
+	202	[420]	GETTABLE 	39 39 -45	; "format"
+	203	[420]	LOADK    	40 -49	; "dcore%s.zip"
+	204	[420]	GETUPVAL 	41 0	; globals
+	205	[420]	GETTABLE 	41 41 -47	; "USE_ARM64"
+	206	[420]	TEST     	41 0 0
+	207	[420]	JMP      	3	; to 211
+	208	[420]	LOADK    	41 -48	; "64"
+	209	[420]	TEST     	41 0 1
+	210	[420]	JMP      	1	; to 212
+	211	[420]	GETUPVAL 	41 5	; empty_string
+	212	[420]	CALL     	39 3 2
+	213	[421]	GETUPVAL 	40 0	; globals
+	214	[421]	GETTABLE 	40 40 -33	; "io"
+	215	[421]	GETTABLE 	40 40 -34	; "exists"
+	216	[421]	MOVE     	41 37
+	217	[421]	CALL     	40 2 2
+	218	[421]	TEST     	40 0 1
+	219	[421]	JMP      	7	; to 227
+	220	[422]	GETUPVAL 	40 0	; globals
+	221	[422]	GETTABLE 	40 40 -35	; "ycFunction"
+	222	[422]	GETTABLE 	40 40 -36	; "mkdir"
+	223	[422]	GETUPVAL 	41 0	; globals
+	224	[422]	GETTABLE 	41 41 -35	; "ycFunction"
+	225	[422]	MOVE     	42 37
+	226	[422]	CALL     	40 3 1
+	227	[424]	GETUPVAL 	40 0	; globals
+	228	[424]	GETTABLE 	40 40 -33	; "io"
+	229	[424]	GETTABLE 	40 40 -34	; "exists"
+	230	[424]	MOVE     	41 37
+	231	[424]	MOVE     	42 38
+	232	[424]	CONCAT   	41 41 42
+	233	[424]	CALL     	40 2 2
+	234	[424]	TEST     	40 0 1
+	235	[424]	JMP      	23	; to 259
+	236	[425]	GETUPVAL 	40 0	; globals
+	237	[425]	GETTABLE 	40 40 -50	; "an"
+	238	[425]	GETTABLE 	40 40 -51	; "newMsgbox"
+	239	[425]	LOADK    	41 -52	; "\228\189\160\231\154\132\231\153\187\233\153\134\229\153\168\228\184\141\230\152\175G\231\137\136\231\153\187\233\153\134\229\153\168\n\232\175\183\228\184\139\232\189\189bzmir.bin\239\188\129 "
+	240	[429]	CLOSURE  	42 14	; 006D2D98
+	241	[429]	GETUPVAL 	0 1	; to_number
+	242	[429]	GETUPVAL 	0 0	; globals
+	243	[429]	NEWTABLE 	43 0 2
+	244	[429]	GETUPVAL 	44 3	; true_value
+	245	[429]	SETTABLE 	43 -53 44	; "center" -
+	246	[429]	GETUPVAL 	44 2	; false_value
+	247	[429]	SETTABLE 	43 -54 44	; "close" -
+	248	[425]	CALL     	40 4 1
+	249	[430]	GETUPVAL 	40 0	; globals
+	250	[430]	GETTABLE 	40 40 -55	; "scheduler"
+	251	[430]	GETTABLE 	40 40 -56	; "performWithDelayGlobal"
+	252	[432]	CLOSURE  	41 15	; 006D2C90
+	253	[432]	GETUPVAL 	0 0	; globals
+	254	[432]	GETUPVAL 	42 1	; to_number
+	255	[432]	LOADK    	43 -57	; "6"
+	256	[432]	CALL     	42 2 0
+	257	[430]	CALL     	40 0 1
+	258	[433]	RETURN   	0 1
+	259	[435]	MOVE     	40 10
+	260	[435]	GETUPVAL 	41 0	; globals
+	261	[435]	GETTABLE 	41 41 -58	; "cc"
+	262	[435]	GETTABLE 	41 41 -59	; "Crypto"
+	263	[435]	GETTABLE 	41 41 -60	; "decryptXXTEA"
+	264	[435]	CALL     	40 2 2
+	265	[435]	GETTABLE 	40 40 -61	; "what"
+	266	[435]	EQ       	1 40 -62	; - "C"
+	267	[435]	JMP      	4	; to 272
+	268	[436]	GETUPVAL 	40 0	; globals
+	269	[436]	GETTABLE 	40 40 -63	; "core_func_byby"
+	270	[436]	LOADK    	41 -64	; "\233\157\158\230\179\149hook"
+	271	[436]	CALL     	40 2 1
+	272	[438]	GETUPVAL 	40 0	; globals
+	273	[438]	GETTABLE 	40 40 -33	; "io"
+	274	[438]	GETTABLE 	40 40 -65	; "readfile"
+	275	[438]	MOVE     	41 37
+	276	[438]	MOVE     	42 38
+	277	[438]	CONCAT   	41 41 42
+	278	[438]	CALL     	40 2 2
+	279	[439]	TEST     	40 0 1
+	280	[439]	JMP      	4	; to 285
+	281	[440]	GETUPVAL 	41 0	; globals
+	282	[440]	GETTABLE 	41 41 -63	; "core_func_byby"
+	283	[440]	LOADK    	42 -66	; "core\231\188\186\229\164\177"
+	284	[440]	CALL     	41 2 1
+	285	[442]	GETUPVAL 	41 0	; globals
+	286	[442]	GETTABLE 	41 41 -67	; "core_func_decryptTEA"
+	287	[442]	MOVE     	42 40
+	288	[442]	MOVE     	43 36
+	289	[442]	LOADK    	44 -68	; "\231\136\178"
+	290	[442]	CONCAT   	43 43 44
+	291	[442]	CALL     	41 3 2
+	292	[443]	GETUPVAL 	42 0	; globals
+	293	[443]	GETTABLE 	42 42 -69	; "core_func_writefile"
+	294	[443]	MOVE     	43 37
+	295	[443]	MOVE     	44 39
+	296	[443]	CONCAT   	43 43 44
+	297	[443]	MOVE     	44 41
+	298	[443]	CALL     	42 3 1
+	299	[444]	GETUPVAL 	42 0	; globals
+	300	[444]	GETTABLE 	42 42 -58	; "cc"
+	301	[444]	GETTABLE 	42 42 -70	; "LuaLoadChunksFromZIP"
+	302	[444]	MOVE     	43 39
+	303	[444]	CALL     	42 2 1
+	304	[445]	GETUPVAL 	42 0	; globals
+	305	[445]	GETTABLE 	42 42 -71	; "os"
+	306	[445]	GETTABLE 	42 42 -72	; "remove"
+	307	[445]	MOVE     	43 37
+	308	[445]	MOVE     	44 39
+	309	[445]	CONCAT   	43 43 44
+	310	[445]	CALL     	42 2 1
+	311	[447]	GETUPVAL 	42 0	; globals
+	312	[447]	GETTABLE 	42 42 -33	; "io"
+	313	[447]	GETTABLE 	42 42 -34	; "exists"
+	314	[448]	MOVE     	43 37
+	315	[448]	GETUPVAL 	44 0	; globals
+	316	[448]	GETTABLE 	44 44 -24	; "string"
+	317	[448]	GETTABLE 	44 44 -45	; "format"
+	318	[448]	LOADK    	45 -73	; "hookcore%s.zip"
+	319	[448]	GETUPVAL 	46 0	; globals
+	320	[448]	GETTABLE 	46 46 -47	; "USE_ARM64"
+	321	[448]	TEST     	46 0 0
+	322	[448]	JMP      	3	; to 326
+	323	[448]	LOADK    	46 -48	; "64"
+	324	[448]	TEST     	46 0 1
+	325	[448]	JMP      	1	; to 327
+	326	[448]	GETUPVAL 	46 5	; empty_string
+	327	[448]	CALL     	44 3 2
+	328	[448]	CONCAT   	43 43 44
+	329	[447]	CALL     	42 2 2
+	330	[449]	TEST     	42 0 0
+	331	[449]	JMP      	17	; to 349
+	332	[451]	GETUPVAL 	42 0	; globals
+	333	[451]	GETTABLE 	42 42 -58	; "cc"
+	334	[451]	GETTABLE 	42 42 -70	; "LuaLoadChunksFromZIP"
+	335	[452]	GETUPVAL 	43 0	; globals
+	336	[452]	GETTABLE 	43 43 -24	; "string"
+	337	[452]	GETTABLE 	43 43 -45	; "format"
+	338	[452]	LOADK    	44 -73	; "hookcore%s.zip"
+	339	[452]	GETUPVAL 	45 0	; globals
+	340	[452]	GETTABLE 	45 45 -47	; "USE_ARM64"
+	341	[452]	TEST     	45 0 0
+	342	[452]	JMP      	3	; to 346
+	343	[452]	LOADK    	45 -48	; "64"
+	344	[452]	TEST     	45 0 1
+	345	[452]	JMP      	1	; to 347
+	346	[452]	GETUPVAL 	45 5	; empty_string
+	347	[452]	CALL     	43 3 0
+	348	[451]	CALL     	42 0 1
+	349	[455]	MOVE     	42 23
+	350	[455]	CALL     	42 1 1
+	351	[456]	MOVE     	42 22
+	352	[456]	CALL     	42 1 1
+	353	[457]	MOVE     	42 15
+	354	[459]	GETUPVAL 	43 0	; globals
+	355	[461]	CLOSURE  	44 16	; 006D2F50
+	356	[461]	GETUPVAL 	0 0	; globals
+	357	[461]	SETTABLE 	43 -74 44	; "set_helper" -
+	358	[462]	GETUPVAL 	43 0	; globals
+	359	[462]	GETTABLE 	43 43 -75	; "core_func_createNet"
+	360	[531]	CLOSURE  	44 17	; 006D29D0
+	361	[531]	GETUPVAL 	0 0	; globals
+	362	[531]	MOVE     	0 26
+	363	[531]	GETUPVAL 	0 2	; false_value
+	364	[531]	GETUPVAL 	0 1	; to_number
+	365	[531]	MOVE     	0 22
+	366	[531]	MOVE     	0 27
+	367	[531]	GETUPVAL 	0 3	; true_value
+	368	[531]	MOVE     	0 19
+	369	[531]	MOVE     	0 21
+	370	[531]	MOVE     	0 25
+	371	[531]	MOVE     	0 24
+	372	[531]	MOVE     	45 18
+	373	[531]	MOVE     	46 1
+	374	[531]	CALL     	45 2 2
+	375	[531]	LOADK    	46 -76	; "POST"
+	376	[462]	CALL     	43 4 2
+	377	[532]	GETUPVAL 	44 0	; globals
+	378	[532]	GETTABLE 	44 44 -35	; "ycFunction"
+	379	[532]	GETTABLE 	44 44 -77	; "getFileData"
+	380	[532]	GETUPVAL 	45 0	; globals
+	381	[532]	GETTABLE 	45 45 -35	; "ycFunction"
+	382	[532]	LOADK    	46 -78	; "gplus.bin"
+	383	[532]	GETUPVAL 	47 3	; true_value
+	384	[532]	CALL     	44 4 3
+	385	[541]	CLOSURE  	46 18	; 006D2DF0
+	386	[541]	GETUPVAL 	0 0	; globals
+	387	[542]	LOADK    	47 -79	; "smlt_"
+	388	[542]	MOVE     	48 46
+	389	[542]	GETUPVAL 	49 5	; empty_string
+	390	[542]	GETUPVAL 	50 0	; globals
+	391	[542]	GETTABLE 	50 50 -71	; "os"
+	392	[542]	GETTABLE 	50 50 -80	; "time"
+	393	[542]	CALL     	50 1 2
+	394	[542]	CONCAT   	49 49 50
+	395	[542]	CALL     	48 2 2
+	396	[542]	CONCAT   	47 47 48
+	397	[543]	LOADK    	48 -81	; "none"
+	398	[544]	GETUPVAL 	49 0	; globals
+	399	[544]	GETTABLE 	49 49 -82	; "g_data"
+	400	[544]	GETTABLE 	49 49 -83	; "login"
+	401	[544]	GETTABLE 	49 49 -84	; "localLastSer"
+	402	[544]	TEST     	49 0 0
+	403	[544]	JMP      	17	; to 421
+	404	[544]	GETUPVAL 	49 0	; globals
+	405	[544]	GETTABLE 	49 49 -82	; "g_data"
+	406	[544]	GETTABLE 	49 49 -83	; "login"
+	407	[544]	GETTABLE 	49 49 -84	; "localLastSer"
+	408	[544]	GETTABLE 	49 49 -85	; "zonename"
+	409	[544]	TEST     	49 0 0
+	410	[544]	JMP      	10	; to 421
+	411	[545]	GETUPVAL 	49 0	; globals
+	412	[545]	GETTABLE 	49 49 -86	; "crypto"
+	413	[545]	GETTABLE 	49 49 -87	; "encodeBase64"
+	414	[545]	GETUPVAL 	50 0	; globals
+	415	[545]	GETTABLE 	50 50 -82	; "g_data"
+	416	[545]	GETTABLE 	50 50 -83	; "login"
+	417	[545]	GETTABLE 	50 50 -84	; "localLastSer"
+	418	[545]	GETTABLE 	50 50 -85	; "zonename"
+	419	[545]	CALL     	49 2 2
+	420	[545]	MOVE     	48 49
+	421	[547]	GETTABLE 	49 43 -88	; "setPOSTData"
+	422	[548]	MOVE     	50 43
+	423	[550]	LOADK    	51 -89	; "ip="
+	424	[550]	GETUPVAL 	52 0	; globals
+	425	[550]	GETTABLE 	52 52 -86	; "crypto"
+	426	[550]	GETTABLE 	52 52 -87	; "encodeBase64"
+	427	[550]	MOVE     	53 13
+	428	[550]	CALL     	52 2 2
+	429	[552]	LOADK    	53 -90	; "&uid="
+	430	[553]	MOVE     	54 47
+	431	[554]	LOADK    	55 -91	; "&code="
+	432	[555]	MOVE     	56 45
+	433	[556]	LOADK    	57 -92	; "&key="
+	434	[556]	GETUPVAL 	58 0	; globals
+	435	[556]	GETTABLE 	58 58 -86	; "crypto"
+	436	[556]	GETTABLE 	58 58 -93	; "decodeBase64"
+	437	[556]	GETUPVAL 	59 0	; globals
+	438	[556]	GETTABLE 	59 59 -1	; "def"
+	439	[556]	GETTABLE 	59 59 -28	; "role"
+	440	[556]	GETTABLE 	59 59 -31	; "stuff"
+	441	[556]	CALL     	58 2 2
+	442	[558]	LOADK    	59 -94	; "&version="
+	443	[559]	MOVE     	60 42
+	444	[560]	LOADK    	61 -95	; "&zone="
+	445	[560]	MOVE     	62 48
+	446	[560]	CONCAT   	51 51 62
+	447	[547]	CALL     	49 3 1
+	448	[562]	GETTABLE 	49 43 -96	; "setTimeout"
+	449	[562]	MOVE     	50 43
+	450	[562]	GETUPVAL 	51 1	; to_number
+	451	[562]	LOADK    	52 -57	; "6"
+	452	[562]	CALL     	51 2 0
+	453	[562]	CALL     	49 0 1
+	454	[563]	GETTABLE 	49 43 -97	; "start"
+	455	[563]	MOVE     	50 43
+	456	[563]	CALL     	49 2 1
+	457	[564]	RETURN   	0 1
+constants (97) for 006C26A0:
+	1	"def"
+	2	"showUserAgreement"
+	3	"argeementText"
+	4	"        \228\184\128\227\128\129\228\184\141\229\190\151\229\136\169\231\148\168\230\156\172\232\189\175\228\187\182\230\136\150\230\156\172\232\189\175\228\187\182\230\156\141\229\138\161\229\136\182\228\189\156\227\128\129\228\184\138\232\189\189\227\128\129\229\164\141\229\136\182\227\128\129\229\143\145\233\128\129\229\166\130\228\184\139\229\134\133\229\174\185\239\188\154\n        (1) \229\143\141\229\175\185\229\174\170\230\179\149\230\137\128\231\161\174\229\174\154\231\154\132\229\159\186\230\156\172\229\142\159\229\136\153\231\154\132\239\188\155\n        (2) \229\141\177\229\174\179\229\155\189\229\174\182\229\174\137\229\133\168\239\188\140\230\179\132\233\156\178\229\155\189\229\174\182\231\167\152\229\175\134\239\188\140\233\162\160\232\166\134\229\155\189\229\174\182\230\148\191\230\157\131\239\188\140\231\160\180\229\157\143\229\155\189\229\174\182\231\187\159\228\184\128\231\154\132\239\188\155\n        (3) \230\141\159\229\174\179\229\155\189\229\174\182\232\141\163\232\170\137\229\146\140\229\136\169\231\155\138\231\154\132\239\188\155\n        (4) \231\133\189\229\138\168\230\176\145\230\151\143\228\187\135\230\129\168\227\128\129\230\176\145\230\151\143\230\173\167\232\167\134\239\188\140\231\160\180\229\157\143\230\176\145\230\151\143\229\155\162\231\187\147\231\154\132\239\188\155\n        (5) \231\160\180\229\157\143\229\155\189\229\174\182\229\174\151\230\149\153\230\148\191\231\173\150\239\188\140\229\174\163\230\137\172\233\130\170\230\149\153\229\146\140\229\176\129\229\187\186\232\191\183\228\191\161\231\154\132\239\188\155\n        (6) \230\149\163\229\184\131\232\176\163\232\168\128\239\188\140\230\137\176\228\185\177\231\164\190\228\188\154\231\167\169\229\186\143\239\188\140\231\160\180\229\157\143\231\164\190\228\188\154\231\168\179\229\174\154\231\154\132\239\188\155\n        (7) \230\149\163\229\184\131\230\183\171\231\167\189\227\128\129\232\137\178\230\131\133\227\128\129\232\181\140\229\141\154\227\128\129\230\154\180\229\138\155\227\128\129\229\135\182\230\157\128\227\128\129\230\129\144\230\128\150\230\136\150\232\128\133\230\149\153\229\148\134\231\138\175\231\189\170\231\154\132\239\188\155\n        (8) \228\190\174\232\190\177\230\136\150\232\128\133\232\175\189\232\176\164\228\187\150\228\186\186\239\188\140\228\190\181\229\174\179\228\187\150\228\186\186\229\144\136\230\179\149\230\157\131\231\155\138\231\154\132\239\188\155\n        (9) \229\144\171\230\156\137\230\179\149\229\190\139\227\128\129\232\161\140\230\148\191\230\179\149\232\167\132\231\166\129\230\173\162\231\154\132\229\133\182\228\187\150\229\134\133\229\174\185\231\154\132\228\191\161\230\129\175\227\128\130\n        \228\186\140\227\128\129\230\156\172\230\184\184\230\136\143\230\137\128\230\156\137\231\180\160\230\157\144\229\157\135\230\157\165\232\135\170\228\186\146\232\129\148\231\189\145\239\188\140\229\166\130\233\129\135\228\190\181\230\157\131\232\175\183\232\129\148\231\179\187GM\229\136\160\233\153\164\227\128\130\n        \228\184\137\227\128\129\232\139\165\230\130\168\229\175\185\230\156\172\230\184\184\230\136\143\229\143\138\230\156\172\230\156\141\229\138\161\230\156\137\228\187\187\228\189\149\230\132\143\232\167\129\239\188\140\230\172\162\232\191\142\232\129\148\231\179\187\230\184\184\230\136\143\231\149\140\233\157\162\228\184\173\231\154\132\229\174\162\230\156\141\232\129\148\231\179\187\230\150\185\229\188\143\227\128\130\n    "
+	5	"http://go.zejiang.wang/gv6"
+	6	"http://gate.zejiang.wang:88/gv6"
+	7	"81"
+	8	"88"
+	9	"89"
+	10	"90"
+	11	"91"
+	12	"92"
+	13	"93"
+	14	"94"
+	15	"http://tm2.zejiang.wang/gv6"
+	16	"http://tm3.zejiang.wang/gv6"
+	17	"http://sng.zejiang.wang:99/gv6"
+	18	"4"
+	19	"1"
+	20	"device"
+	21	"writablePath"
+	22	"cache/ao/"
+	23	"getinfo"
+	24	"string"
+	25	"len"
+	26	"gateIP"
+	27	"nofile"
+	28	"role"
+	29	"open"
+	30	"core_func_md5"
+	31	"stuff"
+	32	"999"
+	33	"io"
+	34	"exists"
+	35	"ycFunction"
+	36	"mkdir"
+	37	"math"
+	38	"floor"
+	39	"exp"
+	40	"sqrt"
+	41	"char"
+	42	"reverse"
+	43	"pcall"
+	44	"res/"
+	45	"format"
+	46	"core%s.zip"
+	47	"USE_ARM64"
+	48	"64"
+	49	"dcore%s.zip"
+	50	"an"
+	51	"newMsgbox"
+	52	"\228\189\160\231\154\132\231\153\187\233\153\134\229\153\168\228\184\141\230\152\175G\231\137\136\231\153\187\233\153\134\229\153\168\n\232\175\183\228\184\139\232\189\189bzmir.bin\239\188\129 "
+	53	"center"
+	54	"close"
+	55	"scheduler"
+	56	"performWithDelayGlobal"
+	57	"6"
+	58	"cc"
+	59	"Crypto"
+	60	"decryptXXTEA"
+	61	"what"
+	62	"C"
+	63	"core_func_byby"
+	64	"\233\157\158\230\179\149hook"
+	65	"readfile"
+	66	"core\231\188\186\229\164\177"
+	67	"core_func_decryptTEA"
+	68	"\231\136\178"
+	69	"core_func_writefile"
+	70	"LuaLoadChunksFromZIP"
+	71	"os"
+	72	"remove"
+	73	"hookcore%s.zip"
+	74	"set_helper"
+	75	"core_func_createNet"
+	76	"POST"
+	77	"getFileData"
+	78	"gplus.bin"
+	79	"smlt_"
+	80	"time"
+	81	"none"
+	82	"g_data"
+	83	"login"
+	84	"localLastSer"
+	85	"zonename"
+	86	"crypto"
+	87	"encodeBase64"
+	88	"setPOSTData"
+	89	"ip="
+	90	"&uid="
+	91	"&code="
+	92	"&key="
+	93	"decodeBase64"
+	94	"&version="
+	95	"&zone="
+	96	"setTimeout"
+	97	"start"
+locals (49) for 006C26A0:
+	0	arg	1	457
+	1	primary_update_url	9	457
+	2	default_backup_url	10	457
+	3	unused_port_list	20	457
+	4	backup_update_urls	26	457
+	5	current_update_url	27	457
+	6	backup_url_count	30	457
+	7	backup_url_index	33	457
+	8	cache_directory	38	457
+	9	unused_false_flag	39	457
+	10	get_info	41	457
+	11	unused_string_length	44	457
+	12	cached_code_loaded	45	457
+	13	gate_ip	48	457
+	14	key_fragment_rm	49	457
+	15	local_version	50	457
+	16	key_fragment_a	56	457
+	17	cache_file_base	68	457
+	18	identity	83	457
+	19	decrypt_remote_content	88	457
+	20	write_file	94	457
+	21	execute_lua	97	457
+	22	load_cached_code	106	457
+	23	load_cached_version	110	457
+	24	save_cached_version	113	457
+	25	save_cached_content	117	457
+	26	request_backup_update	135	457
+	27	request_primary_update	152	457
+	28	math_floor	161	457
+	29	math_exp	161	457
+	30	math_sqrt	161	457
+	31	string_char	167	457
+	32	string_reverse	167	457
+	33	build_key_parameters	169	457
+	34	derive_core_archive_key	178	457
+	35	key_derivation_ok	182	457
+	36	core_archive_key	182	457
+	37	resource_directory	187	457
+	38	encrypted_core_archive_name	200	457
+	39	decrypted_core_archive_name	213	457
+	40	file_data_result	279	457
+	41	decrypted_core_archive	292	457
+	42	version_tag	354	457
+	43	request	377	457
+	44	file_data_result	385	457
+	45	gplus_file_md5	385	457
+	46	get_or_create_uuid	387	457
+	47	client_uid	397	457
+	48	zone_name_base64	398	457
+upvalues (6) for 006C26A0:
+	0	globals
+	1	to_number
+	2	false_value
+	3	true_value
+	4	nil_value
+	5	empty_string
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:55,57> (3 instructions, 12 bytes at 006C99E8)
+0 params, 2 slots, 0 upvalues, 0 locals, 1 constant, 0 functions
+	1	[56]	LOADK    	0 -1	; "rM"
+	2	[56]	RETURN   	0 2
+	3	[57]	RETURN   	0 1
+constants (1) for 006C99E8:
+	1	"rM"
+locals (0) for 006C99E8:
+upvalues (0) for 006C99E8:
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:60,62> (3 instructions, 12 bytes at 006CAE40)
+0 params, 2 slots, 0 upvalues, 0 locals, 1 constant, 0 functions
+	1	[61]	LOADK    	0 -1	; "A"
+	2	[61]	RETURN   	0 2
+	3	[62]	RETURN   	0 1
+constants (1) for 006CAE40:
+	1	"A"
+locals (0) for 006CAE40:
+upvalues (0) for 006CAE40:
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:67,69> (2 instructions, 8 bytes at 006CAEB0)
+1 param, 2 slots, 0 upvalues, 1 local, 0 constants, 0 functions
+	1	[68]	RETURN   	0 2
+	2	[69]	RETURN   	0 1
+constants (0) for 006CAEB0:
+locals (1) for 006CAEB0:
+	0	value	1	2
+upvalues (0) for 006CAEB0:
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:71,82> (46 instructions, 184 bytes at 006CAF08)
+1 param, 10 slots, 4 upvalues, 1 local, 18 constants, 0 functions
+	1	[72]	GETUPVAL 	1 0	; get_info
+	2	[72]	GETUPVAL 	2 1	; globals
+	3	[72]	GETTABLE 	2 2 -1	; "cc"
+	4	[72]	GETTABLE 	2 2 -2	; "Crypto"
+	5	[72]	GETTABLE 	2 2 -3	; "decodeBase64"
+	6	[72]	CALL     	1 2 2
+	7	[72]	GETTABLE 	1 1 -4	; "what"
+	8	[72]	EQ       	0 1 -5	; - "C"
+	9	[72]	JMP      	33	; to 43
+	10	[73]	GETUPVAL 	1 1	; globals
+	11	[73]	GETTABLE 	1 1 -6	; "core_func_decryptTEA"
+	12	[74]	GETUPVAL 	2 1	; globals
+	13	[74]	GETTABLE 	2 2 -7	; "core_func_decodeBase64"
+	14	[74]	MOVE     	3 0
+	15	[74]	CALL     	2 2 2
+	16	[75]	GETUPVAL 	3 1	; globals
+	17	[75]	GETTABLE 	3 3 -8	; "tostring"
+	18	[75]	GETUPVAL 	4 1	; globals
+	19	[75]	GETTABLE 	4 4 -9	; "os"
+	20	[75]	GETTABLE 	4 4 -10	; "date"
+	21	[75]	LOADK    	5 -11	; "%Y%m"
+	22	[75]	CALL     	4 2 0
+	23	[75]	CALL     	3 0 2
+	24	[76]	GETUPVAL 	4 1	; globals
+	25	[76]	GETTABLE 	4 4 -7	; "core_func_decodeBase64"
+	26	[76]	LOADK    	5 -12	; "K"
+	27	[76]	GETUPVAL 	6 2	; key_fragment_a
+	28	[76]	CALL     	6 1 2
+	29	[76]	LOADK    	7 -13	; "s"
+	30	[76]	GETUPVAL 	8 3	; key_fragment_rm
+	31	[76]	CALL     	8 1 2
+	32	[76]	LOADK    	9 -14	; "oLrt"
+	33	[76]	CONCAT   	5 5 9
+	34	[76]	CALL     	4 2 2
+	35	[77]	GETUPVAL 	5 1	; globals
+	36	[77]	GETTABLE 	5 5 -15	; "def"
+	37	[77]	GETTABLE 	5 5 -16	; "role"
+	38	[77]	GETTABLE 	5 5 -17	; "stuff"
+	39	[77]	CONCAT   	3 3 5
+	40	[73]	TAILCALL 	1 3 0
+	41	[78]	RETURN   	1 0
+	42	[78]	JMP      	3	; to 46
+	43	[80]	GETUPVAL 	1 1	; globals
+	44	[80]	GETTABLE 	1 1 -18	; "core_func_exit"
+	45	[80]	CALL     	1 1 1
+	46	[82]	RETURN   	0 1
+constants (18) for 006CAF08:
+	1	"cc"
+	2	"Crypto"
+	3	"decodeBase64"
+	4	"what"
+	5	"C"
+	6	"core_func_decryptTEA"
+	7	"core_func_decodeBase64"
+	8	"tostring"
+	9	"os"
+	10	"date"
+	11	"%Y%m"
+	12	"K"
+	13	"s"
+	14	"oLrt"
+	15	"def"
+	16	"role"
+	17	"stuff"
+	18	"core_func_exit"
+locals (1) for 006CAF08:
+	0	content	1	46
+upvalues (4) for 006CAF08:
+	0	get_info
+	1	globals
+	2	key_fragment_a
+	3	key_fragment_rm
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:83,98> (40 instructions, 160 bytes at 006CEF90)
+2 params, 6 slots, 5 upvalues, 3 locals, 8 constants, 0 functions
+	1	[84]	GETUPVAL 	2 0	; get_info
+	2	[84]	GETUPVAL 	3 1	; globals
+	3	[84]	GETTABLE 	3 3 -1	; "io"
+	4	[84]	GETTABLE 	3 3 -2	; "write"
+	5	[84]	CALL     	2 2 2
+	6	[84]	GETTABLE 	2 2 -3	; "what"
+	7	[84]	EQ       	0 2 -4	; - "C"
+	8	[84]	JMP      	28	; to 37
+	9	[85]	GETUPVAL 	2 1	; globals
+	10	[85]	GETTABLE 	2 2 -1	; "io"
+	11	[85]	GETTABLE 	2 2 -5	; "open"
+	12	[85]	MOVE     	3 0
+	13	[85]	LOADK    	4 -6	; "w+b"
+	14	[85]	CALL     	2 3 2
+	15	[86]	TEST     	2 0 0
+	16	[86]	JMP      	17	; to 34
+	17	[87]	GETTABLE 	3 2 -2	; "write"
+	18	[87]	MOVE     	4 2
+	19	[87]	MOVE     	5 1
+	20	[87]	CALL     	3 3 2
+	21	[87]	GETUPVAL 	4 2	; nil_value
+	22	[87]	EQ       	0 3 4
+	23	[87]	JMP      	2	; to 26
+	24	[88]	GETUPVAL 	3 3	; false_value
+	25	[88]	RETURN   	3 2
+	26	[90]	GETUPVAL 	3 1	; globals
+	27	[90]	GETTABLE 	3 3 -1	; "io"
+	28	[90]	GETTABLE 	3 3 -7	; "close"
+	29	[90]	MOVE     	4 2
+	30	[90]	CALL     	3 2 1
+	31	[91]	GETUPVAL 	3 4	; true_value
+	32	[91]	RETURN   	3 2
+	33	[91]	JMP      	6	; to 40
+	34	[93]	GETUPVAL 	3 3	; false_value
+	35	[93]	RETURN   	3 2
+	36	[94]	JMP      	3	; to 40
+	37	[96]	GETUPVAL 	2 1	; globals
+	38	[96]	GETTABLE 	2 2 -8	; "core_func_exit"
+	39	[96]	CALL     	2 1 1
+	40	[98]	RETURN   	0 1
+constants (8) for 006CEF90:
+	1	"io"
+	2	"write"
+	3	"what"
+	4	"C"
+	5	"open"
+	6	"w+b"
+	7	"close"
+	8	"core_func_exit"
+locals (3) for 006CEF90:
+	0	file_path	1	40
+	1	file_data	1	40
+	2	file_handle	15	36
+upvalues (5) for 006CEF90:
+	0	get_info
+	1	globals
+	2	nil_value
+	3	false_value
+	4	true_value
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:99,111> (30 instructions, 120 bytes at 006CE720)
+1 param, 3 slots, 2 upvalues, 1 local, 5 constants, 1 function
+	1	[100]	GETUPVAL 	1 0	; get_info
+	2	[100]	GETUPVAL 	2 1	; globals
+	3	[100]	GETTABLE 	2 2 -1	; "pcall"
+	4	[100]	CALL     	1 2 2
+	5	[100]	GETTABLE 	1 1 -2	; "what"
+	6	[100]	EQ       	1 1 -3	; - "C"
+	7	[100]	JMP      	4	; to 12
+	8	[101]	GETUPVAL 	1 1	; globals
+	9	[101]	GETTABLE 	1 1 -4	; "core_func_exit"
+	10	[101]	CALL     	1 1 1
+	11	[102]	RETURN   	0 1
+	12	[104]	GETUPVAL 	1 0	; get_info
+	13	[104]	GETUPVAL 	2 1	; globals
+	14	[104]	GETTABLE 	2 2 -5	; "load"
+	15	[104]	CALL     	1 2 2
+	16	[104]	GETTABLE 	1 1 -2	; "what"
+	17	[104]	EQ       	0 1 -3	; - "C"
+	18	[104]	JMP      	8	; to 27
+	19	[105]	GETUPVAL 	1 1	; globals
+	20	[105]	GETTABLE 	1 1 -1	; "pcall"
+	21	[107]	CLOSURE  	2 0	; 006D1638
+	22	[107]	GETUPVAL 	0 1	; globals
+	23	[107]	MOVE     	0 0
+	24	[105]	TAILCALL 	1 2 0
+	25	[107]	RETURN   	1 0
+	26	[107]	JMP      	3	; to 30
+	27	[109]	GETUPVAL 	1 1	; globals
+	28	[109]	GETTABLE 	1 1 -4	; "core_func_exit"
+	29	[109]	CALL     	1 1 1
+	30	[111]	RETURN   	0 1
+constants (5) for 006CE720:
+	1	"pcall"
+	2	"what"
+	3	"C"
+	4	"core_func_exit"
+	5	"load"
+locals (1) for 006CE720:
+	0	lua_source	1	30
+upvalues (2) for 006CE720:
+	0	get_info
+	1	globals
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:105,107> (6 instructions, 24 bytes at 006D1638)
+0 params, 2 slots, 2 upvalues, 0 locals, 1 constant, 0 functions
+	1	[106]	GETUPVAL 	0 0	; globals
+	2	[106]	GETTABLE 	0 0 -1	; "load"
+	3	[106]	GETUPVAL 	1 1	; lua_source
+	4	[106]	CALL     	0 2 2
+	5	[106]	CALL     	0 1 1
+	6	[107]	RETURN   	0 1
+constants (1) for 006D1638:
+	1	"load"
+locals (0) for 006D1638:
+upvalues (2) for 006D1638:
+	0	globals
+	1	lua_source
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:112,132> (47 instructions, 188 bytes at 006CADD8)
+0 params, 5 slots, 8 upvalues, 3 locals, 8 constants, 0 functions
+	1	[113]	GETUPVAL 	0 0	; globals
+	2	[113]	GETTABLE 	0 0 -1	; "isloaded"
+	3	[113]	TEST     	0 0 0
+	4	[113]	JMP      	1	; to 6
+	5	[114]	RETURN   	0 1
+	6	[116]	GETUPVAL 	0 0	; globals
+	7	[116]	GETTABLE 	0 0 -2	; "io"
+	8	[116]	GETTABLE 	0 0 -3	; "exists"
+	9	[116]	GETUPVAL 	1 1	; cache_file_base
+	10	[116]	LOADK    	2 -4	; ".bin"
+	11	[116]	CONCAT   	1 1 2
+	12	[116]	CALL     	0 2 2
+	13	[116]	TEST     	0 0 0
+	14	[116]	JMP      	28	; to 43
+	15	[117]	GETUPVAL 	0 0	; globals
+	16	[117]	GETTABLE 	0 0 -2	; "io"
+	17	[117]	GETTABLE 	0 0 -5	; "readfile"
+	18	[117]	GETUPVAL 	1 1	; cache_file_base
+	19	[117]	LOADK    	2 -4	; ".bin"
+	20	[117]	CONCAT   	1 1 2
+	21	[117]	CALL     	0 2 2
+	22	[118]	TEST     	0 0 0
+	23	[118]	JMP      	19	; to 43
+	24	[119]	GETUPVAL 	1 2	; decrypt_remote_content
+	25	[119]	MOVE     	2 0
+	26	[119]	CALL     	1 2 2
+	27	[119]	MOVE     	0 1
+	28	[120]	TEST     	0 0 0
+	29	[120]	JMP      	13	; to 43
+	30	[121]	GETUPVAL 	1 3	; execute_lua
+	31	[121]	MOVE     	2 0
+	32	[121]	CALL     	1 2 3
+	33	[122]	TEST     	1 0 0
+	34	[122]	JMP      	8	; to 43
+	35	[123]	GETUPVAL 	3 5	; true_value
+	36	[123]	SETUPVAL 	3 4	; cached_code_loaded
+	37	[124]	GETUPVAL 	3 0	; globals
+	38	[124]	GETTABLE 	3 3 -6	; "print"
+	39	[124]	LOADK    	4 -7	; "m1"
+	40	[124]	CALL     	3 2 1
+	41	[125]	GETUPVAL 	3 5	; true_value
+	42	[125]	RETURN   	3 2
+	43	[130]	LOADK    	0 -8	; "nover"
+	44	[130]	SETUPVAL 	0 6	; local_version
+	45	[131]	GETUPVAL 	0 7	; false_value
+	46	[131]	RETURN   	0 2
+	47	[132]	RETURN   	0 1
+constants (8) for 006CADD8:
+	1	"isloaded"
+	2	"io"
+	3	"exists"
+	4	".bin"
+	5	"readfile"
+	6	"print"
+	7	"m1"
+	8	"nover"
+locals (3) for 006CADD8:
+	0	cached_data	22	43
+	1	success	33	43
+	2	execution_error	33	43
+upvalues (8) for 006CADD8:
+	0	globals
+	1	cache_file_base
+	2	decrypt_remote_content
+	3	execute_lua
+	4	cached_code_loaded
+	5	true_value
+	6	local_version
+	7	false_value
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:133,141> (30 instructions, 120 bytes at 006D2028)
+0 params, 3 slots, 3 upvalues, 1 local, 5 constants, 0 functions
+	1	[134]	GETUPVAL 	0 0	; globals
+	2	[134]	GETTABLE 	0 0 -1	; "io"
+	3	[134]	GETTABLE 	0 0 -2	; "exists"
+	4	[134]	GETUPVAL 	1 1	; cache_file_base
+	5	[134]	LOADK    	2 -3	; ".bin"
+	6	[134]	CONCAT   	1 1 2
+	7	[134]	CALL     	0 2 2
+	8	[134]	TEST     	0 0 0
+	9	[134]	JMP      	20	; to 30
+	10	[134]	GETUPVAL 	0 0	; globals
+	11	[134]	GETTABLE 	0 0 -1	; "io"
+	12	[134]	GETTABLE 	0 0 -2	; "exists"
+	13	[134]	GETUPVAL 	1 1	; cache_file_base
+	14	[134]	LOADK    	2 -4	; ".version"
+	15	[134]	CONCAT   	1 1 2
+	16	[134]	CALL     	0 2 2
+	17	[134]	TEST     	0 0 0
+	18	[134]	JMP      	11	; to 30
+	19	[135]	GETUPVAL 	0 0	; globals
+	20	[135]	GETTABLE 	0 0 -1	; "io"
+	21	[135]	GETTABLE 	0 0 -5	; "readfile"
+	22	[135]	GETUPVAL 	1 1	; cache_file_base
+	23	[135]	LOADK    	2 -4	; ".version"
+	24	[135]	CONCAT   	1 1 2
+	25	[135]	CALL     	0 2 2
+	26	[136]	TEST     	0 0 0
+	27	[136]	JMP      	2	; to 30
+	28	[137]	SETUPVAL 	0 2	; local_version
+	29	[138]	RETURN   	0 1
+	30	[141]	RETURN   	0 1
+constants (5) for 006D2028:
+	1	"io"
+	2	"exists"
+	3	".bin"
+	4	".version"
+	5	"readfile"
+locals (1) for 006D2028:
+	0	cached_data	26	30
+upvalues (3) for 006D2028:
+	0	globals
+	1	cache_file_base
+	2	local_version
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:142,144> (7 instructions, 28 bytes at 006D2840)
+1 param, 4 slots, 2 upvalues, 1 local, 1 constant, 0 functions
+	1	[143]	GETUPVAL 	1 0	; write_file
+	2	[143]	GETUPVAL 	2 1	; cache_file_base
+	3	[143]	LOADK    	3 -1	; ".version"
+	4	[143]	CONCAT   	2 2 3
+	5	[143]	MOVE     	3 0
+	6	[143]	CALL     	1 3 1
+	7	[144]	RETURN   	0 1
+constants (1) for 006D2840:
+	1	".version"
+locals (1) for 006D2840:
+	0	local_version	1	7
+upvalues (2) for 006D2840:
+	0	write_file
+	1	cache_file_base
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:145,148> (11 instructions, 44 bytes at 006D2D40)
+1 param, 4 slots, 3 upvalues, 1 local, 3 constants, 0 functions
+	1	[146]	GETUPVAL 	1 0	; write_file
+	2	[146]	GETUPVAL 	2 1	; cache_file_base
+	3	[146]	LOADK    	3 -1	; ".bin"
+	4	[146]	CONCAT   	2 2 3
+	5	[146]	MOVE     	3 0
+	6	[146]	CALL     	1 3 1
+	7	[147]	GETUPVAL 	1 2	; globals
+	8	[147]	GETTABLE 	1 1 -2	; "print"
+	9	[147]	LOADK    	2 -3	; "m2"
+	10	[147]	CALL     	1 2 1
+	11	[148]	RETURN   	0 1
+constants (3) for 006D2D40:
+	1	".bin"
+	2	"print"
+	3	"m2"
+locals (1) for 006D2D40:
+	0	content	1	11
+upvalues (3) for 006D2D40:
+	0	write_file
+	1	cache_file_base
+	2	globals
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:150,268> (139 instructions, 556 bytes at 006D2978)
+1 param, 22 slots, 17 upvalues, 8 locals, 34 constants, 2 functions
+	1	[151]	TEST     	0 0 0
+	2	[151]	JMP      	25	; to 28
+	3	[152]	GETUPVAL 	1 0	; backup_url_index
+	4	[152]	GETUPVAL 	2 1	; backup_url_count
+	5	[152]	LE       	0 1 2
+	6	[152]	JMP      	11	; to 18
+	7	[153]	GETUPVAL 	1 3	; backup_update_urls
+	8	[153]	GETUPVAL 	2 0	; backup_url_index
+	9	[153]	GETTABLE 	1 1 2
+	10	[153]	SETUPVAL 	1 2	; current_update_url
+	11	[154]	GETUPVAL 	1 0	; backup_url_index
+	12	[154]	GETUPVAL 	2 4	; to_number
+	13	[154]	LOADK    	3 -1	; "1"
+	14	[154]	CALL     	2 2 2
+	15	[154]	ADD      	1 1 2
+	16	[154]	SETUPVAL 	1 0	; backup_url_index
+	17	[154]	JMP      	10	; to 28
+	18	[156]	GETUPVAL 	1 5	; globals
+	19	[156]	GETTABLE 	1 1 -2	; "def"
+	20	[156]	GETTABLE 	1 1 -3	; "debugkey"
+	21	[156]	TEST     	1 0 0
+	22	[156]	JMP      	4	; to 27
+	23	[157]	GETUPVAL 	1 5	; globals
+	24	[157]	GETTABLE 	1 1 -4	; "print"
+	25	[157]	LOADK    	2 -5	; "\230\178\161\230\156\137\229\143\175\228\187\165\232\174\191\233\151\174\231\154\132\230\156\141\229\138\161\229\153\168"
+	26	[157]	CALL     	1 2 1
+	27	[159]	RETURN   	0 1
+	28	[162]	GETUPVAL 	1 6	; local_version
+	29	[163]	TEST     	0 0 0
+	30	[163]	JMP      	1	; to 32
+	31	[164]	LOADK    	1 -6	; "dirty"
+	32	[166]	GETUPVAL 	2 5	; globals
+	33	[166]	GETTABLE 	2 2 -2	; "def"
+	34	[166]	GETTABLE 	2 2 -3	; "debugkey"
+	35	[166]	TEST     	2 0 0
+	36	[166]	JMP      	4	; to 41
+	37	[167]	GETUPVAL 	2 5	; globals
+	38	[167]	GETTABLE 	2 2 -4	; "print"
+	39	[167]	GETUPVAL 	3 2	; current_update_url
+	40	[167]	CALL     	2 2 1
+	41	[169]	GETUPVAL 	2 5	; globals
+	42	[169]	GETTABLE 	2 2 -7	; "core_func_createNet"
+	43	[234]	CLOSURE  	3 0	; 006D2B88
+	44	[234]	GETUPVAL 	0 5	; globals
+	45	[234]	GETUPVAL 	0 7	; request_backup_update
+	46	[234]	MOVE     	0 0
+	47	[234]	GETUPVAL 	0 4	; to_number
+	48	[234]	GETUPVAL 	0 8	; load_cached_code
+	49	[234]	GETUPVAL 	0 9	; true_value
+	50	[234]	GETUPVAL 	0 10	; decrypt_remote_content
+	51	[234]	GETUPVAL 	0 11	; execute_lua
+	52	[234]	GETUPVAL 	0 12	; save_cached_content
+	53	[234]	GETUPVAL 	0 13	; save_cached_version
+	54	[234]	GETUPVAL 	4 14	; identity
+	55	[234]	GETUPVAL 	5 2	; current_update_url
+	56	[234]	CALL     	4 2 2
+	57	[234]	LOADK    	5 -8	; "POST"
+	58	[169]	CALL     	2 4 2
+	59	[236]	GETUPVAL 	3 5	; globals
+	60	[236]	GETTABLE 	3 3 -9	; "ycFunction"
+	61	[236]	GETTABLE 	3 3 -10	; "getFileData"
+	62	[236]	GETUPVAL 	4 5	; globals
+	63	[236]	GETTABLE 	4 4 -9	; "ycFunction"
+	64	[236]	LOADK    	5 -11	; "gplus.bin"
+	65	[236]	GETUPVAL 	6 9	; true_value
+	66	[236]	CALL     	3 4 3
+	67	[245]	CLOSURE  	5 1	; 006D2A28
+	68	[245]	GETUPVAL 	0 5	; globals
+	69	[246]	LOADK    	6 -12	; "smlt_"
+	70	[246]	MOVE     	7 5
+	71	[246]	GETUPVAL 	8 15	; empty_string
+	72	[246]	GETUPVAL 	9 5	; globals
+	73	[246]	GETTABLE 	9 9 -13	; "os"
+	74	[246]	GETTABLE 	9 9 -14	; "time"
+	75	[246]	CALL     	9 1 2
+	76	[246]	CONCAT   	8 8 9
+	77	[246]	CALL     	7 2 2
+	78	[246]	CONCAT   	6 6 7
+	79	[247]	LOADK    	7 -15	; "none"
+	80	[248]	GETUPVAL 	8 5	; globals
+	81	[248]	GETTABLE 	8 8 -16	; "g_data"
+	82	[248]	GETTABLE 	8 8 -17	; "login"
+	83	[248]	GETTABLE 	8 8 -18	; "localLastSer"
+	84	[248]	TEST     	8 0 0
+	85	[248]	JMP      	17	; to 103
+	86	[248]	GETUPVAL 	8 5	; globals
+	87	[248]	GETTABLE 	8 8 -16	; "g_data"
+	88	[248]	GETTABLE 	8 8 -17	; "login"
+	89	[248]	GETTABLE 	8 8 -18	; "localLastSer"
+	90	[248]	GETTABLE 	8 8 -19	; "zonename"
+	91	[248]	TEST     	8 0 0
+	92	[248]	JMP      	10	; to 103
+	93	[249]	GETUPVAL 	8 5	; globals
+	94	[249]	GETTABLE 	8 8 -20	; "crypto"
+	95	[249]	GETTABLE 	8 8 -21	; "encodeBase64"
+	96	[249]	GETUPVAL 	9 5	; globals
+	97	[249]	GETTABLE 	9 9 -16	; "g_data"
+	98	[249]	GETTABLE 	9 9 -17	; "login"
+	99	[249]	GETTABLE 	9 9 -18	; "localLastSer"
+	100	[249]	GETTABLE 	9 9 -19	; "zonename"
+	101	[249]	CALL     	8 2 2
+	102	[249]	MOVE     	7 8
+	103	[251]	GETTABLE 	8 2 -22	; "setPOSTData"
+	104	[252]	MOVE     	9 2
+	105	[254]	LOADK    	10 -23	; "ip="
+	106	[254]	GETUPVAL 	11 5	; globals
+	107	[254]	GETTABLE 	11 11 -20	; "crypto"
+	108	[254]	GETTABLE 	11 11 -21	; "encodeBase64"
+	109	[254]	GETUPVAL 	12 16	; gate_ip
+	110	[254]	CALL     	11 2 2
+	111	[256]	LOADK    	12 -24	; "&uid="
+	112	[257]	MOVE     	13 6
+	113	[258]	LOADK    	14 -25	; "&code="
+	114	[259]	MOVE     	15 4
+	115	[260]	LOADK    	16 -26	; "&key="
+	116	[260]	GETUPVAL 	17 5	; globals
+	117	[260]	GETTABLE 	17 17 -20	; "crypto"
+	118	[260]	GETTABLE 	17 17 -27	; "decodeBase64"
+	119	[260]	GETUPVAL 	18 5	; globals
+	120	[260]	GETTABLE 	18 18 -2	; "def"
+	121	[260]	GETTABLE 	18 18 -28	; "role"
+	122	[260]	GETTABLE 	18 18 -29	; "stuff"
+	123	[260]	CALL     	17 2 2
+	124	[262]	LOADK    	18 -30	; "&version="
+	125	[263]	MOVE     	19 1
+	126	[264]	LOADK    	20 -31	; "&zone="
+	127	[264]	MOVE     	21 7
+	128	[264]	CONCAT   	10 10 21
+	129	[251]	CALL     	8 3 1
+	130	[266]	GETTABLE 	8 2 -32	; "setTimeout"
+	131	[266]	MOVE     	9 2
+	132	[266]	GETUPVAL 	10 4	; to_number
+	133	[266]	LOADK    	11 -33	; "6"
+	134	[266]	CALL     	10 2 0
+	135	[266]	CALL     	8 0 1
+	136	[267]	GETTABLE 	8 2 -34	; "start"
+	137	[267]	MOVE     	9 2
+	138	[267]	CALL     	8 2 1
+	139	[268]	RETURN   	0 1
+constants (34) for 006D2978:
+	1	"1"
+	2	"def"
+	3	"debugkey"
+	4	"print"
+	5	"\230\178\161\230\156\137\229\143\175\228\187\165\232\174\191\233\151\174\231\154\132\230\156\141\229\138\161\229\153\168"
+	6	"dirty"
+	7	"core_func_createNet"
+	8	"POST"
+	9	"ycFunction"
+	10	"getFileData"
+	11	"gplus.bin"
+	12	"smlt_"
+	13	"os"
+	14	"time"
+	15	"none"
+	16	"g_data"
+	17	"login"
+	18	"localLastSer"
+	19	"zonename"
+	20	"crypto"
+	21	"encodeBase64"
+	22	"setPOSTData"
+	23	"ip="
+	24	"&uid="
+	25	"&code="
+	26	"&key="
+	27	"decodeBase64"
+	28	"role"
+	29	"stuff"
+	30	"&version="
+	31	"&zone="
+	32	"setTimeout"
+	33	"6"
+	34	"start"
+locals (8) for 006D2978:
+	0	force_refresh	1	139
+	1	version_tag	29	139
+	2	backup_request	59	139
+	3	file_data_result	67	139
+	4	gplus_file_md5	67	139
+	5	get_or_create_uuid	69	139
+	6	client_uid	79	139
+	7	zone_name_base64	80	139
+upvalues (17) for 006D2978:
+	0	backup_url_index
+	1	backup_url_count
+	2	current_update_url
+	3	backup_update_urls
+	4	to_number
+	5	globals
+	6	local_version
+	7	request_backup_update
+	8	load_cached_code
+	9	true_value
+	10	decrypt_remote_content
+	11	execute_lua
+	12	save_cached_content
+	13	save_cached_version
+	14	identity
+	15	empty_string
+	16	gate_ip
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:169,234> (149 instructions, 596 bytes at 006D2B88)
+1 param, 11 slots, 10 upvalues, 9 locals, 25 constants, 0 functions
+	1	[170]	GETTABLE 	1 0 -1	; "name"
+	2	[170]	EQ       	1 1 -2	; - "completed"
+	3	[170]	JMP      	16	; to 20
+	4	[171]	GETTABLE 	1 0 -1	; "name"
+	5	[171]	EQ       	0 1 -3	; - "failed"
+	6	[171]	JMP      	12	; to 19
+	7	[172]	GETUPVAL 	1 0	; globals
+	8	[172]	GETTABLE 	1 1 -4	; "def"
+	9	[172]	GETTABLE 	1 1 -5	; "debugkey"
+	10	[172]	TEST     	1 0 0
+	11	[172]	JMP      	4	; to 16
+	12	[173]	GETUPVAL 	1 0	; globals
+	13	[173]	GETTABLE 	1 1 -6	; "print"
+	14	[173]	LOADK    	2 -7	; "backup not ok"
+	15	[173]	CALL     	1 2 1
+	16	[175]	GETUPVAL 	1 1	; request_backup_update
+	17	[175]	GETUPVAL 	2 2	; force_refresh
+	18	[175]	CALL     	1 2 1
+	19	[177]	RETURN   	0 1
+	20	[179]	GETTABLE 	1 0 -8	; "request"
+	21	[180]	GETTABLE 	2 1 -9	; "getResponseStatusCode"
+	22	[180]	MOVE     	3 1
+	23	[180]	CALL     	2 2 2
+	24	[181]	GETUPVAL 	3 3	; to_number
+	25	[181]	LOADK    	4 -10	; "200"
+	26	[181]	CALL     	3 2 2
+	27	[181]	EQ       	1 2 3
+	28	[181]	JMP      	1	; to 30
+	29	[182]	RETURN   	0 1
+	30	[184]	GETTABLE 	3 1 -11	; "getResponseData"
+	31	[184]	MOVE     	4 1
+	32	[184]	CALL     	3 2 2
+	33	[185]	TEST     	3 0 0
+	34	[185]	JMP      	111	; to 146
+	35	[186]	EQ       	0 3 -12	; - "u7bTrcq508Ow19bttcfCvMb3"
+	36	[186]	JMP      	3	; to 40
+	37	[187]	GETUPVAL 	4 0	; globals
+	38	[187]	GETTABLE 	4 4 -13	; "core_func_exit"
+	39	[187]	CALL     	4 1 1
+	40	[189]	EQ       	0 3 -14	; - "OK"
+	41	[189]	JMP      	21	; to 63
+	42	[190]	GETUPVAL 	4 0	; globals
+	43	[190]	GETTABLE 	4 4 -4	; "def"
+	44	[190]	GETTABLE 	4 4 -5	; "debugkey"
+	45	[190]	TEST     	4 0 0
+	46	[190]	JMP      	4	; to 51
+	47	[191]	GETUPVAL 	4 0	; globals
+	48	[191]	GETTABLE 	4 4 -6	; "print"
+	49	[191]	LOADK    	5 -15	; "same versions"
+	50	[191]	CALL     	4 2 1
+	51	[193]	GETUPVAL 	4 0	; globals
+	52	[193]	GETTABLE 	4 4 -16	; "isloaded"
+	53	[193]	TEST     	4 0 1
+	54	[193]	JMP      	7	; to 62
+	55	[193]	GETUPVAL 	4 4	; load_cached_code
+	56	[193]	CALL     	4 1 2
+	57	[193]	TEST     	4 0 1
+	58	[193]	JMP      	3	; to 62
+	59	[194]	GETUPVAL 	4 1	; request_backup_update
+	60	[194]	GETUPVAL 	5 5	; true_value
+	61	[194]	CALL     	4 2 1
+	62	[196]	RETURN   	0 1
+	63	[198]	GETUPVAL 	4 0	; globals
+	64	[198]	GETTABLE 	4 4 -17	; "require"
+	65	[198]	LOADK    	5 -18	; "cjson"
+	66	[198]	CALL     	4 2 2
+	67	[199]	GETTABLE 	5 4 -19	; "decode"
+	68	[199]	MOVE     	6 3
+	69	[199]	CALL     	5 2 2
+	70	[200]	TEST     	5 0 1
+	71	[200]	JMP      	12	; to 84
+	72	[201]	GETUPVAL 	6 0	; globals
+	73	[201]	GETTABLE 	6 6 -4	; "def"
+	74	[201]	GETTABLE 	6 6 -5	; "debugkey"
+	75	[201]	TEST     	6 0 0
+	76	[201]	JMP      	4	; to 81
+	77	[202]	GETUPVAL 	6 0	; globals
+	78	[202]	GETTABLE 	6 6 -6	; "print"
+	79	[202]	LOADK    	7 -20	; "json decode error"
+	80	[202]	CALL     	6 2 1
+	81	[204]	GETUPVAL 	6 1	; request_backup_update
+	82	[204]	GETUPVAL 	7 5	; true_value
+	83	[204]	CALL     	6 2 1
+	84	[206]	GETTABLE 	6 5 -21	; "version"
+	85	[206]	TEST     	6 0 0
+	86	[206]	JMP      	3	; to 90
+	87	[206]	GETTABLE 	6 5 -22	; "content"
+	88	[206]	TEST     	6 0 1
+	89	[206]	JMP      	13	; to 103
+	90	[207]	GETUPVAL 	6 0	; globals
+	91	[207]	GETTABLE 	6 6 -4	; "def"
+	92	[207]	GETTABLE 	6 6 -5	; "debugkey"
+	93	[207]	TEST     	6 0 0
+	94	[207]	JMP      	4	; to 99
+	95	[208]	GETUPVAL 	6 0	; globals
+	96	[208]	GETTABLE 	6 6 -6	; "print"
+	97	[208]	LOADK    	7 -23	; "json format error"
+	98	[208]	CALL     	6 2 1
+	99	[210]	GETUPVAL 	6 1	; request_backup_update
+	100	[210]	GETUPVAL 	7 5	; true_value
+	101	[210]	CALL     	6 2 1
+	102	[211]	RETURN   	0 1
+	103	[213]	GETUPVAL 	6 6	; decrypt_remote_content
+	104	[213]	GETTABLE 	7 5 -22	; "content"
+	105	[213]	CALL     	6 2 2
+	106	[214]	TEST     	6 0 1
+	107	[214]	JMP      	13	; to 121
+	108	[215]	GETUPVAL 	7 0	; globals
+	109	[215]	GETTABLE 	7 7 -4	; "def"
+	110	[215]	GETTABLE 	7 7 -5	; "debugkey"
+	111	[215]	TEST     	7 0 0
+	112	[215]	JMP      	4	; to 117
+	113	[216]	GETUPVAL 	7 0	; globals
+	114	[216]	GETTABLE 	7 7 -6	; "print"
+	115	[216]	LOADK    	8 -24	; "content decode error"
+	116	[216]	CALL     	7 2 1
+	117	[218]	GETUPVAL 	7 1	; request_backup_update
+	118	[218]	GETUPVAL 	8 5	; true_value
+	119	[218]	CALL     	7 2 1
+	120	[218]	JMP      	28	; to 149
+	121	[220]	GETUPVAL 	7 7	; execute_lua
+	122	[220]	MOVE     	8 6
+	123	[220]	CALL     	7 2 3
+	124	[221]	TEST     	7 0 0
+	125	[221]	JMP      	7	; to 133
+	126	[222]	GETUPVAL 	9 8	; save_cached_content
+	127	[222]	GETTABLE 	10 5 -22	; "content"
+	128	[222]	CALL     	9 2 1
+	129	[223]	GETUPVAL 	9 9	; save_cached_version
+	130	[223]	GETTABLE 	10 5 -21	; "version"
+	131	[223]	CALL     	9 2 1
+	132	[223]	JMP      	16	; to 149
+	133	[225]	GETUPVAL 	9 0	; globals
+	134	[225]	GETTABLE 	9 9 -4	; "def"
+	135	[225]	GETTABLE 	9 9 -5	; "debugkey"
+	136	[225]	TEST     	9 0 0
+	137	[225]	JMP      	4	; to 142
+	138	[226]	GETUPVAL 	9 0	; globals
+	139	[226]	GETTABLE 	9 9 -6	; "print"
+	140	[226]	LOADK    	10 -25	; "run code error"
+	141	[226]	CALL     	9 2 1
+	142	[228]	GETUPVAL 	9 1	; request_backup_update
+	143	[228]	GETUPVAL 	10 5	; true_value
+	144	[228]	CALL     	9 2 1
+	145	[230]	JMP      	3	; to 149
+	146	[232]	GETUPVAL 	4 1	; request_backup_update
+	147	[232]	GETUPVAL 	5 5	; true_value
+	148	[232]	CALL     	4 2 1
+	149	[234]	RETURN   	0 1
+constants (25) for 006D2B88:
+	1	"name"
+	2	"completed"
+	3	"failed"
+	4	"def"
+	5	"debugkey"
+	6	"print"
+	7	"backup not ok"
+	8	"request"
+	9	"getResponseStatusCode"
+	10	"200"
+	11	"getResponseData"
+	12	"u7bTrcq508Ow19bttcfCvMb3"
+	13	"core_func_exit"
+	14	"OK"
+	15	"same versions"
+	16	"isloaded"
+	17	"require"
+	18	"cjson"
+	19	"decode"
+	20	"json decode error"
+	21	"version"
+	22	"content"
+	23	"json format error"
+	24	"content decode error"
+	25	"run code error"
+locals (9) for 006D2B88:
+	0	backup_event	1	149
+	1	request	21	149
+	2	status_code	24	149
+	3	content	33	149
+	4	json_module	67	145
+	5	response_json	70	145
+	6	lua_source	106	145
+	7	success	124	145
+	8	execution_error	124	145
+upvalues (10) for 006D2B88:
+	0	globals
+	1	request_backup_update
+	2	force_refresh
+	3	to_number
+	4	load_cached_code
+	5	true_value
+	6	decrypt_remote_content
+	7	execute_lua
+	8	save_cached_content
+	9	save_cached_version
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:237,245> (31 instructions, 124 bytes at 006D2A28)
+1 param, 5 slots, 1 upvalue, 2 locals, 9 constants, 0 functions
+	1	[238]	GETUPVAL 	1 0	; globals
+	2	[238]	GETTABLE 	1 1 -1	; "device"
+	3	[238]	GETTABLE 	1 1 -2	; "writablePath"
+	4	[238]	LOADK    	2 -3	; "bzuuid"
+	5	[238]	CONCAT   	1 1 2
+	6	[239]	GETUPVAL 	2 0	; globals
+	7	[239]	GETTABLE 	2 2 -4	; "io"
+	8	[239]	GETTABLE 	2 2 -5	; "exists"
+	9	[239]	MOVE     	3 1
+	10	[239]	CALL     	2 2 2
+	11	[239]	TEST     	2 0 1
+	12	[239]	JMP      	12	; to 25
+	13	[240]	GETUPVAL 	2 0	; globals
+	14	[240]	GETTABLE 	2 2 -6	; "crypto"
+	15	[240]	GETTABLE 	2 2 -7	; "md5"
+	16	[240]	MOVE     	3 0
+	17	[240]	CALL     	2 2 2
+	18	[240]	MOVE     	0 2
+	19	[241]	GETUPVAL 	2 0	; globals
+	20	[241]	GETTABLE 	2 2 -8	; "core_func_writefile"
+	21	[241]	MOVE     	3 1
+	22	[241]	MOVE     	4 0
+	23	[241]	CALL     	2 3 1
+	24	[242]	RETURN   	0 2
+	25	[244]	GETUPVAL 	2 0	; globals
+	26	[244]	GETTABLE 	2 2 -4	; "io"
+	27	[244]	GETTABLE 	2 2 -9	; "readfile"
+	28	[244]	MOVE     	3 1
+	29	[244]	TAILCALL 	2 2 0
+	30	[244]	RETURN   	2 0
+	31	[245]	RETURN   	0 1
+constants (9) for 006D2A28:
+	1	"device"
+	2	"writablePath"
+	3	"bzuuid"
+	4	"io"
+	5	"exists"
+	6	"crypto"
+	7	"md5"
+	8	"core_func_writefile"
+	9	"readfile"
+locals (2) for 006D2A28:
+	0	uuid_seed	1	31
+	1	file_path	6	31
+upvalues (1) for 006D2A28:
+	0	globals
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:270,381> (113 instructions, 452 bytes at 006D2E48)
+1 param, 22 slots, 16 upvalues, 8 locals, 32 constants, 2 functions
+	1	[271]	GETUPVAL 	1 0	; local_version
+	2	[272]	TEST     	0 0 0
+	3	[272]	JMP      	1	; to 5
+	4	[273]	LOADK    	1 -1	; "dirty"
+	5	[275]	GETUPVAL 	2 1	; globals
+	6	[275]	GETTABLE 	2 2 -2	; "def"
+	7	[275]	GETTABLE 	2 2 -3	; "debugkey"
+	8	[275]	TEST     	2 0 0
+	9	[275]	JMP      	4	; to 14
+	10	[276]	GETUPVAL 	2 1	; globals
+	11	[276]	GETTABLE 	2 2 -4	; "print"
+	12	[276]	GETUPVAL 	3 2	; primary_update_url
+	13	[276]	CALL     	2 2 1
+	14	[278]	GETUPVAL 	2 1	; globals
+	15	[278]	GETTABLE 	2 2 -5	; "core_func_createNet"
+	16	[347]	CLOSURE  	3 0	; 006D2BE0
+	17	[347]	GETUPVAL 	0 1	; globals
+	18	[347]	GETUPVAL 	0 3	; request_backup_update
+	19	[347]	GETUPVAL 	0 4	; false_value
+	20	[347]	GETUPVAL 	0 5	; to_number
+	21	[347]	GETUPVAL 	0 6	; load_cached_code
+	22	[347]	GETUPVAL 	0 7	; request_primary_update
+	23	[347]	GETUPVAL 	0 8	; true_value
+	24	[347]	GETUPVAL 	0 9	; decrypt_remote_content
+	25	[347]	GETUPVAL 	0 10	; execute_lua
+	26	[347]	GETUPVAL 	0 11	; save_cached_content
+	27	[347]	GETUPVAL 	0 12	; save_cached_version
+	28	[347]	GETUPVAL 	4 13	; identity
+	29	[347]	GETUPVAL 	5 2	; primary_update_url
+	30	[347]	CALL     	4 2 2
+	31	[347]	LOADK    	5 -6	; "POST"
+	32	[278]	CALL     	2 4 2
+	33	[349]	GETUPVAL 	3 1	; globals
+	34	[349]	GETTABLE 	3 3 -7	; "ycFunction"
+	35	[349]	GETTABLE 	3 3 -8	; "getFileData"
+	36	[349]	GETUPVAL 	4 1	; globals
+	37	[349]	GETTABLE 	4 4 -7	; "ycFunction"
+	38	[349]	LOADK    	5 -9	; "gplus.bin"
+	39	[349]	GETUPVAL 	6 8	; true_value
+	40	[349]	CALL     	3 4 3
+	41	[358]	CLOSURE  	5 1	; 006D2A80
+	42	[358]	GETUPVAL 	0 1	; globals
+	43	[359]	LOADK    	6 -10	; "smlt_"
+	44	[359]	MOVE     	7 5
+	45	[359]	GETUPVAL 	8 14	; empty_string
+	46	[359]	GETUPVAL 	9 1	; globals
+	47	[359]	GETTABLE 	9 9 -11	; "os"
+	48	[359]	GETTABLE 	9 9 -12	; "time"
+	49	[359]	CALL     	9 1 2
+	50	[359]	CONCAT   	8 8 9
+	51	[359]	CALL     	7 2 2
+	52	[359]	CONCAT   	6 6 7
+	53	[360]	LOADK    	7 -13	; "none"
+	54	[361]	GETUPVAL 	8 1	; globals
+	55	[361]	GETTABLE 	8 8 -14	; "g_data"
+	56	[361]	GETTABLE 	8 8 -15	; "login"
+	57	[361]	GETTABLE 	8 8 -16	; "localLastSer"
+	58	[361]	TEST     	8 0 0
+	59	[361]	JMP      	17	; to 77
+	60	[361]	GETUPVAL 	8 1	; globals
+	61	[361]	GETTABLE 	8 8 -14	; "g_data"
+	62	[361]	GETTABLE 	8 8 -15	; "login"
+	63	[361]	GETTABLE 	8 8 -16	; "localLastSer"
+	64	[361]	GETTABLE 	8 8 -17	; "zonename"
+	65	[361]	TEST     	8 0 0
+	66	[361]	JMP      	10	; to 77
+	67	[362]	GETUPVAL 	8 1	; globals
+	68	[362]	GETTABLE 	8 8 -18	; "crypto"
+	69	[362]	GETTABLE 	8 8 -19	; "encodeBase64"
+	70	[362]	GETUPVAL 	9 1	; globals
+	71	[362]	GETTABLE 	9 9 -14	; "g_data"
+	72	[362]	GETTABLE 	9 9 -15	; "login"
+	73	[362]	GETTABLE 	9 9 -16	; "localLastSer"
+	74	[362]	GETTABLE 	9 9 -17	; "zonename"
+	75	[362]	CALL     	8 2 2
+	76	[362]	MOVE     	7 8
+	77	[364]	GETTABLE 	8 2 -20	; "setPOSTData"
+	78	[365]	MOVE     	9 2
+	79	[367]	LOADK    	10 -21	; "ip="
+	80	[367]	GETUPVAL 	11 1	; globals
+	81	[367]	GETTABLE 	11 11 -18	; "crypto"
+	82	[367]	GETTABLE 	11 11 -19	; "encodeBase64"
+	83	[367]	GETUPVAL 	12 15	; gate_ip
+	84	[367]	CALL     	11 2 2
+	85	[369]	LOADK    	12 -22	; "&uid="
+	86	[370]	MOVE     	13 6
+	87	[371]	LOADK    	14 -23	; "&code="
+	88	[372]	MOVE     	15 4
+	89	[373]	LOADK    	16 -24	; "&key="
+	90	[373]	GETUPVAL 	17 1	; globals
+	91	[373]	GETTABLE 	17 17 -18	; "crypto"
+	92	[373]	GETTABLE 	17 17 -25	; "decodeBase64"
+	93	[373]	GETUPVAL 	18 1	; globals
+	94	[373]	GETTABLE 	18 18 -2	; "def"
+	95	[373]	GETTABLE 	18 18 -26	; "role"
+	96	[373]	GETTABLE 	18 18 -27	; "stuff"
+	97	[373]	CALL     	17 2 2
+	98	[375]	LOADK    	18 -28	; "&version="
+	99	[376]	MOVE     	19 1
+	100	[377]	LOADK    	20 -29	; "&zone="
+	101	[377]	MOVE     	21 7
+	102	[377]	CONCAT   	10 10 21
+	103	[364]	CALL     	8 3 1
+	104	[379]	GETTABLE 	8 2 -30	; "setTimeout"
+	105	[379]	MOVE     	9 2
+	106	[379]	GETUPVAL 	10 5	; to_number
+	107	[379]	LOADK    	11 -31	; "6"
+	108	[379]	CALL     	10 2 0
+	109	[379]	CALL     	8 0 1
+	110	[380]	GETTABLE 	8 2 -32	; "start"
+	111	[380]	MOVE     	9 2
+	112	[380]	CALL     	8 2 1
+	113	[381]	RETURN   	0 1
+constants (32) for 006D2E48:
+	1	"dirty"
+	2	"def"
+	3	"debugkey"
+	4	"print"
+	5	"core_func_createNet"
+	6	"POST"
+	7	"ycFunction"
+	8	"getFileData"
+	9	"gplus.bin"
+	10	"smlt_"
+	11	"os"
+	12	"time"
+	13	"none"
+	14	"g_data"
+	15	"login"
+	16	"localLastSer"
+	17	"zonename"
+	18	"crypto"
+	19	"encodeBase64"
+	20	"setPOSTData"
+	21	"ip="
+	22	"&uid="
+	23	"&code="
+	24	"&key="
+	25	"decodeBase64"
+	26	"role"
+	27	"stuff"
+	28	"&version="
+	29	"&zone="
+	30	"setTimeout"
+	31	"6"
+	32	"start"
+locals (8) for 006D2E48:
+	0	force_refresh	1	113
+	1	version_tag	2	113
+	2	request	33	113
+	3	file_data_result	41	113
+	4	gplus_file_md5	41	113
+	5	get_or_create_uuid	43	113
+	6	client_uid	53	113
+	7	zone_name_base64	54	113
+upvalues (16) for 006D2E48:
+	0	local_version
+	1	globals
+	2	primary_update_url
+	3	request_backup_update
+	4	false_value
+	5	to_number
+	6	load_cached_code
+	7	request_primary_update
+	8	true_value
+	9	decrypt_remote_content
+	10	execute_lua
+	11	save_cached_content
+	12	save_cached_version
+	13	identity
+	14	empty_string
+	15	gate_ip
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:278,347> (159 instructions, 636 bytes at 006D2BE0)
+1 param, 11 slots, 11 upvalues, 9 locals, 25 constants, 0 functions
+	1	[279]	GETTABLE 	1 0 -1	; "name"
+	2	[279]	EQ       	1 1 -2	; - "completed"
+	3	[279]	JMP      	25	; to 29
+	4	[280]	GETUPVAL 	1 0	; globals
+	5	[280]	GETTABLE 	1 1 -3	; "def"
+	6	[280]	GETTABLE 	1 1 -4	; "debugkey"
+	7	[280]	TEST     	1 0 0
+	8	[280]	JMP      	4	; to 13
+	9	[281]	GETUPVAL 	1 0	; globals
+	10	[281]	GETTABLE 	1 1 -5	; "print"
+	11	[281]	GETTABLE 	2 0 -1	; "name"
+	12	[281]	CALL     	1 2 1
+	13	[283]	GETTABLE 	1 0 -1	; "name"
+	14	[283]	EQ       	0 1 -6	; - "failed"
+	15	[283]	JMP      	12	; to 28
+	16	[284]	GETUPVAL 	1 0	; globals
+	17	[284]	GETTABLE 	1 1 -3	; "def"
+	18	[284]	GETTABLE 	1 1 -4	; "debugkey"
+	19	[284]	TEST     	1 0 0
+	20	[284]	JMP      	4	; to 25
+	21	[285]	GETUPVAL 	1 0	; globals
+	22	[285]	GETTABLE 	1 1 -5	; "print"
+	23	[285]	LOADK    	2 -7	; "not ok"
+	24	[285]	CALL     	1 2 1
+	25	[287]	GETUPVAL 	1 1	; request_backup_update
+	26	[287]	GETUPVAL 	2 2	; false_value
+	27	[287]	CALL     	1 2 1
+	28	[289]	RETURN   	0 1
+	29	[291]	GETTABLE 	1 0 -8	; "request"
+	30	[292]	GETTABLE 	2 1 -9	; "getResponseStatusCode"
+	31	[292]	MOVE     	3 1
+	32	[292]	CALL     	2 2 2
+	33	[293]	GETUPVAL 	3 3	; to_number
+	34	[293]	LOADK    	4 -10	; "200"
+	35	[293]	CALL     	3 2 2
+	36	[293]	EQ       	1 2 3
+	37	[293]	JMP      	1	; to 39
+	38	[294]	RETURN   	0 1
+	39	[296]	GETTABLE 	3 1 -11	; "getResponseData"
+	40	[296]	MOVE     	4 1
+	41	[296]	CALL     	3 2 2
+	42	[297]	TEST     	3 0 0
+	43	[297]	JMP      	112	; to 156
+	44	[298]	EQ       	0 3 -12	; - "u7bTrcq508Ow19bttcfCvMb3"
+	45	[298]	JMP      	4	; to 50
+	46	[299]	GETUPVAL 	4 0	; globals
+	47	[299]	GETTABLE 	4 4 -13	; "core_func_exit"
+	48	[299]	CALL     	4 1 1
+	49	[300]	RETURN   	0 1
+	50	[302]	EQ       	0 3 -14	; - "OK"
+	51	[302]	JMP      	21	; to 73
+	52	[303]	GETUPVAL 	4 0	; globals
+	53	[303]	GETTABLE 	4 4 -3	; "def"
+	54	[303]	GETTABLE 	4 4 -4	; "debugkey"
+	55	[303]	TEST     	4 0 0
+	56	[303]	JMP      	4	; to 61
+	57	[304]	GETUPVAL 	4 0	; globals
+	58	[304]	GETTABLE 	4 4 -5	; "print"
+	59	[304]	LOADK    	5 -15	; "same version"
+	60	[304]	CALL     	4 2 1
+	61	[306]	GETUPVAL 	4 0	; globals
+	62	[306]	GETTABLE 	4 4 -16	; "isloaded"
+	63	[306]	TEST     	4 0 1
+	64	[306]	JMP      	7	; to 72
+	65	[306]	GETUPVAL 	4 4	; load_cached_code
+	66	[306]	CALL     	4 1 2
+	67	[306]	TEST     	4 0 1
+	68	[306]	JMP      	3	; to 72
+	69	[307]	GETUPVAL 	4 5	; request_primary_update
+	70	[307]	GETUPVAL 	5 6	; true_value
+	71	[307]	CALL     	4 2 1
+	72	[309]	RETURN   	0 1
+	73	[311]	GETUPVAL 	4 0	; globals
+	74	[311]	GETTABLE 	4 4 -17	; "require"
+	75	[311]	LOADK    	5 -18	; "cjson"
+	76	[311]	CALL     	4 2 2
+	77	[312]	GETTABLE 	5 4 -19	; "decode"
+	78	[312]	MOVE     	6 3
+	79	[312]	CALL     	5 2 2
+	80	[313]	TEST     	5 0 1
+	81	[313]	JMP      	12	; to 94
+	82	[314]	GETUPVAL 	6 0	; globals
+	83	[314]	GETTABLE 	6 6 -3	; "def"
+	84	[314]	GETTABLE 	6 6 -4	; "debugkey"
+	85	[314]	TEST     	6 0 0
+	86	[314]	JMP      	4	; to 91
+	87	[315]	GETUPVAL 	6 0	; globals
+	88	[315]	GETTABLE 	6 6 -5	; "print"
+	89	[315]	LOADK    	7 -20	; "json decode error"
+	90	[315]	CALL     	6 2 1
+	91	[317]	GETUPVAL 	6 1	; request_backup_update
+	92	[317]	GETUPVAL 	7 6	; true_value
+	93	[317]	CALL     	6 2 1
+	94	[319]	GETTABLE 	6 5 -21	; "version"
+	95	[319]	TEST     	6 0 0
+	96	[319]	JMP      	3	; to 100
+	97	[319]	GETTABLE 	6 5 -22	; "content"
+	98	[319]	TEST     	6 0 1
+	99	[319]	JMP      	13	; to 113
+	100	[320]	GETUPVAL 	6 0	; globals
+	101	[320]	GETTABLE 	6 6 -3	; "def"
+	102	[320]	GETTABLE 	6 6 -4	; "debugkey"
+	103	[320]	TEST     	6 0 0
+	104	[320]	JMP      	4	; to 109
+	105	[321]	GETUPVAL 	6 0	; globals
+	106	[321]	GETTABLE 	6 6 -5	; "print"
+	107	[321]	LOADK    	7 -23	; "json format error"
+	108	[321]	CALL     	6 2 1
+	109	[323]	GETUPVAL 	6 1	; request_backup_update
+	110	[323]	GETUPVAL 	7 6	; true_value
+	111	[323]	CALL     	6 2 1
+	112	[324]	RETURN   	0 1
+	113	[326]	GETUPVAL 	6 7	; decrypt_remote_content
+	114	[326]	GETTABLE 	7 5 -22	; "content"
+	115	[326]	CALL     	6 2 2
+	116	[327]	TEST     	6 0 1
+	117	[327]	JMP      	13	; to 131
+	118	[328]	GETUPVAL 	7 0	; globals
+	119	[328]	GETTABLE 	7 7 -3	; "def"
+	120	[328]	GETTABLE 	7 7 -4	; "debugkey"
+	121	[328]	TEST     	7 0 0
+	122	[328]	JMP      	4	; to 127
+	123	[329]	GETUPVAL 	7 0	; globals
+	124	[329]	GETTABLE 	7 7 -5	; "print"
+	125	[329]	LOADK    	8 -24	; "content decode error"
+	126	[329]	CALL     	7 2 1
+	127	[331]	GETUPVAL 	7 1	; request_backup_update
+	128	[331]	GETUPVAL 	8 6	; true_value
+	129	[331]	CALL     	7 2 1
+	130	[331]	JMP      	28	; to 159
+	131	[333]	GETUPVAL 	7 8	; execute_lua
+	132	[333]	MOVE     	8 6
+	133	[333]	CALL     	7 2 3
+	134	[334]	TEST     	7 0 0
+	135	[334]	JMP      	7	; to 143
+	136	[335]	GETUPVAL 	9 9	; save_cached_content
+	137	[335]	GETTABLE 	10 5 -22	; "content"
+	138	[335]	CALL     	9 2 1
+	139	[336]	GETUPVAL 	9 10	; save_cached_version
+	140	[336]	GETTABLE 	10 5 -21	; "version"
+	141	[336]	CALL     	9 2 1
+	142	[336]	JMP      	16	; to 159
+	143	[338]	GETUPVAL 	9 0	; globals
+	144	[338]	GETTABLE 	9 9 -3	; "def"
+	145	[338]	GETTABLE 	9 9 -4	; "debugkey"
+	146	[338]	TEST     	9 0 0
+	147	[338]	JMP      	4	; to 152
+	148	[339]	GETUPVAL 	9 0	; globals
+	149	[339]	GETTABLE 	9 9 -5	; "print"
+	150	[339]	LOADK    	10 -25	; "run code error"
+	151	[339]	CALL     	9 2 1
+	152	[341]	GETUPVAL 	9 1	; request_backup_update
+	153	[341]	GETUPVAL 	10 6	; true_value
+	154	[341]	CALL     	9 2 1
+	155	[343]	JMP      	3	; to 159
+	156	[345]	GETUPVAL 	4 1	; request_backup_update
+	157	[345]	GETUPVAL 	5 6	; true_value
+	158	[345]	CALL     	4 2 1
+	159	[347]	RETURN   	0 1
+constants (25) for 006D2BE0:
+	1	"name"
+	2	"completed"
+	3	"def"
+	4	"debugkey"
+	5	"print"
+	6	"failed"
+	7	"not ok"
+	8	"request"
+	9	"getResponseStatusCode"
+	10	"200"
+	11	"getResponseData"
+	12	"u7bTrcq508Ow19bttcfCvMb3"
+	13	"core_func_exit"
+	14	"OK"
+	15	"same version"
+	16	"isloaded"
+	17	"require"
+	18	"cjson"
+	19	"decode"
+	20	"json decode error"
+	21	"version"
+	22	"content"
+	23	"json format error"
+	24	"content decode error"
+	25	"run code error"
+locals (9) for 006D2BE0:
+	0	network_event	1	159
+	1	request	30	159
+	2	status_code	33	159
+	3	content	42	159
+	4	json_module	77	155
+	5	response_json	80	155
+	6	lua_source	116	155
+	7	success	134	155
+	8	execution_error	134	155
+upvalues (11) for 006D2BE0:
+	0	globals
+	1	request_backup_update
+	2	false_value
+	3	to_number
+	4	load_cached_code
+	5	request_primary_update
+	6	true_value
+	7	decrypt_remote_content
+	8	execute_lua
+	9	save_cached_content
+	10	save_cached_version
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:350,358> (31 instructions, 124 bytes at 006D2A80)
+1 param, 5 slots, 1 upvalue, 2 locals, 9 constants, 0 functions
+	1	[351]	GETUPVAL 	1 0	; globals
+	2	[351]	GETTABLE 	1 1 -1	; "device"
+	3	[351]	GETTABLE 	1 1 -2	; "writablePath"
+	4	[351]	LOADK    	2 -3	; "bzuuid"
+	5	[351]	CONCAT   	1 1 2
+	6	[352]	GETUPVAL 	2 0	; globals
+	7	[352]	GETTABLE 	2 2 -4	; "io"
+	8	[352]	GETTABLE 	2 2 -5	; "exists"
+	9	[352]	MOVE     	3 1
+	10	[352]	CALL     	2 2 2
+	11	[352]	TEST     	2 0 1
+	12	[352]	JMP      	12	; to 25
+	13	[353]	GETUPVAL 	2 0	; globals
+	14	[353]	GETTABLE 	2 2 -6	; "crypto"
+	15	[353]	GETTABLE 	2 2 -7	; "md5"
+	16	[353]	MOVE     	3 0
+	17	[353]	CALL     	2 2 2
+	18	[353]	MOVE     	0 2
+	19	[354]	GETUPVAL 	2 0	; globals
+	20	[354]	GETTABLE 	2 2 -8	; "core_func_writefile"
+	21	[354]	MOVE     	3 1
+	22	[354]	MOVE     	4 0
+	23	[354]	CALL     	2 3 1
+	24	[355]	RETURN   	0 2
+	25	[357]	GETUPVAL 	2 0	; globals
+	26	[357]	GETTABLE 	2 2 -4	; "io"
+	27	[357]	GETTABLE 	2 2 -9	; "readfile"
+	28	[357]	MOVE     	3 1
+	29	[357]	TAILCALL 	2 2 0
+	30	[357]	RETURN   	2 0
+	31	[358]	RETURN   	0 1
+constants (9) for 006D2A80:
+	1	"device"
+	2	"writablePath"
+	3	"bzuuid"
+	4	"io"
+	5	"exists"
+	6	"crypto"
+	7	"md5"
+	8	"core_func_writefile"
+	9	"readfile"
+locals (2) for 006D2A80:
+	0	uuid_seed	1	31
+	1	file_path	6	31
+upvalues (1) for 006D2A80:
+	0	globals
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:385,391> (15 instructions, 60 bytes at 006D2AD8)
+0 params, 3 slots, 1 upvalue, 0 locals, 6 constants, 0 functions
+	1	[386]	NEWTABLE 	0 0 3
+	2	[387]	GETUPVAL 	1 0	; to_number
+	3	[387]	LOADK    	2 -2	; "0.5"
+	4	[387]	CALL     	1 2 2
+	5	[387]	SETTABLE 	0 -1 1	; "phase_shift" -
+	6	[388]	GETUPVAL 	1 0	; to_number
+	7	[388]	LOADK    	2 -4	; "2.302585093"
+	8	[388]	CALL     	1 2 2
+	9	[388]	SETTABLE 	0 -3 1	; "exp_factor" -
+	10	[389]	GETUPVAL 	1 0	; to_number
+	11	[389]	LOADK    	2 -6	; "36"
+	12	[389]	CALL     	1 2 2
+	13	[389]	SETTABLE 	0 -5 1	; "char_offset" -
+	14	[390]	RETURN   	0 2
+	15	[391]	RETURN   	0 1
+constants (6) for 006D2AD8:
+	1	"phase_shift"
+	2	"0.5"
+	3	"exp_factor"
+	4	"2.302585093"
+	5	"char_offset"
+	6	"36"
+locals (0) for 006D2AD8:
+upvalues (1) for 006D2AD8:
+	0	to_number
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:392,415> (109 instructions, 436 bytes at 006D2B30)
+0 params, 19 slots, 8 upvalues, 7 locals, 27 constants, 0 functions
+	1	[393]	GETUPVAL 	0 0	; build_key_parameters
+	2	[393]	CALL     	0 1 2
+	3	[394]	GETUPVAL 	1 1	; math_floor
+	4	[394]	GETUPVAL 	2 2	; math_exp
+	5	[394]	GETTABLE 	3 0 -1	; "exp_factor"
+	6	[394]	CALL     	2 2 0
+	7	[394]	CALL     	1 0 2
+	8	[396]	GETUPVAL 	2 3	; globals
+	9	[396]	GETTABLE 	2 2 -2	; "math"
+	10	[396]	GETTABLE 	2 2 -3	; "pi"
+	11	[396]	GETUPVAL 	3 4	; to_number
+	12	[396]	LOADK    	4 -4	; "3.1415926535"
+	13	[396]	CALL     	3 2 2
+	14	[396]	SUB      	2 2 3
+	15	[396]	GETTABLE 	3 0 -5	; "phase_shift"
+	16	[396]	ADD      	2 2 3
+	17	[396]	MUL      	2 1 2
+	18	[397]	GETUPVAL 	3 1	; math_floor
+	19	[397]	GETUPVAL 	4 4	; to_number
+	20	[397]	LOADK    	5 -6	; "0.5"
+	21	[397]	CALL     	4 2 2
+	22	[397]	MUL      	4 2 4
+	23	[397]	GETUPVAL 	5 4	; to_number
+	24	[397]	LOADK    	6 -7	; "100"
+	25	[397]	CALL     	5 2 2
+	26	[397]	MUL      	4 4 5
+	27	[397]	CALL     	3 2 2
+	28	[398]	GETUPVAL 	4 4	; to_number
+	29	[398]	LOADK    	5 -8	; "10"
+	30	[398]	CALL     	4 2 2
+	31	[398]	GETUPVAL 	5 4	; to_number
+	32	[398]	LOADK    	6 -8	; "10"
+	33	[398]	CALL     	5 2 2
+	34	[398]	MUL      	4 4 5
+	35	[398]	GETUPVAL 	5 4	; to_number
+	36	[398]	LOADK    	6 -9	; "2"
+	37	[398]	CALL     	5 2 2
+	38	[398]	MUL      	4 4 5
+	39	[399]	MUL      	5 3 4
+	40	[400]	GETUPVAL 	6 5	; math_sqrt
+	41	[400]	MOVE     	7 5
+	42	[400]	CALL     	6 2 2
+	43	[401]	GETUPVAL 	7 6	; string_reverse
+	44	[402]	GETUPVAL 	8 7	; string_char
+	45	[403]	GETUPVAL 	9 1	; math_floor
+	46	[403]	GETUPVAL 	10 4	; to_number
+	47	[403]	LOADK    	11 -8	; "10"
+	48	[403]	CALL     	10 2 2
+	49	[403]	DIV      	10 6 10
+	50	[403]	CALL     	9 2 2
+	51	[404]	GETUPVAL 	10 4	; to_number
+	52	[404]	LOADK    	11 -10	; "36"
+	53	[404]	CALL     	10 2 2
+	54	[404]	GETTABLE 	11 0 -11	; "char_offset"
+	55	[404]	ADD      	10 10 11
+	56	[405]	GETUPVAL 	11 4	; to_number
+	57	[405]	LOADK    	12 -12	; "72"
+	58	[405]	CALL     	11 2 2
+	59	[405]	GETUPVAL 	12 4	; to_number
+	60	[405]	LOADK    	13 -13	; "15"
+	61	[405]	CALL     	12 2 2
+	62	[405]	SUB      	11 11 12
+	63	[406]	GETUPVAL 	12 4	; to_number
+	64	[406]	LOADK    	13 -14	; "57"
+	65	[406]	CALL     	12 2 2
+	66	[406]	GETUPVAL 	13 4	; to_number
+	67	[406]	LOADK    	14 -15	; "25"
+	68	[406]	CALL     	13 2 2
+	69	[406]	ADD      	12 12 13
+	70	[407]	GETUPVAL 	13 4	; to_number
+	71	[407]	LOADK    	14 -16	; "82"
+	72	[407]	CALL     	13 2 2
+	73	[407]	GETUPVAL 	14 4	; to_number
+	74	[407]	LOADK    	15 -6	; "0.5"
+	75	[407]	CALL     	14 2 2
+	76	[407]	POW      	13 13 14
+	77	[408]	GETUPVAL 	14 4	; to_number
+	78	[408]	LOADK    	15 -17	; "9"
+	79	[408]	CALL     	14 2 2
+	80	[408]	GETUPVAL 	15 4	; to_number
+	81	[408]	LOADK    	16 -18	; "33"
+	82	[408]	CALL     	15 2 2
+	83	[408]	ADD      	14 14 15
+	84	[409]	GETUPVAL 	15 4	; to_number
+	85	[409]	LOADK    	16 -19	; "42"
+	86	[409]	CALL     	15 2 2
+	87	[409]	GETUPVAL 	16 4	; to_number
+	88	[409]	LOADK    	17 -20	; "52"
+	89	[409]	CALL     	16 2 2
+	90	[409]	ADD      	15 15 16
+	91	[410]	GETUPVAL 	16 4	; to_number
+	92	[410]	LOADK    	17 -21	; "94"
+	93	[410]	CALL     	16 2 2
+	94	[410]	GETUPVAL 	17 4	; to_number
+	95	[410]	LOADK    	18 -22	; "65"
+	96	[410]	CALL     	17 2 2
+	97	[410]	MOD      	16 16 17
+	98	[402]	CALL     	8 9 0
+	99	[401]	CALL     	7 0 2
+	100	[413]	SELF     	7 7 -23	; "gsub"
+	101	[413]	LOADK    	9 -24	; "[\022]"
+	102	[413]	LOADK    	10 -25	; "HK"
+	103	[413]	CALL     	7 4 2
+	104	[414]	SELF     	7 7 -23	; "gsub"
+	105	[414]	LOADK    	9 -26	; "[\t]"
+	106	[414]	LOADK    	10 -27	; "EX"
+	107	[414]	TAILCALL 	7 4 0
+	108	[414]	RETURN   	7 0
+	109	[415]	RETURN   	0 1
+constants (27) for 006D2B30:
+	1	"exp_factor"
+	2	"math"
+	3	"pi"
+	4	"3.1415926535"
+	5	"phase_shift"
+	6	"0.5"
+	7	"100"
+	8	"10"
+	9	"2"
+	10	"36"
+	11	"char_offset"
+	12	"72"
+	13	"15"
+	14	"57"
+	15	"25"
+	16	"82"
+	17	"9"
+	18	"33"
+	19	"42"
+	20	"52"
+	21	"94"
+	22	"65"
+	23	"gsub"
+	24	"[\022]"
+	25	"HK"
+	26	"[\t]"
+	27	"EX"
+locals (7) for 006D2B30:
+	0	key_parameters	3	109
+	1	exponential_base	8	109
+	2	phase_value	18	109
+	3	scaled_phase	28	109
+	4	scale_factor	39	109
+	5	scaled_product	40	109
+	6	square_root	43	109
+upvalues (8) for 006D2B30:
+	0	build_key_parameters
+	1	math_floor
+	2	math_exp
+	3	globals
+	4	to_number
+	5	math_sqrt
+	6	string_reverse
+	7	string_char
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:425,429> (10 instructions, 40 bytes at 006D2D98)
+1 param, 3 slots, 2 upvalues, 1 local, 3 constants, 0 functions
+	1	[426]	GETUPVAL 	1 0	; to_number
+	2	[426]	LOADK    	2 -1	; "1"
+	3	[426]	CALL     	1 2 2
+	4	[426]	EQ       	0 1 0
+	5	[426]	JMP      	4	; to 10
+	6	[427]	GETUPVAL 	1 1	; globals
+	7	[427]	GETTABLE 	1 1 -2	; "core_func_byby"
+	8	[427]	LOADK    	2 -3	; "\228\184\141\230\152\175G\231\137\136\230\156\172"
+	9	[427]	CALL     	1 2 1
+	10	[429]	RETURN   	0 1
+constants (3) for 006D2D98:
+	1	"1"
+	2	"core_func_byby"
+	3	"\228\184\141\230\152\175G\231\137\136\230\156\172"
+locals (1) for 006D2D98:
+	0	button_index	1	10
+upvalues (2) for 006D2D98:
+	0	to_number
+	1	globals
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:430,432> (5 instructions, 20 bytes at 006D2C90)
+0 params, 2 slots, 1 upvalue, 0 locals, 2 constants, 0 functions
+	1	[431]	GETUPVAL 	0 0	; globals
+	2	[431]	GETTABLE 	0 0 -1	; "os"
+	3	[431]	GETTABLE 	0 0 -2	; "exit"
+	4	[431]	CALL     	0 1 1
+	5	[432]	RETURN   	0 1
+constants (2) for 006D2C90:
+	1	"os"
+	2	"exit"
+locals (0) for 006D2C90:
+upvalues (1) for 006D2C90:
+	0	globals
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:459,461> (5 instructions, 20 bytes at 006D2F50)
+1 param, 2 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[460]	GETUPVAL 	1 0	; globals
+	2	[460]	GETTABLE 	1 1 -1	; "def"
+	3	[460]	GETTABLE 	1 1 -2	; "role"
+	4	[460]	SETTABLE 	1 -3 0	; "helperID" -
+	5	[461]	RETURN   	0 1
+constants (3) for 006D2F50:
+	1	"def"
+	2	"role"
+	3	"helperID"
+locals (1) for 006D2F50:
+	0	helper_id	1	5
+upvalues (1) for 006D2F50:
+	0	globals
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:462,531> (159 instructions, 636 bytes at 006D29D0)
+1 param, 11 slots, 11 upvalues, 9 locals, 25 constants, 0 functions
+	1	[463]	GETTABLE 	1 0 -1	; "name"
+	2	[463]	EQ       	1 1 -2	; - "completed"
+	3	[463]	JMP      	25	; to 29
+	4	[464]	GETUPVAL 	1 0	; globals
+	5	[464]	GETTABLE 	1 1 -3	; "def"
+	6	[464]	GETTABLE 	1 1 -4	; "debugkey"
+	7	[464]	TEST     	1 0 0
+	8	[464]	JMP      	4	; to 13
+	9	[465]	GETUPVAL 	1 0	; globals
+	10	[465]	GETTABLE 	1 1 -5	; "print"
+	11	[465]	GETTABLE 	2 0 -1	; "name"
+	12	[465]	CALL     	1 2 1
+	13	[467]	GETTABLE 	1 0 -1	; "name"
+	14	[467]	EQ       	0 1 -6	; - "failed"
+	15	[467]	JMP      	12	; to 28
+	16	[468]	GETUPVAL 	1 0	; globals
+	17	[468]	GETTABLE 	1 1 -3	; "def"
+	18	[468]	GETTABLE 	1 1 -4	; "debugkey"
+	19	[468]	TEST     	1 0 0
+	20	[468]	JMP      	4	; to 25
+	21	[469]	GETUPVAL 	1 0	; globals
+	22	[469]	GETTABLE 	1 1 -5	; "print"
+	23	[469]	LOADK    	2 -7	; "not ok"
+	24	[469]	CALL     	1 2 1
+	25	[471]	GETUPVAL 	1 1	; request_backup_update
+	26	[471]	GETUPVAL 	2 2	; false_value
+	27	[471]	CALL     	1 2 1
+	28	[473]	RETURN   	0 1
+	29	[475]	GETTABLE 	1 0 -8	; "request"
+	30	[476]	GETTABLE 	2 1 -9	; "getResponseStatusCode"
+	31	[476]	MOVE     	3 1
+	32	[476]	CALL     	2 2 2
+	33	[477]	GETUPVAL 	3 3	; to_number
+	34	[477]	LOADK    	4 -10	; "200"
+	35	[477]	CALL     	3 2 2
+	36	[477]	EQ       	1 2 3
+	37	[477]	JMP      	1	; to 39
+	38	[478]	RETURN   	0 1
+	39	[480]	GETTABLE 	3 1 -11	; "getResponseData"
+	40	[480]	MOVE     	4 1
+	41	[480]	CALL     	3 2 2
+	42	[481]	TEST     	3 0 0
+	43	[481]	JMP      	112	; to 156
+	44	[482]	EQ       	0 3 -12	; - "u7bTrcq508Ow19bttcfCvMb3"
+	45	[482]	JMP      	4	; to 50
+	46	[483]	GETUPVAL 	4 0	; globals
+	47	[483]	GETTABLE 	4 4 -13	; "core_func_exit"
+	48	[483]	CALL     	4 1 1
+	49	[484]	RETURN   	0 1
+	50	[486]	EQ       	0 3 -14	; - "OK"
+	51	[486]	JMP      	21	; to 73
+	52	[487]	GETUPVAL 	4 0	; globals
+	53	[487]	GETTABLE 	4 4 -3	; "def"
+	54	[487]	GETTABLE 	4 4 -4	; "debugkey"
+	55	[487]	TEST     	4 0 0
+	56	[487]	JMP      	4	; to 61
+	57	[488]	GETUPVAL 	4 0	; globals
+	58	[488]	GETTABLE 	4 4 -5	; "print"
+	59	[488]	LOADK    	5 -15	; "same version"
+	60	[488]	CALL     	4 2 1
+	61	[490]	GETUPVAL 	4 0	; globals
+	62	[490]	GETTABLE 	4 4 -16	; "isloaded"
+	63	[490]	TEST     	4 0 1
+	64	[490]	JMP      	7	; to 72
+	65	[490]	GETUPVAL 	4 4	; load_cached_code
+	66	[490]	CALL     	4 1 2
+	67	[490]	TEST     	4 0 1
+	68	[490]	JMP      	3	; to 72
+	69	[491]	GETUPVAL 	4 5	; request_primary_update
+	70	[491]	GETUPVAL 	5 6	; true_value
+	71	[491]	CALL     	4 2 1
+	72	[493]	RETURN   	0 1
+	73	[495]	GETUPVAL 	4 0	; globals
+	74	[495]	GETTABLE 	4 4 -17	; "require"
+	75	[495]	LOADK    	5 -18	; "cjson"
+	76	[495]	CALL     	4 2 2
+	77	[496]	GETTABLE 	5 4 -19	; "decode"
+	78	[496]	MOVE     	6 3
+	79	[496]	CALL     	5 2 2
+	80	[497]	TEST     	5 0 1
+	81	[497]	JMP      	12	; to 94
+	82	[498]	GETUPVAL 	6 0	; globals
+	83	[498]	GETTABLE 	6 6 -3	; "def"
+	84	[498]	GETTABLE 	6 6 -4	; "debugkey"
+	85	[498]	TEST     	6 0 0
+	86	[498]	JMP      	4	; to 91
+	87	[499]	GETUPVAL 	6 0	; globals
+	88	[499]	GETTABLE 	6 6 -5	; "print"
+	89	[499]	LOADK    	7 -20	; "json decode error"
+	90	[499]	CALL     	6 2 1
+	91	[501]	GETUPVAL 	6 1	; request_backup_update
+	92	[501]	GETUPVAL 	7 6	; true_value
+	93	[501]	CALL     	6 2 1
+	94	[503]	GETTABLE 	6 5 -21	; "version"
+	95	[503]	TEST     	6 0 0
+	96	[503]	JMP      	3	; to 100
+	97	[503]	GETTABLE 	6 5 -22	; "content"
+	98	[503]	TEST     	6 0 1
+	99	[503]	JMP      	13	; to 113
+	100	[504]	GETUPVAL 	6 0	; globals
+	101	[504]	GETTABLE 	6 6 -3	; "def"
+	102	[504]	GETTABLE 	6 6 -4	; "debugkey"
+	103	[504]	TEST     	6 0 0
+	104	[504]	JMP      	4	; to 109
+	105	[505]	GETUPVAL 	6 0	; globals
+	106	[505]	GETTABLE 	6 6 -5	; "print"
+	107	[505]	LOADK    	7 -23	; "json format error"
+	108	[505]	CALL     	6 2 1
+	109	[507]	GETUPVAL 	6 1	; request_backup_update
+	110	[507]	GETUPVAL 	7 6	; true_value
+	111	[507]	CALL     	6 2 1
+	112	[508]	RETURN   	0 1
+	113	[510]	GETUPVAL 	6 7	; decrypt_remote_content
+	114	[510]	GETTABLE 	7 5 -22	; "content"
+	115	[510]	CALL     	6 2 2
+	116	[511]	TEST     	6 0 1
+	117	[511]	JMP      	13	; to 131
+	118	[512]	GETUPVAL 	7 0	; globals
+	119	[512]	GETTABLE 	7 7 -3	; "def"
+	120	[512]	GETTABLE 	7 7 -4	; "debugkey"
+	121	[512]	TEST     	7 0 0
+	122	[512]	JMP      	4	; to 127
+	123	[513]	GETUPVAL 	7 0	; globals
+	124	[513]	GETTABLE 	7 7 -5	; "print"
+	125	[513]	LOADK    	8 -24	; "content decode error"
+	126	[513]	CALL     	7 2 1
+	127	[515]	GETUPVAL 	7 1	; request_backup_update
+	128	[515]	GETUPVAL 	8 6	; true_value
+	129	[515]	CALL     	7 2 1
+	130	[515]	JMP      	28	; to 159
+	131	[517]	GETUPVAL 	7 8	; execute_lua
+	132	[517]	MOVE     	8 6
+	133	[517]	CALL     	7 2 3
+	134	[518]	TEST     	7 0 0
+	135	[518]	JMP      	7	; to 143
+	136	[519]	GETUPVAL 	9 9	; save_cached_content
+	137	[519]	GETTABLE 	10 5 -22	; "content"
+	138	[519]	CALL     	9 2 1
+	139	[520]	GETUPVAL 	9 10	; save_cached_version
+	140	[520]	GETTABLE 	10 5 -21	; "version"
+	141	[520]	CALL     	9 2 1
+	142	[520]	JMP      	16	; to 159
+	143	[522]	GETUPVAL 	9 0	; globals
+	144	[522]	GETTABLE 	9 9 -3	; "def"
+	145	[522]	GETTABLE 	9 9 -4	; "debugkey"
+	146	[522]	TEST     	9 0 0
+	147	[522]	JMP      	4	; to 152
+	148	[523]	GETUPVAL 	9 0	; globals
+	149	[523]	GETTABLE 	9 9 -5	; "print"
+	150	[523]	LOADK    	10 -25	; "run code error"
+	151	[523]	CALL     	9 2 1
+	152	[525]	GETUPVAL 	9 1	; request_backup_update
+	153	[525]	GETUPVAL 	10 6	; true_value
+	154	[525]	CALL     	9 2 1
+	155	[527]	JMP      	3	; to 159
+	156	[529]	GETUPVAL 	4 1	; request_backup_update
+	157	[529]	GETUPVAL 	5 6	; true_value
+	158	[529]	CALL     	4 2 1
+	159	[531]	RETURN   	0 1
+constants (25) for 006D29D0:
+	1	"name"
+	2	"completed"
+	3	"def"
+	4	"debugkey"
+	5	"print"
+	6	"failed"
+	7	"not ok"
+	8	"request"
+	9	"getResponseStatusCode"
+	10	"200"
+	11	"getResponseData"
+	12	"u7bTrcq508Ow19bttcfCvMb3"
+	13	"core_func_exit"
+	14	"OK"
+	15	"same version"
+	16	"isloaded"
+	17	"require"
+	18	"cjson"
+	19	"decode"
+	20	"json decode error"
+	21	"version"
+	22	"content"
+	23	"json format error"
+	24	"content decode error"
+	25	"run code error"
+locals (9) for 006D29D0:
+	0	network_event	1	159
+	1	request	30	159
+	2	status_code	33	159
+	3	content	42	159
+	4	json_module	77	155
+	5	response_json	80	155
+	6	lua_source	116	155
+	7	success	134	155
+	8	execution_error	134	155
+upvalues (11) for 006D29D0:
+	0	globals
+	1	request_backup_update
+	2	false_value
+	3	to_number
+	4	load_cached_code
+	5	request_primary_update
+	6	true_value
+	7	decrypt_remote_content
+	8	execute_lua
+	9	save_cached_content
+	10	save_cached_version
+
+function <D:\loym2\����G2.5_core_gplus_restored_20260710_134136\core_dec_readable.lua:533,541> (31 instructions, 124 bytes at 006D2DF0)
+1 param, 5 slots, 1 upvalue, 2 locals, 9 constants, 0 functions
+	1	[534]	GETUPVAL 	1 0	; globals
+	2	[534]	GETTABLE 	1 1 -1	; "device"
+	3	[534]	GETTABLE 	1 1 -2	; "writablePath"
+	4	[534]	LOADK    	2 -3	; "bzuuid"
+	5	[534]	CONCAT   	1 1 2
+	6	[535]	GETUPVAL 	2 0	; globals
+	7	[535]	GETTABLE 	2 2 -4	; "io"
+	8	[535]	GETTABLE 	2 2 -5	; "exists"
+	9	[535]	MOVE     	3 1
+	10	[535]	CALL     	2 2 2
+	11	[535]	TEST     	2 0 1
+	12	[535]	JMP      	12	; to 25
+	13	[536]	GETUPVAL 	2 0	; globals
+	14	[536]	GETTABLE 	2 2 -6	; "crypto"
+	15	[536]	GETTABLE 	2 2 -7	; "md5"
+	16	[536]	MOVE     	3 0
+	17	[536]	CALL     	2 2 2
+	18	[536]	MOVE     	0 2
+	19	[537]	GETUPVAL 	2 0	; globals
+	20	[537]	GETTABLE 	2 2 -8	; "core_func_writefile"
+	21	[537]	MOVE     	3 1
+	22	[537]	MOVE     	4 0
+	23	[537]	CALL     	2 3 1
+	24	[538]	RETURN   	0 2
+	25	[540]	GETUPVAL 	2 0	; globals
+	26	[540]	GETTABLE 	2 2 -4	; "io"
+	27	[540]	GETTABLE 	2 2 -9	; "readfile"
+	28	[540]	MOVE     	3 1
+	29	[540]	TAILCALL 	2 2 0
+	30	[540]	RETURN   	2 0
+	31	[541]	RETURN   	0 1
+constants (9) for 006D2DF0:
+	1	"device"
+	2	"writablePath"
+	3	"bzuuid"
+	4	"io"
+	5	"exists"
+	6	"crypto"
+	7	"md5"
+	8	"core_func_writefile"
+	9	"readfile"
+locals (2) for 006D2DF0:
+	0	uuid_seed	1	31
+	1	file_path	6	31
+upvalues (1) for 006D2DF0:
+	0	globals

@@ -1,0 +1,1662 @@
+﻿prototype_id,function_name,pc,original_source_line,readable_source_line,original_opcode,readable_opcode,original_operands,readable_operands,original_listing_comment,readable_listing_comment,opcode_equal,operands_equal,semantic_instruction_equal
+P00,<chunk>,1,1,7,LOADK,LOADK,0 -1,0 -1,17,17,true,true,true
+P00,<chunk>,2,1,8,LOADK,LOADK,1 -2,1 -2,34,34,true,true,true
+P00,<chunk>,3,1,9,LOADK,LOADK,2 -3,2 -3,23,23,true,true,true
+P00,<chunk>,4,1,10,EQ,EQ,1 -4 -5,1 -4 -5,0 1,0 1,true,true,true
+P00,<chunk>,5,1,10,JMP,JMP,1,1,to 7,to 7,true,true,true
+P00,<chunk>,6,1,10,LOADBOOL,LOADBOOL,3 0 1,3 0 1,,,true,true,true
+P00,<chunk>,7,1,10,LOADBOOL,LOADBOOL,3 1 0,3 1 0,,,true,true,true
+P00,<chunk>,8,1,11,NOT,NOT,4 3,4 3,,,true,true,true
+P00,<chunk>,9,1,12,LOADNIL,LOADNIL,5 5,5 5,,,true,true,true
+P00,<chunk>,10,1,13,LOADK,LOADK,6 -6,6 -6,"""""","""""",true,true,true
+P00,<chunk>,11,1,14,GETGLOBAL,GETGLOBAL,7 -7,7 -7,_G,_G,true,true,true
+P00,<chunk>,12,1,15,GETGLOBAL,GETGLOBAL,8 -8,8 -8,_ENV,_ENV,true,true,true
+P00,<chunk>,13,1,16,GETTABLE,GETTABLE,9 7 -9,9 7 -9,"""tonumber""","""tonumber""",true,true,true
+P00,<chunk>,14,1,564,CLOSURE,CLOSURE,10 0,10 0,<function-address-omitted>,<function-address-omitted>,true,true,true
+P00,<chunk>,15,1,564,MOVE,MOVE,0 7,0 7,,,true,true,true
+P00,<chunk>,16,1,564,MOVE,MOVE,0 9,0 9,,,true,true,true
+P00,<chunk>,17,1,564,MOVE,MOVE,0 3,0 3,,,true,true,true
+P00,<chunk>,18,1,564,MOVE,MOVE,0 4,0 4,,,true,true,true
+P00,<chunk>,19,1,564,MOVE,MOVE,0 5,0 5,,,true,true,true
+P00,<chunk>,20,1,564,MOVE,MOVE,0 6,0 6,,,true,true,true
+P00,<chunk>,21,1,564,TAILCALL,TAILCALL,10 1 0,10 1 0,,,true,true,true
+P00,<chunk>,22,1,564,RETURN,RETURN,10 0,10 0,,,true,true,true
+P00,<chunk>,23,1,564,RETURN,RETURN,0 1,0 1,,,true,true,true
+P01,startup_iife,1,1,19,GETUPVAL,GETUPVAL,1 0,1 0,h,globals,true,true,true
+P01,startup_iife,2,1,19,GETTABLE,GETTABLE,1 1 -1,1 1 -1,"""def""","""def""",true,true,true
+P01,startup_iife,3,1,19,GETTABLE,GETTABLE,1 1 -2,1 1 -2,"""showUserAgreement""","""showUserAgreement""",true,true,true
+P01,startup_iife,4,1,19,TEST,TEST,1 0 0,1 0 0,,,true,true,true
+P01,startup_iife,5,1,19,JMP,JMP,2,2,to 8,to 8,true,true,true
+P01,startup_iife,6,1,20,GETUPVAL,GETUPVAL,1 0,1 0,h,globals,true,true,true
+P01,startup_iife,7,1,33,SETTABLE,SETTABLE,1 -3 -4,1 -3 -4,"""argeementText"" ""        \228\184\128\227\128\129\228\184\141\229\190\151\229\136\169\231\148\168\230\156\172\232\189\175\228\187\182\230\136\150\230\156\172\232\189\175\228\187\182\230\156\141\229\138\161\229\136\182\228\189\156\227\128\129\228\184\138\232\189\189\227\128\129\229\164\141\229\136\182\227\128\129\229\143\145\233\128\129\229\166\130\228\184\139\229\134\133\229\174\185\239\188\154\n        (1) \229\143\141\229\175\185\229\174\170\230\179\149\230\137\128\231\161\174\229\174\154\231\154\132\229\159\186\230\156\172\229\142\159\229\136\153\231\154\132\239\188\155\n        (2) \229\141\177\229\174\179\229\155\189\229\174\182\229\174\137\229\133\168\239\188\140\230\179\132\233\156\178\229\155\189\229\174\182\231\167\152\229\175\134\239\188\140\233\162\160\232\166\134\229\155\189\229\174\182\230\148\191\230\157\131\239\188\140\231\160\180\229\157\143\229\155\189\229\174\182\231\187\159\228\184\128\231\154\132\239\188\155\n        (3) \230\141\159\229\174\179\229\155\189\229\174\182\232\141\163\232\170\137\229\146\140\229\136\169\231\155\138\231\154\132\239\188\155\n        (4) \231\133\189\229\138\168\230\176\145\230\151\143\228\187\135\230\129\168\227\128\129\230\176\145\230\151\143\230\173\167\232\167\134\239\188\140\231\160\180\229\157\143\230\176\145\230\151\143\229\155\162\231\187\147\231\154\132\239\188\155\n        (5) \231\160\180\229\157\143\229\155\189\229\174\182\229\174\151\230\149\153\230\148\191\231\173\150\239\188\140\229\174\163\230\137\172\233\130\170\230\149\153\229\146\140\229\176\129\229\187\186\232\191\183\228\191\161\231\154\132\239\188\155\n        (6) \230\149\163\229\184\131\232\176\163\232\168\128\239\188\140\230\137\176\228\185\177\231\164\190\228\188\154\231\167\169\229\186\143\239\188\140\231\160\180\229\157\143\231\164\190\228\188\154\231\168\179\229\174\154\231\154\132\239\188\155\n        (7) \230\149\163\229\184\131\230\183\171\231\167\189\227\128\129\232\137\178\230\131\133\227\128\129\232\181\140\229\141\154\227\128\129\230\154\180\229\138\155\227\128\129\229\135\182\230\157\128\227\128\129\230\129\144\230\128\150\230\136\150\232\128\133\230\149\153\229\148\134\231\138\175\231\189\170\231\154\132\239\188\155\n        (8) \228\190\174\232\190\177\230\136\150\232\128\133\232\175\189\232\176\164\228\187\150\228\186\186\239\188\140\228\190\181\229\174\179\228\187\150\228\186\186\229\144\136\230\179\149\230\157\131\231\155\138\231\154\132\239\188\155\n        (9) \229\144\171\230\156\137\230\179\149\229\190\139\227\128\129\232\161\140\230\148\191\230\179\149\232\167\132\231\166\129\230\173\162\231\154\132\229\133\182\228\187\150\229\134\133\229\174\185\231\154\132\228\191\161\230\129\175\227\128\130\n        \228\186\140\227\128\129\230\156\172\230\184\184\230\136\143\230\137\128\230\156\137\231\180\160\230\157\144\229\157\135\230\157\165\232\135\170\228\186\146\232\129\148\231\189\145\239\188\140\229\166\130\233\129\135\228\190\181\230\157\131\232\175\183\232\129\148\231\179\187GM\229\136\160\233\153\164\227\128\130\n        \228\184\137\227\128\129\232\139\165\230\130\168\229\175\185\230\156\172\230\184\184\230\136\143\229\143\138\230\156\172\230\156\141\229\138\161\230\156\137\228\187\187\228\189\149\230\132\143\232\167\129\239\188\140\230\172\162\232\191\142\232\129\148\231\179\187\230\184\184\230\136\143\231\149\140\233\157\162\228\184\173\231\154\132\229\174\162\230\156\141\232\129\148\231\179\187\230\150\185\229\188\143\227\128\130\n    ""","""argeementText"" ""        \228\184\128\227\128\129\228\184\141\229\190\151\229\136\169\231\148\168\230\156\172\232\189\175\228\187\182\230\136\150\230\156\172\232\189\175\228\187\182\230\156\141\229\138\161\229\136\182\228\189\156\227\128\129\228\184\138\232\189\189\227\128\129\229\164\141\229\136\182\227\128\129\229\143\145\233\128\129\229\166\130\228\184\139\229\134\133\229\174\185\239\188\154\n        (1) \229\143\141\229\175\185\229\174\170\230\179\149\230\137\128\231\161\174\229\174\154\231\154\132\229\159\186\230\156\172\229\142\159\229\136\153\231\154\132\239\188\155\n        (2) \229\141\177\229\174\179\229\155\189\229\174\182\229\174\137\229\133\168\239\188\140\230\179\132\233\156\178\229\155\189\229\174\182\231\167\152\229\175\134\239\188\140\233\162\160\232\166\134\229\155\189\229\174\182\230\148\191\230\157\131\239\188\140\231\160\180\229\157\143\229\155\189\229\174\182\231\187\159\228\184\128\231\154\132\239\188\155\n        (3) \230\141\159\229\174\179\229\155\189\229\174\182\232\141\163\232\170\137\229\146\140\229\136\169\231\155\138\231\154\132\239\188\155\n        (4) \231\133\189\229\138\168\230\176\145\230\151\143\228\187\135\230\129\168\227\128\129\230\176\145\230\151\143\230\173\167\232\167\134\239\188\140\231\160\180\229\157\143\230\176\145\230\151\143\229\155\162\231\187\147\231\154\132\239\188\155\n        (5) \231\160\180\229\157\143\229\155\189\229\174\182\229\174\151\230\149\153\230\148\191\231\173\150\239\188\140\229\174\163\230\137\172\233\130\170\230\149\153\229\146\140\229\176\129\229\187\186\232\191\183\228\191\161\231\154\132\239\188\155\n        (6) \230\149\163\229\184\131\232\176\163\232\168\128\239\188\140\230\137\176\228\185\177\231\164\190\228\188\154\231\167\169\229\186\143\239\188\140\231\160\180\229\157\143\231\164\190\228\188\154\231\168\179\229\174\154\231\154\132\239\188\155\n        (7) \230\149\163\229\184\131\230\183\171\231\167\189\227\128\129\232\137\178\230\131\133\227\128\129\232\181\140\229\141\154\227\128\129\230\154\180\229\138\155\227\128\129\229\135\182\230\157\128\227\128\129\230\129\144\230\128\150\230\136\150\232\128\133\230\149\153\229\148\134\231\138\175\231\189\170\231\154\132\239\188\155\n        (8) \228\190\174\232\190\177\230\136\150\232\128\133\232\175\189\232\176\164\228\187\150\228\186\186\239\188\140\228\190\181\229\174\179\228\187\150\228\186\186\229\144\136\230\179\149\230\157\131\231\155\138\231\154\132\239\188\155\n        (9) \229\144\171\230\156\137\230\179\149\229\190\139\227\128\129\232\161\140\230\148\191\230\179\149\232\167\132\231\166\129\230\173\162\231\154\132\229\133\182\228\187\150\229\134\133\229\174\185\231\154\132\228\191\161\230\129\175\227\128\130\n        \228\186\140\227\128\129\230\156\172\230\184\184\230\136\143\230\137\128\230\156\137\231\180\160\230\157\144\229\157\135\230\157\165\232\135\170\228\186\146\232\129\148\231\189\145\239\188\140\229\166\130\233\129\135\228\190\181\230\157\131\232\175\183\232\129\148\231\179\187GM\229\136\160\233\153\164\227\128\130\n        \228\184\137\227\128\129\232\139\165\230\130\168\229\175\185\230\156\172\230\184\184\230\136\143\229\143\138\230\156\172\230\156\141\229\138\161\230\156\137\228\187\187\228\189\149\230\132\143\232\167\129\239\188\140\230\172\162\232\191\142\232\129\148\231\179\187\230\184\184\230\136\143\231\149\140\233\157\162\228\184\173\231\154\132\229\174\162\230\156\141\232\129\148\231\179\187\230\150\185\229\188\143\227\128\130\n    """,true,true,true
+P01,startup_iife,8,1,36,LOADK,LOADK,1 -5,1 -5,"""http://go.zejiang.wang/gv6""","""http://go.zejiang.wang/gv6""",true,true,true
+P01,startup_iife,9,1,37,LOADK,LOADK,2 -6,2 -6,"""http://gate.zejiang.wang:88/gv6""","""http://gate.zejiang.wang:88/gv6""",true,true,true
+P01,startup_iife,10,1,38,NEWTABLE,NEWTABLE,3 8 0,3 8 0,,,true,true,true
+P01,startup_iife,11,1,38,LOADK,LOADK,4 -7,4 -7,"""81""","""81""",true,true,true
+P01,startup_iife,12,1,38,LOADK,LOADK,5 -8,5 -8,"""88""","""88""",true,true,true
+P01,startup_iife,13,1,38,LOADK,LOADK,6 -9,6 -9,"""89""","""89""",true,true,true
+P01,startup_iife,14,1,38,LOADK,LOADK,7 -10,7 -10,"""90""","""90""",true,true,true
+P01,startup_iife,15,1,38,LOADK,LOADK,8 -11,8 -11,"""91""","""91""",true,true,true
+P01,startup_iife,16,1,38,LOADK,LOADK,9 -12,9 -12,"""92""","""92""",true,true,true
+P01,startup_iife,17,1,38,LOADK,LOADK,10 -13,10 -13,"""93""","""93""",true,true,true
+P01,startup_iife,18,1,38,LOADK,LOADK,11 -14,11 -14,"""94""","""94""",true,true,true
+P01,startup_iife,19,1,38,SETLIST,SETLIST,3 8 1,3 8 1,1,1,true,true,true
+P01,startup_iife,20,1,39,NEWTABLE,NEWTABLE,4 4 0,4 4 0,,,true,true,true
+P01,startup_iife,21,1,40,LOADK,LOADK,5 -6,5 -6,"""http://gate.zejiang.wang:88/gv6""","""http://gate.zejiang.wang:88/gv6""",true,true,true
+P01,startup_iife,22,1,41,LOADK,LOADK,6 -15,6 -15,"""http://tm2.zejiang.wang/gv6""","""http://tm2.zejiang.wang/gv6""",true,true,true
+P01,startup_iife,23,1,42,LOADK,LOADK,7 -16,7 -16,"""http://tm3.zejiang.wang/gv6""","""http://tm3.zejiang.wang/gv6""",true,true,true
+P01,startup_iife,24,1,44,LOADK,LOADK,8 -17,8 -17,"""http://sng.zejiang.wang:99/gv6""","""http://sng.zejiang.wang:99/gv6""",true,true,true
+P01,startup_iife,25,1,44,SETLIST,SETLIST,4 4 1,4 4 1,1,1,true,true,true
+P01,startup_iife,26,1,45,MOVE,MOVE,5 2,5 2,,,true,true,true
+P01,startup_iife,27,1,46,GETUPVAL,GETUPVAL,6 1,6 1,j,to_number,true,true,true
+P01,startup_iife,28,1,46,LOADK,LOADK,7 -18,7 -18,"""4""","""4""",true,true,true
+P01,startup_iife,29,1,46,CALL,CALL,6 2 2,6 2 2,,,true,true,true
+P01,startup_iife,30,1,47,GETUPVAL,GETUPVAL,7 1,7 1,j,to_number,true,true,true
+P01,startup_iife,31,1,47,LOADK,LOADK,8 -19,8 -19,"""1""","""1""",true,true,true
+P01,startup_iife,32,1,47,CALL,CALL,7 2 2,7 2 2,,,true,true,true
+P01,startup_iife,33,1,49,GETUPVAL,GETUPVAL,8 0,8 0,h,globals,true,true,true
+P01,startup_iife,34,1,49,GETTABLE,GETTABLE,8 8 -20,8 8 -20,"""device""","""device""",true,true,true
+P01,startup_iife,35,1,49,GETTABLE,GETTABLE,8 8 -21,8 8 -21,"""writablePath""","""writablePath""",true,true,true
+P01,startup_iife,36,1,49,LOADK,LOADK,9 -22,9 -22,"""cache/ao/""","""cache/ao/""",true,true,true
+P01,startup_iife,37,1,49,CONCAT,CONCAT,8 8 9,8 8 9,,,true,true,true
+P01,startup_iife,38,1,50,GETUPVAL,GETUPVAL,9 2,9 2,d,false_value,true,true,true
+P01,startup_iife,39,1,51,GETUPVAL,GETUPVAL,10 0,10 0,h,globals,true,true,true
+P01,startup_iife,40,1,51,GETTABLE,GETTABLE,10 10 -23,10 10 -23,"""getinfo""","""getinfo""",true,true,true
+P01,startup_iife,41,1,52,GETUPVAL,GETUPVAL,11 0,11 0,h,globals,true,true,true
+P01,startup_iife,42,1,52,GETTABLE,GETTABLE,11 11 -24,11 11 -24,"""string""","""string""",true,true,true
+P01,startup_iife,43,1,52,GETTABLE,GETTABLE,11 11 -25,11 11 -25,"""len""","""len""",true,true,true
+P01,startup_iife,44,1,53,GETUPVAL,GETUPVAL,12 2,12 2,d,false_value,true,true,true
+P01,startup_iife,45,1,54,GETUPVAL,GETUPVAL,13 0,13 0,h,globals,true,true,true
+P01,startup_iife,46,1,54,GETTABLE,GETTABLE,13 13 -1,13 13 -1,"""def""","""def""",true,true,true
+P01,startup_iife,47,1,54,GETTABLE,GETTABLE,13 13 -26,13 13 -26,"""gateIP""","""gateIP""",true,true,true
+P01,startup_iife,48,1,57,CLOSURE,CLOSURE,14 0,14 0,<function-address-omitted>,<function-address-omitted>,true,true,true
+P01,startup_iife,49,1,58,LOADK,LOADK,15 -27,15 -27,"""nofile""","""nofile""",true,true,true
+P01,startup_iife,50,1,59,GETUPVAL,GETUPVAL,16 0,16 0,h,globals,true,true,true
+P01,startup_iife,51,1,59,GETTABLE,GETTABLE,16 16 -1,16 16 -1,"""def""","""def""",true,true,true
+P01,startup_iife,52,1,59,GETTABLE,GETTABLE,16 16 -28,16 16 -28,"""role""","""role""",true,true,true
+P01,startup_iife,53,1,59,GETUPVAL,GETUPVAL,17 3,17 3,e,true_value,true,true,true
+P01,startup_iife,54,1,59,SETTABLE,SETTABLE,16 -29 17,16 -29 17,"""open"" -","""open"" -",true,true,true
+P01,startup_iife,55,1,62,CLOSURE,CLOSURE,16 1,16 1,<function-address-omitted>,<function-address-omitted>,true,true,true
+P01,startup_iife,56,1,63,MOVE,MOVE,17 8,17 8,,,true,true,true
+P01,startup_iife,57,1,63,GETUPVAL,GETUPVAL,18 0,18 0,h,globals,true,true,true
+P01,startup_iife,58,1,63,GETTABLE,GETTABLE,18 18 -30,18 18 -30,"""core_func_md5""","""core_func_md5""",true,true,true
+P01,startup_iife,59,1,63,GETUPVAL,GETUPVAL,19 0,19 0,h,globals,true,true,true
+P01,startup_iife,60,1,63,GETTABLE,GETTABLE,19 19 -1,19 19 -1,"""def""","""def""",true,true,true
+P01,startup_iife,61,1,63,GETTABLE,GETTABLE,19 19 -28,19 19 -28,"""role""","""role""",true,true,true
+P01,startup_iife,62,1,63,GETTABLE,GETTABLE,19 19 -31,19 19 -31,"""stuff""","""stuff""",true,true,true
+P01,startup_iife,63,1,63,TEST,TEST,19 0 1,19 0 1,,,true,true,true
+P01,startup_iife,64,1,63,JMP,JMP,1,1,to 66,to 66,true,true,true
+P01,startup_iife,65,1,63,LOADK,LOADK,19 -32,19 -32,"""999""","""999""",true,true,true
+P01,startup_iife,66,1,63,CALL,CALL,18 2 2,18 2 2,,,true,true,true
+P01,startup_iife,67,1,63,CONCAT,CONCAT,17 17 18,17 17 18,,,true,true,true
+P01,startup_iife,68,1,64,GETUPVAL,GETUPVAL,18 0,18 0,h,globals,true,true,true
+P01,startup_iife,69,1,64,GETTABLE,GETTABLE,18 18 -33,18 18 -33,"""io""","""io""",true,true,true
+P01,startup_iife,70,1,64,GETTABLE,GETTABLE,18 18 -34,18 18 -34,"""exists""","""exists""",true,true,true
+P01,startup_iife,71,1,64,MOVE,MOVE,19 8,19 8,,,true,true,true
+P01,startup_iife,72,1,64,CALL,CALL,18 2 2,18 2 2,,,true,true,true
+P01,startup_iife,73,1,64,TEST,TEST,18 0 1,18 0 1,,,true,true,true
+P01,startup_iife,74,1,64,JMP,JMP,7,7,to 82,to 82,true,true,true
+P01,startup_iife,75,1,65,GETUPVAL,GETUPVAL,18 0,18 0,h,globals,true,true,true
+P01,startup_iife,76,1,65,GETTABLE,GETTABLE,18 18 -35,18 18 -35,"""ycFunction""","""ycFunction""",true,true,true
+P01,startup_iife,77,1,65,GETTABLE,GETTABLE,18 18 -36,18 18 -36,"""mkdir""","""mkdir""",true,true,true
+P01,startup_iife,78,1,65,GETUPVAL,GETUPVAL,19 0,19 0,h,globals,true,true,true
+P01,startup_iife,79,1,65,GETTABLE,GETTABLE,19 19 -35,19 19 -35,"""ycFunction""","""ycFunction""",true,true,true
+P01,startup_iife,80,1,65,MOVE,MOVE,20 8,20 8,,,true,true,true
+P01,startup_iife,81,1,65,CALL,CALL,18 3 1,18 3 1,,,true,true,true
+P01,startup_iife,82,1,69,CLOSURE,CLOSURE,18 2,18 2,<function-address-omitted>,<function-address-omitted>,true,true,true
+P01,startup_iife,83,1,82,CLOSURE,CLOSURE,19 3,19 3,<function-address-omitted>,<function-address-omitted>,true,true,true
+P01,startup_iife,84,1,82,MOVE,MOVE,0 10,0 10,,,true,true,true
+P01,startup_iife,85,1,82,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P01,startup_iife,86,1,82,MOVE,MOVE,0 16,0 16,,,true,true,true
+P01,startup_iife,87,1,82,MOVE,MOVE,0 14,0 14,,,true,true,true
+P01,startup_iife,88,1,98,CLOSURE,CLOSURE,20 4,20 4,<function-address-omitted>,<function-address-omitted>,true,true,true
+P01,startup_iife,89,1,98,MOVE,MOVE,0 10,0 10,,,true,true,true
+P01,startup_iife,90,1,98,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P01,startup_iife,91,1,98,GETUPVAL,GETUPVAL,0 4,0 4,f,nil_value,true,true,true
+P01,startup_iife,92,1,98,GETUPVAL,GETUPVAL,0 2,0 2,d,false_value,true,true,true
+P01,startup_iife,93,1,98,GETUPVAL,GETUPVAL,0 3,0 3,e,true_value,true,true,true
+P01,startup_iife,94,1,111,CLOSURE,CLOSURE,21 5,21 5,<function-address-omitted>,<function-address-omitted>,true,true,true
+P01,startup_iife,95,1,111,MOVE,MOVE,0 10,0 10,,,true,true,true
+P01,startup_iife,96,1,111,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P01,startup_iife,97,1,132,CLOSURE,CLOSURE,22 6,22 6,<function-address-omitted>,<function-address-omitted>,true,true,true
+P01,startup_iife,98,1,132,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P01,startup_iife,99,1,132,MOVE,MOVE,0 17,0 17,,,true,true,true
+P01,startup_iife,100,1,132,MOVE,MOVE,0 19,0 19,,,true,true,true
+P01,startup_iife,101,1,132,MOVE,MOVE,0 21,0 21,,,true,true,true
+P01,startup_iife,102,1,132,MOVE,MOVE,0 12,0 12,,,true,true,true
+P01,startup_iife,103,1,132,GETUPVAL,GETUPVAL,0 3,0 3,e,true_value,true,true,true
+P01,startup_iife,104,1,132,MOVE,MOVE,0 15,0 15,,,true,true,true
+P01,startup_iife,105,1,132,GETUPVAL,GETUPVAL,0 2,0 2,d,false_value,true,true,true
+P01,startup_iife,106,1,141,CLOSURE,CLOSURE,23 7,23 7,<function-address-omitted>,<function-address-omitted>,true,true,true
+P01,startup_iife,107,1,141,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P01,startup_iife,108,1,141,MOVE,MOVE,0 17,0 17,,,true,true,true
+P01,startup_iife,109,1,141,MOVE,MOVE,0 15,0 15,,,true,true,true
+P01,startup_iife,110,1,144,CLOSURE,CLOSURE,24 8,24 8,<function-address-omitted>,<function-address-omitted>,true,true,true
+P01,startup_iife,111,1,144,MOVE,MOVE,0 20,0 20,,,true,true,true
+P01,startup_iife,112,1,144,MOVE,MOVE,0 17,0 17,,,true,true,true
+P01,startup_iife,113,1,148,CLOSURE,CLOSURE,25 9,25 9,<function-address-omitted>,<function-address-omitted>,true,true,true
+P01,startup_iife,114,1,148,MOVE,MOVE,0 20,0 20,,,true,true,true
+P01,startup_iife,115,1,148,MOVE,MOVE,0 17,0 17,,,true,true,true
+P01,startup_iife,116,1,148,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P01,startup_iife,117,1,268,CLOSURE,CLOSURE,26 10,26 10,<function-address-omitted>,<function-address-omitted>,true,true,true
+P01,startup_iife,118,1,268,MOVE,MOVE,0 7,0 7,,,true,true,true
+P01,startup_iife,119,1,268,MOVE,MOVE,0 6,0 6,,,true,true,true
+P01,startup_iife,120,1,268,MOVE,MOVE,0 5,0 5,,,true,true,true
+P01,startup_iife,121,1,268,MOVE,MOVE,0 4,0 4,,,true,true,true
+P01,startup_iife,122,1,268,GETUPVAL,GETUPVAL,0 1,0 1,j,to_number,true,true,true
+P01,startup_iife,123,1,268,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P01,startup_iife,124,1,268,MOVE,MOVE,0 15,0 15,,,true,true,true
+P01,startup_iife,125,1,268,MOVE,MOVE,0 26,0 26,,,true,true,true
+P01,startup_iife,126,1,268,MOVE,MOVE,0 22,0 22,,,true,true,true
+P01,startup_iife,127,1,268,GETUPVAL,GETUPVAL,0 3,0 3,e,true_value,true,true,true
+P01,startup_iife,128,1,268,MOVE,MOVE,0 19,0 19,,,true,true,true
+P01,startup_iife,129,1,268,MOVE,MOVE,0 21,0 21,,,true,true,true
+P01,startup_iife,130,1,268,MOVE,MOVE,0 25,0 25,,,true,true,true
+P01,startup_iife,131,1,268,MOVE,MOVE,0 24,0 24,,,true,true,true
+P01,startup_iife,132,1,268,MOVE,MOVE,0 18,0 18,,,true,true,true
+P01,startup_iife,133,1,268,GETUPVAL,GETUPVAL,0 5,0 5,g,empty_string,true,true,true
+P01,startup_iife,134,1,268,MOVE,MOVE,0 13,0 13,,,true,true,true
+P01,startup_iife,135,1,381,CLOSURE,CLOSURE,27 11,27 11,<function-address-omitted>,<function-address-omitted>,true,true,true
+P01,startup_iife,136,1,381,MOVE,MOVE,0 15,0 15,,,true,true,true
+P01,startup_iife,137,1,381,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P01,startup_iife,138,1,381,MOVE,MOVE,0 1,0 1,,,true,true,true
+P01,startup_iife,139,1,381,MOVE,MOVE,0 26,0 26,,,true,true,true
+P01,startup_iife,140,1,381,GETUPVAL,GETUPVAL,0 2,0 2,d,false_value,true,true,true
+P01,startup_iife,141,1,381,GETUPVAL,GETUPVAL,0 1,0 1,j,to_number,true,true,true
+P01,startup_iife,142,1,381,MOVE,MOVE,0 22,0 22,,,true,true,true
+P01,startup_iife,143,1,381,MOVE,MOVE,0 27,0 27,,,true,true,true
+P01,startup_iife,144,1,381,GETUPVAL,GETUPVAL,0 3,0 3,e,true_value,true,true,true
+P01,startup_iife,145,1,381,MOVE,MOVE,0 19,0 19,,,true,true,true
+P01,startup_iife,146,1,381,MOVE,MOVE,0 21,0 21,,,true,true,true
+P01,startup_iife,147,1,381,MOVE,MOVE,0 25,0 25,,,true,true,true
+P01,startup_iife,148,1,381,MOVE,MOVE,0 24,0 24,,,true,true,true
+P01,startup_iife,149,1,381,MOVE,MOVE,0 18,0 18,,,true,true,true
+P01,startup_iife,150,1,381,GETUPVAL,GETUPVAL,0 5,0 5,g,empty_string,true,true,true
+P01,startup_iife,151,1,381,MOVE,MOVE,0 13,0 13,,,true,true,true
+P01,startup_iife,152,1,383,GETUPVAL,GETUPVAL,28 0,28 0,h,globals,true,true,true
+P01,startup_iife,153,1,383,GETTABLE,GETTABLE,28 28 -37,28 28 -37,"""math""","""math""",true,true,true
+P01,startup_iife,154,1,383,GETTABLE,GETTABLE,28 28 -38,28 28 -38,"""floor""","""floor""",true,true,true
+P01,startup_iife,155,1,383,GETUPVAL,GETUPVAL,29 0,29 0,h,globals,true,true,true
+P01,startup_iife,156,1,383,GETTABLE,GETTABLE,29 29 -37,29 29 -37,"""math""","""math""",true,true,true
+P01,startup_iife,157,1,383,GETTABLE,GETTABLE,29 29 -39,29 29 -39,"""exp""","""exp""",true,true,true
+P01,startup_iife,158,1,383,GETUPVAL,GETUPVAL,30 0,30 0,h,globals,true,true,true
+P01,startup_iife,159,1,383,GETTABLE,GETTABLE,30 30 -37,30 30 -37,"""math""","""math""",true,true,true
+P01,startup_iife,160,1,383,GETTABLE,GETTABLE,30 30 -40,30 30 -40,"""sqrt""","""sqrt""",true,true,true
+P01,startup_iife,161,1,384,GETUPVAL,GETUPVAL,31 0,31 0,h,globals,true,true,true
+P01,startup_iife,162,1,384,GETTABLE,GETTABLE,31 31 -24,31 31 -24,"""string""","""string""",true,true,true
+P01,startup_iife,163,1,384,GETTABLE,GETTABLE,31 31 -41,31 31 -41,"""char""","""char""",true,true,true
+P01,startup_iife,164,1,384,GETUPVAL,GETUPVAL,32 0,32 0,h,globals,true,true,true
+P01,startup_iife,165,1,384,GETTABLE,GETTABLE,32 32 -24,32 32 -24,"""string""","""string""",true,true,true
+P01,startup_iife,166,1,384,GETTABLE,GETTABLE,32 32 -42,32 32 -42,"""reverse""","""reverse""",true,true,true
+P01,startup_iife,167,1,391,CLOSURE,CLOSURE,33 12,33 12,<function-address-omitted>,<function-address-omitted>,true,true,true
+P01,startup_iife,168,1,391,GETUPVAL,GETUPVAL,0 1,0 1,j,to_number,true,true,true
+P01,startup_iife,169,1,415,CLOSURE,CLOSURE,34 13,34 13,<function-address-omitted>,<function-address-omitted>,true,true,true
+P01,startup_iife,170,1,415,MOVE,MOVE,0 33,0 33,,,true,true,true
+P01,startup_iife,171,1,415,MOVE,MOVE,0 28,0 28,,,true,true,true
+P01,startup_iife,172,1,415,MOVE,MOVE,0 29,0 29,,,true,true,true
+P01,startup_iife,173,1,415,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P01,startup_iife,174,1,415,GETUPVAL,GETUPVAL,0 1,0 1,j,to_number,true,true,true
+P01,startup_iife,175,1,415,MOVE,MOVE,0 30,0 30,,,true,true,true
+P01,startup_iife,176,1,415,MOVE,MOVE,0 32,0 32,,,true,true,true
+P01,startup_iife,177,1,415,MOVE,MOVE,0 31,0 31,,,true,true,true
+P01,startup_iife,178,1,417,GETUPVAL,GETUPVAL,35 0,35 0,h,globals,true,true,true
+P01,startup_iife,179,1,417,GETTABLE,GETTABLE,35 35 -43,35 35 -43,"""pcall""","""pcall""",true,true,true
+P01,startup_iife,180,1,417,MOVE,MOVE,36 34,36 34,,,true,true,true
+P01,startup_iife,181,1,417,CALL,CALL,35 2 3,35 2 3,,,true,true,true
+P01,startup_iife,182,1,418,GETUPVAL,GETUPVAL,37 0,37 0,h,globals,true,true,true
+P01,startup_iife,183,1,418,GETTABLE,GETTABLE,37 37 -20,37 37 -20,"""device""","""device""",true,true,true
+P01,startup_iife,184,1,418,GETTABLE,GETTABLE,37 37 -21,37 37 -21,"""writablePath""","""writablePath""",true,true,true
+P01,startup_iife,185,1,418,LOADK,LOADK,38 -44,38 -44,"""res/""","""res/""",true,true,true
+P01,startup_iife,186,1,418,CONCAT,CONCAT,37 37 38,37 37 38,,,true,true,true
+P01,startup_iife,187,1,419,GETUPVAL,GETUPVAL,38 0,38 0,h,globals,true,true,true
+P01,startup_iife,188,1,419,GETTABLE,GETTABLE,38 38 -24,38 38 -24,"""string""","""string""",true,true,true
+P01,startup_iife,189,1,419,GETTABLE,GETTABLE,38 38 -45,38 38 -45,"""format""","""format""",true,true,true
+P01,startup_iife,190,1,419,LOADK,LOADK,39 -46,39 -46,"""core%s.zip""","""core%s.zip""",true,true,true
+P01,startup_iife,191,1,419,GETUPVAL,GETUPVAL,40 0,40 0,h,globals,true,true,true
+P01,startup_iife,192,1,419,GETTABLE,GETTABLE,40 40 -47,40 40 -47,"""USE_ARM64""","""USE_ARM64""",true,true,true
+P01,startup_iife,193,1,419,TEST,TEST,40 0 0,40 0 0,,,true,true,true
+P01,startup_iife,194,1,419,JMP,JMP,3,3,to 198,to 198,true,true,true
+P01,startup_iife,195,1,419,LOADK,LOADK,40 -48,40 -48,"""64""","""64""",true,true,true
+P01,startup_iife,196,1,419,TEST,TEST,40 0 1,40 0 1,,,true,true,true
+P01,startup_iife,197,1,419,JMP,JMP,1,1,to 199,to 199,true,true,true
+P01,startup_iife,198,1,419,GETUPVAL,GETUPVAL,40 5,40 5,g,empty_string,true,true,true
+P01,startup_iife,199,1,419,CALL,CALL,38 3 2,38 3 2,,,true,true,true
+P01,startup_iife,200,1,420,GETUPVAL,GETUPVAL,39 0,39 0,h,globals,true,true,true
+P01,startup_iife,201,1,420,GETTABLE,GETTABLE,39 39 -24,39 39 -24,"""string""","""string""",true,true,true
+P01,startup_iife,202,1,420,GETTABLE,GETTABLE,39 39 -45,39 39 -45,"""format""","""format""",true,true,true
+P01,startup_iife,203,1,420,LOADK,LOADK,40 -49,40 -49,"""dcore%s.zip""","""dcore%s.zip""",true,true,true
+P01,startup_iife,204,1,420,GETUPVAL,GETUPVAL,41 0,41 0,h,globals,true,true,true
+P01,startup_iife,205,1,420,GETTABLE,GETTABLE,41 41 -47,41 41 -47,"""USE_ARM64""","""USE_ARM64""",true,true,true
+P01,startup_iife,206,1,420,TEST,TEST,41 0 0,41 0 0,,,true,true,true
+P01,startup_iife,207,1,420,JMP,JMP,3,3,to 211,to 211,true,true,true
+P01,startup_iife,208,1,420,LOADK,LOADK,41 -48,41 -48,"""64""","""64""",true,true,true
+P01,startup_iife,209,1,420,TEST,TEST,41 0 1,41 0 1,,,true,true,true
+P01,startup_iife,210,1,420,JMP,JMP,1,1,to 212,to 212,true,true,true
+P01,startup_iife,211,1,420,GETUPVAL,GETUPVAL,41 5,41 5,g,empty_string,true,true,true
+P01,startup_iife,212,1,420,CALL,CALL,39 3 2,39 3 2,,,true,true,true
+P01,startup_iife,213,1,421,GETUPVAL,GETUPVAL,40 0,40 0,h,globals,true,true,true
+P01,startup_iife,214,1,421,GETTABLE,GETTABLE,40 40 -33,40 40 -33,"""io""","""io""",true,true,true
+P01,startup_iife,215,1,421,GETTABLE,GETTABLE,40 40 -34,40 40 -34,"""exists""","""exists""",true,true,true
+P01,startup_iife,216,1,421,MOVE,MOVE,41 37,41 37,,,true,true,true
+P01,startup_iife,217,1,421,CALL,CALL,40 2 2,40 2 2,,,true,true,true
+P01,startup_iife,218,1,421,TEST,TEST,40 0 1,40 0 1,,,true,true,true
+P01,startup_iife,219,1,421,JMP,JMP,7,7,to 227,to 227,true,true,true
+P01,startup_iife,220,1,422,GETUPVAL,GETUPVAL,40 0,40 0,h,globals,true,true,true
+P01,startup_iife,221,1,422,GETTABLE,GETTABLE,40 40 -35,40 40 -35,"""ycFunction""","""ycFunction""",true,true,true
+P01,startup_iife,222,1,422,GETTABLE,GETTABLE,40 40 -36,40 40 -36,"""mkdir""","""mkdir""",true,true,true
+P01,startup_iife,223,1,422,GETUPVAL,GETUPVAL,41 0,41 0,h,globals,true,true,true
+P01,startup_iife,224,1,422,GETTABLE,GETTABLE,41 41 -35,41 41 -35,"""ycFunction""","""ycFunction""",true,true,true
+P01,startup_iife,225,1,422,MOVE,MOVE,42 37,42 37,,,true,true,true
+P01,startup_iife,226,1,422,CALL,CALL,40 3 1,40 3 1,,,true,true,true
+P01,startup_iife,227,1,424,GETUPVAL,GETUPVAL,40 0,40 0,h,globals,true,true,true
+P01,startup_iife,228,1,424,GETTABLE,GETTABLE,40 40 -33,40 40 -33,"""io""","""io""",true,true,true
+P01,startup_iife,229,1,424,GETTABLE,GETTABLE,40 40 -34,40 40 -34,"""exists""","""exists""",true,true,true
+P01,startup_iife,230,1,424,MOVE,MOVE,41 37,41 37,,,true,true,true
+P01,startup_iife,231,1,424,MOVE,MOVE,42 38,42 38,,,true,true,true
+P01,startup_iife,232,1,424,CONCAT,CONCAT,41 41 42,41 41 42,,,true,true,true
+P01,startup_iife,233,1,424,CALL,CALL,40 2 2,40 2 2,,,true,true,true
+P01,startup_iife,234,1,424,TEST,TEST,40 0 1,40 0 1,,,true,true,true
+P01,startup_iife,235,1,424,JMP,JMP,23,23,to 259,to 259,true,true,true
+P01,startup_iife,236,1,425,GETUPVAL,GETUPVAL,40 0,40 0,h,globals,true,true,true
+P01,startup_iife,237,1,425,GETTABLE,GETTABLE,40 40 -50,40 40 -50,"""an""","""an""",true,true,true
+P01,startup_iife,238,1,425,GETTABLE,GETTABLE,40 40 -51,40 40 -51,"""newMsgbox""","""newMsgbox""",true,true,true
+P01,startup_iife,239,1,425,LOADK,LOADK,41 -52,41 -52,"""\228\189\160\231\154\132\231\153\187\233\153\134\229\153\168\228\184\141\230\152\175G\231\137\136\231\153\187\233\153\134\229\153\168\n\232\175\183\228\184\139\232\189\189bzmir.bin\239\188\129 ""","""\228\189\160\231\154\132\231\153\187\233\153\134\229\153\168\228\184\141\230\152\175G\231\137\136\231\153\187\233\153\134\229\153\168\n\232\175\183\228\184\139\232\189\189bzmir.bin\239\188\129 """,true,true,true
+P01,startup_iife,240,1,429,CLOSURE,CLOSURE,42 14,42 14,<function-address-omitted>,<function-address-omitted>,true,true,true
+P01,startup_iife,241,1,429,GETUPVAL,GETUPVAL,0 1,0 1,j,to_number,true,true,true
+P01,startup_iife,242,1,429,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P01,startup_iife,243,1,429,NEWTABLE,NEWTABLE,43 0 2,43 0 2,,,true,true,true
+P01,startup_iife,244,1,429,GETUPVAL,GETUPVAL,44 3,44 3,e,true_value,true,true,true
+P01,startup_iife,245,1,429,SETTABLE,SETTABLE,43 -53 44,43 -53 44,"""center"" -","""center"" -",true,true,true
+P01,startup_iife,246,1,429,GETUPVAL,GETUPVAL,44 2,44 2,d,false_value,true,true,true
+P01,startup_iife,247,1,429,SETTABLE,SETTABLE,43 -54 44,43 -54 44,"""close"" -","""close"" -",true,true,true
+P01,startup_iife,248,1,425,CALL,CALL,40 4 1,40 4 1,,,true,true,true
+P01,startup_iife,249,1,430,GETUPVAL,GETUPVAL,40 0,40 0,h,globals,true,true,true
+P01,startup_iife,250,1,430,GETTABLE,GETTABLE,40 40 -55,40 40 -55,"""scheduler""","""scheduler""",true,true,true
+P01,startup_iife,251,1,430,GETTABLE,GETTABLE,40 40 -56,40 40 -56,"""performWithDelayGlobal""","""performWithDelayGlobal""",true,true,true
+P01,startup_iife,252,1,432,CLOSURE,CLOSURE,41 15,41 15,<function-address-omitted>,<function-address-omitted>,true,true,true
+P01,startup_iife,253,1,432,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P01,startup_iife,254,1,432,GETUPVAL,GETUPVAL,42 1,42 1,j,to_number,true,true,true
+P01,startup_iife,255,1,432,LOADK,LOADK,43 -57,43 -57,"""6""","""6""",true,true,true
+P01,startup_iife,256,1,432,CALL,CALL,42 2 0,42 2 0,,,true,true,true
+P01,startup_iife,257,1,430,CALL,CALL,40 0 1,40 0 1,,,true,true,true
+P01,startup_iife,258,1,433,RETURN,RETURN,0 1,0 1,,,true,true,true
+P01,startup_iife,259,1,435,MOVE,MOVE,40 10,40 10,,,true,true,true
+P01,startup_iife,260,1,435,GETUPVAL,GETUPVAL,41 0,41 0,h,globals,true,true,true
+P01,startup_iife,261,1,435,GETTABLE,GETTABLE,41 41 -58,41 41 -58,"""cc""","""cc""",true,true,true
+P01,startup_iife,262,1,435,GETTABLE,GETTABLE,41 41 -59,41 41 -59,"""Crypto""","""Crypto""",true,true,true
+P01,startup_iife,263,1,435,GETTABLE,GETTABLE,41 41 -60,41 41 -60,"""decryptXXTEA""","""decryptXXTEA""",true,true,true
+P01,startup_iife,264,1,435,CALL,CALL,40 2 2,40 2 2,,,true,true,true
+P01,startup_iife,265,1,435,GETTABLE,GETTABLE,40 40 -61,40 40 -61,"""what""","""what""",true,true,true
+P01,startup_iife,266,1,435,EQ,EQ,1 40 -62,1 40 -62,"- ""C""","- ""C""",true,true,true
+P01,startup_iife,267,1,435,JMP,JMP,4,4,to 272,to 272,true,true,true
+P01,startup_iife,268,1,436,GETUPVAL,GETUPVAL,40 0,40 0,h,globals,true,true,true
+P01,startup_iife,269,1,436,GETTABLE,GETTABLE,40 40 -63,40 40 -63,"""core_func_byby""","""core_func_byby""",true,true,true
+P01,startup_iife,270,1,436,LOADK,LOADK,41 -64,41 -64,"""\233\157\158\230\179\149hook""","""\233\157\158\230\179\149hook""",true,true,true
+P01,startup_iife,271,1,436,CALL,CALL,40 2 1,40 2 1,,,true,true,true
+P01,startup_iife,272,1,438,GETUPVAL,GETUPVAL,40 0,40 0,h,globals,true,true,true
+P01,startup_iife,273,1,438,GETTABLE,GETTABLE,40 40 -33,40 40 -33,"""io""","""io""",true,true,true
+P01,startup_iife,274,1,438,GETTABLE,GETTABLE,40 40 -65,40 40 -65,"""readfile""","""readfile""",true,true,true
+P01,startup_iife,275,1,438,MOVE,MOVE,41 37,41 37,,,true,true,true
+P01,startup_iife,276,1,438,MOVE,MOVE,42 38,42 38,,,true,true,true
+P01,startup_iife,277,1,438,CONCAT,CONCAT,41 41 42,41 41 42,,,true,true,true
+P01,startup_iife,278,1,438,CALL,CALL,40 2 2,40 2 2,,,true,true,true
+P01,startup_iife,279,1,439,TEST,TEST,40 0 1,40 0 1,,,true,true,true
+P01,startup_iife,280,1,439,JMP,JMP,4,4,to 285,to 285,true,true,true
+P01,startup_iife,281,1,440,GETUPVAL,GETUPVAL,41 0,41 0,h,globals,true,true,true
+P01,startup_iife,282,1,440,GETTABLE,GETTABLE,41 41 -63,41 41 -63,"""core_func_byby""","""core_func_byby""",true,true,true
+P01,startup_iife,283,1,440,LOADK,LOADK,42 -66,42 -66,"""core\231\188\186\229\164\177""","""core\231\188\186\229\164\177""",true,true,true
+P01,startup_iife,284,1,440,CALL,CALL,41 2 1,41 2 1,,,true,true,true
+P01,startup_iife,285,1,442,GETUPVAL,GETUPVAL,41 0,41 0,h,globals,true,true,true
+P01,startup_iife,286,1,442,GETTABLE,GETTABLE,41 41 -67,41 41 -67,"""core_func_decryptTEA""","""core_func_decryptTEA""",true,true,true
+P01,startup_iife,287,1,442,MOVE,MOVE,42 40,42 40,,,true,true,true
+P01,startup_iife,288,1,442,MOVE,MOVE,43 36,43 36,,,true,true,true
+P01,startup_iife,289,1,442,LOADK,LOADK,44 -68,44 -68,"""\231\136\178""","""\231\136\178""",true,true,true
+P01,startup_iife,290,1,442,CONCAT,CONCAT,43 43 44,43 43 44,,,true,true,true
+P01,startup_iife,291,1,442,CALL,CALL,41 3 2,41 3 2,,,true,true,true
+P01,startup_iife,292,1,443,GETUPVAL,GETUPVAL,42 0,42 0,h,globals,true,true,true
+P01,startup_iife,293,1,443,GETTABLE,GETTABLE,42 42 -69,42 42 -69,"""core_func_writefile""","""core_func_writefile""",true,true,true
+P01,startup_iife,294,1,443,MOVE,MOVE,43 37,43 37,,,true,true,true
+P01,startup_iife,295,1,443,MOVE,MOVE,44 39,44 39,,,true,true,true
+P01,startup_iife,296,1,443,CONCAT,CONCAT,43 43 44,43 43 44,,,true,true,true
+P01,startup_iife,297,1,443,MOVE,MOVE,44 41,44 41,,,true,true,true
+P01,startup_iife,298,1,443,CALL,CALL,42 3 1,42 3 1,,,true,true,true
+P01,startup_iife,299,1,444,GETUPVAL,GETUPVAL,42 0,42 0,h,globals,true,true,true
+P01,startup_iife,300,1,444,GETTABLE,GETTABLE,42 42 -58,42 42 -58,"""cc""","""cc""",true,true,true
+P01,startup_iife,301,1,444,GETTABLE,GETTABLE,42 42 -70,42 42 -70,"""LuaLoadChunksFromZIP""","""LuaLoadChunksFromZIP""",true,true,true
+P01,startup_iife,302,1,444,MOVE,MOVE,43 39,43 39,,,true,true,true
+P01,startup_iife,303,1,444,CALL,CALL,42 2 1,42 2 1,,,true,true,true
+P01,startup_iife,304,1,445,GETUPVAL,GETUPVAL,42 0,42 0,h,globals,true,true,true
+P01,startup_iife,305,1,445,GETTABLE,GETTABLE,42 42 -71,42 42 -71,"""os""","""os""",true,true,true
+P01,startup_iife,306,1,445,GETTABLE,GETTABLE,42 42 -72,42 42 -72,"""remove""","""remove""",true,true,true
+P01,startup_iife,307,1,445,MOVE,MOVE,43 37,43 37,,,true,true,true
+P01,startup_iife,308,1,445,MOVE,MOVE,44 39,44 39,,,true,true,true
+P01,startup_iife,309,1,445,CONCAT,CONCAT,43 43 44,43 43 44,,,true,true,true
+P01,startup_iife,310,1,445,CALL,CALL,42 2 1,42 2 1,,,true,true,true
+P01,startup_iife,311,1,447,GETUPVAL,GETUPVAL,42 0,42 0,h,globals,true,true,true
+P01,startup_iife,312,1,447,GETTABLE,GETTABLE,42 42 -33,42 42 -33,"""io""","""io""",true,true,true
+P01,startup_iife,313,1,447,GETTABLE,GETTABLE,42 42 -34,42 42 -34,"""exists""","""exists""",true,true,true
+P01,startup_iife,314,1,448,MOVE,MOVE,43 37,43 37,,,true,true,true
+P01,startup_iife,315,1,448,GETUPVAL,GETUPVAL,44 0,44 0,h,globals,true,true,true
+P01,startup_iife,316,1,448,GETTABLE,GETTABLE,44 44 -24,44 44 -24,"""string""","""string""",true,true,true
+P01,startup_iife,317,1,448,GETTABLE,GETTABLE,44 44 -45,44 44 -45,"""format""","""format""",true,true,true
+P01,startup_iife,318,1,448,LOADK,LOADK,45 -73,45 -73,"""hookcore%s.zip""","""hookcore%s.zip""",true,true,true
+P01,startup_iife,319,1,448,GETUPVAL,GETUPVAL,46 0,46 0,h,globals,true,true,true
+P01,startup_iife,320,1,448,GETTABLE,GETTABLE,46 46 -47,46 46 -47,"""USE_ARM64""","""USE_ARM64""",true,true,true
+P01,startup_iife,321,1,448,TEST,TEST,46 0 0,46 0 0,,,true,true,true
+P01,startup_iife,322,1,448,JMP,JMP,3,3,to 326,to 326,true,true,true
+P01,startup_iife,323,1,448,LOADK,LOADK,46 -48,46 -48,"""64""","""64""",true,true,true
+P01,startup_iife,324,1,448,TEST,TEST,46 0 1,46 0 1,,,true,true,true
+P01,startup_iife,325,1,448,JMP,JMP,1,1,to 327,to 327,true,true,true
+P01,startup_iife,326,1,448,GETUPVAL,GETUPVAL,46 5,46 5,g,empty_string,true,true,true
+P01,startup_iife,327,1,448,CALL,CALL,44 3 2,44 3 2,,,true,true,true
+P01,startup_iife,328,1,448,CONCAT,CONCAT,43 43 44,43 43 44,,,true,true,true
+P01,startup_iife,329,1,447,CALL,CALL,42 2 2,42 2 2,,,true,true,true
+P01,startup_iife,330,1,449,TEST,TEST,42 0 0,42 0 0,,,true,true,true
+P01,startup_iife,331,1,449,JMP,JMP,17,17,to 349,to 349,true,true,true
+P01,startup_iife,332,1,451,GETUPVAL,GETUPVAL,42 0,42 0,h,globals,true,true,true
+P01,startup_iife,333,1,451,GETTABLE,GETTABLE,42 42 -58,42 42 -58,"""cc""","""cc""",true,true,true
+P01,startup_iife,334,1,451,GETTABLE,GETTABLE,42 42 -70,42 42 -70,"""LuaLoadChunksFromZIP""","""LuaLoadChunksFromZIP""",true,true,true
+P01,startup_iife,335,1,452,GETUPVAL,GETUPVAL,43 0,43 0,h,globals,true,true,true
+P01,startup_iife,336,1,452,GETTABLE,GETTABLE,43 43 -24,43 43 -24,"""string""","""string""",true,true,true
+P01,startup_iife,337,1,452,GETTABLE,GETTABLE,43 43 -45,43 43 -45,"""format""","""format""",true,true,true
+P01,startup_iife,338,1,452,LOADK,LOADK,44 -73,44 -73,"""hookcore%s.zip""","""hookcore%s.zip""",true,true,true
+P01,startup_iife,339,1,452,GETUPVAL,GETUPVAL,45 0,45 0,h,globals,true,true,true
+P01,startup_iife,340,1,452,GETTABLE,GETTABLE,45 45 -47,45 45 -47,"""USE_ARM64""","""USE_ARM64""",true,true,true
+P01,startup_iife,341,1,452,TEST,TEST,45 0 0,45 0 0,,,true,true,true
+P01,startup_iife,342,1,452,JMP,JMP,3,3,to 346,to 346,true,true,true
+P01,startup_iife,343,1,452,LOADK,LOADK,45 -48,45 -48,"""64""","""64""",true,true,true
+P01,startup_iife,344,1,452,TEST,TEST,45 0 1,45 0 1,,,true,true,true
+P01,startup_iife,345,1,452,JMP,JMP,1,1,to 347,to 347,true,true,true
+P01,startup_iife,346,1,452,GETUPVAL,GETUPVAL,45 5,45 5,g,empty_string,true,true,true
+P01,startup_iife,347,1,452,CALL,CALL,43 3 0,43 3 0,,,true,true,true
+P01,startup_iife,348,1,451,CALL,CALL,42 0 1,42 0 1,,,true,true,true
+P01,startup_iife,349,1,455,MOVE,MOVE,42 23,42 23,,,true,true,true
+P01,startup_iife,350,1,455,CALL,CALL,42 1 1,42 1 1,,,true,true,true
+P01,startup_iife,351,1,456,MOVE,MOVE,42 22,42 22,,,true,true,true
+P01,startup_iife,352,1,456,CALL,CALL,42 1 1,42 1 1,,,true,true,true
+P01,startup_iife,353,1,457,MOVE,MOVE,42 15,42 15,,,true,true,true
+P01,startup_iife,354,1,459,GETUPVAL,GETUPVAL,43 0,43 0,h,globals,true,true,true
+P01,startup_iife,355,1,461,CLOSURE,CLOSURE,44 16,44 16,<function-address-omitted>,<function-address-omitted>,true,true,true
+P01,startup_iife,356,1,461,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P01,startup_iife,357,1,461,SETTABLE,SETTABLE,43 -74 44,43 -74 44,"""set_helper"" -","""set_helper"" -",true,true,true
+P01,startup_iife,358,1,462,GETUPVAL,GETUPVAL,43 0,43 0,h,globals,true,true,true
+P01,startup_iife,359,1,462,GETTABLE,GETTABLE,43 43 -75,43 43 -75,"""core_func_createNet""","""core_func_createNet""",true,true,true
+P01,startup_iife,360,1,531,CLOSURE,CLOSURE,44 17,44 17,<function-address-omitted>,<function-address-omitted>,true,true,true
+P01,startup_iife,361,1,531,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P01,startup_iife,362,1,531,MOVE,MOVE,0 26,0 26,,,true,true,true
+P01,startup_iife,363,1,531,GETUPVAL,GETUPVAL,0 2,0 2,d,false_value,true,true,true
+P01,startup_iife,364,1,531,GETUPVAL,GETUPVAL,0 1,0 1,j,to_number,true,true,true
+P01,startup_iife,365,1,531,MOVE,MOVE,0 22,0 22,,,true,true,true
+P01,startup_iife,366,1,531,MOVE,MOVE,0 27,0 27,,,true,true,true
+P01,startup_iife,367,1,531,GETUPVAL,GETUPVAL,0 3,0 3,e,true_value,true,true,true
+P01,startup_iife,368,1,531,MOVE,MOVE,0 19,0 19,,,true,true,true
+P01,startup_iife,369,1,531,MOVE,MOVE,0 21,0 21,,,true,true,true
+P01,startup_iife,370,1,531,MOVE,MOVE,0 25,0 25,,,true,true,true
+P01,startup_iife,371,1,531,MOVE,MOVE,0 24,0 24,,,true,true,true
+P01,startup_iife,372,1,531,MOVE,MOVE,45 18,45 18,,,true,true,true
+P01,startup_iife,373,1,531,MOVE,MOVE,46 1,46 1,,,true,true,true
+P01,startup_iife,374,1,531,CALL,CALL,45 2 2,45 2 2,,,true,true,true
+P01,startup_iife,375,1,531,LOADK,LOADK,46 -76,46 -76,"""POST""","""POST""",true,true,true
+P01,startup_iife,376,1,462,CALL,CALL,43 4 2,43 4 2,,,true,true,true
+P01,startup_iife,377,1,532,GETUPVAL,GETUPVAL,44 0,44 0,h,globals,true,true,true
+P01,startup_iife,378,1,532,GETTABLE,GETTABLE,44 44 -35,44 44 -35,"""ycFunction""","""ycFunction""",true,true,true
+P01,startup_iife,379,1,532,GETTABLE,GETTABLE,44 44 -77,44 44 -77,"""getFileData""","""getFileData""",true,true,true
+P01,startup_iife,380,1,532,GETUPVAL,GETUPVAL,45 0,45 0,h,globals,true,true,true
+P01,startup_iife,381,1,532,GETTABLE,GETTABLE,45 45 -35,45 45 -35,"""ycFunction""","""ycFunction""",true,true,true
+P01,startup_iife,382,1,532,LOADK,LOADK,46 -78,46 -78,"""gplus.bin""","""gplus.bin""",true,true,true
+P01,startup_iife,383,1,532,GETUPVAL,GETUPVAL,47 3,47 3,e,true_value,true,true,true
+P01,startup_iife,384,1,532,CALL,CALL,44 4 3,44 4 3,,,true,true,true
+P01,startup_iife,385,1,541,CLOSURE,CLOSURE,46 18,46 18,<function-address-omitted>,<function-address-omitted>,true,true,true
+P01,startup_iife,386,1,541,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P01,startup_iife,387,1,542,LOADK,LOADK,47 -79,47 -79,"""smlt_""","""smlt_""",true,true,true
+P01,startup_iife,388,1,542,MOVE,MOVE,48 46,48 46,,,true,true,true
+P01,startup_iife,389,1,542,GETUPVAL,GETUPVAL,49 5,49 5,g,empty_string,true,true,true
+P01,startup_iife,390,1,542,GETUPVAL,GETUPVAL,50 0,50 0,h,globals,true,true,true
+P01,startup_iife,391,1,542,GETTABLE,GETTABLE,50 50 -71,50 50 -71,"""os""","""os""",true,true,true
+P01,startup_iife,392,1,542,GETTABLE,GETTABLE,50 50 -80,50 50 -80,"""time""","""time""",true,true,true
+P01,startup_iife,393,1,542,CALL,CALL,50 1 2,50 1 2,,,true,true,true
+P01,startup_iife,394,1,542,CONCAT,CONCAT,49 49 50,49 49 50,,,true,true,true
+P01,startup_iife,395,1,542,CALL,CALL,48 2 2,48 2 2,,,true,true,true
+P01,startup_iife,396,1,542,CONCAT,CONCAT,47 47 48,47 47 48,,,true,true,true
+P01,startup_iife,397,1,543,LOADK,LOADK,48 -81,48 -81,"""none""","""none""",true,true,true
+P01,startup_iife,398,1,544,GETUPVAL,GETUPVAL,49 0,49 0,h,globals,true,true,true
+P01,startup_iife,399,1,544,GETTABLE,GETTABLE,49 49 -82,49 49 -82,"""g_data""","""g_data""",true,true,true
+P01,startup_iife,400,1,544,GETTABLE,GETTABLE,49 49 -83,49 49 -83,"""login""","""login""",true,true,true
+P01,startup_iife,401,1,544,GETTABLE,GETTABLE,49 49 -84,49 49 -84,"""localLastSer""","""localLastSer""",true,true,true
+P01,startup_iife,402,1,544,TEST,TEST,49 0 0,49 0 0,,,true,true,true
+P01,startup_iife,403,1,544,JMP,JMP,17,17,to 421,to 421,true,true,true
+P01,startup_iife,404,1,544,GETUPVAL,GETUPVAL,49 0,49 0,h,globals,true,true,true
+P01,startup_iife,405,1,544,GETTABLE,GETTABLE,49 49 -82,49 49 -82,"""g_data""","""g_data""",true,true,true
+P01,startup_iife,406,1,544,GETTABLE,GETTABLE,49 49 -83,49 49 -83,"""login""","""login""",true,true,true
+P01,startup_iife,407,1,544,GETTABLE,GETTABLE,49 49 -84,49 49 -84,"""localLastSer""","""localLastSer""",true,true,true
+P01,startup_iife,408,1,544,GETTABLE,GETTABLE,49 49 -85,49 49 -85,"""zonename""","""zonename""",true,true,true
+P01,startup_iife,409,1,544,TEST,TEST,49 0 0,49 0 0,,,true,true,true
+P01,startup_iife,410,1,544,JMP,JMP,10,10,to 421,to 421,true,true,true
+P01,startup_iife,411,1,545,GETUPVAL,GETUPVAL,49 0,49 0,h,globals,true,true,true
+P01,startup_iife,412,1,545,GETTABLE,GETTABLE,49 49 -86,49 49 -86,"""crypto""","""crypto""",true,true,true
+P01,startup_iife,413,1,545,GETTABLE,GETTABLE,49 49 -87,49 49 -87,"""encodeBase64""","""encodeBase64""",true,true,true
+P01,startup_iife,414,1,545,GETUPVAL,GETUPVAL,50 0,50 0,h,globals,true,true,true
+P01,startup_iife,415,1,545,GETTABLE,GETTABLE,50 50 -82,50 50 -82,"""g_data""","""g_data""",true,true,true
+P01,startup_iife,416,1,545,GETTABLE,GETTABLE,50 50 -83,50 50 -83,"""login""","""login""",true,true,true
+P01,startup_iife,417,1,545,GETTABLE,GETTABLE,50 50 -84,50 50 -84,"""localLastSer""","""localLastSer""",true,true,true
+P01,startup_iife,418,1,545,GETTABLE,GETTABLE,50 50 -85,50 50 -85,"""zonename""","""zonename""",true,true,true
+P01,startup_iife,419,1,545,CALL,CALL,49 2 2,49 2 2,,,true,true,true
+P01,startup_iife,420,1,545,MOVE,MOVE,48 49,48 49,,,true,true,true
+P01,startup_iife,421,1,547,GETTABLE,GETTABLE,49 43 -88,49 43 -88,"""setPOSTData""","""setPOSTData""",true,true,true
+P01,startup_iife,422,1,548,MOVE,MOVE,50 43,50 43,,,true,true,true
+P01,startup_iife,423,1,550,LOADK,LOADK,51 -89,51 -89,"""ip=""","""ip=""",true,true,true
+P01,startup_iife,424,1,550,GETUPVAL,GETUPVAL,52 0,52 0,h,globals,true,true,true
+P01,startup_iife,425,1,550,GETTABLE,GETTABLE,52 52 -86,52 52 -86,"""crypto""","""crypto""",true,true,true
+P01,startup_iife,426,1,550,GETTABLE,GETTABLE,52 52 -87,52 52 -87,"""encodeBase64""","""encodeBase64""",true,true,true
+P01,startup_iife,427,1,550,MOVE,MOVE,53 13,53 13,,,true,true,true
+P01,startup_iife,428,1,550,CALL,CALL,52 2 2,52 2 2,,,true,true,true
+P01,startup_iife,429,1,552,LOADK,LOADK,53 -90,53 -90,"""&uid=""","""&uid=""",true,true,true
+P01,startup_iife,430,1,553,MOVE,MOVE,54 47,54 47,,,true,true,true
+P01,startup_iife,431,1,554,LOADK,LOADK,55 -91,55 -91,"""&code=""","""&code=""",true,true,true
+P01,startup_iife,432,1,555,MOVE,MOVE,56 45,56 45,,,true,true,true
+P01,startup_iife,433,1,556,LOADK,LOADK,57 -92,57 -92,"""&key=""","""&key=""",true,true,true
+P01,startup_iife,434,1,556,GETUPVAL,GETUPVAL,58 0,58 0,h,globals,true,true,true
+P01,startup_iife,435,1,556,GETTABLE,GETTABLE,58 58 -86,58 58 -86,"""crypto""","""crypto""",true,true,true
+P01,startup_iife,436,1,556,GETTABLE,GETTABLE,58 58 -93,58 58 -93,"""decodeBase64""","""decodeBase64""",true,true,true
+P01,startup_iife,437,1,556,GETUPVAL,GETUPVAL,59 0,59 0,h,globals,true,true,true
+P01,startup_iife,438,1,556,GETTABLE,GETTABLE,59 59 -1,59 59 -1,"""def""","""def""",true,true,true
+P01,startup_iife,439,1,556,GETTABLE,GETTABLE,59 59 -28,59 59 -28,"""role""","""role""",true,true,true
+P01,startup_iife,440,1,556,GETTABLE,GETTABLE,59 59 -31,59 59 -31,"""stuff""","""stuff""",true,true,true
+P01,startup_iife,441,1,556,CALL,CALL,58 2 2,58 2 2,,,true,true,true
+P01,startup_iife,442,1,558,LOADK,LOADK,59 -94,59 -94,"""&version=""","""&version=""",true,true,true
+P01,startup_iife,443,1,559,MOVE,MOVE,60 42,60 42,,,true,true,true
+P01,startup_iife,444,1,560,LOADK,LOADK,61 -95,61 -95,"""&zone=""","""&zone=""",true,true,true
+P01,startup_iife,445,1,560,MOVE,MOVE,62 48,62 48,,,true,true,true
+P01,startup_iife,446,1,560,CONCAT,CONCAT,51 51 62,51 51 62,,,true,true,true
+P01,startup_iife,447,1,547,CALL,CALL,49 3 1,49 3 1,,,true,true,true
+P01,startup_iife,448,1,562,GETTABLE,GETTABLE,49 43 -96,49 43 -96,"""setTimeout""","""setTimeout""",true,true,true
+P01,startup_iife,449,1,562,MOVE,MOVE,50 43,50 43,,,true,true,true
+P01,startup_iife,450,1,562,GETUPVAL,GETUPVAL,51 1,51 1,j,to_number,true,true,true
+P01,startup_iife,451,1,562,LOADK,LOADK,52 -57,52 -57,"""6""","""6""",true,true,true
+P01,startup_iife,452,1,562,CALL,CALL,51 2 0,51 2 0,,,true,true,true
+P01,startup_iife,453,1,562,CALL,CALL,49 0 1,49 0 1,,,true,true,true
+P01,startup_iife,454,1,563,GETTABLE,GETTABLE,49 43 -97,49 43 -97,"""start""","""start""",true,true,true
+P01,startup_iife,455,1,563,MOVE,MOVE,50 43,50 43,,,true,true,true
+P01,startup_iife,456,1,563,CALL,CALL,49 2 1,49 2 1,,,true,true,true
+P01,startup_iife,457,1,564,RETURN,RETURN,0 1,0 1,,,true,true,true
+P02,key_fragment_rm,1,1,56,LOADK,LOADK,0 -1,0 -1,"""rM""","""rM""",true,true,true
+P02,key_fragment_rm,2,1,56,RETURN,RETURN,0 2,0 2,,,true,true,true
+P02,key_fragment_rm,3,1,57,RETURN,RETURN,0 1,0 1,,,true,true,true
+P03,key_fragment_a,1,1,61,LOADK,LOADK,0 -1,0 -1,"""A""","""A""",true,true,true
+P03,key_fragment_a,2,1,61,RETURN,RETURN,0 2,0 2,,,true,true,true
+P03,key_fragment_a,3,1,62,RETURN,RETURN,0 1,0 1,,,true,true,true
+P04,identity,1,1,68,RETURN,RETURN,0 2,0 2,,,true,true,true
+P04,identity,2,1,69,RETURN,RETURN,0 1,0 1,,,true,true,true
+P05,decrypt_remote_content,1,1,72,GETUPVAL,GETUPVAL,1 0,1 0,t,get_info,true,true,true
+P05,decrypt_remote_content,2,1,72,GETUPVAL,GETUPVAL,2 1,2 1,h,globals,true,true,true
+P05,decrypt_remote_content,3,1,72,GETTABLE,GETTABLE,2 2 -1,2 2 -1,"""cc""","""cc""",true,true,true
+P05,decrypt_remote_content,4,1,72,GETTABLE,GETTABLE,2 2 -2,2 2 -2,"""Crypto""","""Crypto""",true,true,true
+P05,decrypt_remote_content,5,1,72,GETTABLE,GETTABLE,2 2 -3,2 2 -3,"""decodeBase64""","""decodeBase64""",true,true,true
+P05,decrypt_remote_content,6,1,72,CALL,CALL,1 2 2,1 2 2,,,true,true,true
+P05,decrypt_remote_content,7,1,72,GETTABLE,GETTABLE,1 1 -4,1 1 -4,"""what""","""what""",true,true,true
+P05,decrypt_remote_content,8,1,72,EQ,EQ,0 1 -5,0 1 -5,"- ""C""","- ""C""",true,true,true
+P05,decrypt_remote_content,9,1,72,JMP,JMP,33,33,to 43,to 43,true,true,true
+P05,decrypt_remote_content,10,1,73,GETUPVAL,GETUPVAL,1 1,1 1,h,globals,true,true,true
+P05,decrypt_remote_content,11,1,73,GETTABLE,GETTABLE,1 1 -6,1 1 -6,"""core_func_decryptTEA""","""core_func_decryptTEA""",true,true,true
+P05,decrypt_remote_content,12,1,74,GETUPVAL,GETUPVAL,2 1,2 1,h,globals,true,true,true
+P05,decrypt_remote_content,13,1,74,GETTABLE,GETTABLE,2 2 -7,2 2 -7,"""core_func_decodeBase64""","""core_func_decodeBase64""",true,true,true
+P05,decrypt_remote_content,14,1,74,MOVE,MOVE,3 0,3 0,,,true,true,true
+P05,decrypt_remote_content,15,1,74,CALL,CALL,2 2 2,2 2 2,,,true,true,true
+P05,decrypt_remote_content,16,1,75,GETUPVAL,GETUPVAL,3 1,3 1,h,globals,true,true,true
+P05,decrypt_remote_content,17,1,75,GETTABLE,GETTABLE,3 3 -8,3 3 -8,"""tostring""","""tostring""",true,true,true
+P05,decrypt_remote_content,18,1,75,GETUPVAL,GETUPVAL,4 1,4 1,h,globals,true,true,true
+P05,decrypt_remote_content,19,1,75,GETTABLE,GETTABLE,4 4 -9,4 4 -9,"""os""","""os""",true,true,true
+P05,decrypt_remote_content,20,1,75,GETTABLE,GETTABLE,4 4 -10,4 4 -10,"""date""","""date""",true,true,true
+P05,decrypt_remote_content,21,1,75,LOADK,LOADK,5 -11,5 -11,"""%Y%m""","""%Y%m""",true,true,true
+P05,decrypt_remote_content,22,1,75,CALL,CALL,4 2 0,4 2 0,,,true,true,true
+P05,decrypt_remote_content,23,1,75,CALL,CALL,3 0 2,3 0 2,,,true,true,true
+P05,decrypt_remote_content,24,1,76,GETUPVAL,GETUPVAL,4 1,4 1,h,globals,true,true,true
+P05,decrypt_remote_content,25,1,76,GETTABLE,GETTABLE,4 4 -7,4 4 -7,"""core_func_decodeBase64""","""core_func_decodeBase64""",true,true,true
+P05,decrypt_remote_content,26,1,76,LOADK,LOADK,5 -12,5 -12,"""K""","""K""",true,true,true
+P05,decrypt_remote_content,27,1,76,GETUPVAL,GETUPVAL,6 2,6 2,z,key_fragment_a,true,true,true
+P05,decrypt_remote_content,28,1,76,CALL,CALL,6 1 2,6 1 2,,,true,true,true
+P05,decrypt_remote_content,29,1,76,LOADK,LOADK,7 -13,7 -13,"""s""","""s""",true,true,true
+P05,decrypt_remote_content,30,1,76,GETUPVAL,GETUPVAL,8 3,8 3,x,key_fragment_rm,true,true,true
+P05,decrypt_remote_content,31,1,76,CALL,CALL,8 1 2,8 1 2,,,true,true,true
+P05,decrypt_remote_content,32,1,76,LOADK,LOADK,9 -14,9 -14,"""oLrt""","""oLrt""",true,true,true
+P05,decrypt_remote_content,33,1,76,CONCAT,CONCAT,5 5 9,5 5 9,,,true,true,true
+P05,decrypt_remote_content,34,1,76,CALL,CALL,4 2 2,4 2 2,,,true,true,true
+P05,decrypt_remote_content,35,1,77,GETUPVAL,GETUPVAL,5 1,5 1,h,globals,true,true,true
+P05,decrypt_remote_content,36,1,77,GETTABLE,GETTABLE,5 5 -15,5 5 -15,"""def""","""def""",true,true,true
+P05,decrypt_remote_content,37,1,77,GETTABLE,GETTABLE,5 5 -16,5 5 -16,"""role""","""role""",true,true,true
+P05,decrypt_remote_content,38,1,77,GETTABLE,GETTABLE,5 5 -17,5 5 -17,"""stuff""","""stuff""",true,true,true
+P05,decrypt_remote_content,39,1,77,CONCAT,CONCAT,3 3 5,3 3 5,,,true,true,true
+P05,decrypt_remote_content,40,1,73,TAILCALL,TAILCALL,1 3 0,1 3 0,,,true,true,true
+P05,decrypt_remote_content,41,1,78,RETURN,RETURN,1 0,1 0,,,true,true,true
+P05,decrypt_remote_content,42,1,78,JMP,JMP,3,3,to 46,to 46,true,true,true
+P05,decrypt_remote_content,43,1,80,GETUPVAL,GETUPVAL,1 1,1 1,h,globals,true,true,true
+P05,decrypt_remote_content,44,1,80,GETTABLE,GETTABLE,1 1 -18,1 1 -18,"""core_func_exit""","""core_func_exit""",true,true,true
+P05,decrypt_remote_content,45,1,80,CALL,CALL,1 1 1,1 1 1,,,true,true,true
+P05,decrypt_remote_content,46,1,82,RETURN,RETURN,0 1,0 1,,,true,true,true
+P06,write_file,1,1,84,GETUPVAL,GETUPVAL,2 0,2 0,t,get_info,true,true,true
+P06,write_file,2,1,84,GETUPVAL,GETUPVAL,3 1,3 1,h,globals,true,true,true
+P06,write_file,3,1,84,GETTABLE,GETTABLE,3 3 -1,3 3 -1,"""io""","""io""",true,true,true
+P06,write_file,4,1,84,GETTABLE,GETTABLE,3 3 -2,3 3 -2,"""write""","""write""",true,true,true
+P06,write_file,5,1,84,CALL,CALL,2 2 2,2 2 2,,,true,true,true
+P06,write_file,6,1,84,GETTABLE,GETTABLE,2 2 -3,2 2 -3,"""what""","""what""",true,true,true
+P06,write_file,7,1,84,EQ,EQ,0 2 -4,0 2 -4,"- ""C""","- ""C""",true,true,true
+P06,write_file,8,1,84,JMP,JMP,28,28,to 37,to 37,true,true,true
+P06,write_file,9,1,85,GETUPVAL,GETUPVAL,2 1,2 1,h,globals,true,true,true
+P06,write_file,10,1,85,GETTABLE,GETTABLE,2 2 -1,2 2 -1,"""io""","""io""",true,true,true
+P06,write_file,11,1,85,GETTABLE,GETTABLE,2 2 -5,2 2 -5,"""open""","""open""",true,true,true
+P06,write_file,12,1,85,MOVE,MOVE,3 0,3 0,,,true,true,true
+P06,write_file,13,1,85,LOADK,LOADK,4 -6,4 -6,"""w+b""","""w+b""",true,true,true
+P06,write_file,14,1,85,CALL,CALL,2 3 2,2 3 2,,,true,true,true
+P06,write_file,15,1,86,TEST,TEST,2 0 0,2 0 0,,,true,true,true
+P06,write_file,16,1,86,JMP,JMP,17,17,to 34,to 34,true,true,true
+P06,write_file,17,1,87,GETTABLE,GETTABLE,3 2 -2,3 2 -2,"""write""","""write""",true,true,true
+P06,write_file,18,1,87,MOVE,MOVE,4 2,4 2,,,true,true,true
+P06,write_file,19,1,87,MOVE,MOVE,5 1,5 1,,,true,true,true
+P06,write_file,20,1,87,CALL,CALL,3 3 2,3 3 2,,,true,true,true
+P06,write_file,21,1,87,GETUPVAL,GETUPVAL,4 2,4 2,f,nil_value,true,true,true
+P06,write_file,22,1,87,EQ,EQ,0 3 4,0 3 4,,,true,true,true
+P06,write_file,23,1,87,JMP,JMP,2,2,to 26,to 26,true,true,true
+P06,write_file,24,1,88,GETUPVAL,GETUPVAL,3 3,3 3,d,false_value,true,true,true
+P06,write_file,25,1,88,RETURN,RETURN,3 2,3 2,,,true,true,true
+P06,write_file,26,1,90,GETUPVAL,GETUPVAL,3 1,3 1,h,globals,true,true,true
+P06,write_file,27,1,90,GETTABLE,GETTABLE,3 3 -1,3 3 -1,"""io""","""io""",true,true,true
+P06,write_file,28,1,90,GETTABLE,GETTABLE,3 3 -7,3 3 -7,"""close""","""close""",true,true,true
+P06,write_file,29,1,90,MOVE,MOVE,4 2,4 2,,,true,true,true
+P06,write_file,30,1,90,CALL,CALL,3 2 1,3 2 1,,,true,true,true
+P06,write_file,31,1,91,GETUPVAL,GETUPVAL,3 4,3 4,e,true_value,true,true,true
+P06,write_file,32,1,91,RETURN,RETURN,3 2,3 2,,,true,true,true
+P06,write_file,33,1,91,JMP,JMP,6,6,to 40,to 40,true,true,true
+P06,write_file,34,1,93,GETUPVAL,GETUPVAL,3 3,3 3,d,false_value,true,true,true
+P06,write_file,35,1,93,RETURN,RETURN,3 2,3 2,,,true,true,true
+P06,write_file,36,1,94,JMP,JMP,3,3,to 40,to 40,true,true,true
+P06,write_file,37,1,96,GETUPVAL,GETUPVAL,2 1,2 1,h,globals,true,true,true
+P06,write_file,38,1,96,GETTABLE,GETTABLE,2 2 -8,2 2 -8,"""core_func_exit""","""core_func_exit""",true,true,true
+P06,write_file,39,1,96,CALL,CALL,2 1 1,2 1 1,,,true,true,true
+P06,write_file,40,1,98,RETURN,RETURN,0 1,0 1,,,true,true,true
+P07,execute_lua,1,1,100,GETUPVAL,GETUPVAL,1 0,1 0,t,get_info,true,true,true
+P07,execute_lua,2,1,100,GETUPVAL,GETUPVAL,2 1,2 1,h,globals,true,true,true
+P07,execute_lua,3,1,100,GETTABLE,GETTABLE,2 2 -1,2 2 -1,"""pcall""","""pcall""",true,true,true
+P07,execute_lua,4,1,100,CALL,CALL,1 2 2,1 2 2,,,true,true,true
+P07,execute_lua,5,1,100,GETTABLE,GETTABLE,1 1 -2,1 1 -2,"""what""","""what""",true,true,true
+P07,execute_lua,6,1,100,EQ,EQ,1 1 -3,1 1 -3,"- ""C""","- ""C""",true,true,true
+P07,execute_lua,7,1,100,JMP,JMP,4,4,to 12,to 12,true,true,true
+P07,execute_lua,8,1,101,GETUPVAL,GETUPVAL,1 1,1 1,h,globals,true,true,true
+P07,execute_lua,9,1,101,GETTABLE,GETTABLE,1 1 -4,1 1 -4,"""core_func_exit""","""core_func_exit""",true,true,true
+P07,execute_lua,10,1,101,CALL,CALL,1 1 1,1 1 1,,,true,true,true
+P07,execute_lua,11,1,102,RETURN,RETURN,0 1,0 1,,,true,true,true
+P07,execute_lua,12,1,104,GETUPVAL,GETUPVAL,1 0,1 0,t,get_info,true,true,true
+P07,execute_lua,13,1,104,GETUPVAL,GETUPVAL,2 1,2 1,h,globals,true,true,true
+P07,execute_lua,14,1,104,GETTABLE,GETTABLE,2 2 -5,2 2 -5,"""load""","""load""",true,true,true
+P07,execute_lua,15,1,104,CALL,CALL,1 2 2,1 2 2,,,true,true,true
+P07,execute_lua,16,1,104,GETTABLE,GETTABLE,1 1 -2,1 1 -2,"""what""","""what""",true,true,true
+P07,execute_lua,17,1,104,EQ,EQ,0 1 -3,0 1 -3,"- ""C""","- ""C""",true,true,true
+P07,execute_lua,18,1,104,JMP,JMP,8,8,to 27,to 27,true,true,true
+P07,execute_lua,19,1,105,GETUPVAL,GETUPVAL,1 1,1 1,h,globals,true,true,true
+P07,execute_lua,20,1,105,GETTABLE,GETTABLE,1 1 -1,1 1 -1,"""pcall""","""pcall""",true,true,true
+P07,execute_lua,21,1,107,CLOSURE,CLOSURE,2 0,2 0,<function-address-omitted>,<function-address-omitted>,true,true,true
+P07,execute_lua,22,1,107,GETUPVAL,GETUPVAL,0 1,0 1,h,globals,true,true,true
+P07,execute_lua,23,1,107,MOVE,MOVE,0 0,0 0,,,true,true,true
+P07,execute_lua,24,1,105,TAILCALL,TAILCALL,1 2 0,1 2 0,,,true,true,true
+P07,execute_lua,25,1,107,RETURN,RETURN,1 0,1 0,,,true,true,true
+P07,execute_lua,26,1,107,JMP,JMP,3,3,to 30,to 30,true,true,true
+P07,execute_lua,27,1,109,GETUPVAL,GETUPVAL,1 1,1 1,h,globals,true,true,true
+P07,execute_lua,28,1,109,GETTABLE,GETTABLE,1 1 -4,1 1 -4,"""core_func_exit""","""core_func_exit""",true,true,true
+P07,execute_lua,29,1,109,CALL,CALL,1 1 1,1 1 1,,,true,true,true
+P07,execute_lua,30,1,111,RETURN,RETURN,0 1,0 1,,,true,true,true
+P08,execute_lua_callback,1,1,106,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P08,execute_lua_callback,2,1,106,GETTABLE,GETTABLE,0 0 -1,0 0 -1,"""load""","""load""",true,true,true
+P08,execute_lua_callback,3,1,106,GETUPVAL,GETUPVAL,1 1,1 1,K,lua_source,true,true,true
+P08,execute_lua_callback,4,1,106,CALL,CALL,0 2 2,0 2 2,,,true,true,true
+P08,execute_lua_callback,5,1,106,CALL,CALL,0 1 1,0 1 1,,,true,true,true
+P08,execute_lua_callback,6,1,107,RETURN,RETURN,0 1,0 1,,,true,true,true
+P09,load_cached_code,1,1,113,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P09,load_cached_code,2,1,113,GETTABLE,GETTABLE,0 0 -1,0 0 -1,"""isloaded""","""isloaded""",true,true,true
+P09,load_cached_code,3,1,113,TEST,TEST,0 0 0,0 0 0,,,true,true,true
+P09,load_cached_code,4,1,113,JMP,JMP,1,1,to 6,to 6,true,true,true
+P09,load_cached_code,5,1,114,RETURN,RETURN,0 1,0 1,,,true,true,true
+P09,load_cached_code,6,1,116,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P09,load_cached_code,7,1,116,GETTABLE,GETTABLE,0 0 -2,0 0 -2,"""io""","""io""",true,true,true
+P09,load_cached_code,8,1,116,GETTABLE,GETTABLE,0 0 -3,0 0 -3,"""exists""","""exists""",true,true,true
+P09,load_cached_code,9,1,116,GETUPVAL,GETUPVAL,1 1,1 1,A,cache_file_base,true,true,true
+P09,load_cached_code,10,1,116,LOADK,LOADK,2 -4,2 -4,""".bin""",""".bin""",true,true,true
+P09,load_cached_code,11,1,116,CONCAT,CONCAT,1 1 2,1 1 2,,,true,true,true
+P09,load_cached_code,12,1,116,CALL,CALL,0 2 2,0 2 2,,,true,true,true
+P09,load_cached_code,13,1,116,TEST,TEST,0 0 0,0 0 0,,,true,true,true
+P09,load_cached_code,14,1,116,JMP,JMP,28,28,to 43,to 43,true,true,true
+P09,load_cached_code,15,1,117,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P09,load_cached_code,16,1,117,GETTABLE,GETTABLE,0 0 -2,0 0 -2,"""io""","""io""",true,true,true
+P09,load_cached_code,17,1,117,GETTABLE,GETTABLE,0 0 -5,0 0 -5,"""readfile""","""readfile""",true,true,true
+P09,load_cached_code,18,1,117,GETUPVAL,GETUPVAL,1 1,1 1,A,cache_file_base,true,true,true
+P09,load_cached_code,19,1,117,LOADK,LOADK,2 -4,2 -4,""".bin""",""".bin""",true,true,true
+P09,load_cached_code,20,1,117,CONCAT,CONCAT,1 1 2,1 1 2,,,true,true,true
+P09,load_cached_code,21,1,117,CALL,CALL,0 2 2,0 2 2,,,true,true,true
+P09,load_cached_code,22,1,118,TEST,TEST,0 0 0,0 0 0,,,true,true,true
+P09,load_cached_code,23,1,118,JMP,JMP,19,19,to 43,to 43,true,true,true
+P09,load_cached_code,24,1,119,GETUPVAL,GETUPVAL,1 2,1 2,D,decrypt_remote_content,true,true,true
+P09,load_cached_code,25,1,119,MOVE,MOVE,2 0,2 0,,,true,true,true
+P09,load_cached_code,26,1,119,CALL,CALL,1 2 2,1 2 2,,,true,true,true
+P09,load_cached_code,27,1,119,MOVE,MOVE,0 1,0 1,,,true,true,true
+P09,load_cached_code,28,1,120,TEST,TEST,0 0 0,0 0 0,,,true,true,true
+P09,load_cached_code,29,1,120,JMP,JMP,13,13,to 43,to 43,true,true,true
+P09,load_cached_code,30,1,121,GETUPVAL,GETUPVAL,1 3,1 3,J,execute_lua,true,true,true
+P09,load_cached_code,31,1,121,MOVE,MOVE,2 0,2 0,,,true,true,true
+P09,load_cached_code,32,1,121,CALL,CALL,1 2 3,1 2 3,,,true,true,true
+P09,load_cached_code,33,1,122,TEST,TEST,1 0 0,1 0 0,,,true,true,true
+P09,load_cached_code,34,1,122,JMP,JMP,8,8,to 43,to 43,true,true,true
+P09,load_cached_code,35,1,123,GETUPVAL,GETUPVAL,3 5,3 5,e,true_value,true,true,true
+P09,load_cached_code,36,1,123,SETUPVAL,SETUPVAL,3 4,3 4,v,cached_code_loaded,true,true,true
+P09,load_cached_code,37,1,124,GETUPVAL,GETUPVAL,3 0,3 0,h,globals,true,true,true
+P09,load_cached_code,38,1,124,GETTABLE,GETTABLE,3 3 -6,3 3 -6,"""print""","""print""",true,true,true
+P09,load_cached_code,39,1,124,LOADK,LOADK,4 -7,4 -7,"""m1""","""m1""",true,true,true
+P09,load_cached_code,40,1,124,CALL,CALL,3 2 1,3 2 1,,,true,true,true
+P09,load_cached_code,41,1,125,GETUPVAL,GETUPVAL,3 5,3 5,e,true_value,true,true,true
+P09,load_cached_code,42,1,125,RETURN,RETURN,3 2,3 2,,,true,true,true
+P09,load_cached_code,43,1,130,LOADK,LOADK,0 -8,0 -8,"""nover""","""nover""",true,true,true
+P09,load_cached_code,44,1,130,SETUPVAL,SETUPVAL,0 6,0 6,y,local_version,true,true,true
+P09,load_cached_code,45,1,131,GETUPVAL,GETUPVAL,0 7,0 7,d,false_value,true,true,true
+P09,load_cached_code,46,1,131,RETURN,RETURN,0 2,0 2,,,true,true,true
+P09,load_cached_code,47,1,132,RETURN,RETURN,0 1,0 1,,,true,true,true
+P10,load_cached_version,1,1,134,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P10,load_cached_version,2,1,134,GETTABLE,GETTABLE,0 0 -1,0 0 -1,"""io""","""io""",true,true,true
+P10,load_cached_version,3,1,134,GETTABLE,GETTABLE,0 0 -2,0 0 -2,"""exists""","""exists""",true,true,true
+P10,load_cached_version,4,1,134,GETUPVAL,GETUPVAL,1 1,1 1,A,cache_file_base,true,true,true
+P10,load_cached_version,5,1,134,LOADK,LOADK,2 -3,2 -3,""".bin""",""".bin""",true,true,true
+P10,load_cached_version,6,1,134,CONCAT,CONCAT,1 1 2,1 1 2,,,true,true,true
+P10,load_cached_version,7,1,134,CALL,CALL,0 2 2,0 2 2,,,true,true,true
+P10,load_cached_version,8,1,134,TEST,TEST,0 0 0,0 0 0,,,true,true,true
+P10,load_cached_version,9,1,134,JMP,JMP,20,20,to 30,to 30,true,true,true
+P10,load_cached_version,10,1,134,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P10,load_cached_version,11,1,134,GETTABLE,GETTABLE,0 0 -1,0 0 -1,"""io""","""io""",true,true,true
+P10,load_cached_version,12,1,134,GETTABLE,GETTABLE,0 0 -2,0 0 -2,"""exists""","""exists""",true,true,true
+P10,load_cached_version,13,1,134,GETUPVAL,GETUPVAL,1 1,1 1,A,cache_file_base,true,true,true
+P10,load_cached_version,14,1,134,LOADK,LOADK,2 -4,2 -4,""".version""",""".version""",true,true,true
+P10,load_cached_version,15,1,134,CONCAT,CONCAT,1 1 2,1 1 2,,,true,true,true
+P10,load_cached_version,16,1,134,CALL,CALL,0 2 2,0 2 2,,,true,true,true
+P10,load_cached_version,17,1,134,TEST,TEST,0 0 0,0 0 0,,,true,true,true
+P10,load_cached_version,18,1,134,JMP,JMP,11,11,to 30,to 30,true,true,true
+P10,load_cached_version,19,1,135,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P10,load_cached_version,20,1,135,GETTABLE,GETTABLE,0 0 -1,0 0 -1,"""io""","""io""",true,true,true
+P10,load_cached_version,21,1,135,GETTABLE,GETTABLE,0 0 -5,0 0 -5,"""readfile""","""readfile""",true,true,true
+P10,load_cached_version,22,1,135,GETUPVAL,GETUPVAL,1 1,1 1,A,cache_file_base,true,true,true
+P10,load_cached_version,23,1,135,LOADK,LOADK,2 -4,2 -4,""".version""",""".version""",true,true,true
+P10,load_cached_version,24,1,135,CONCAT,CONCAT,1 1 2,1 1 2,,,true,true,true
+P10,load_cached_version,25,1,135,CALL,CALL,0 2 2,0 2 2,,,true,true,true
+P10,load_cached_version,26,1,136,TEST,TEST,0 0 0,0 0 0,,,true,true,true
+P10,load_cached_version,27,1,136,JMP,JMP,2,2,to 30,to 30,true,true,true
+P10,load_cached_version,28,1,137,SETUPVAL,SETUPVAL,0 2,0 2,y,local_version,true,true,true
+P10,load_cached_version,29,1,138,RETURN,RETURN,0 1,0 1,,,true,true,true
+P10,load_cached_version,30,1,141,RETURN,RETURN,0 1,0 1,,,true,true,true
+P11,save_cached_version,1,1,143,GETUPVAL,GETUPVAL,1 0,1 0,F,write_file,true,true,true
+P11,save_cached_version,2,1,143,GETUPVAL,GETUPVAL,2 1,2 1,A,cache_file_base,true,true,true
+P11,save_cached_version,3,1,143,LOADK,LOADK,3 -1,3 -1,""".version""",""".version""",true,true,true
+P11,save_cached_version,4,1,143,CONCAT,CONCAT,2 2 3,2 2 3,,,true,true,true
+P11,save_cached_version,5,1,143,MOVE,MOVE,3 0,3 0,,,true,true,true
+P11,save_cached_version,6,1,143,CALL,CALL,1 3 1,1 3 1,,,true,true,true
+P11,save_cached_version,7,1,144,RETURN,RETURN,0 1,0 1,,,true,true,true
+P12,save_cached_content,1,1,146,GETUPVAL,GETUPVAL,1 0,1 0,F,write_file,true,true,true
+P12,save_cached_content,2,1,146,GETUPVAL,GETUPVAL,2 1,2 1,A,cache_file_base,true,true,true
+P12,save_cached_content,3,1,146,LOADK,LOADK,3 -1,3 -1,""".bin""",""".bin""",true,true,true
+P12,save_cached_content,4,1,146,CONCAT,CONCAT,2 2 3,2 2 3,,,true,true,true
+P12,save_cached_content,5,1,146,MOVE,MOVE,3 0,3 0,,,true,true,true
+P12,save_cached_content,6,1,146,CALL,CALL,1 3 1,1 3 1,,,true,true,true
+P12,save_cached_content,7,1,147,GETUPVAL,GETUPVAL,1 2,1 2,h,globals,true,true,true
+P12,save_cached_content,8,1,147,GETTABLE,GETTABLE,1 1 -2,1 1 -2,"""print""","""print""",true,true,true
+P12,save_cached_content,9,1,147,LOADK,LOADK,2 -3,2 -3,"""m2""","""m2""",true,true,true
+P12,save_cached_content,10,1,147,CALL,CALL,1 2 1,1 2 1,,,true,true,true
+P12,save_cached_content,11,1,148,RETURN,RETURN,0 1,0 1,,,true,true,true
+P13,request_backup_update,1,1,151,TEST,TEST,0 0 0,0 0 0,,,true,true,true
+P13,request_backup_update,2,1,151,JMP,JMP,25,25,to 28,to 28,true,true,true
+P13,request_backup_update,3,1,152,GETUPVAL,GETUPVAL,1 0,1 0,q,backup_url_index,true,true,true
+P13,request_backup_update,4,1,152,GETUPVAL,GETUPVAL,2 1,2 1,p,backup_url_count,true,true,true
+P13,request_backup_update,5,1,152,LE,LE,0 1 2,0 1 2,,,true,true,true
+P13,request_backup_update,6,1,152,JMP,JMP,11,11,to 18,to 18,true,true,true
+P13,request_backup_update,7,1,153,GETUPVAL,GETUPVAL,1 3,1 3,n,backup_update_urls,true,true,true
+P13,request_backup_update,8,1,153,GETUPVAL,GETUPVAL,2 0,2 0,q,backup_url_index,true,true,true
+P13,request_backup_update,9,1,153,GETTABLE,GETTABLE,1 1 2,1 1 2,,,true,true,true
+P13,request_backup_update,10,1,153,SETUPVAL,SETUPVAL,1 2,1 2,o,current_update_url,true,true,true
+P13,request_backup_update,11,1,154,GETUPVAL,GETUPVAL,1 0,1 0,q,backup_url_index,true,true,true
+P13,request_backup_update,12,1,154,GETUPVAL,GETUPVAL,2 4,2 4,j,to_number,true,true,true
+P13,request_backup_update,13,1,154,LOADK,LOADK,3 -1,3 -1,"""1""","""1""",true,true,true
+P13,request_backup_update,14,1,154,CALL,CALL,2 2 2,2 2 2,,,true,true,true
+P13,request_backup_update,15,1,154,ADD,ADD,1 1 2,1 1 2,,,true,true,true
+P13,request_backup_update,16,1,154,SETUPVAL,SETUPVAL,1 0,1 0,q,backup_url_index,true,true,true
+P13,request_backup_update,17,1,154,JMP,JMP,10,10,to 28,to 28,true,true,true
+P13,request_backup_update,18,1,156,GETUPVAL,GETUPVAL,1 5,1 5,h,globals,true,true,true
+P13,request_backup_update,19,1,156,GETTABLE,GETTABLE,1 1 -2,1 1 -2,"""def""","""def""",true,true,true
+P13,request_backup_update,20,1,156,GETTABLE,GETTABLE,1 1 -3,1 1 -3,"""debugkey""","""debugkey""",true,true,true
+P13,request_backup_update,21,1,156,TEST,TEST,1 0 0,1 0 0,,,true,true,true
+P13,request_backup_update,22,1,156,JMP,JMP,4,4,to 27,to 27,true,true,true
+P13,request_backup_update,23,1,157,GETUPVAL,GETUPVAL,1 5,1 5,h,globals,true,true,true
+P13,request_backup_update,24,1,157,GETTABLE,GETTABLE,1 1 -4,1 1 -4,"""print""","""print""",true,true,true
+P13,request_backup_update,25,1,157,LOADK,LOADK,2 -5,2 -5,"""\230\178\161\230\156\137\229\143\175\228\187\165\232\174\191\233\151\174\231\154\132\230\156\141\229\138\161\229\153\168""","""\230\178\161\230\156\137\229\143\175\228\187\165\232\174\191\233\151\174\231\154\132\230\156\141\229\138\161\229\153\168""",true,true,true
+P13,request_backup_update,26,1,157,CALL,CALL,1 2 1,1 2 1,,,true,true,true
+P13,request_backup_update,27,1,159,RETURN,RETURN,0 1,0 1,,,true,true,true
+P13,request_backup_update,28,1,162,GETUPVAL,GETUPVAL,1 6,1 6,y,local_version,true,true,true
+P13,request_backup_update,29,1,163,TEST,TEST,0 0 0,0 0 0,,,true,true,true
+P13,request_backup_update,30,1,163,JMP,JMP,1,1,to 32,to 32,true,true,true
+P13,request_backup_update,31,1,164,LOADK,LOADK,1 -6,1 -6,"""dirty""","""dirty""",true,true,true
+P13,request_backup_update,32,1,166,GETUPVAL,GETUPVAL,2 5,2 5,h,globals,true,true,true
+P13,request_backup_update,33,1,166,GETTABLE,GETTABLE,2 2 -2,2 2 -2,"""def""","""def""",true,true,true
+P13,request_backup_update,34,1,166,GETTABLE,GETTABLE,2 2 -3,2 2 -3,"""debugkey""","""debugkey""",true,true,true
+P13,request_backup_update,35,1,166,TEST,TEST,2 0 0,2 0 0,,,true,true,true
+P13,request_backup_update,36,1,166,JMP,JMP,4,4,to 41,to 41,true,true,true
+P13,request_backup_update,37,1,167,GETUPVAL,GETUPVAL,2 5,2 5,h,globals,true,true,true
+P13,request_backup_update,38,1,167,GETTABLE,GETTABLE,2 2 -4,2 2 -4,"""print""","""print""",true,true,true
+P13,request_backup_update,39,1,167,GETUPVAL,GETUPVAL,3 2,3 2,o,current_update_url,true,true,true
+P13,request_backup_update,40,1,167,CALL,CALL,2 2 1,2 2 1,,,true,true,true
+P13,request_backup_update,41,1,169,GETUPVAL,GETUPVAL,2 5,2 5,h,globals,true,true,true
+P13,request_backup_update,42,1,169,GETTABLE,GETTABLE,2 2 -7,2 2 -7,"""core_func_createNet""","""core_func_createNet""",true,true,true
+P13,request_backup_update,43,1,234,CLOSURE,CLOSURE,3 0,3 0,<function-address-omitted>,<function-address-omitted>,true,true,true
+P13,request_backup_update,44,1,234,GETUPVAL,GETUPVAL,0 5,0 5,h,globals,true,true,true
+P13,request_backup_update,45,1,234,GETUPVAL,GETUPVAL,0 7,0 7,S,request_backup_update,true,true,true
+P13,request_backup_update,46,1,234,MOVE,MOVE,0 0,0 0,,,true,true,true
+P13,request_backup_update,47,1,234,GETUPVAL,GETUPVAL,0 4,0 4,j,to_number,true,true,true
+P13,request_backup_update,48,1,234,GETUPVAL,GETUPVAL,0 8,0 8,L,load_cached_code,true,true,true
+P13,request_backup_update,49,1,234,GETUPVAL,GETUPVAL,0 9,0 9,e,true_value,true,true,true
+P13,request_backup_update,50,1,234,GETUPVAL,GETUPVAL,0 10,0 10,D,decrypt_remote_content,true,true,true
+P13,request_backup_update,51,1,234,GETUPVAL,GETUPVAL,0 11,0 11,J,execute_lua,true,true,true
+P13,request_backup_update,52,1,234,GETUPVAL,GETUPVAL,0 12,0 12,R,save_cached_content,true,true,true
+P13,request_backup_update,53,1,234,GETUPVAL,GETUPVAL,0 13,0 13,Q,save_cached_version,true,true,true
+P13,request_backup_update,54,1,234,GETUPVAL,GETUPVAL,4 14,4 14,B,identity,true,true,true
+P13,request_backup_update,55,1,234,GETUPVAL,GETUPVAL,5 2,5 2,o,current_update_url,true,true,true
+P13,request_backup_update,56,1,234,CALL,CALL,4 2 2,4 2 2,,,true,true,true
+P13,request_backup_update,57,1,234,LOADK,LOADK,5 -8,5 -8,"""POST""","""POST""",true,true,true
+P13,request_backup_update,58,1,169,CALL,CALL,2 4 2,2 4 2,,,true,true,true
+P13,request_backup_update,59,1,236,GETUPVAL,GETUPVAL,3 5,3 5,h,globals,true,true,true
+P13,request_backup_update,60,1,236,GETTABLE,GETTABLE,3 3 -9,3 3 -9,"""ycFunction""","""ycFunction""",true,true,true
+P13,request_backup_update,61,1,236,GETTABLE,GETTABLE,3 3 -10,3 3 -10,"""getFileData""","""getFileData""",true,true,true
+P13,request_backup_update,62,1,236,GETUPVAL,GETUPVAL,4 5,4 5,h,globals,true,true,true
+P13,request_backup_update,63,1,236,GETTABLE,GETTABLE,4 4 -9,4 4 -9,"""ycFunction""","""ycFunction""",true,true,true
+P13,request_backup_update,64,1,236,LOADK,LOADK,5 -11,5 -11,"""gplus.bin""","""gplus.bin""",true,true,true
+P13,request_backup_update,65,1,236,GETUPVAL,GETUPVAL,6 9,6 9,e,true_value,true,true,true
+P13,request_backup_update,66,1,236,CALL,CALL,3 4 3,3 4 3,,,true,true,true
+P13,request_backup_update,67,1,245,CLOSURE,CLOSURE,5 1,5 1,<function-address-omitted>,<function-address-omitted>,true,true,true
+P13,request_backup_update,68,1,245,GETUPVAL,GETUPVAL,0 5,0 5,h,globals,true,true,true
+P13,request_backup_update,69,1,246,LOADK,LOADK,6 -12,6 -12,"""smlt_""","""smlt_""",true,true,true
+P13,request_backup_update,70,1,246,MOVE,MOVE,7 5,7 5,,,true,true,true
+P13,request_backup_update,71,1,246,GETUPVAL,GETUPVAL,8 15,8 15,g,empty_string,true,true,true
+P13,request_backup_update,72,1,246,GETUPVAL,GETUPVAL,9 5,9 5,h,globals,true,true,true
+P13,request_backup_update,73,1,246,GETTABLE,GETTABLE,9 9 -13,9 9 -13,"""os""","""os""",true,true,true
+P13,request_backup_update,74,1,246,GETTABLE,GETTABLE,9 9 -14,9 9 -14,"""time""","""time""",true,true,true
+P13,request_backup_update,75,1,246,CALL,CALL,9 1 2,9 1 2,,,true,true,true
+P13,request_backup_update,76,1,246,CONCAT,CONCAT,8 8 9,8 8 9,,,true,true,true
+P13,request_backup_update,77,1,246,CALL,CALL,7 2 2,7 2 2,,,true,true,true
+P13,request_backup_update,78,1,246,CONCAT,CONCAT,6 6 7,6 6 7,,,true,true,true
+P13,request_backup_update,79,1,247,LOADK,LOADK,7 -15,7 -15,"""none""","""none""",true,true,true
+P13,request_backup_update,80,1,248,GETUPVAL,GETUPVAL,8 5,8 5,h,globals,true,true,true
+P13,request_backup_update,81,1,248,GETTABLE,GETTABLE,8 8 -16,8 8 -16,"""g_data""","""g_data""",true,true,true
+P13,request_backup_update,82,1,248,GETTABLE,GETTABLE,8 8 -17,8 8 -17,"""login""","""login""",true,true,true
+P13,request_backup_update,83,1,248,GETTABLE,GETTABLE,8 8 -18,8 8 -18,"""localLastSer""","""localLastSer""",true,true,true
+P13,request_backup_update,84,1,248,TEST,TEST,8 0 0,8 0 0,,,true,true,true
+P13,request_backup_update,85,1,248,JMP,JMP,17,17,to 103,to 103,true,true,true
+P13,request_backup_update,86,1,248,GETUPVAL,GETUPVAL,8 5,8 5,h,globals,true,true,true
+P13,request_backup_update,87,1,248,GETTABLE,GETTABLE,8 8 -16,8 8 -16,"""g_data""","""g_data""",true,true,true
+P13,request_backup_update,88,1,248,GETTABLE,GETTABLE,8 8 -17,8 8 -17,"""login""","""login""",true,true,true
+P13,request_backup_update,89,1,248,GETTABLE,GETTABLE,8 8 -18,8 8 -18,"""localLastSer""","""localLastSer""",true,true,true
+P13,request_backup_update,90,1,248,GETTABLE,GETTABLE,8 8 -19,8 8 -19,"""zonename""","""zonename""",true,true,true
+P13,request_backup_update,91,1,248,TEST,TEST,8 0 0,8 0 0,,,true,true,true
+P13,request_backup_update,92,1,248,JMP,JMP,10,10,to 103,to 103,true,true,true
+P13,request_backup_update,93,1,249,GETUPVAL,GETUPVAL,8 5,8 5,h,globals,true,true,true
+P13,request_backup_update,94,1,249,GETTABLE,GETTABLE,8 8 -20,8 8 -20,"""crypto""","""crypto""",true,true,true
+P13,request_backup_update,95,1,249,GETTABLE,GETTABLE,8 8 -21,8 8 -21,"""encodeBase64""","""encodeBase64""",true,true,true
+P13,request_backup_update,96,1,249,GETUPVAL,GETUPVAL,9 5,9 5,h,globals,true,true,true
+P13,request_backup_update,97,1,249,GETTABLE,GETTABLE,9 9 -16,9 9 -16,"""g_data""","""g_data""",true,true,true
+P13,request_backup_update,98,1,249,GETTABLE,GETTABLE,9 9 -17,9 9 -17,"""login""","""login""",true,true,true
+P13,request_backup_update,99,1,249,GETTABLE,GETTABLE,9 9 -18,9 9 -18,"""localLastSer""","""localLastSer""",true,true,true
+P13,request_backup_update,100,1,249,GETTABLE,GETTABLE,9 9 -19,9 9 -19,"""zonename""","""zonename""",true,true,true
+P13,request_backup_update,101,1,249,CALL,CALL,8 2 2,8 2 2,,,true,true,true
+P13,request_backup_update,102,1,249,MOVE,MOVE,7 8,7 8,,,true,true,true
+P13,request_backup_update,103,1,251,GETTABLE,GETTABLE,8 2 -22,8 2 -22,"""setPOSTData""","""setPOSTData""",true,true,true
+P13,request_backup_update,104,1,252,MOVE,MOVE,9 2,9 2,,,true,true,true
+P13,request_backup_update,105,1,254,LOADK,LOADK,10 -23,10 -23,"""ip=""","""ip=""",true,true,true
+P13,request_backup_update,106,1,254,GETUPVAL,GETUPVAL,11 5,11 5,h,globals,true,true,true
+P13,request_backup_update,107,1,254,GETTABLE,GETTABLE,11 11 -20,11 11 -20,"""crypto""","""crypto""",true,true,true
+P13,request_backup_update,108,1,254,GETTABLE,GETTABLE,11 11 -21,11 11 -21,"""encodeBase64""","""encodeBase64""",true,true,true
+P13,request_backup_update,109,1,254,GETUPVAL,GETUPVAL,12 16,12 16,w,gate_ip,true,true,true
+P13,request_backup_update,110,1,254,CALL,CALL,11 2 2,11 2 2,,,true,true,true
+P13,request_backup_update,111,1,256,LOADK,LOADK,12 -24,12 -24,"""&uid=""","""&uid=""",true,true,true
+P13,request_backup_update,112,1,257,MOVE,MOVE,13 6,13 6,,,true,true,true
+P13,request_backup_update,113,1,258,LOADK,LOADK,14 -25,14 -25,"""&code=""","""&code=""",true,true,true
+P13,request_backup_update,114,1,259,MOVE,MOVE,15 4,15 4,,,true,true,true
+P13,request_backup_update,115,1,260,LOADK,LOADK,16 -26,16 -26,"""&key=""","""&key=""",true,true,true
+P13,request_backup_update,116,1,260,GETUPVAL,GETUPVAL,17 5,17 5,h,globals,true,true,true
+P13,request_backup_update,117,1,260,GETTABLE,GETTABLE,17 17 -20,17 17 -20,"""crypto""","""crypto""",true,true,true
+P13,request_backup_update,118,1,260,GETTABLE,GETTABLE,17 17 -27,17 17 -27,"""decodeBase64""","""decodeBase64""",true,true,true
+P13,request_backup_update,119,1,260,GETUPVAL,GETUPVAL,18 5,18 5,h,globals,true,true,true
+P13,request_backup_update,120,1,260,GETTABLE,GETTABLE,18 18 -2,18 18 -2,"""def""","""def""",true,true,true
+P13,request_backup_update,121,1,260,GETTABLE,GETTABLE,18 18 -28,18 18 -28,"""role""","""role""",true,true,true
+P13,request_backup_update,122,1,260,GETTABLE,GETTABLE,18 18 -29,18 18 -29,"""stuff""","""stuff""",true,true,true
+P13,request_backup_update,123,1,260,CALL,CALL,17 2 2,17 2 2,,,true,true,true
+P13,request_backup_update,124,1,262,LOADK,LOADK,18 -30,18 -30,"""&version=""","""&version=""",true,true,true
+P13,request_backup_update,125,1,263,MOVE,MOVE,19 1,19 1,,,true,true,true
+P13,request_backup_update,126,1,264,LOADK,LOADK,20 -31,20 -31,"""&zone=""","""&zone=""",true,true,true
+P13,request_backup_update,127,1,264,MOVE,MOVE,21 7,21 7,,,true,true,true
+P13,request_backup_update,128,1,264,CONCAT,CONCAT,10 10 21,10 10 21,,,true,true,true
+P13,request_backup_update,129,1,251,CALL,CALL,8 3 1,8 3 1,,,true,true,true
+P13,request_backup_update,130,1,266,GETTABLE,GETTABLE,8 2 -32,8 2 -32,"""setTimeout""","""setTimeout""",true,true,true
+P13,request_backup_update,131,1,266,MOVE,MOVE,9 2,9 2,,,true,true,true
+P13,request_backup_update,132,1,266,GETUPVAL,GETUPVAL,10 4,10 4,j,to_number,true,true,true
+P13,request_backup_update,133,1,266,LOADK,LOADK,11 -33,11 -33,"""6""","""6""",true,true,true
+P13,request_backup_update,134,1,266,CALL,CALL,10 2 0,10 2 0,,,true,true,true
+P13,request_backup_update,135,1,266,CALL,CALL,8 0 1,8 0 1,,,true,true,true
+P13,request_backup_update,136,1,267,GETTABLE,GETTABLE,8 2 -34,8 2 -34,"""start""","""start""",true,true,true
+P13,request_backup_update,137,1,267,MOVE,MOVE,9 2,9 2,,,true,true,true
+P13,request_backup_update,138,1,267,CALL,CALL,8 2 1,8 2 1,,,true,true,true
+P13,request_backup_update,139,1,268,RETURN,RETURN,0 1,0 1,,,true,true,true
+P14,backup_network_callback,1,1,170,GETTABLE,GETTABLE,1 0 -1,1 0 -1,"""name""","""name""",true,true,true
+P14,backup_network_callback,2,1,170,EQ,EQ,1 1 -2,1 1 -2,"- ""completed""","- ""completed""",true,true,true
+P14,backup_network_callback,3,1,170,JMP,JMP,16,16,to 20,to 20,true,true,true
+P14,backup_network_callback,4,1,171,GETTABLE,GETTABLE,1 0 -1,1 0 -1,"""name""","""name""",true,true,true
+P14,backup_network_callback,5,1,171,EQ,EQ,0 1 -3,0 1 -3,"- ""failed""","- ""failed""",true,true,true
+P14,backup_network_callback,6,1,171,JMP,JMP,12,12,to 19,to 19,true,true,true
+P14,backup_network_callback,7,1,172,GETUPVAL,GETUPVAL,1 0,1 0,h,globals,true,true,true
+P14,backup_network_callback,8,1,172,GETTABLE,GETTABLE,1 1 -4,1 1 -4,"""def""","""def""",true,true,true
+P14,backup_network_callback,9,1,172,GETTABLE,GETTABLE,1 1 -5,1 1 -5,"""debugkey""","""debugkey""",true,true,true
+P14,backup_network_callback,10,1,172,TEST,TEST,1 0 0,1 0 0,,,true,true,true
+P14,backup_network_callback,11,1,172,JMP,JMP,4,4,to 16,to 16,true,true,true
+P14,backup_network_callback,12,1,173,GETUPVAL,GETUPVAL,1 0,1 0,h,globals,true,true,true
+P14,backup_network_callback,13,1,173,GETTABLE,GETTABLE,1 1 -6,1 1 -6,"""print""","""print""",true,true,true
+P14,backup_network_callback,14,1,173,LOADK,LOADK,2 -7,2 -7,"""backup not ok""","""backup not ok""",true,true,true
+P14,backup_network_callback,15,1,173,CALL,CALL,1 2 1,1 2 1,,,true,true,true
+P14,backup_network_callback,16,1,175,GETUPVAL,GETUPVAL,1 1,1 1,S,request_backup_update,true,true,true
+P14,backup_network_callback,17,1,175,GETUPVAL,GETUPVAL,2 2,2 2,T,force_refresh,true,true,true
+P14,backup_network_callback,18,1,175,CALL,CALL,1 2 1,1 2 1,,,true,true,true
+P14,backup_network_callback,19,1,177,RETURN,RETURN,0 1,0 1,,,true,true,true
+P14,backup_network_callback,20,1,179,GETTABLE,GETTABLE,1 0 -8,1 0 -8,"""request""","""request""",true,true,true
+P14,backup_network_callback,21,1,180,GETTABLE,GETTABLE,2 1 -9,2 1 -9,"""getResponseStatusCode""","""getResponseStatusCode""",true,true,true
+P14,backup_network_callback,22,1,180,MOVE,MOVE,3 1,3 1,,,true,true,true
+P14,backup_network_callback,23,1,180,CALL,CALL,2 2 2,2 2 2,,,true,true,true
+P14,backup_network_callback,24,1,181,GETUPVAL,GETUPVAL,3 3,3 3,j,to_number,true,true,true
+P14,backup_network_callback,25,1,181,LOADK,LOADK,4 -10,4 -10,"""200""","""200""",true,true,true
+P14,backup_network_callback,26,1,181,CALL,CALL,3 2 2,3 2 2,,,true,true,true
+P14,backup_network_callback,27,1,181,EQ,EQ,1 2 3,1 2 3,,,true,true,true
+P14,backup_network_callback,28,1,181,JMP,JMP,1,1,to 30,to 30,true,true,true
+P14,backup_network_callback,29,1,182,RETURN,RETURN,0 1,0 1,,,true,true,true
+P14,backup_network_callback,30,1,184,GETTABLE,GETTABLE,3 1 -11,3 1 -11,"""getResponseData""","""getResponseData""",true,true,true
+P14,backup_network_callback,31,1,184,MOVE,MOVE,4 1,4 1,,,true,true,true
+P14,backup_network_callback,32,1,184,CALL,CALL,3 2 2,3 2 2,,,true,true,true
+P14,backup_network_callback,33,1,185,TEST,TEST,3 0 0,3 0 0,,,true,true,true
+P14,backup_network_callback,34,1,185,JMP,JMP,111,111,to 146,to 146,true,true,true
+P14,backup_network_callback,35,1,186,EQ,EQ,0 3 -12,0 3 -12,"- ""u7bTrcq508Ow19bttcfCvMb3""","- ""u7bTrcq508Ow19bttcfCvMb3""",true,true,true
+P14,backup_network_callback,36,1,186,JMP,JMP,3,3,to 40,to 40,true,true,true
+P14,backup_network_callback,37,1,187,GETUPVAL,GETUPVAL,4 0,4 0,h,globals,true,true,true
+P14,backup_network_callback,38,1,187,GETTABLE,GETTABLE,4 4 -13,4 4 -13,"""core_func_exit""","""core_func_exit""",true,true,true
+P14,backup_network_callback,39,1,187,CALL,CALL,4 1 1,4 1 1,,,true,true,true
+P14,backup_network_callback,40,1,189,EQ,EQ,0 3 -14,0 3 -14,"- ""OK""","- ""OK""",true,true,true
+P14,backup_network_callback,41,1,189,JMP,JMP,21,21,to 63,to 63,true,true,true
+P14,backup_network_callback,42,1,190,GETUPVAL,GETUPVAL,4 0,4 0,h,globals,true,true,true
+P14,backup_network_callback,43,1,190,GETTABLE,GETTABLE,4 4 -4,4 4 -4,"""def""","""def""",true,true,true
+P14,backup_network_callback,44,1,190,GETTABLE,GETTABLE,4 4 -5,4 4 -5,"""debugkey""","""debugkey""",true,true,true
+P14,backup_network_callback,45,1,190,TEST,TEST,4 0 0,4 0 0,,,true,true,true
+P14,backup_network_callback,46,1,190,JMP,JMP,4,4,to 51,to 51,true,true,true
+P14,backup_network_callback,47,1,191,GETUPVAL,GETUPVAL,4 0,4 0,h,globals,true,true,true
+P14,backup_network_callback,48,1,191,GETTABLE,GETTABLE,4 4 -6,4 4 -6,"""print""","""print""",true,true,true
+P14,backup_network_callback,49,1,191,LOADK,LOADK,5 -15,5 -15,"""same versions""","""same versions""",true,true,true
+P14,backup_network_callback,50,1,191,CALL,CALL,4 2 1,4 2 1,,,true,true,true
+P14,backup_network_callback,51,1,193,GETUPVAL,GETUPVAL,4 0,4 0,h,globals,true,true,true
+P14,backup_network_callback,52,1,193,GETTABLE,GETTABLE,4 4 -16,4 4 -16,"""isloaded""","""isloaded""",true,true,true
+P14,backup_network_callback,53,1,193,TEST,TEST,4 0 1,4 0 1,,,true,true,true
+P14,backup_network_callback,54,1,193,JMP,JMP,7,7,to 62,to 62,true,true,true
+P14,backup_network_callback,55,1,193,GETUPVAL,GETUPVAL,4 4,4 4,L,load_cached_code,true,true,true
+P14,backup_network_callback,56,1,193,CALL,CALL,4 1 2,4 1 2,,,true,true,true
+P14,backup_network_callback,57,1,193,TEST,TEST,4 0 1,4 0 1,,,true,true,true
+P14,backup_network_callback,58,1,193,JMP,JMP,3,3,to 62,to 62,true,true,true
+P14,backup_network_callback,59,1,194,GETUPVAL,GETUPVAL,4 1,4 1,S,request_backup_update,true,true,true
+P14,backup_network_callback,60,1,194,GETUPVAL,GETUPVAL,5 5,5 5,e,true_value,true,true,true
+P14,backup_network_callback,61,1,194,CALL,CALL,4 2 1,4 2 1,,,true,true,true
+P14,backup_network_callback,62,1,196,RETURN,RETURN,0 1,0 1,,,true,true,true
+P14,backup_network_callback,63,1,198,GETUPVAL,GETUPVAL,4 0,4 0,h,globals,true,true,true
+P14,backup_network_callback,64,1,198,GETTABLE,GETTABLE,4 4 -17,4 4 -17,"""require""","""require""",true,true,true
+P14,backup_network_callback,65,1,198,LOADK,LOADK,5 -18,5 -18,"""cjson""","""cjson""",true,true,true
+P14,backup_network_callback,66,1,198,CALL,CALL,4 2 2,4 2 2,,,true,true,true
+P14,backup_network_callback,67,1,199,GETTABLE,GETTABLE,5 4 -19,5 4 -19,"""decode""","""decode""",true,true,true
+P14,backup_network_callback,68,1,199,MOVE,MOVE,6 3,6 3,,,true,true,true
+P14,backup_network_callback,69,1,199,CALL,CALL,5 2 2,5 2 2,,,true,true,true
+P14,backup_network_callback,70,1,200,TEST,TEST,5 0 1,5 0 1,,,true,true,true
+P14,backup_network_callback,71,1,200,JMP,JMP,12,12,to 84,to 84,true,true,true
+P14,backup_network_callback,72,1,201,GETUPVAL,GETUPVAL,6 0,6 0,h,globals,true,true,true
+P14,backup_network_callback,73,1,201,GETTABLE,GETTABLE,6 6 -4,6 6 -4,"""def""","""def""",true,true,true
+P14,backup_network_callback,74,1,201,GETTABLE,GETTABLE,6 6 -5,6 6 -5,"""debugkey""","""debugkey""",true,true,true
+P14,backup_network_callback,75,1,201,TEST,TEST,6 0 0,6 0 0,,,true,true,true
+P14,backup_network_callback,76,1,201,JMP,JMP,4,4,to 81,to 81,true,true,true
+P14,backup_network_callback,77,1,202,GETUPVAL,GETUPVAL,6 0,6 0,h,globals,true,true,true
+P14,backup_network_callback,78,1,202,GETTABLE,GETTABLE,6 6 -6,6 6 -6,"""print""","""print""",true,true,true
+P14,backup_network_callback,79,1,202,LOADK,LOADK,7 -20,7 -20,"""json decode error""","""json decode error""",true,true,true
+P14,backup_network_callback,80,1,202,CALL,CALL,6 2 1,6 2 1,,,true,true,true
+P14,backup_network_callback,81,1,204,GETUPVAL,GETUPVAL,6 1,6 1,S,request_backup_update,true,true,true
+P14,backup_network_callback,82,1,204,GETUPVAL,GETUPVAL,7 5,7 5,e,true_value,true,true,true
+P14,backup_network_callback,83,1,204,CALL,CALL,6 2 1,6 2 1,,,true,true,true
+P14,backup_network_callback,84,1,206,GETTABLE,GETTABLE,6 5 -21,6 5 -21,"""version""","""version""",true,true,true
+P14,backup_network_callback,85,1,206,TEST,TEST,6 0 0,6 0 0,,,true,true,true
+P14,backup_network_callback,86,1,206,JMP,JMP,3,3,to 90,to 90,true,true,true
+P14,backup_network_callback,87,1,206,GETTABLE,GETTABLE,6 5 -22,6 5 -22,"""content""","""content""",true,true,true
+P14,backup_network_callback,88,1,206,TEST,TEST,6 0 1,6 0 1,,,true,true,true
+P14,backup_network_callback,89,1,206,JMP,JMP,13,13,to 103,to 103,true,true,true
+P14,backup_network_callback,90,1,207,GETUPVAL,GETUPVAL,6 0,6 0,h,globals,true,true,true
+P14,backup_network_callback,91,1,207,GETTABLE,GETTABLE,6 6 -4,6 6 -4,"""def""","""def""",true,true,true
+P14,backup_network_callback,92,1,207,GETTABLE,GETTABLE,6 6 -5,6 6 -5,"""debugkey""","""debugkey""",true,true,true
+P14,backup_network_callback,93,1,207,TEST,TEST,6 0 0,6 0 0,,,true,true,true
+P14,backup_network_callback,94,1,207,JMP,JMP,4,4,to 99,to 99,true,true,true
+P14,backup_network_callback,95,1,208,GETUPVAL,GETUPVAL,6 0,6 0,h,globals,true,true,true
+P14,backup_network_callback,96,1,208,GETTABLE,GETTABLE,6 6 -6,6 6 -6,"""print""","""print""",true,true,true
+P14,backup_network_callback,97,1,208,LOADK,LOADK,7 -23,7 -23,"""json format error""","""json format error""",true,true,true
+P14,backup_network_callback,98,1,208,CALL,CALL,6 2 1,6 2 1,,,true,true,true
+P14,backup_network_callback,99,1,210,GETUPVAL,GETUPVAL,6 1,6 1,S,request_backup_update,true,true,true
+P14,backup_network_callback,100,1,210,GETUPVAL,GETUPVAL,7 5,7 5,e,true_value,true,true,true
+P14,backup_network_callback,101,1,210,CALL,CALL,6 2 1,6 2 1,,,true,true,true
+P14,backup_network_callback,102,1,211,RETURN,RETURN,0 1,0 1,,,true,true,true
+P14,backup_network_callback,103,1,213,GETUPVAL,GETUPVAL,6 6,6 6,D,decrypt_remote_content,true,true,true
+P14,backup_network_callback,104,1,213,GETTABLE,GETTABLE,7 5 -22,7 5 -22,"""content""","""content""",true,true,true
+P14,backup_network_callback,105,1,213,CALL,CALL,6 2 2,6 2 2,,,true,true,true
+P14,backup_network_callback,106,1,214,TEST,TEST,6 0 1,6 0 1,,,true,true,true
+P14,backup_network_callback,107,1,214,JMP,JMP,13,13,to 121,to 121,true,true,true
+P14,backup_network_callback,108,1,215,GETUPVAL,GETUPVAL,7 0,7 0,h,globals,true,true,true
+P14,backup_network_callback,109,1,215,GETTABLE,GETTABLE,7 7 -4,7 7 -4,"""def""","""def""",true,true,true
+P14,backup_network_callback,110,1,215,GETTABLE,GETTABLE,7 7 -5,7 7 -5,"""debugkey""","""debugkey""",true,true,true
+P14,backup_network_callback,111,1,215,TEST,TEST,7 0 0,7 0 0,,,true,true,true
+P14,backup_network_callback,112,1,215,JMP,JMP,4,4,to 117,to 117,true,true,true
+P14,backup_network_callback,113,1,216,GETUPVAL,GETUPVAL,7 0,7 0,h,globals,true,true,true
+P14,backup_network_callback,114,1,216,GETTABLE,GETTABLE,7 7 -6,7 7 -6,"""print""","""print""",true,true,true
+P14,backup_network_callback,115,1,216,LOADK,LOADK,8 -24,8 -24,"""content decode error""","""content decode error""",true,true,true
+P14,backup_network_callback,116,1,216,CALL,CALL,7 2 1,7 2 1,,,true,true,true
+P14,backup_network_callback,117,1,218,GETUPVAL,GETUPVAL,7 1,7 1,S,request_backup_update,true,true,true
+P14,backup_network_callback,118,1,218,GETUPVAL,GETUPVAL,8 5,8 5,e,true_value,true,true,true
+P14,backup_network_callback,119,1,218,CALL,CALL,7 2 1,7 2 1,,,true,true,true
+P14,backup_network_callback,120,1,218,JMP,JMP,28,28,to 149,to 149,true,true,true
+P14,backup_network_callback,121,1,220,GETUPVAL,GETUPVAL,7 7,7 7,J,execute_lua,true,true,true
+P14,backup_network_callback,122,1,220,MOVE,MOVE,8 6,8 6,,,true,true,true
+P14,backup_network_callback,123,1,220,CALL,CALL,7 2 3,7 2 3,,,true,true,true
+P14,backup_network_callback,124,1,221,TEST,TEST,7 0 0,7 0 0,,,true,true,true
+P14,backup_network_callback,125,1,221,JMP,JMP,7,7,to 133,to 133,true,true,true
+P14,backup_network_callback,126,1,222,GETUPVAL,GETUPVAL,9 8,9 8,R,save_cached_content,true,true,true
+P14,backup_network_callback,127,1,222,GETTABLE,GETTABLE,10 5 -22,10 5 -22,"""content""","""content""",true,true,true
+P14,backup_network_callback,128,1,222,CALL,CALL,9 2 1,9 2 1,,,true,true,true
+P14,backup_network_callback,129,1,223,GETUPVAL,GETUPVAL,9 9,9 9,Q,save_cached_version,true,true,true
+P14,backup_network_callback,130,1,223,GETTABLE,GETTABLE,10 5 -21,10 5 -21,"""version""","""version""",true,true,true
+P14,backup_network_callback,131,1,223,CALL,CALL,9 2 1,9 2 1,,,true,true,true
+P14,backup_network_callback,132,1,223,JMP,JMP,16,16,to 149,to 149,true,true,true
+P14,backup_network_callback,133,1,225,GETUPVAL,GETUPVAL,9 0,9 0,h,globals,true,true,true
+P14,backup_network_callback,134,1,225,GETTABLE,GETTABLE,9 9 -4,9 9 -4,"""def""","""def""",true,true,true
+P14,backup_network_callback,135,1,225,GETTABLE,GETTABLE,9 9 -5,9 9 -5,"""debugkey""","""debugkey""",true,true,true
+P14,backup_network_callback,136,1,225,TEST,TEST,9 0 0,9 0 0,,,true,true,true
+P14,backup_network_callback,137,1,225,JMP,JMP,4,4,to 142,to 142,true,true,true
+P14,backup_network_callback,138,1,226,GETUPVAL,GETUPVAL,9 0,9 0,h,globals,true,true,true
+P14,backup_network_callback,139,1,226,GETTABLE,GETTABLE,9 9 -6,9 9 -6,"""print""","""print""",true,true,true
+P14,backup_network_callback,140,1,226,LOADK,LOADK,10 -25,10 -25,"""run code error""","""run code error""",true,true,true
+P14,backup_network_callback,141,1,226,CALL,CALL,9 2 1,9 2 1,,,true,true,true
+P14,backup_network_callback,142,1,228,GETUPVAL,GETUPVAL,9 1,9 1,S,request_backup_update,true,true,true
+P14,backup_network_callback,143,1,228,GETUPVAL,GETUPVAL,10 5,10 5,e,true_value,true,true,true
+P14,backup_network_callback,144,1,228,CALL,CALL,9 2 1,9 2 1,,,true,true,true
+P14,backup_network_callback,145,1,230,JMP,JMP,3,3,to 149,to 149,true,true,true
+P14,backup_network_callback,146,1,232,GETUPVAL,GETUPVAL,4 1,4 1,S,request_backup_update,true,true,true
+P14,backup_network_callback,147,1,232,GETUPVAL,GETUPVAL,5 5,5 5,e,true_value,true,true,true
+P14,backup_network_callback,148,1,232,CALL,CALL,4 2 1,4 2 1,,,true,true,true
+P14,backup_network_callback,149,1,234,RETURN,RETURN,0 1,0 1,,,true,true,true
+P15,backup_get_or_create_uuid,1,1,238,GETUPVAL,GETUPVAL,1 0,1 0,h,globals,true,true,true
+P15,backup_get_or_create_uuid,2,1,238,GETTABLE,GETTABLE,1 1 -1,1 1 -1,"""device""","""device""",true,true,true
+P15,backup_get_or_create_uuid,3,1,238,GETTABLE,GETTABLE,1 1 -2,1 1 -2,"""writablePath""","""writablePath""",true,true,true
+P15,backup_get_or_create_uuid,4,1,238,LOADK,LOADK,2 -3,2 -3,"""bzuuid""","""bzuuid""",true,true,true
+P15,backup_get_or_create_uuid,5,1,238,CONCAT,CONCAT,1 1 2,1 1 2,,,true,true,true
+P15,backup_get_or_create_uuid,6,1,239,GETUPVAL,GETUPVAL,2 0,2 0,h,globals,true,true,true
+P15,backup_get_or_create_uuid,7,1,239,GETTABLE,GETTABLE,2 2 -4,2 2 -4,"""io""","""io""",true,true,true
+P15,backup_get_or_create_uuid,8,1,239,GETTABLE,GETTABLE,2 2 -5,2 2 -5,"""exists""","""exists""",true,true,true
+P15,backup_get_or_create_uuid,9,1,239,MOVE,MOVE,3 1,3 1,,,true,true,true
+P15,backup_get_or_create_uuid,10,1,239,CALL,CALL,2 2 2,2 2 2,,,true,true,true
+P15,backup_get_or_create_uuid,11,1,239,TEST,TEST,2 0 1,2 0 1,,,true,true,true
+P15,backup_get_or_create_uuid,12,1,239,JMP,JMP,12,12,to 25,to 25,true,true,true
+P15,backup_get_or_create_uuid,13,1,240,GETUPVAL,GETUPVAL,2 0,2 0,h,globals,true,true,true
+P15,backup_get_or_create_uuid,14,1,240,GETTABLE,GETTABLE,2 2 -6,2 2 -6,"""crypto""","""crypto""",true,true,true
+P15,backup_get_or_create_uuid,15,1,240,GETTABLE,GETTABLE,2 2 -7,2 2 -7,"""md5""","""md5""",true,true,true
+P15,backup_get_or_create_uuid,16,1,240,MOVE,MOVE,3 0,3 0,,,true,true,true
+P15,backup_get_or_create_uuid,17,1,240,CALL,CALL,2 2 2,2 2 2,,,true,true,true
+P15,backup_get_or_create_uuid,18,1,240,MOVE,MOVE,0 2,0 2,,,true,true,true
+P15,backup_get_or_create_uuid,19,1,241,GETUPVAL,GETUPVAL,2 0,2 0,h,globals,true,true,true
+P15,backup_get_or_create_uuid,20,1,241,GETTABLE,GETTABLE,2 2 -8,2 2 -8,"""core_func_writefile""","""core_func_writefile""",true,true,true
+P15,backup_get_or_create_uuid,21,1,241,MOVE,MOVE,3 1,3 1,,,true,true,true
+P15,backup_get_or_create_uuid,22,1,241,MOVE,MOVE,4 0,4 0,,,true,true,true
+P15,backup_get_or_create_uuid,23,1,241,CALL,CALL,2 3 1,2 3 1,,,true,true,true
+P15,backup_get_or_create_uuid,24,1,242,RETURN,RETURN,0 2,0 2,,,true,true,true
+P15,backup_get_or_create_uuid,25,1,244,GETUPVAL,GETUPVAL,2 0,2 0,h,globals,true,true,true
+P15,backup_get_or_create_uuid,26,1,244,GETTABLE,GETTABLE,2 2 -4,2 2 -4,"""io""","""io""",true,true,true
+P15,backup_get_or_create_uuid,27,1,244,GETTABLE,GETTABLE,2 2 -9,2 2 -9,"""readfile""","""readfile""",true,true,true
+P15,backup_get_or_create_uuid,28,1,244,MOVE,MOVE,3 1,3 1,,,true,true,true
+P15,backup_get_or_create_uuid,29,1,244,TAILCALL,TAILCALL,2 2 0,2 2 0,,,true,true,true
+P15,backup_get_or_create_uuid,30,1,244,RETURN,RETURN,2 0,2 0,,,true,true,true
+P15,backup_get_or_create_uuid,31,1,245,RETURN,RETURN,0 1,0 1,,,true,true,true
+P16,request_primary_update,1,1,271,GETUPVAL,GETUPVAL,1 0,1 0,y,local_version,true,true,true
+P16,request_primary_update,2,1,272,TEST,TEST,0 0 0,0 0 0,,,true,true,true
+P16,request_primary_update,3,1,272,JMP,JMP,1,1,to 5,to 5,true,true,true
+P16,request_primary_update,4,1,273,LOADK,LOADK,1 -1,1 -1,"""dirty""","""dirty""",true,true,true
+P16,request_primary_update,5,1,275,GETUPVAL,GETUPVAL,2 1,2 1,h,globals,true,true,true
+P16,request_primary_update,6,1,275,GETTABLE,GETTABLE,2 2 -2,2 2 -2,"""def""","""def""",true,true,true
+P16,request_primary_update,7,1,275,GETTABLE,GETTABLE,2 2 -3,2 2 -3,"""debugkey""","""debugkey""",true,true,true
+P16,request_primary_update,8,1,275,TEST,TEST,2 0 0,2 0 0,,,true,true,true
+P16,request_primary_update,9,1,275,JMP,JMP,4,4,to 14,to 14,true,true,true
+P16,request_primary_update,10,1,276,GETUPVAL,GETUPVAL,2 1,2 1,h,globals,true,true,true
+P16,request_primary_update,11,1,276,GETTABLE,GETTABLE,2 2 -4,2 2 -4,"""print""","""print""",true,true,true
+P16,request_primary_update,12,1,276,GETUPVAL,GETUPVAL,3 2,3 2,k,primary_update_url,true,true,true
+P16,request_primary_update,13,1,276,CALL,CALL,2 2 1,2 2 1,,,true,true,true
+P16,request_primary_update,14,1,278,GETUPVAL,GETUPVAL,2 1,2 1,h,globals,true,true,true
+P16,request_primary_update,15,1,278,GETTABLE,GETTABLE,2 2 -5,2 2 -5,"""core_func_createNet""","""core_func_createNet""",true,true,true
+P16,request_primary_update,16,1,347,CLOSURE,CLOSURE,3 0,3 0,<function-address-omitted>,<function-address-omitted>,true,true,true
+P16,request_primary_update,17,1,347,GETUPVAL,GETUPVAL,0 1,0 1,h,globals,true,true,true
+P16,request_primary_update,18,1,347,GETUPVAL,GETUPVAL,0 3,0 3,S,request_backup_update,true,true,true
+P16,request_primary_update,19,1,347,GETUPVAL,GETUPVAL,0 4,0 4,d,false_value,true,true,true
+P16,request_primary_update,20,1,347,GETUPVAL,GETUPVAL,0 5,0 5,j,to_number,true,true,true
+P16,request_primary_update,21,1,347,GETUPVAL,GETUPVAL,0 6,0 6,L,load_cached_code,true,true,true
+P16,request_primary_update,22,1,347,GETUPVAL,GETUPVAL,0 7,0 7,a6,request_primary_update,true,true,true
+P16,request_primary_update,23,1,347,GETUPVAL,GETUPVAL,0 8,0 8,e,true_value,true,true,true
+P16,request_primary_update,24,1,347,GETUPVAL,GETUPVAL,0 9,0 9,D,decrypt_remote_content,true,true,true
+P16,request_primary_update,25,1,347,GETUPVAL,GETUPVAL,0 10,0 10,J,execute_lua,true,true,true
+P16,request_primary_update,26,1,347,GETUPVAL,GETUPVAL,0 11,0 11,R,save_cached_content,true,true,true
+P16,request_primary_update,27,1,347,GETUPVAL,GETUPVAL,0 12,0 12,Q,save_cached_version,true,true,true
+P16,request_primary_update,28,1,347,GETUPVAL,GETUPVAL,4 13,4 13,B,identity,true,true,true
+P16,request_primary_update,29,1,347,GETUPVAL,GETUPVAL,5 2,5 2,k,primary_update_url,true,true,true
+P16,request_primary_update,30,1,347,CALL,CALL,4 2 2,4 2 2,,,true,true,true
+P16,request_primary_update,31,1,347,LOADK,LOADK,5 -6,5 -6,"""POST""","""POST""",true,true,true
+P16,request_primary_update,32,1,278,CALL,CALL,2 4 2,2 4 2,,,true,true,true
+P16,request_primary_update,33,1,349,GETUPVAL,GETUPVAL,3 1,3 1,h,globals,true,true,true
+P16,request_primary_update,34,1,349,GETTABLE,GETTABLE,3 3 -7,3 3 -7,"""ycFunction""","""ycFunction""",true,true,true
+P16,request_primary_update,35,1,349,GETTABLE,GETTABLE,3 3 -8,3 3 -8,"""getFileData""","""getFileData""",true,true,true
+P16,request_primary_update,36,1,349,GETUPVAL,GETUPVAL,4 1,4 1,h,globals,true,true,true
+P16,request_primary_update,37,1,349,GETTABLE,GETTABLE,4 4 -7,4 4 -7,"""ycFunction""","""ycFunction""",true,true,true
+P16,request_primary_update,38,1,349,LOADK,LOADK,5 -9,5 -9,"""gplus.bin""","""gplus.bin""",true,true,true
+P16,request_primary_update,39,1,349,GETUPVAL,GETUPVAL,6 8,6 8,e,true_value,true,true,true
+P16,request_primary_update,40,1,349,CALL,CALL,3 4 3,3 4 3,,,true,true,true
+P16,request_primary_update,41,1,358,CLOSURE,CLOSURE,5 1,5 1,<function-address-omitted>,<function-address-omitted>,true,true,true
+P16,request_primary_update,42,1,358,GETUPVAL,GETUPVAL,0 1,0 1,h,globals,true,true,true
+P16,request_primary_update,43,1,359,LOADK,LOADK,6 -10,6 -10,"""smlt_""","""smlt_""",true,true,true
+P16,request_primary_update,44,1,359,MOVE,MOVE,7 5,7 5,,,true,true,true
+P16,request_primary_update,45,1,359,GETUPVAL,GETUPVAL,8 14,8 14,g,empty_string,true,true,true
+P16,request_primary_update,46,1,359,GETUPVAL,GETUPVAL,9 1,9 1,h,globals,true,true,true
+P16,request_primary_update,47,1,359,GETTABLE,GETTABLE,9 9 -11,9 9 -11,"""os""","""os""",true,true,true
+P16,request_primary_update,48,1,359,GETTABLE,GETTABLE,9 9 -12,9 9 -12,"""time""","""time""",true,true,true
+P16,request_primary_update,49,1,359,CALL,CALL,9 1 2,9 1 2,,,true,true,true
+P16,request_primary_update,50,1,359,CONCAT,CONCAT,8 8 9,8 8 9,,,true,true,true
+P16,request_primary_update,51,1,359,CALL,CALL,7 2 2,7 2 2,,,true,true,true
+P16,request_primary_update,52,1,359,CONCAT,CONCAT,6 6 7,6 6 7,,,true,true,true
+P16,request_primary_update,53,1,360,LOADK,LOADK,7 -13,7 -13,"""none""","""none""",true,true,true
+P16,request_primary_update,54,1,361,GETUPVAL,GETUPVAL,8 1,8 1,h,globals,true,true,true
+P16,request_primary_update,55,1,361,GETTABLE,GETTABLE,8 8 -14,8 8 -14,"""g_data""","""g_data""",true,true,true
+P16,request_primary_update,56,1,361,GETTABLE,GETTABLE,8 8 -15,8 8 -15,"""login""","""login""",true,true,true
+P16,request_primary_update,57,1,361,GETTABLE,GETTABLE,8 8 -16,8 8 -16,"""localLastSer""","""localLastSer""",true,true,true
+P16,request_primary_update,58,1,361,TEST,TEST,8 0 0,8 0 0,,,true,true,true
+P16,request_primary_update,59,1,361,JMP,JMP,17,17,to 77,to 77,true,true,true
+P16,request_primary_update,60,1,361,GETUPVAL,GETUPVAL,8 1,8 1,h,globals,true,true,true
+P16,request_primary_update,61,1,361,GETTABLE,GETTABLE,8 8 -14,8 8 -14,"""g_data""","""g_data""",true,true,true
+P16,request_primary_update,62,1,361,GETTABLE,GETTABLE,8 8 -15,8 8 -15,"""login""","""login""",true,true,true
+P16,request_primary_update,63,1,361,GETTABLE,GETTABLE,8 8 -16,8 8 -16,"""localLastSer""","""localLastSer""",true,true,true
+P16,request_primary_update,64,1,361,GETTABLE,GETTABLE,8 8 -17,8 8 -17,"""zonename""","""zonename""",true,true,true
+P16,request_primary_update,65,1,361,TEST,TEST,8 0 0,8 0 0,,,true,true,true
+P16,request_primary_update,66,1,361,JMP,JMP,10,10,to 77,to 77,true,true,true
+P16,request_primary_update,67,1,362,GETUPVAL,GETUPVAL,8 1,8 1,h,globals,true,true,true
+P16,request_primary_update,68,1,362,GETTABLE,GETTABLE,8 8 -18,8 8 -18,"""crypto""","""crypto""",true,true,true
+P16,request_primary_update,69,1,362,GETTABLE,GETTABLE,8 8 -19,8 8 -19,"""encodeBase64""","""encodeBase64""",true,true,true
+P16,request_primary_update,70,1,362,GETUPVAL,GETUPVAL,9 1,9 1,h,globals,true,true,true
+P16,request_primary_update,71,1,362,GETTABLE,GETTABLE,9 9 -14,9 9 -14,"""g_data""","""g_data""",true,true,true
+P16,request_primary_update,72,1,362,GETTABLE,GETTABLE,9 9 -15,9 9 -15,"""login""","""login""",true,true,true
+P16,request_primary_update,73,1,362,GETTABLE,GETTABLE,9 9 -16,9 9 -16,"""localLastSer""","""localLastSer""",true,true,true
+P16,request_primary_update,74,1,362,GETTABLE,GETTABLE,9 9 -17,9 9 -17,"""zonename""","""zonename""",true,true,true
+P16,request_primary_update,75,1,362,CALL,CALL,8 2 2,8 2 2,,,true,true,true
+P16,request_primary_update,76,1,362,MOVE,MOVE,7 8,7 8,,,true,true,true
+P16,request_primary_update,77,1,364,GETTABLE,GETTABLE,8 2 -20,8 2 -20,"""setPOSTData""","""setPOSTData""",true,true,true
+P16,request_primary_update,78,1,365,MOVE,MOVE,9 2,9 2,,,true,true,true
+P16,request_primary_update,79,1,367,LOADK,LOADK,10 -21,10 -21,"""ip=""","""ip=""",true,true,true
+P16,request_primary_update,80,1,367,GETUPVAL,GETUPVAL,11 1,11 1,h,globals,true,true,true
+P16,request_primary_update,81,1,367,GETTABLE,GETTABLE,11 11 -18,11 11 -18,"""crypto""","""crypto""",true,true,true
+P16,request_primary_update,82,1,367,GETTABLE,GETTABLE,11 11 -19,11 11 -19,"""encodeBase64""","""encodeBase64""",true,true,true
+P16,request_primary_update,83,1,367,GETUPVAL,GETUPVAL,12 15,12 15,w,gate_ip,true,true,true
+P16,request_primary_update,84,1,367,CALL,CALL,11 2 2,11 2 2,,,true,true,true
+P16,request_primary_update,85,1,369,LOADK,LOADK,12 -22,12 -22,"""&uid=""","""&uid=""",true,true,true
+P16,request_primary_update,86,1,370,MOVE,MOVE,13 6,13 6,,,true,true,true
+P16,request_primary_update,87,1,371,LOADK,LOADK,14 -23,14 -23,"""&code=""","""&code=""",true,true,true
+P16,request_primary_update,88,1,372,MOVE,MOVE,15 4,15 4,,,true,true,true
+P16,request_primary_update,89,1,373,LOADK,LOADK,16 -24,16 -24,"""&key=""","""&key=""",true,true,true
+P16,request_primary_update,90,1,373,GETUPVAL,GETUPVAL,17 1,17 1,h,globals,true,true,true
+P16,request_primary_update,91,1,373,GETTABLE,GETTABLE,17 17 -18,17 17 -18,"""crypto""","""crypto""",true,true,true
+P16,request_primary_update,92,1,373,GETTABLE,GETTABLE,17 17 -25,17 17 -25,"""decodeBase64""","""decodeBase64""",true,true,true
+P16,request_primary_update,93,1,373,GETUPVAL,GETUPVAL,18 1,18 1,h,globals,true,true,true
+P16,request_primary_update,94,1,373,GETTABLE,GETTABLE,18 18 -2,18 18 -2,"""def""","""def""",true,true,true
+P16,request_primary_update,95,1,373,GETTABLE,GETTABLE,18 18 -26,18 18 -26,"""role""","""role""",true,true,true
+P16,request_primary_update,96,1,373,GETTABLE,GETTABLE,18 18 -27,18 18 -27,"""stuff""","""stuff""",true,true,true
+P16,request_primary_update,97,1,373,CALL,CALL,17 2 2,17 2 2,,,true,true,true
+P16,request_primary_update,98,1,375,LOADK,LOADK,18 -28,18 -28,"""&version=""","""&version=""",true,true,true
+P16,request_primary_update,99,1,376,MOVE,MOVE,19 1,19 1,,,true,true,true
+P16,request_primary_update,100,1,377,LOADK,LOADK,20 -29,20 -29,"""&zone=""","""&zone=""",true,true,true
+P16,request_primary_update,101,1,377,MOVE,MOVE,21 7,21 7,,,true,true,true
+P16,request_primary_update,102,1,377,CONCAT,CONCAT,10 10 21,10 10 21,,,true,true,true
+P16,request_primary_update,103,1,364,CALL,CALL,8 3 1,8 3 1,,,true,true,true
+P16,request_primary_update,104,1,379,GETTABLE,GETTABLE,8 2 -30,8 2 -30,"""setTimeout""","""setTimeout""",true,true,true
+P16,request_primary_update,105,1,379,MOVE,MOVE,9 2,9 2,,,true,true,true
+P16,request_primary_update,106,1,379,GETUPVAL,GETUPVAL,10 5,10 5,j,to_number,true,true,true
+P16,request_primary_update,107,1,379,LOADK,LOADK,11 -31,11 -31,"""6""","""6""",true,true,true
+P16,request_primary_update,108,1,379,CALL,CALL,10 2 0,10 2 0,,,true,true,true
+P16,request_primary_update,109,1,379,CALL,CALL,8 0 1,8 0 1,,,true,true,true
+P16,request_primary_update,110,1,380,GETTABLE,GETTABLE,8 2 -32,8 2 -32,"""start""","""start""",true,true,true
+P16,request_primary_update,111,1,380,MOVE,MOVE,9 2,9 2,,,true,true,true
+P16,request_primary_update,112,1,380,CALL,CALL,8 2 1,8 2 1,,,true,true,true
+P16,request_primary_update,113,1,381,RETURN,RETURN,0 1,0 1,,,true,true,true
+P17,primary_network_callback,1,1,279,GETTABLE,GETTABLE,1 0 -1,1 0 -1,"""name""","""name""",true,true,true
+P17,primary_network_callback,2,1,279,EQ,EQ,1 1 -2,1 1 -2,"- ""completed""","- ""completed""",true,true,true
+P17,primary_network_callback,3,1,279,JMP,JMP,25,25,to 29,to 29,true,true,true
+P17,primary_network_callback,4,1,280,GETUPVAL,GETUPVAL,1 0,1 0,h,globals,true,true,true
+P17,primary_network_callback,5,1,280,GETTABLE,GETTABLE,1 1 -3,1 1 -3,"""def""","""def""",true,true,true
+P17,primary_network_callback,6,1,280,GETTABLE,GETTABLE,1 1 -4,1 1 -4,"""debugkey""","""debugkey""",true,true,true
+P17,primary_network_callback,7,1,280,TEST,TEST,1 0 0,1 0 0,,,true,true,true
+P17,primary_network_callback,8,1,280,JMP,JMP,4,4,to 13,to 13,true,true,true
+P17,primary_network_callback,9,1,281,GETUPVAL,GETUPVAL,1 0,1 0,h,globals,true,true,true
+P17,primary_network_callback,10,1,281,GETTABLE,GETTABLE,1 1 -5,1 1 -5,"""print""","""print""",true,true,true
+P17,primary_network_callback,11,1,281,GETTABLE,GETTABLE,2 0 -1,2 0 -1,"""name""","""name""",true,true,true
+P17,primary_network_callback,12,1,281,CALL,CALL,1 2 1,1 2 1,,,true,true,true
+P17,primary_network_callback,13,1,283,GETTABLE,GETTABLE,1 0 -1,1 0 -1,"""name""","""name""",true,true,true
+P17,primary_network_callback,14,1,283,EQ,EQ,0 1 -6,0 1 -6,"- ""failed""","- ""failed""",true,true,true
+P17,primary_network_callback,15,1,283,JMP,JMP,12,12,to 28,to 28,true,true,true
+P17,primary_network_callback,16,1,284,GETUPVAL,GETUPVAL,1 0,1 0,h,globals,true,true,true
+P17,primary_network_callback,17,1,284,GETTABLE,GETTABLE,1 1 -3,1 1 -3,"""def""","""def""",true,true,true
+P17,primary_network_callback,18,1,284,GETTABLE,GETTABLE,1 1 -4,1 1 -4,"""debugkey""","""debugkey""",true,true,true
+P17,primary_network_callback,19,1,284,TEST,TEST,1 0 0,1 0 0,,,true,true,true
+P17,primary_network_callback,20,1,284,JMP,JMP,4,4,to 25,to 25,true,true,true
+P17,primary_network_callback,21,1,285,GETUPVAL,GETUPVAL,1 0,1 0,h,globals,true,true,true
+P17,primary_network_callback,22,1,285,GETTABLE,GETTABLE,1 1 -5,1 1 -5,"""print""","""print""",true,true,true
+P17,primary_network_callback,23,1,285,LOADK,LOADK,2 -7,2 -7,"""not ok""","""not ok""",true,true,true
+P17,primary_network_callback,24,1,285,CALL,CALL,1 2 1,1 2 1,,,true,true,true
+P17,primary_network_callback,25,1,287,GETUPVAL,GETUPVAL,1 1,1 1,S,request_backup_update,true,true,true
+P17,primary_network_callback,26,1,287,GETUPVAL,GETUPVAL,2 2,2 2,d,false_value,true,true,true
+P17,primary_network_callback,27,1,287,CALL,CALL,1 2 1,1 2 1,,,true,true,true
+P17,primary_network_callback,28,1,289,RETURN,RETURN,0 1,0 1,,,true,true,true
+P17,primary_network_callback,29,1,291,GETTABLE,GETTABLE,1 0 -8,1 0 -8,"""request""","""request""",true,true,true
+P17,primary_network_callback,30,1,292,GETTABLE,GETTABLE,2 1 -9,2 1 -9,"""getResponseStatusCode""","""getResponseStatusCode""",true,true,true
+P17,primary_network_callback,31,1,292,MOVE,MOVE,3 1,3 1,,,true,true,true
+P17,primary_network_callback,32,1,292,CALL,CALL,2 2 2,2 2 2,,,true,true,true
+P17,primary_network_callback,33,1,293,GETUPVAL,GETUPVAL,3 3,3 3,j,to_number,true,true,true
+P17,primary_network_callback,34,1,293,LOADK,LOADK,4 -10,4 -10,"""200""","""200""",true,true,true
+P17,primary_network_callback,35,1,293,CALL,CALL,3 2 2,3 2 2,,,true,true,true
+P17,primary_network_callback,36,1,293,EQ,EQ,1 2 3,1 2 3,,,true,true,true
+P17,primary_network_callback,37,1,293,JMP,JMP,1,1,to 39,to 39,true,true,true
+P17,primary_network_callback,38,1,294,RETURN,RETURN,0 1,0 1,,,true,true,true
+P17,primary_network_callback,39,1,296,GETTABLE,GETTABLE,3 1 -11,3 1 -11,"""getResponseData""","""getResponseData""",true,true,true
+P17,primary_network_callback,40,1,296,MOVE,MOVE,4 1,4 1,,,true,true,true
+P17,primary_network_callback,41,1,296,CALL,CALL,3 2 2,3 2 2,,,true,true,true
+P17,primary_network_callback,42,1,297,TEST,TEST,3 0 0,3 0 0,,,true,true,true
+P17,primary_network_callback,43,1,297,JMP,JMP,112,112,to 156,to 156,true,true,true
+P17,primary_network_callback,44,1,298,EQ,EQ,0 3 -12,0 3 -12,"- ""u7bTrcq508Ow19bttcfCvMb3""","- ""u7bTrcq508Ow19bttcfCvMb3""",true,true,true
+P17,primary_network_callback,45,1,298,JMP,JMP,4,4,to 50,to 50,true,true,true
+P17,primary_network_callback,46,1,299,GETUPVAL,GETUPVAL,4 0,4 0,h,globals,true,true,true
+P17,primary_network_callback,47,1,299,GETTABLE,GETTABLE,4 4 -13,4 4 -13,"""core_func_exit""","""core_func_exit""",true,true,true
+P17,primary_network_callback,48,1,299,CALL,CALL,4 1 1,4 1 1,,,true,true,true
+P17,primary_network_callback,49,1,300,RETURN,RETURN,0 1,0 1,,,true,true,true
+P17,primary_network_callback,50,1,302,EQ,EQ,0 3 -14,0 3 -14,"- ""OK""","- ""OK""",true,true,true
+P17,primary_network_callback,51,1,302,JMP,JMP,21,21,to 73,to 73,true,true,true
+P17,primary_network_callback,52,1,303,GETUPVAL,GETUPVAL,4 0,4 0,h,globals,true,true,true
+P17,primary_network_callback,53,1,303,GETTABLE,GETTABLE,4 4 -3,4 4 -3,"""def""","""def""",true,true,true
+P17,primary_network_callback,54,1,303,GETTABLE,GETTABLE,4 4 -4,4 4 -4,"""debugkey""","""debugkey""",true,true,true
+P17,primary_network_callback,55,1,303,TEST,TEST,4 0 0,4 0 0,,,true,true,true
+P17,primary_network_callback,56,1,303,JMP,JMP,4,4,to 61,to 61,true,true,true
+P17,primary_network_callback,57,1,304,GETUPVAL,GETUPVAL,4 0,4 0,h,globals,true,true,true
+P17,primary_network_callback,58,1,304,GETTABLE,GETTABLE,4 4 -5,4 4 -5,"""print""","""print""",true,true,true
+P17,primary_network_callback,59,1,304,LOADK,LOADK,5 -15,5 -15,"""same version""","""same version""",true,true,true
+P17,primary_network_callback,60,1,304,CALL,CALL,4 2 1,4 2 1,,,true,true,true
+P17,primary_network_callback,61,1,306,GETUPVAL,GETUPVAL,4 0,4 0,h,globals,true,true,true
+P17,primary_network_callback,62,1,306,GETTABLE,GETTABLE,4 4 -16,4 4 -16,"""isloaded""","""isloaded""",true,true,true
+P17,primary_network_callback,63,1,306,TEST,TEST,4 0 1,4 0 1,,,true,true,true
+P17,primary_network_callback,64,1,306,JMP,JMP,7,7,to 72,to 72,true,true,true
+P17,primary_network_callback,65,1,306,GETUPVAL,GETUPVAL,4 4,4 4,L,load_cached_code,true,true,true
+P17,primary_network_callback,66,1,306,CALL,CALL,4 1 2,4 1 2,,,true,true,true
+P17,primary_network_callback,67,1,306,TEST,TEST,4 0 1,4 0 1,,,true,true,true
+P17,primary_network_callback,68,1,306,JMP,JMP,3,3,to 72,to 72,true,true,true
+P17,primary_network_callback,69,1,307,GETUPVAL,GETUPVAL,4 5,4 5,a6,request_primary_update,true,true,true
+P17,primary_network_callback,70,1,307,GETUPVAL,GETUPVAL,5 6,5 6,e,true_value,true,true,true
+P17,primary_network_callback,71,1,307,CALL,CALL,4 2 1,4 2 1,,,true,true,true
+P17,primary_network_callback,72,1,309,RETURN,RETURN,0 1,0 1,,,true,true,true
+P17,primary_network_callback,73,1,311,GETUPVAL,GETUPVAL,4 0,4 0,h,globals,true,true,true
+P17,primary_network_callback,74,1,311,GETTABLE,GETTABLE,4 4 -17,4 4 -17,"""require""","""require""",true,true,true
+P17,primary_network_callback,75,1,311,LOADK,LOADK,5 -18,5 -18,"""cjson""","""cjson""",true,true,true
+P17,primary_network_callback,76,1,311,CALL,CALL,4 2 2,4 2 2,,,true,true,true
+P17,primary_network_callback,77,1,312,GETTABLE,GETTABLE,5 4 -19,5 4 -19,"""decode""","""decode""",true,true,true
+P17,primary_network_callback,78,1,312,MOVE,MOVE,6 3,6 3,,,true,true,true
+P17,primary_network_callback,79,1,312,CALL,CALL,5 2 2,5 2 2,,,true,true,true
+P17,primary_network_callback,80,1,313,TEST,TEST,5 0 1,5 0 1,,,true,true,true
+P17,primary_network_callback,81,1,313,JMP,JMP,12,12,to 94,to 94,true,true,true
+P17,primary_network_callback,82,1,314,GETUPVAL,GETUPVAL,6 0,6 0,h,globals,true,true,true
+P17,primary_network_callback,83,1,314,GETTABLE,GETTABLE,6 6 -3,6 6 -3,"""def""","""def""",true,true,true
+P17,primary_network_callback,84,1,314,GETTABLE,GETTABLE,6 6 -4,6 6 -4,"""debugkey""","""debugkey""",true,true,true
+P17,primary_network_callback,85,1,314,TEST,TEST,6 0 0,6 0 0,,,true,true,true
+P17,primary_network_callback,86,1,314,JMP,JMP,4,4,to 91,to 91,true,true,true
+P17,primary_network_callback,87,1,315,GETUPVAL,GETUPVAL,6 0,6 0,h,globals,true,true,true
+P17,primary_network_callback,88,1,315,GETTABLE,GETTABLE,6 6 -5,6 6 -5,"""print""","""print""",true,true,true
+P17,primary_network_callback,89,1,315,LOADK,LOADK,7 -20,7 -20,"""json decode error""","""json decode error""",true,true,true
+P17,primary_network_callback,90,1,315,CALL,CALL,6 2 1,6 2 1,,,true,true,true
+P17,primary_network_callback,91,1,317,GETUPVAL,GETUPVAL,6 1,6 1,S,request_backup_update,true,true,true
+P17,primary_network_callback,92,1,317,GETUPVAL,GETUPVAL,7 6,7 6,e,true_value,true,true,true
+P17,primary_network_callback,93,1,317,CALL,CALL,6 2 1,6 2 1,,,true,true,true
+P17,primary_network_callback,94,1,319,GETTABLE,GETTABLE,6 5 -21,6 5 -21,"""version""","""version""",true,true,true
+P17,primary_network_callback,95,1,319,TEST,TEST,6 0 0,6 0 0,,,true,true,true
+P17,primary_network_callback,96,1,319,JMP,JMP,3,3,to 100,to 100,true,true,true
+P17,primary_network_callback,97,1,319,GETTABLE,GETTABLE,6 5 -22,6 5 -22,"""content""","""content""",true,true,true
+P17,primary_network_callback,98,1,319,TEST,TEST,6 0 1,6 0 1,,,true,true,true
+P17,primary_network_callback,99,1,319,JMP,JMP,13,13,to 113,to 113,true,true,true
+P17,primary_network_callback,100,1,320,GETUPVAL,GETUPVAL,6 0,6 0,h,globals,true,true,true
+P17,primary_network_callback,101,1,320,GETTABLE,GETTABLE,6 6 -3,6 6 -3,"""def""","""def""",true,true,true
+P17,primary_network_callback,102,1,320,GETTABLE,GETTABLE,6 6 -4,6 6 -4,"""debugkey""","""debugkey""",true,true,true
+P17,primary_network_callback,103,1,320,TEST,TEST,6 0 0,6 0 0,,,true,true,true
+P17,primary_network_callback,104,1,320,JMP,JMP,4,4,to 109,to 109,true,true,true
+P17,primary_network_callback,105,1,321,GETUPVAL,GETUPVAL,6 0,6 0,h,globals,true,true,true
+P17,primary_network_callback,106,1,321,GETTABLE,GETTABLE,6 6 -5,6 6 -5,"""print""","""print""",true,true,true
+P17,primary_network_callback,107,1,321,LOADK,LOADK,7 -23,7 -23,"""json format error""","""json format error""",true,true,true
+P17,primary_network_callback,108,1,321,CALL,CALL,6 2 1,6 2 1,,,true,true,true
+P17,primary_network_callback,109,1,323,GETUPVAL,GETUPVAL,6 1,6 1,S,request_backup_update,true,true,true
+P17,primary_network_callback,110,1,323,GETUPVAL,GETUPVAL,7 6,7 6,e,true_value,true,true,true
+P17,primary_network_callback,111,1,323,CALL,CALL,6 2 1,6 2 1,,,true,true,true
+P17,primary_network_callback,112,1,324,RETURN,RETURN,0 1,0 1,,,true,true,true
+P17,primary_network_callback,113,1,326,GETUPVAL,GETUPVAL,6 7,6 7,D,decrypt_remote_content,true,true,true
+P17,primary_network_callback,114,1,326,GETTABLE,GETTABLE,7 5 -22,7 5 -22,"""content""","""content""",true,true,true
+P17,primary_network_callback,115,1,326,CALL,CALL,6 2 2,6 2 2,,,true,true,true
+P17,primary_network_callback,116,1,327,TEST,TEST,6 0 1,6 0 1,,,true,true,true
+P17,primary_network_callback,117,1,327,JMP,JMP,13,13,to 131,to 131,true,true,true
+P17,primary_network_callback,118,1,328,GETUPVAL,GETUPVAL,7 0,7 0,h,globals,true,true,true
+P17,primary_network_callback,119,1,328,GETTABLE,GETTABLE,7 7 -3,7 7 -3,"""def""","""def""",true,true,true
+P17,primary_network_callback,120,1,328,GETTABLE,GETTABLE,7 7 -4,7 7 -4,"""debugkey""","""debugkey""",true,true,true
+P17,primary_network_callback,121,1,328,TEST,TEST,7 0 0,7 0 0,,,true,true,true
+P17,primary_network_callback,122,1,328,JMP,JMP,4,4,to 127,to 127,true,true,true
+P17,primary_network_callback,123,1,329,GETUPVAL,GETUPVAL,7 0,7 0,h,globals,true,true,true
+P17,primary_network_callback,124,1,329,GETTABLE,GETTABLE,7 7 -5,7 7 -5,"""print""","""print""",true,true,true
+P17,primary_network_callback,125,1,329,LOADK,LOADK,8 -24,8 -24,"""content decode error""","""content decode error""",true,true,true
+P17,primary_network_callback,126,1,329,CALL,CALL,7 2 1,7 2 1,,,true,true,true
+P17,primary_network_callback,127,1,331,GETUPVAL,GETUPVAL,7 1,7 1,S,request_backup_update,true,true,true
+P17,primary_network_callback,128,1,331,GETUPVAL,GETUPVAL,8 6,8 6,e,true_value,true,true,true
+P17,primary_network_callback,129,1,331,CALL,CALL,7 2 1,7 2 1,,,true,true,true
+P17,primary_network_callback,130,1,331,JMP,JMP,28,28,to 159,to 159,true,true,true
+P17,primary_network_callback,131,1,333,GETUPVAL,GETUPVAL,7 8,7 8,J,execute_lua,true,true,true
+P17,primary_network_callback,132,1,333,MOVE,MOVE,8 6,8 6,,,true,true,true
+P17,primary_network_callback,133,1,333,CALL,CALL,7 2 3,7 2 3,,,true,true,true
+P17,primary_network_callback,134,1,334,TEST,TEST,7 0 0,7 0 0,,,true,true,true
+P17,primary_network_callback,135,1,334,JMP,JMP,7,7,to 143,to 143,true,true,true
+P17,primary_network_callback,136,1,335,GETUPVAL,GETUPVAL,9 9,9 9,R,save_cached_content,true,true,true
+P17,primary_network_callback,137,1,335,GETTABLE,GETTABLE,10 5 -22,10 5 -22,"""content""","""content""",true,true,true
+P17,primary_network_callback,138,1,335,CALL,CALL,9 2 1,9 2 1,,,true,true,true
+P17,primary_network_callback,139,1,336,GETUPVAL,GETUPVAL,9 10,9 10,Q,save_cached_version,true,true,true
+P17,primary_network_callback,140,1,336,GETTABLE,GETTABLE,10 5 -21,10 5 -21,"""version""","""version""",true,true,true
+P17,primary_network_callback,141,1,336,CALL,CALL,9 2 1,9 2 1,,,true,true,true
+P17,primary_network_callback,142,1,336,JMP,JMP,16,16,to 159,to 159,true,true,true
+P17,primary_network_callback,143,1,338,GETUPVAL,GETUPVAL,9 0,9 0,h,globals,true,true,true
+P17,primary_network_callback,144,1,338,GETTABLE,GETTABLE,9 9 -3,9 9 -3,"""def""","""def""",true,true,true
+P17,primary_network_callback,145,1,338,GETTABLE,GETTABLE,9 9 -4,9 9 -4,"""debugkey""","""debugkey""",true,true,true
+P17,primary_network_callback,146,1,338,TEST,TEST,9 0 0,9 0 0,,,true,true,true
+P17,primary_network_callback,147,1,338,JMP,JMP,4,4,to 152,to 152,true,true,true
+P17,primary_network_callback,148,1,339,GETUPVAL,GETUPVAL,9 0,9 0,h,globals,true,true,true
+P17,primary_network_callback,149,1,339,GETTABLE,GETTABLE,9 9 -5,9 9 -5,"""print""","""print""",true,true,true
+P17,primary_network_callback,150,1,339,LOADK,LOADK,10 -25,10 -25,"""run code error""","""run code error""",true,true,true
+P17,primary_network_callback,151,1,339,CALL,CALL,9 2 1,9 2 1,,,true,true,true
+P17,primary_network_callback,152,1,341,GETUPVAL,GETUPVAL,9 1,9 1,S,request_backup_update,true,true,true
+P17,primary_network_callback,153,1,341,GETUPVAL,GETUPVAL,10 6,10 6,e,true_value,true,true,true
+P17,primary_network_callback,154,1,341,CALL,CALL,9 2 1,9 2 1,,,true,true,true
+P17,primary_network_callback,155,1,343,JMP,JMP,3,3,to 159,to 159,true,true,true
+P17,primary_network_callback,156,1,345,GETUPVAL,GETUPVAL,4 1,4 1,S,request_backup_update,true,true,true
+P17,primary_network_callback,157,1,345,GETUPVAL,GETUPVAL,5 6,5 6,e,true_value,true,true,true
+P17,primary_network_callback,158,1,345,CALL,CALL,4 2 1,4 2 1,,,true,true,true
+P17,primary_network_callback,159,1,347,RETURN,RETURN,0 1,0 1,,,true,true,true
+P18,primary_get_or_create_uuid,1,1,351,GETUPVAL,GETUPVAL,1 0,1 0,h,globals,true,true,true
+P18,primary_get_or_create_uuid,2,1,351,GETTABLE,GETTABLE,1 1 -1,1 1 -1,"""device""","""device""",true,true,true
+P18,primary_get_or_create_uuid,3,1,351,GETTABLE,GETTABLE,1 1 -2,1 1 -2,"""writablePath""","""writablePath""",true,true,true
+P18,primary_get_or_create_uuid,4,1,351,LOADK,LOADK,2 -3,2 -3,"""bzuuid""","""bzuuid""",true,true,true
+P18,primary_get_or_create_uuid,5,1,351,CONCAT,CONCAT,1 1 2,1 1 2,,,true,true,true
+P18,primary_get_or_create_uuid,6,1,352,GETUPVAL,GETUPVAL,2 0,2 0,h,globals,true,true,true
+P18,primary_get_or_create_uuid,7,1,352,GETTABLE,GETTABLE,2 2 -4,2 2 -4,"""io""","""io""",true,true,true
+P18,primary_get_or_create_uuid,8,1,352,GETTABLE,GETTABLE,2 2 -5,2 2 -5,"""exists""","""exists""",true,true,true
+P18,primary_get_or_create_uuid,9,1,352,MOVE,MOVE,3 1,3 1,,,true,true,true
+P18,primary_get_or_create_uuid,10,1,352,CALL,CALL,2 2 2,2 2 2,,,true,true,true
+P18,primary_get_or_create_uuid,11,1,352,TEST,TEST,2 0 1,2 0 1,,,true,true,true
+P18,primary_get_or_create_uuid,12,1,352,JMP,JMP,12,12,to 25,to 25,true,true,true
+P18,primary_get_or_create_uuid,13,1,353,GETUPVAL,GETUPVAL,2 0,2 0,h,globals,true,true,true
+P18,primary_get_or_create_uuid,14,1,353,GETTABLE,GETTABLE,2 2 -6,2 2 -6,"""crypto""","""crypto""",true,true,true
+P18,primary_get_or_create_uuid,15,1,353,GETTABLE,GETTABLE,2 2 -7,2 2 -7,"""md5""","""md5""",true,true,true
+P18,primary_get_or_create_uuid,16,1,353,MOVE,MOVE,3 0,3 0,,,true,true,true
+P18,primary_get_or_create_uuid,17,1,353,CALL,CALL,2 2 2,2 2 2,,,true,true,true
+P18,primary_get_or_create_uuid,18,1,353,MOVE,MOVE,0 2,0 2,,,true,true,true
+P18,primary_get_or_create_uuid,19,1,354,GETUPVAL,GETUPVAL,2 0,2 0,h,globals,true,true,true
+P18,primary_get_or_create_uuid,20,1,354,GETTABLE,GETTABLE,2 2 -8,2 2 -8,"""core_func_writefile""","""core_func_writefile""",true,true,true
+P18,primary_get_or_create_uuid,21,1,354,MOVE,MOVE,3 1,3 1,,,true,true,true
+P18,primary_get_or_create_uuid,22,1,354,MOVE,MOVE,4 0,4 0,,,true,true,true
+P18,primary_get_or_create_uuid,23,1,354,CALL,CALL,2 3 1,2 3 1,,,true,true,true
+P18,primary_get_or_create_uuid,24,1,355,RETURN,RETURN,0 2,0 2,,,true,true,true
+P18,primary_get_or_create_uuid,25,1,357,GETUPVAL,GETUPVAL,2 0,2 0,h,globals,true,true,true
+P18,primary_get_or_create_uuid,26,1,357,GETTABLE,GETTABLE,2 2 -4,2 2 -4,"""io""","""io""",true,true,true
+P18,primary_get_or_create_uuid,27,1,357,GETTABLE,GETTABLE,2 2 -9,2 2 -9,"""readfile""","""readfile""",true,true,true
+P18,primary_get_or_create_uuid,28,1,357,MOVE,MOVE,3 1,3 1,,,true,true,true
+P18,primary_get_or_create_uuid,29,1,357,TAILCALL,TAILCALL,2 2 0,2 2 0,,,true,true,true
+P18,primary_get_or_create_uuid,30,1,357,RETURN,RETURN,2 0,2 0,,,true,true,true
+P18,primary_get_or_create_uuid,31,1,358,RETURN,RETURN,0 1,0 1,,,true,true,true
+P19,build_key_parameters,1,1,386,NEWTABLE,NEWTABLE,0 0 3,0 0 3,,,true,true,true
+P19,build_key_parameters,2,1,387,GETUPVAL,GETUPVAL,1 0,1 0,j,to_number,true,true,true
+P19,build_key_parameters,3,1,387,LOADK,LOADK,2 -2,2 -2,"""0.5""","""0.5""",true,true,true
+P19,build_key_parameters,4,1,387,CALL,CALL,1 2 2,1 2 2,,,true,true,true
+P19,build_key_parameters,5,1,387,SETTABLE,SETTABLE,0 -1 1,0 -1 1,"""phase_shift"" -","""phase_shift"" -",true,true,true
+P19,build_key_parameters,6,1,388,GETUPVAL,GETUPVAL,1 0,1 0,j,to_number,true,true,true
+P19,build_key_parameters,7,1,388,LOADK,LOADK,2 -4,2 -4,"""2.302585093""","""2.302585093""",true,true,true
+P19,build_key_parameters,8,1,388,CALL,CALL,1 2 2,1 2 2,,,true,true,true
+P19,build_key_parameters,9,1,388,SETTABLE,SETTABLE,0 -3 1,0 -3 1,"""exp_factor"" -","""exp_factor"" -",true,true,true
+P19,build_key_parameters,10,1,389,GETUPVAL,GETUPVAL,1 0,1 0,j,to_number,true,true,true
+P19,build_key_parameters,11,1,389,LOADK,LOADK,2 -6,2 -6,"""36""","""36""",true,true,true
+P19,build_key_parameters,12,1,389,CALL,CALL,1 2 2,1 2 2,,,true,true,true
+P19,build_key_parameters,13,1,389,SETTABLE,SETTABLE,0 -5 1,0 -5 1,"""char_offset"" -","""char_offset"" -",true,true,true
+P19,build_key_parameters,14,1,390,RETURN,RETURN,0 2,0 2,,,true,true,true
+P19,build_key_parameters,15,1,391,RETURN,RETURN,0 1,0 1,,,true,true,true
+P20,derive_core_archive_key,1,1,393,GETUPVAL,GETUPVAL,0 0,0 0,ad,build_key_parameters,true,true,true
+P20,derive_core_archive_key,2,1,393,CALL,CALL,0 1 2,0 1 2,,,true,true,true
+P20,derive_core_archive_key,3,1,394,GETUPVAL,GETUPVAL,1 1,1 1,a8,math_floor,true,true,true
+P20,derive_core_archive_key,4,1,394,GETUPVAL,GETUPVAL,2 2,2 2,a9,math_exp,true,true,true
+P20,derive_core_archive_key,5,1,394,GETTABLE,GETTABLE,3 0 -1,3 0 -1,"""exp_factor""","""exp_factor""",true,true,true
+P20,derive_core_archive_key,6,1,394,CALL,CALL,2 2 0,2 2 0,,,true,true,true
+P20,derive_core_archive_key,7,1,394,CALL,CALL,1 0 2,1 0 2,,,true,true,true
+P20,derive_core_archive_key,8,1,396,GETUPVAL,GETUPVAL,2 3,2 3,h,globals,true,true,true
+P20,derive_core_archive_key,9,1,396,GETTABLE,GETTABLE,2 2 -2,2 2 -2,"""math""","""math""",true,true,true
+P20,derive_core_archive_key,10,1,396,GETTABLE,GETTABLE,2 2 -3,2 2 -3,"""pi""","""pi""",true,true,true
+P20,derive_core_archive_key,11,1,396,GETUPVAL,GETUPVAL,3 4,3 4,j,to_number,true,true,true
+P20,derive_core_archive_key,12,1,396,LOADK,LOADK,4 -4,4 -4,"""3.1415926535""","""3.1415926535""",true,true,true
+P20,derive_core_archive_key,13,1,396,CALL,CALL,3 2 2,3 2 2,,,true,true,true
+P20,derive_core_archive_key,14,1,396,SUB,SUB,2 2 3,2 2 3,,,true,true,true
+P20,derive_core_archive_key,15,1,396,GETTABLE,GETTABLE,3 0 -5,3 0 -5,"""phase_shift""","""phase_shift""",true,true,true
+P20,derive_core_archive_key,16,1,396,ADD,ADD,2 2 3,2 2 3,,,true,true,true
+P20,derive_core_archive_key,17,1,396,MUL,MUL,2 1 2,2 1 2,,,true,true,true
+P20,derive_core_archive_key,18,1,397,GETUPVAL,GETUPVAL,3 1,3 1,a8,math_floor,true,true,true
+P20,derive_core_archive_key,19,1,397,GETUPVAL,GETUPVAL,4 4,4 4,j,to_number,true,true,true
+P20,derive_core_archive_key,20,1,397,LOADK,LOADK,5 -6,5 -6,"""0.5""","""0.5""",true,true,true
+P20,derive_core_archive_key,21,1,397,CALL,CALL,4 2 2,4 2 2,,,true,true,true
+P20,derive_core_archive_key,22,1,397,MUL,MUL,4 2 4,4 2 4,,,true,true,true
+P20,derive_core_archive_key,23,1,397,GETUPVAL,GETUPVAL,5 4,5 4,j,to_number,true,true,true
+P20,derive_core_archive_key,24,1,397,LOADK,LOADK,6 -7,6 -7,"""100""","""100""",true,true,true
+P20,derive_core_archive_key,25,1,397,CALL,CALL,5 2 2,5 2 2,,,true,true,true
+P20,derive_core_archive_key,26,1,397,MUL,MUL,4 4 5,4 4 5,,,true,true,true
+P20,derive_core_archive_key,27,1,397,CALL,CALL,3 2 2,3 2 2,,,true,true,true
+P20,derive_core_archive_key,28,1,398,GETUPVAL,GETUPVAL,4 4,4 4,j,to_number,true,true,true
+P20,derive_core_archive_key,29,1,398,LOADK,LOADK,5 -8,5 -8,"""10""","""10""",true,true,true
+P20,derive_core_archive_key,30,1,398,CALL,CALL,4 2 2,4 2 2,,,true,true,true
+P20,derive_core_archive_key,31,1,398,GETUPVAL,GETUPVAL,5 4,5 4,j,to_number,true,true,true
+P20,derive_core_archive_key,32,1,398,LOADK,LOADK,6 -8,6 -8,"""10""","""10""",true,true,true
+P20,derive_core_archive_key,33,1,398,CALL,CALL,5 2 2,5 2 2,,,true,true,true
+P20,derive_core_archive_key,34,1,398,MUL,MUL,4 4 5,4 4 5,,,true,true,true
+P20,derive_core_archive_key,35,1,398,GETUPVAL,GETUPVAL,5 4,5 4,j,to_number,true,true,true
+P20,derive_core_archive_key,36,1,398,LOADK,LOADK,6 -9,6 -9,"""2""","""2""",true,true,true
+P20,derive_core_archive_key,37,1,398,CALL,CALL,5 2 2,5 2 2,,,true,true,true
+P20,derive_core_archive_key,38,1,398,MUL,MUL,4 4 5,4 4 5,,,true,true,true
+P20,derive_core_archive_key,39,1,399,MUL,MUL,5 3 4,5 3 4,,,true,true,true
+P20,derive_core_archive_key,40,1,400,GETUPVAL,GETUPVAL,6 5,6 5,aa,math_sqrt,true,true,true
+P20,derive_core_archive_key,41,1,400,MOVE,MOVE,7 5,7 5,,,true,true,true
+P20,derive_core_archive_key,42,1,400,CALL,CALL,6 2 2,6 2 2,,,true,true,true
+P20,derive_core_archive_key,43,1,401,GETUPVAL,GETUPVAL,7 6,7 6,ac,string_reverse,true,true,true
+P20,derive_core_archive_key,44,1,402,GETUPVAL,GETUPVAL,8 7,8 7,ab,string_char,true,true,true
+P20,derive_core_archive_key,45,1,403,GETUPVAL,GETUPVAL,9 1,9 1,a8,math_floor,true,true,true
+P20,derive_core_archive_key,46,1,403,GETUPVAL,GETUPVAL,10 4,10 4,j,to_number,true,true,true
+P20,derive_core_archive_key,47,1,403,LOADK,LOADK,11 -8,11 -8,"""10""","""10""",true,true,true
+P20,derive_core_archive_key,48,1,403,CALL,CALL,10 2 2,10 2 2,,,true,true,true
+P20,derive_core_archive_key,49,1,403,DIV,DIV,10 6 10,10 6 10,,,true,true,true
+P20,derive_core_archive_key,50,1,403,CALL,CALL,9 2 2,9 2 2,,,true,true,true
+P20,derive_core_archive_key,51,1,404,GETUPVAL,GETUPVAL,10 4,10 4,j,to_number,true,true,true
+P20,derive_core_archive_key,52,1,404,LOADK,LOADK,11 -10,11 -10,"""36""","""36""",true,true,true
+P20,derive_core_archive_key,53,1,404,CALL,CALL,10 2 2,10 2 2,,,true,true,true
+P20,derive_core_archive_key,54,1,404,GETTABLE,GETTABLE,11 0 -11,11 0 -11,"""char_offset""","""char_offset""",true,true,true
+P20,derive_core_archive_key,55,1,404,ADD,ADD,10 10 11,10 10 11,,,true,true,true
+P20,derive_core_archive_key,56,1,405,GETUPVAL,GETUPVAL,11 4,11 4,j,to_number,true,true,true
+P20,derive_core_archive_key,57,1,405,LOADK,LOADK,12 -12,12 -12,"""72""","""72""",true,true,true
+P20,derive_core_archive_key,58,1,405,CALL,CALL,11 2 2,11 2 2,,,true,true,true
+P20,derive_core_archive_key,59,1,405,GETUPVAL,GETUPVAL,12 4,12 4,j,to_number,true,true,true
+P20,derive_core_archive_key,60,1,405,LOADK,LOADK,13 -13,13 -13,"""15""","""15""",true,true,true
+P20,derive_core_archive_key,61,1,405,CALL,CALL,12 2 2,12 2 2,,,true,true,true
+P20,derive_core_archive_key,62,1,405,SUB,SUB,11 11 12,11 11 12,,,true,true,true
+P20,derive_core_archive_key,63,1,406,GETUPVAL,GETUPVAL,12 4,12 4,j,to_number,true,true,true
+P20,derive_core_archive_key,64,1,406,LOADK,LOADK,13 -14,13 -14,"""57""","""57""",true,true,true
+P20,derive_core_archive_key,65,1,406,CALL,CALL,12 2 2,12 2 2,,,true,true,true
+P20,derive_core_archive_key,66,1,406,GETUPVAL,GETUPVAL,13 4,13 4,j,to_number,true,true,true
+P20,derive_core_archive_key,67,1,406,LOADK,LOADK,14 -15,14 -15,"""25""","""25""",true,true,true
+P20,derive_core_archive_key,68,1,406,CALL,CALL,13 2 2,13 2 2,,,true,true,true
+P20,derive_core_archive_key,69,1,406,ADD,ADD,12 12 13,12 12 13,,,true,true,true
+P20,derive_core_archive_key,70,1,407,GETUPVAL,GETUPVAL,13 4,13 4,j,to_number,true,true,true
+P20,derive_core_archive_key,71,1,407,LOADK,LOADK,14 -16,14 -16,"""82""","""82""",true,true,true
+P20,derive_core_archive_key,72,1,407,CALL,CALL,13 2 2,13 2 2,,,true,true,true
+P20,derive_core_archive_key,73,1,407,GETUPVAL,GETUPVAL,14 4,14 4,j,to_number,true,true,true
+P20,derive_core_archive_key,74,1,407,LOADK,LOADK,15 -6,15 -6,"""0.5""","""0.5""",true,true,true
+P20,derive_core_archive_key,75,1,407,CALL,CALL,14 2 2,14 2 2,,,true,true,true
+P20,derive_core_archive_key,76,1,407,POW,POW,13 13 14,13 13 14,,,true,true,true
+P20,derive_core_archive_key,77,1,408,GETUPVAL,GETUPVAL,14 4,14 4,j,to_number,true,true,true
+P20,derive_core_archive_key,78,1,408,LOADK,LOADK,15 -17,15 -17,"""9""","""9""",true,true,true
+P20,derive_core_archive_key,79,1,408,CALL,CALL,14 2 2,14 2 2,,,true,true,true
+P20,derive_core_archive_key,80,1,408,GETUPVAL,GETUPVAL,15 4,15 4,j,to_number,true,true,true
+P20,derive_core_archive_key,81,1,408,LOADK,LOADK,16 -18,16 -18,"""33""","""33""",true,true,true
+P20,derive_core_archive_key,82,1,408,CALL,CALL,15 2 2,15 2 2,,,true,true,true
+P20,derive_core_archive_key,83,1,408,ADD,ADD,14 14 15,14 14 15,,,true,true,true
+P20,derive_core_archive_key,84,1,409,GETUPVAL,GETUPVAL,15 4,15 4,j,to_number,true,true,true
+P20,derive_core_archive_key,85,1,409,LOADK,LOADK,16 -19,16 -19,"""42""","""42""",true,true,true
+P20,derive_core_archive_key,86,1,409,CALL,CALL,15 2 2,15 2 2,,,true,true,true
+P20,derive_core_archive_key,87,1,409,GETUPVAL,GETUPVAL,16 4,16 4,j,to_number,true,true,true
+P20,derive_core_archive_key,88,1,409,LOADK,LOADK,17 -20,17 -20,"""52""","""52""",true,true,true
+P20,derive_core_archive_key,89,1,409,CALL,CALL,16 2 2,16 2 2,,,true,true,true
+P20,derive_core_archive_key,90,1,409,ADD,ADD,15 15 16,15 15 16,,,true,true,true
+P20,derive_core_archive_key,91,1,410,GETUPVAL,GETUPVAL,16 4,16 4,j,to_number,true,true,true
+P20,derive_core_archive_key,92,1,410,LOADK,LOADK,17 -21,17 -21,"""94""","""94""",true,true,true
+P20,derive_core_archive_key,93,1,410,CALL,CALL,16 2 2,16 2 2,,,true,true,true
+P20,derive_core_archive_key,94,1,410,GETUPVAL,GETUPVAL,17 4,17 4,j,to_number,true,true,true
+P20,derive_core_archive_key,95,1,410,LOADK,LOADK,18 -22,18 -22,"""65""","""65""",true,true,true
+P20,derive_core_archive_key,96,1,410,CALL,CALL,17 2 2,17 2 2,,,true,true,true
+P20,derive_core_archive_key,97,1,410,MOD,MOD,16 16 17,16 16 17,,,true,true,true
+P20,derive_core_archive_key,98,1,402,CALL,CALL,8 9 0,8 9 0,,,true,true,true
+P20,derive_core_archive_key,99,1,401,CALL,CALL,7 0 2,7 0 2,,,true,true,true
+P20,derive_core_archive_key,100,1,413,SELF,SELF,7 7 -23,7 7 -23,"""gsub""","""gsub""",true,true,true
+P20,derive_core_archive_key,101,1,413,LOADK,LOADK,9 -24,9 -24,"""[\022]""","""[\022]""",true,true,true
+P20,derive_core_archive_key,102,1,413,LOADK,LOADK,10 -25,10 -25,"""HK""","""HK""",true,true,true
+P20,derive_core_archive_key,103,1,413,CALL,CALL,7 4 2,7 4 2,,,true,true,true
+P20,derive_core_archive_key,104,1,414,SELF,SELF,7 7 -23,7 7 -23,"""gsub""","""gsub""",true,true,true
+P20,derive_core_archive_key,105,1,414,LOADK,LOADK,9 -26,9 -26,"""[\t]""","""[\t]""",true,true,true
+P20,derive_core_archive_key,106,1,414,LOADK,LOADK,10 -27,10 -27,"""EX""","""EX""",true,true,true
+P20,derive_core_archive_key,107,1,414,TAILCALL,TAILCALL,7 4 0,7 4 0,,,true,true,true
+P20,derive_core_archive_key,108,1,414,RETURN,RETURN,7 0,7 0,,,true,true,true
+P20,derive_core_archive_key,109,1,415,RETURN,RETURN,0 1,0 1,,,true,true,true
+P21,wrong_version_dialog_callback,1,1,426,GETUPVAL,GETUPVAL,1 0,1 0,j,to_number,true,true,true
+P21,wrong_version_dialog_callback,2,1,426,LOADK,LOADK,2 -1,2 -1,"""1""","""1""",true,true,true
+P21,wrong_version_dialog_callback,3,1,426,CALL,CALL,1 2 2,1 2 2,,,true,true,true
+P21,wrong_version_dialog_callback,4,1,426,EQ,EQ,0 1 0,0 1 0,,,true,true,true
+P21,wrong_version_dialog_callback,5,1,426,JMP,JMP,4,4,to 10,to 10,true,true,true
+P21,wrong_version_dialog_callback,6,1,427,GETUPVAL,GETUPVAL,1 1,1 1,h,globals,true,true,true
+P21,wrong_version_dialog_callback,7,1,427,GETTABLE,GETTABLE,1 1 -2,1 1 -2,"""core_func_byby""","""core_func_byby""",true,true,true
+P21,wrong_version_dialog_callback,8,1,427,LOADK,LOADK,2 -3,2 -3,"""\228\184\141\230\152\175G\231\137\136\230\156\172""","""\228\184\141\230\152\175G\231\137\136\230\156\172""",true,true,true
+P21,wrong_version_dialog_callback,9,1,427,CALL,CALL,1 2 1,1 2 1,,,true,true,true
+P21,wrong_version_dialog_callback,10,1,429,RETURN,RETURN,0 1,0 1,,,true,true,true
+P22,delayed_exit_callback,1,1,431,GETUPVAL,GETUPVAL,0 0,0 0,h,globals,true,true,true
+P22,delayed_exit_callback,2,1,431,GETTABLE,GETTABLE,0 0 -1,0 0 -1,"""os""","""os""",true,true,true
+P22,delayed_exit_callback,3,1,431,GETTABLE,GETTABLE,0 0 -2,0 0 -2,"""exit""","""exit""",true,true,true
+P22,delayed_exit_callback,4,1,431,CALL,CALL,0 1 1,0 1 1,,,true,true,true
+P22,delayed_exit_callback,5,1,432,RETURN,RETURN,0 1,0 1,,,true,true,true
+P23,globals.set_helper,1,1,460,GETUPVAL,GETUPVAL,1 0,1 0,h,globals,true,true,true
+P23,globals.set_helper,2,1,460,GETTABLE,GETTABLE,1 1 -1,1 1 -1,"""def""","""def""",true,true,true
+P23,globals.set_helper,3,1,460,GETTABLE,GETTABLE,1 1 -2,1 1 -2,"""role""","""role""",true,true,true
+P23,globals.set_helper,4,1,460,SETTABLE,SETTABLE,1 -3 0,1 -3 0,"""helperID"" -","""helperID"" -",true,true,true
+P23,globals.set_helper,5,1,461,RETURN,RETURN,0 1,0 1,,,true,true,true
+P24,startup_network_callback,1,1,463,GETTABLE,GETTABLE,1 0 -1,1 0 -1,"""name""","""name""",true,true,true
+P24,startup_network_callback,2,1,463,EQ,EQ,1 1 -2,1 1 -2,"- ""completed""","- ""completed""",true,true,true
+P24,startup_network_callback,3,1,463,JMP,JMP,25,25,to 29,to 29,true,true,true
+P24,startup_network_callback,4,1,464,GETUPVAL,GETUPVAL,1 0,1 0,h,globals,true,true,true
+P24,startup_network_callback,5,1,464,GETTABLE,GETTABLE,1 1 -3,1 1 -3,"""def""","""def""",true,true,true
+P24,startup_network_callback,6,1,464,GETTABLE,GETTABLE,1 1 -4,1 1 -4,"""debugkey""","""debugkey""",true,true,true
+P24,startup_network_callback,7,1,464,TEST,TEST,1 0 0,1 0 0,,,true,true,true
+P24,startup_network_callback,8,1,464,JMP,JMP,4,4,to 13,to 13,true,true,true
+P24,startup_network_callback,9,1,465,GETUPVAL,GETUPVAL,1 0,1 0,h,globals,true,true,true
+P24,startup_network_callback,10,1,465,GETTABLE,GETTABLE,1 1 -5,1 1 -5,"""print""","""print""",true,true,true
+P24,startup_network_callback,11,1,465,GETTABLE,GETTABLE,2 0 -1,2 0 -1,"""name""","""name""",true,true,true
+P24,startup_network_callback,12,1,465,CALL,CALL,1 2 1,1 2 1,,,true,true,true
+P24,startup_network_callback,13,1,467,GETTABLE,GETTABLE,1 0 -1,1 0 -1,"""name""","""name""",true,true,true
+P24,startup_network_callback,14,1,467,EQ,EQ,0 1 -6,0 1 -6,"- ""failed""","- ""failed""",true,true,true
+P24,startup_network_callback,15,1,467,JMP,JMP,12,12,to 28,to 28,true,true,true
+P24,startup_network_callback,16,1,468,GETUPVAL,GETUPVAL,1 0,1 0,h,globals,true,true,true
+P24,startup_network_callback,17,1,468,GETTABLE,GETTABLE,1 1 -3,1 1 -3,"""def""","""def""",true,true,true
+P24,startup_network_callback,18,1,468,GETTABLE,GETTABLE,1 1 -4,1 1 -4,"""debugkey""","""debugkey""",true,true,true
+P24,startup_network_callback,19,1,468,TEST,TEST,1 0 0,1 0 0,,,true,true,true
+P24,startup_network_callback,20,1,468,JMP,JMP,4,4,to 25,to 25,true,true,true
+P24,startup_network_callback,21,1,469,GETUPVAL,GETUPVAL,1 0,1 0,h,globals,true,true,true
+P24,startup_network_callback,22,1,469,GETTABLE,GETTABLE,1 1 -5,1 1 -5,"""print""","""print""",true,true,true
+P24,startup_network_callback,23,1,469,LOADK,LOADK,2 -7,2 -7,"""not ok""","""not ok""",true,true,true
+P24,startup_network_callback,24,1,469,CALL,CALL,1 2 1,1 2 1,,,true,true,true
+P24,startup_network_callback,25,1,471,GETUPVAL,GETUPVAL,1 1,1 1,S,request_backup_update,true,true,true
+P24,startup_network_callback,26,1,471,GETUPVAL,GETUPVAL,2 2,2 2,d,false_value,true,true,true
+P24,startup_network_callback,27,1,471,CALL,CALL,1 2 1,1 2 1,,,true,true,true
+P24,startup_network_callback,28,1,473,RETURN,RETURN,0 1,0 1,,,true,true,true
+P24,startup_network_callback,29,1,475,GETTABLE,GETTABLE,1 0 -8,1 0 -8,"""request""","""request""",true,true,true
+P24,startup_network_callback,30,1,476,GETTABLE,GETTABLE,2 1 -9,2 1 -9,"""getResponseStatusCode""","""getResponseStatusCode""",true,true,true
+P24,startup_network_callback,31,1,476,MOVE,MOVE,3 1,3 1,,,true,true,true
+P24,startup_network_callback,32,1,476,CALL,CALL,2 2 2,2 2 2,,,true,true,true
+P24,startup_network_callback,33,1,477,GETUPVAL,GETUPVAL,3 3,3 3,j,to_number,true,true,true
+P24,startup_network_callback,34,1,477,LOADK,LOADK,4 -10,4 -10,"""200""","""200""",true,true,true
+P24,startup_network_callback,35,1,477,CALL,CALL,3 2 2,3 2 2,,,true,true,true
+P24,startup_network_callback,36,1,477,EQ,EQ,1 2 3,1 2 3,,,true,true,true
+P24,startup_network_callback,37,1,477,JMP,JMP,1,1,to 39,to 39,true,true,true
+P24,startup_network_callback,38,1,478,RETURN,RETURN,0 1,0 1,,,true,true,true
+P24,startup_network_callback,39,1,480,GETTABLE,GETTABLE,3 1 -11,3 1 -11,"""getResponseData""","""getResponseData""",true,true,true
+P24,startup_network_callback,40,1,480,MOVE,MOVE,4 1,4 1,,,true,true,true
+P24,startup_network_callback,41,1,480,CALL,CALL,3 2 2,3 2 2,,,true,true,true
+P24,startup_network_callback,42,1,481,TEST,TEST,3 0 0,3 0 0,,,true,true,true
+P24,startup_network_callback,43,1,481,JMP,JMP,112,112,to 156,to 156,true,true,true
+P24,startup_network_callback,44,1,482,EQ,EQ,0 3 -12,0 3 -12,"- ""u7bTrcq508Ow19bttcfCvMb3""","- ""u7bTrcq508Ow19bttcfCvMb3""",true,true,true
+P24,startup_network_callback,45,1,482,JMP,JMP,4,4,to 50,to 50,true,true,true
+P24,startup_network_callback,46,1,483,GETUPVAL,GETUPVAL,4 0,4 0,h,globals,true,true,true
+P24,startup_network_callback,47,1,483,GETTABLE,GETTABLE,4 4 -13,4 4 -13,"""core_func_exit""","""core_func_exit""",true,true,true
+P24,startup_network_callback,48,1,483,CALL,CALL,4 1 1,4 1 1,,,true,true,true
+P24,startup_network_callback,49,1,484,RETURN,RETURN,0 1,0 1,,,true,true,true
+P24,startup_network_callback,50,1,486,EQ,EQ,0 3 -14,0 3 -14,"- ""OK""","- ""OK""",true,true,true
+P24,startup_network_callback,51,1,486,JMP,JMP,21,21,to 73,to 73,true,true,true
+P24,startup_network_callback,52,1,487,GETUPVAL,GETUPVAL,4 0,4 0,h,globals,true,true,true
+P24,startup_network_callback,53,1,487,GETTABLE,GETTABLE,4 4 -3,4 4 -3,"""def""","""def""",true,true,true
+P24,startup_network_callback,54,1,487,GETTABLE,GETTABLE,4 4 -4,4 4 -4,"""debugkey""","""debugkey""",true,true,true
+P24,startup_network_callback,55,1,487,TEST,TEST,4 0 0,4 0 0,,,true,true,true
+P24,startup_network_callback,56,1,487,JMP,JMP,4,4,to 61,to 61,true,true,true
+P24,startup_network_callback,57,1,488,GETUPVAL,GETUPVAL,4 0,4 0,h,globals,true,true,true
+P24,startup_network_callback,58,1,488,GETTABLE,GETTABLE,4 4 -5,4 4 -5,"""print""","""print""",true,true,true
+P24,startup_network_callback,59,1,488,LOADK,LOADK,5 -15,5 -15,"""same version""","""same version""",true,true,true
+P24,startup_network_callback,60,1,488,CALL,CALL,4 2 1,4 2 1,,,true,true,true
+P24,startup_network_callback,61,1,490,GETUPVAL,GETUPVAL,4 0,4 0,h,globals,true,true,true
+P24,startup_network_callback,62,1,490,GETTABLE,GETTABLE,4 4 -16,4 4 -16,"""isloaded""","""isloaded""",true,true,true
+P24,startup_network_callback,63,1,490,TEST,TEST,4 0 1,4 0 1,,,true,true,true
+P24,startup_network_callback,64,1,490,JMP,JMP,7,7,to 72,to 72,true,true,true
+P24,startup_network_callback,65,1,490,GETUPVAL,GETUPVAL,4 4,4 4,L,load_cached_code,true,true,true
+P24,startup_network_callback,66,1,490,CALL,CALL,4 1 2,4 1 2,,,true,true,true
+P24,startup_network_callback,67,1,490,TEST,TEST,4 0 1,4 0 1,,,true,true,true
+P24,startup_network_callback,68,1,490,JMP,JMP,3,3,to 72,to 72,true,true,true
+P24,startup_network_callback,69,1,491,GETUPVAL,GETUPVAL,4 5,4 5,a6,request_primary_update,true,true,true
+P24,startup_network_callback,70,1,491,GETUPVAL,GETUPVAL,5 6,5 6,e,true_value,true,true,true
+P24,startup_network_callback,71,1,491,CALL,CALL,4 2 1,4 2 1,,,true,true,true
+P24,startup_network_callback,72,1,493,RETURN,RETURN,0 1,0 1,,,true,true,true
+P24,startup_network_callback,73,1,495,GETUPVAL,GETUPVAL,4 0,4 0,h,globals,true,true,true
+P24,startup_network_callback,74,1,495,GETTABLE,GETTABLE,4 4 -17,4 4 -17,"""require""","""require""",true,true,true
+P24,startup_network_callback,75,1,495,LOADK,LOADK,5 -18,5 -18,"""cjson""","""cjson""",true,true,true
+P24,startup_network_callback,76,1,495,CALL,CALL,4 2 2,4 2 2,,,true,true,true
+P24,startup_network_callback,77,1,496,GETTABLE,GETTABLE,5 4 -19,5 4 -19,"""decode""","""decode""",true,true,true
+P24,startup_network_callback,78,1,496,MOVE,MOVE,6 3,6 3,,,true,true,true
+P24,startup_network_callback,79,1,496,CALL,CALL,5 2 2,5 2 2,,,true,true,true
+P24,startup_network_callback,80,1,497,TEST,TEST,5 0 1,5 0 1,,,true,true,true
+P24,startup_network_callback,81,1,497,JMP,JMP,12,12,to 94,to 94,true,true,true
+P24,startup_network_callback,82,1,498,GETUPVAL,GETUPVAL,6 0,6 0,h,globals,true,true,true
+P24,startup_network_callback,83,1,498,GETTABLE,GETTABLE,6 6 -3,6 6 -3,"""def""","""def""",true,true,true
+P24,startup_network_callback,84,1,498,GETTABLE,GETTABLE,6 6 -4,6 6 -4,"""debugkey""","""debugkey""",true,true,true
+P24,startup_network_callback,85,1,498,TEST,TEST,6 0 0,6 0 0,,,true,true,true
+P24,startup_network_callback,86,1,498,JMP,JMP,4,4,to 91,to 91,true,true,true
+P24,startup_network_callback,87,1,499,GETUPVAL,GETUPVAL,6 0,6 0,h,globals,true,true,true
+P24,startup_network_callback,88,1,499,GETTABLE,GETTABLE,6 6 -5,6 6 -5,"""print""","""print""",true,true,true
+P24,startup_network_callback,89,1,499,LOADK,LOADK,7 -20,7 -20,"""json decode error""","""json decode error""",true,true,true
+P24,startup_network_callback,90,1,499,CALL,CALL,6 2 1,6 2 1,,,true,true,true
+P24,startup_network_callback,91,1,501,GETUPVAL,GETUPVAL,6 1,6 1,S,request_backup_update,true,true,true
+P24,startup_network_callback,92,1,501,GETUPVAL,GETUPVAL,7 6,7 6,e,true_value,true,true,true
+P24,startup_network_callback,93,1,501,CALL,CALL,6 2 1,6 2 1,,,true,true,true
+P24,startup_network_callback,94,1,503,GETTABLE,GETTABLE,6 5 -21,6 5 -21,"""version""","""version""",true,true,true
+P24,startup_network_callback,95,1,503,TEST,TEST,6 0 0,6 0 0,,,true,true,true
+P24,startup_network_callback,96,1,503,JMP,JMP,3,3,to 100,to 100,true,true,true
+P24,startup_network_callback,97,1,503,GETTABLE,GETTABLE,6 5 -22,6 5 -22,"""content""","""content""",true,true,true
+P24,startup_network_callback,98,1,503,TEST,TEST,6 0 1,6 0 1,,,true,true,true
+P24,startup_network_callback,99,1,503,JMP,JMP,13,13,to 113,to 113,true,true,true
+P24,startup_network_callback,100,1,504,GETUPVAL,GETUPVAL,6 0,6 0,h,globals,true,true,true
+P24,startup_network_callback,101,1,504,GETTABLE,GETTABLE,6 6 -3,6 6 -3,"""def""","""def""",true,true,true
+P24,startup_network_callback,102,1,504,GETTABLE,GETTABLE,6 6 -4,6 6 -4,"""debugkey""","""debugkey""",true,true,true
+P24,startup_network_callback,103,1,504,TEST,TEST,6 0 0,6 0 0,,,true,true,true
+P24,startup_network_callback,104,1,504,JMP,JMP,4,4,to 109,to 109,true,true,true
+P24,startup_network_callback,105,1,505,GETUPVAL,GETUPVAL,6 0,6 0,h,globals,true,true,true
+P24,startup_network_callback,106,1,505,GETTABLE,GETTABLE,6 6 -5,6 6 -5,"""print""","""print""",true,true,true
+P24,startup_network_callback,107,1,505,LOADK,LOADK,7 -23,7 -23,"""json format error""","""json format error""",true,true,true
+P24,startup_network_callback,108,1,505,CALL,CALL,6 2 1,6 2 1,,,true,true,true
+P24,startup_network_callback,109,1,507,GETUPVAL,GETUPVAL,6 1,6 1,S,request_backup_update,true,true,true
+P24,startup_network_callback,110,1,507,GETUPVAL,GETUPVAL,7 6,7 6,e,true_value,true,true,true
+P24,startup_network_callback,111,1,507,CALL,CALL,6 2 1,6 2 1,,,true,true,true
+P24,startup_network_callback,112,1,508,RETURN,RETURN,0 1,0 1,,,true,true,true
+P24,startup_network_callback,113,1,510,GETUPVAL,GETUPVAL,6 7,6 7,D,decrypt_remote_content,true,true,true
+P24,startup_network_callback,114,1,510,GETTABLE,GETTABLE,7 5 -22,7 5 -22,"""content""","""content""",true,true,true
+P24,startup_network_callback,115,1,510,CALL,CALL,6 2 2,6 2 2,,,true,true,true
+P24,startup_network_callback,116,1,511,TEST,TEST,6 0 1,6 0 1,,,true,true,true
+P24,startup_network_callback,117,1,511,JMP,JMP,13,13,to 131,to 131,true,true,true
+P24,startup_network_callback,118,1,512,GETUPVAL,GETUPVAL,7 0,7 0,h,globals,true,true,true
+P24,startup_network_callback,119,1,512,GETTABLE,GETTABLE,7 7 -3,7 7 -3,"""def""","""def""",true,true,true
+P24,startup_network_callback,120,1,512,GETTABLE,GETTABLE,7 7 -4,7 7 -4,"""debugkey""","""debugkey""",true,true,true
+P24,startup_network_callback,121,1,512,TEST,TEST,7 0 0,7 0 0,,,true,true,true
+P24,startup_network_callback,122,1,512,JMP,JMP,4,4,to 127,to 127,true,true,true
+P24,startup_network_callback,123,1,513,GETUPVAL,GETUPVAL,7 0,7 0,h,globals,true,true,true
+P24,startup_network_callback,124,1,513,GETTABLE,GETTABLE,7 7 -5,7 7 -5,"""print""","""print""",true,true,true
+P24,startup_network_callback,125,1,513,LOADK,LOADK,8 -24,8 -24,"""content decode error""","""content decode error""",true,true,true
+P24,startup_network_callback,126,1,513,CALL,CALL,7 2 1,7 2 1,,,true,true,true
+P24,startup_network_callback,127,1,515,GETUPVAL,GETUPVAL,7 1,7 1,S,request_backup_update,true,true,true
+P24,startup_network_callback,128,1,515,GETUPVAL,GETUPVAL,8 6,8 6,e,true_value,true,true,true
+P24,startup_network_callback,129,1,515,CALL,CALL,7 2 1,7 2 1,,,true,true,true
+P24,startup_network_callback,130,1,515,JMP,JMP,28,28,to 159,to 159,true,true,true
+P24,startup_network_callback,131,1,517,GETUPVAL,GETUPVAL,7 8,7 8,J,execute_lua,true,true,true
+P24,startup_network_callback,132,1,517,MOVE,MOVE,8 6,8 6,,,true,true,true
+P24,startup_network_callback,133,1,517,CALL,CALL,7 2 3,7 2 3,,,true,true,true
+P24,startup_network_callback,134,1,518,TEST,TEST,7 0 0,7 0 0,,,true,true,true
+P24,startup_network_callback,135,1,518,JMP,JMP,7,7,to 143,to 143,true,true,true
+P24,startup_network_callback,136,1,519,GETUPVAL,GETUPVAL,9 9,9 9,R,save_cached_content,true,true,true
+P24,startup_network_callback,137,1,519,GETTABLE,GETTABLE,10 5 -22,10 5 -22,"""content""","""content""",true,true,true
+P24,startup_network_callback,138,1,519,CALL,CALL,9 2 1,9 2 1,,,true,true,true
+P24,startup_network_callback,139,1,520,GETUPVAL,GETUPVAL,9 10,9 10,Q,save_cached_version,true,true,true
+P24,startup_network_callback,140,1,520,GETTABLE,GETTABLE,10 5 -21,10 5 -21,"""version""","""version""",true,true,true
+P24,startup_network_callback,141,1,520,CALL,CALL,9 2 1,9 2 1,,,true,true,true
+P24,startup_network_callback,142,1,520,JMP,JMP,16,16,to 159,to 159,true,true,true
+P24,startup_network_callback,143,1,522,GETUPVAL,GETUPVAL,9 0,9 0,h,globals,true,true,true
+P24,startup_network_callback,144,1,522,GETTABLE,GETTABLE,9 9 -3,9 9 -3,"""def""","""def""",true,true,true
+P24,startup_network_callback,145,1,522,GETTABLE,GETTABLE,9 9 -4,9 9 -4,"""debugkey""","""debugkey""",true,true,true
+P24,startup_network_callback,146,1,522,TEST,TEST,9 0 0,9 0 0,,,true,true,true
+P24,startup_network_callback,147,1,522,JMP,JMP,4,4,to 152,to 152,true,true,true
+P24,startup_network_callback,148,1,523,GETUPVAL,GETUPVAL,9 0,9 0,h,globals,true,true,true
+P24,startup_network_callback,149,1,523,GETTABLE,GETTABLE,9 9 -5,9 9 -5,"""print""","""print""",true,true,true
+P24,startup_network_callback,150,1,523,LOADK,LOADK,10 -25,10 -25,"""run code error""","""run code error""",true,true,true
+P24,startup_network_callback,151,1,523,CALL,CALL,9 2 1,9 2 1,,,true,true,true
+P24,startup_network_callback,152,1,525,GETUPVAL,GETUPVAL,9 1,9 1,S,request_backup_update,true,true,true
+P24,startup_network_callback,153,1,525,GETUPVAL,GETUPVAL,10 6,10 6,e,true_value,true,true,true
+P24,startup_network_callback,154,1,525,CALL,CALL,9 2 1,9 2 1,,,true,true,true
+P24,startup_network_callback,155,1,527,JMP,JMP,3,3,to 159,to 159,true,true,true
+P24,startup_network_callback,156,1,529,GETUPVAL,GETUPVAL,4 1,4 1,S,request_backup_update,true,true,true
+P24,startup_network_callback,157,1,529,GETUPVAL,GETUPVAL,5 6,5 6,e,true_value,true,true,true
+P24,startup_network_callback,158,1,529,CALL,CALL,4 2 1,4 2 1,,,true,true,true
+P24,startup_network_callback,159,1,531,RETURN,RETURN,0 1,0 1,,,true,true,true
+P25,startup_get_or_create_uuid,1,1,534,GETUPVAL,GETUPVAL,1 0,1 0,h,globals,true,true,true
+P25,startup_get_or_create_uuid,2,1,534,GETTABLE,GETTABLE,1 1 -1,1 1 -1,"""device""","""device""",true,true,true
+P25,startup_get_or_create_uuid,3,1,534,GETTABLE,GETTABLE,1 1 -2,1 1 -2,"""writablePath""","""writablePath""",true,true,true
+P25,startup_get_or_create_uuid,4,1,534,LOADK,LOADK,2 -3,2 -3,"""bzuuid""","""bzuuid""",true,true,true
+P25,startup_get_or_create_uuid,5,1,534,CONCAT,CONCAT,1 1 2,1 1 2,,,true,true,true
+P25,startup_get_or_create_uuid,6,1,535,GETUPVAL,GETUPVAL,2 0,2 0,h,globals,true,true,true
+P25,startup_get_or_create_uuid,7,1,535,GETTABLE,GETTABLE,2 2 -4,2 2 -4,"""io""","""io""",true,true,true
+P25,startup_get_or_create_uuid,8,1,535,GETTABLE,GETTABLE,2 2 -5,2 2 -5,"""exists""","""exists""",true,true,true
+P25,startup_get_or_create_uuid,9,1,535,MOVE,MOVE,3 1,3 1,,,true,true,true
+P25,startup_get_or_create_uuid,10,1,535,CALL,CALL,2 2 2,2 2 2,,,true,true,true
+P25,startup_get_or_create_uuid,11,1,535,TEST,TEST,2 0 1,2 0 1,,,true,true,true
+P25,startup_get_or_create_uuid,12,1,535,JMP,JMP,12,12,to 25,to 25,true,true,true
+P25,startup_get_or_create_uuid,13,1,536,GETUPVAL,GETUPVAL,2 0,2 0,h,globals,true,true,true
+P25,startup_get_or_create_uuid,14,1,536,GETTABLE,GETTABLE,2 2 -6,2 2 -6,"""crypto""","""crypto""",true,true,true
+P25,startup_get_or_create_uuid,15,1,536,GETTABLE,GETTABLE,2 2 -7,2 2 -7,"""md5""","""md5""",true,true,true
+P25,startup_get_or_create_uuid,16,1,536,MOVE,MOVE,3 0,3 0,,,true,true,true
+P25,startup_get_or_create_uuid,17,1,536,CALL,CALL,2 2 2,2 2 2,,,true,true,true
+P25,startup_get_or_create_uuid,18,1,536,MOVE,MOVE,0 2,0 2,,,true,true,true
+P25,startup_get_or_create_uuid,19,1,537,GETUPVAL,GETUPVAL,2 0,2 0,h,globals,true,true,true
+P25,startup_get_or_create_uuid,20,1,537,GETTABLE,GETTABLE,2 2 -8,2 2 -8,"""core_func_writefile""","""core_func_writefile""",true,true,true
+P25,startup_get_or_create_uuid,21,1,537,MOVE,MOVE,3 1,3 1,,,true,true,true
+P25,startup_get_or_create_uuid,22,1,537,MOVE,MOVE,4 0,4 0,,,true,true,true
+P25,startup_get_or_create_uuid,23,1,537,CALL,CALL,2 3 1,2 3 1,,,true,true,true
+P25,startup_get_or_create_uuid,24,1,538,RETURN,RETURN,0 2,0 2,,,true,true,true
+P25,startup_get_or_create_uuid,25,1,540,GETUPVAL,GETUPVAL,2 0,2 0,h,globals,true,true,true
+P25,startup_get_or_create_uuid,26,1,540,GETTABLE,GETTABLE,2 2 -4,2 2 -4,"""io""","""io""",true,true,true
+P25,startup_get_or_create_uuid,27,1,540,GETTABLE,GETTABLE,2 2 -9,2 2 -9,"""readfile""","""readfile""",true,true,true
+P25,startup_get_or_create_uuid,28,1,540,MOVE,MOVE,3 1,3 1,,,true,true,true
+P25,startup_get_or_create_uuid,29,1,540,TAILCALL,TAILCALL,2 2 0,2 2 0,,,true,true,true
+P25,startup_get_or_create_uuid,30,1,540,RETURN,RETURN,2 0,2 0,,,true,true,true
+P25,startup_get_or_create_uuid,31,1,541,RETURN,RETURN,0 1,0 1,,,true,true,true

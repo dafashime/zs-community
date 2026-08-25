@@ -1,0 +1,4 @@
+﻿escape_index,escape_text,location,semantic_reason
+1,\022,413:21-413:25,control-byte match used by gsub; changing it changes key derivation
+2,\t,414:21-414:23,tab character class used by gsub
+3,\n,425:65-425:67,newline in user-facing message

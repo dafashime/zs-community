@@ -1,0 +1,3 @@
+﻿shadow_relation_id,inner_binding_id,inner_function_name,inner_declaration_kind,inner_scope_id,original_inner_name,readable_inner_name,original_inner_location,readable_inner_location,outer_binding_id,outer_function_name,outer_declaration_kind,outer_scope_id,original_outer_name,readable_outer_name,original_outer_location,readable_outer_location,same_prototype,relation_equivalent
+SH01,P01:L044,startup_iife,local,S001,a0,file_data_result,1:22049,532:11,P01:L040,startup_iife,local,S001,a0,file_data_result,1:18718,438:11,true,true
+SH02,P11:L000,save_cached_version,parameter,S030,y,local_version,1:7674,142:40,P01:L015,startup_iife,local,S001,y,local_version,1:5152,58:11,false,true

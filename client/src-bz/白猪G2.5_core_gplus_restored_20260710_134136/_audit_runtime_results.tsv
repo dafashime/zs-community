@@ -1,0 +1,10 @@
+RESULT	missing_core_archive	true	true	true	true	true	true	true	8	8	0				
+RESULT	startup_remote_success	true	true	true	true	true	true	true	47	47	0				
+RESULT	main_ok_then_primary_remote	true	true	true	true	true	true	true	64	64	0				
+RESULT	main_failed_then_backup_remote	true	true	true	true	true	true	true	62	62	0				
+RESULT	cached_code_then_ok	true	true	true	true	true	true	true	41	41	0				
+RESULT	json_decode_nil_inherited_error	true	true	true	true	true	false	false	45	45	0	attempt to index local '<renamed>' (a nil value)	attempt to index local '<renamed>' (a nil value)	...s_restored_20260710_134136\\core_dec_original_payload.lua:1: attempt to index local '_' (a nil value)	...ore_gplus_restored_20260710_134136\\core_dec_readable.lua:503: attempt to index local 'response_json' (a nil value)
+RESULT	kill_switch	true	true	true	true	true	true	true	27	27	0				
+RESULT	arm64_with_hook_archive	true	true	true	true	true	true	true	28	28	0				
+COVERAGE	0:565,17:564,55:57,60:62,67:69,71:82,83:98,99:111,105:107,112:132,133:141,142:144,145:148,150:268,169:234,237:245,270:381,278:347,350:358,385:391,392:415,425:429,430:432,459:461,462:531,533:541
+ALL_PASS	true

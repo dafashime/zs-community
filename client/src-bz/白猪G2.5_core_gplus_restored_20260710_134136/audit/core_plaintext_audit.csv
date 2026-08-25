@@ -1,0 +1,19 @@
+﻿check,value,pass,evidence
+utf8_strict_decode,pass,true,Entire readable source decodes as strict UTF-8.
+nul_bytes,0,true,Raw source byte scan.
+disallowed_raw_control_bytes,0,true,No raw controls other than tab/newline/CR.
+tree_sitter_escape_sequence_nodes,3,true,"Only \022, \t and \n remain."
+decimal_escape_sequences,1,true,Sole decimal escape is intentional \022 gsub pattern.
+hex_escape_sequences,0,true,No \xNN escapes.
+unicode_escape_sequences,0,true,No \u escapes.
+original_escape_sequence_nodes,4714,true,Original baseline.
+readable_string_literal_nodes,162,true,Original has 527 string nodes.
+static_runtime_name_occurrences,367,true,All static field/table-key/method names are visible and audited.
+dynamic_runtime_index_occurrences,1,false,One computed table index cannot be replaced with a static name without changing behavior.
+to_number_string_literal_calls,34,false,34 calls remain (22 unique strings); folding them would change source form and was not required for executable equivalence.
+runtime_base64_decode_calls,5,false,Five runtime Base64 decode calls consume values not all statically known.
+runtime_xxtea_decrypt_calls,2,false,Two runtime XXTEA decrypt calls depend on external/runtime ciphertext.
+dynamic_lua_load_calls,1,false,One dynamic load executes decrypted source content.
+external_zip_load_calls,2,false,Two archive load sites depend on external ZIP contents.
+static_source_plaintext,yes,true,Source/comments/static names/ordinary strings are readable.
+runtime_external_payloads_plaintext,no,false,"Remote data, encrypted archives and gplus inner payload remain opaque."

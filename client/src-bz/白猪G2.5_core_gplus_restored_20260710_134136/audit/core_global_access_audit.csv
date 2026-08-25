@@ -1,0 +1,3 @@
+﻿prototype_id,function_name,occurrence_in_function,opcode,original_pc,readable_pc,original_global_name,readable_global_name,equal
+P00,<chunk>,1,GETGLOBAL,11,11,_G,_G,true
+P00,<chunk>,2,GETGLOBAL,12,12,_ENV,_ENV,true

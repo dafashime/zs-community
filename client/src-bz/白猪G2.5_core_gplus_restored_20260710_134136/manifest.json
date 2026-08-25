@@ -1,0 +1,112 @@
+{
+  "core": {
+    "original_binary": {
+      "length": 23700,
+      "md5": "598eaa67b00deb9b566dbbaeabcb1699",
+      "sha256": "3d4b889a3bcfab778ae8aa4e69ad3f9ff0da40f9958f0edbc106d000af1f5616"
+    },
+    "decrypted_original_payload": {
+      "length": 23696,
+      "md5": "5512ce2b37485610597ac0feca651734",
+      "sha256": "d9d07d89be75df6dbaeae146ce235a63cbc119a01893ca21918a4008b3cc6b00"
+    },
+    "original_frame": {
+      "framed_length": 23700,
+      "original_length": 23696,
+      "padding_length": 0,
+      "length_trailer_hex": "905c0000"
+    },
+    "original_binary_roundtrip_exact": true,
+    "readable_source": {
+      "length": 24455,
+      "md5": "6118c708032b6089329c1b128b4ac2ac",
+      "sha256": "123ba1bfdbae6326cfd18a75cd486bc1884e4dcb8fd78b9d5d6fb5919ba598fa"
+    },
+    "readable_repacked_binary": {
+      "length": 24460,
+      "md5": "76ec4eb28fa9c629519d31c8a523988b",
+      "sha256": "cfbf245f909324154b8576e8d140e70af0e4e7d93b901ddcac7266d878c2bd46"
+    },
+    "readable_repack_roundtrip_exact": true,
+    "readable_syntax_valid": true,
+    "stripped_luajit_bytecode_equal": true,
+    "stripped_bytecode_original": {
+      "length": 10684,
+      "md5": "efce4d8fe0f25b993e38434b6b356875",
+      "sha256": "fcae59b42c52ab534310fdb3ce02faff7b7f413a45b11439fbaea704bb1f9c75"
+    },
+    "stripped_bytecode_readable": {
+      "length": 10684,
+      "md5": "efce4d8fe0f25b993e38434b6b356875",
+      "sha256": "fcae59b42c52ab534310fdb3ce02faff7b7f413a45b11439fbaea704bb1f9c75"
+    },
+    "validation_message": "",
+    "xxtea_effective_key_hex": "30363936326332646565653639653030"
+  },
+  "gplus": {
+    "original_binary": {
+      "length": 20728,
+      "md5": "4519f09f94ae7ab7c4c9a4bea676ad02",
+      "sha256": "7803e9dda5dc7649dbaca2ccad19eebd48473713446bc8c283df438ef034b96f"
+    },
+    "layer1_plain": {
+      "length": 20722,
+      "md5": "6b9b07af58da15c32b601e4a8dac87e8",
+      "sha256": "d87ac5e13eb8244199248b3e3d0bc0023658a441d1ae4d630e11e10439a5070e"
+    },
+    "frame": {
+      "framed_length": 20728,
+      "original_length": 20722,
+      "padding_length": 2,
+      "length_trailer_hex": "f2500000"
+    },
+    "original_binary_roundtrip_exact": true,
+    "xxtea_effective_key_hex": "0fd48cf87774b614e5e377b3f2161327",
+    "section_count": 11,
+    "section_lengths": [
+      15,
+      17,
+      17,
+      16,
+      27,
+      27,
+      29,
+      29,
+      27,
+      76,
+      20432
+    ],
+    "header_sections_ascii": [
+      "LKKJW{}JKODLAFJ",
+      "LKJOOPPKZCF889838",
+      "KLKLPPLIZDEIF8894",
+      "FJKLJKLXIFEWPSFF",
+      "9990FJSFSDAKLJGDLKSFAJJFJKL",
+      "FLZZZLKFJDLWOPKCKFESGKCKLSE",
+      "KLOWKELFJKLLXKLDF99823FLJSLDK",
+      "KJFLOJKLFJSKLBAIZHULFJDSKLJKL",
+      "34989LLKJLWEFDSFLJKFWEOXKKD",
+      "LPLFJDKSLJLKJIEFJLEXKCFJEOADFKEJKLCKELFSEIJGJLFESKFDJK1775916252@Zsq20200811"
+    ],
+    "embedded_prefix": "LPLFJDKSLJLKJIEFJLEXKCFJEOADFKEJKLCKELFSEIJGJLFESKFDJK",
+    "embedded_unix_timestamp": 1775916252,
+    "embedded_timestamp_utc": "2026-04-11T14:04:12+00:00",
+    "embedded_timestamp_china": "2026-04-11T22:04:12+08:00",
+    "embedded_suffix": "Zsq20200811",
+    "payload_base64": {
+      "length": 20432,
+      "md5": "76fda1e6e1ed8ccaf7eb32aebc8b4710",
+      "sha256": "6f8b6702bd3747de350209d852c8881e828387cb9e5a11075e87c2a5a79c8119"
+    },
+    "payload_binary": {
+      "length": 15324,
+      "md5": "d39ad67b6181e25b4fef1b52b239c7f5",
+      "sha256": "1665d1c16c50ab2aad0f15a4878f47f40128e719569e814e59348843ad0cabbd"
+    },
+    "payload_entropy_bits_per_byte": 7.98798757906917,
+    "payload_known_magic_matches": [],
+    "payload_directly_lua_loadable": false,
+    "payload_lua_error": "C:/Users/Administrator/AppData/Local/Temp/gplus_payload_validate_sb4xheuj/payload.bin: cannot load incompatible bytecode",
+    "inner_format_status": "unknown high-entropy opaque payload; obvious XXTEA/AES/RC4 candidate keys were not verified"
+  }
+}

@@ -1,0 +1,27 @@
+﻿DEBUG = 2
+DEBUG_FPS = false
+DEBUG_MEM = false
+LOAD_DEPRECATED_API = false
+LOAD_SHORTCODES_API = true
+CONFIG_SCREEN_ORIENTATION = "landscape"
+CONFIG_SCREEN_WIDTH = 960
+CONFIG_SCREEN_HEIGHT = 640
+CONFIG_SCREEN_AUTOSCALE = "FIXED_HEIGHT"
+MIR2_VERSION_BASE = nil
+MIR2_VERSION = nil
+SKIP_UPT = true
+-- LUAMODE: "base" (default) or "mod" (production bai-zhu mod client via mir2_modpatch.zip)
+LUAMODE = "base"
+USE_SOURCE_LUA = false
+USE_SOURCE_RES = false
+ANDROID_PACKAGE_NAME = "com/gowlom2/legend/"
+CPP_VERSION = 0
+ALWAYS_PLAY_CG = true
+VERSION_REVIEW = nil
+
+if VERSION_REVIEW then
+	DEBUG = 0
+	SKIP_UPT = true
+end
+
+WIN32_OPERATE = false

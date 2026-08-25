@@ -1,0 +1,11 @@
+﻿check,finding,evidence,scope
+getFileData_visible_argument_contract,"ycFunction, core.bin, true; two Lua return values",LuaJIT 0032-0037; CALL 4 3 4,visible LuaJIT bytecode
+first_return_use,truth-tested; nil/false calls core_func_byby,LuaJIT 0038-0041; source 6523-6527,visible LuaJIT bytecode/source
+second_return_use,unused,R5 is not read after CALL; var_260_5 occurs only at assignment,visible LuaJIT bytecode/source
+loaded_content_origin,"separate var_0_123() result, not either getFileData return",LuaJIT 0042-0056; source 6529-6538,visible LuaJIT bytecode/source
+visible_core_md5_compare,none,core_func_md5 has only its definition/GSET and no visible call,visible LuaJIT bytecode/source
+visible_core_length_or_content_compare,none,core.bin literal occurs only at getFileData call; no returned value comparison beyond truthiness,visible LuaJIT bytecode/source
+core_func_checkbin,returns true and has no visible Lua call,source 6519-6521; listing contains only the GSET occurrence,visible LuaJIT bytecode/source
+original_vs_readable_repack,length 23700 -> 24460; MD5 598eaa67b00deb9b566dbbaeabcb1699 -> 76ec4eb28fa9c629519d31c8a523988b,direct file hashes,artifact bytes
+visible_lua_rejection_due_only_to_changed_hash_or_length,not present,No visible MD5/length/content rejection path,conditional Lua-layer compatibility
+complete_native_loader_compatibility,not proven,"getFileData(..., true) is native; undocumented internal validation/side effects cannot be excluded",native/external boundary

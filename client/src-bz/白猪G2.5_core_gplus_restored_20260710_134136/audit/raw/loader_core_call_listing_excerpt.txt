@@ -1,0 +1,32 @@
+0030    FNEW     4  21      ; mir2.def.bzinit.luac:0
+0031    GSET     4  22      ; "core_func_checkbin"
+0032    GGET     4  23      ; "ycFunction"
+0033    TGETS    4   4  24  ; "getFileData"
+0034    GGET     5  23      ; "ycFunction"
+0035    KSTR     6  25      ; "core.bin"
+0036    MOV      7   1
+0037    CALL     4   3   4
+0038    IST          4
+0039    JMP      6 => 0042
+0040    GGET     6   4      ; "core_func_byby"
+0041    CALL     6   1   1
+0042 => GGET     6  26      ; "var_0_123"
+0043    CALL     6   2   1
+0044    IST          6
+0045    JMP      7 => 0048
+0046    GGET     7   4      ; "core_func_byby"
+0047    CALL     7   1   1
+0048 => GGET     7  27      ; "getinfo"
+0049    GGET     8  28      ; "load"
+0050    CALL     7   2   2
+0051    TGETS    7   7  29  ; "what"
+0052    ISNES    7  30      ; "C"
+0053    JMP      7 => 0058
+0054    GGET     7  31      ; "pcall"
+0055    FNEW     8  32      ; mir2.def.bzinit.luac:0
+0056    CALL     7   1   2
+0057    JMP      7 => 0060
+0058 => GGET     7   4      ; "core_func_byby"
+0059    CALL     7   1   1
+0060 => UCLO     0 => 0061
+0061 => RET1     1   2
