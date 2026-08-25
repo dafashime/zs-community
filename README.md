@@ -19,7 +19,7 @@ zs-community/
 │   ├── src-bs/                    战神基础版 Lua 源码(原始纯净版,仅作参考对照)
 │   ├── src-bz/                    战神白猪版 G2.5 全明文 Lua 源码(含 32/64 双份 + 工具产物)
 │   ├── build/                     打包构建配置(*_build.php / verify_*.php)
-│   ├── cocos/                     引擎工程(不入库;由 BaiZhuClient.zip 解压而来,见下方 Getting Started)
+│   ├── lib/                       引擎工程(不入库;由 BaiZhuClient.zip 解压而来,见下方 Getting Started)
 │   └── 编译指南.md                 客户端编译与打包完整流程(含 BaiZhuClient.zip 获取)
 ├── bin/
 │   └── run-win-client.bat         客户端一键运行脚本(定位 client/lib 下的 exe)
